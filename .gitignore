@@ -1,0 +1,32 @@
+# Exclude the .htaccess file
+.htaccess
+
+# Exclude any PSD/AI source
+*.psd
+*.ai
+
+# Exclude the build products
+build/*
+*.[oa]
+
+# Exclude OS X folder attributes
+.DS_Store
+
+# Exclude Text Files
+*.txt
+# Except read me
+!README.txt
+!wwwoptions.txt
+
+# Exclude log files
+*.log
+
+# Exclude Fonts
+fonts/
+
+# Exclude Codekit files
+#config.codekit
+sass/.sass-cache/*
+
+# Exclude Espresso Project files
+*.esproj
