@@ -1840,14 +1840,14 @@ header {
     border-left: 1px solid #0083a9;
     padding: 6px 14px; }
 
-.login-form {
+.fm-v {
   padding: 20px;
   margin: 20px;
   background: #eee;
   border: 1px solid #ccc;
   border-radius: 4px;
   text-align: center; }
-  .login-form .form-group {
+  .fm-v .form-group {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1860,14 +1860,14 @@ header {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; }
-    .login-form .form-group label {
+    .fm-v .form-group label {
       -webkit-box-flex: 0;
       -webkit-flex: 0 0 80px;
           -ms-flex: 0 0 80px;
               flex: 0 0 80px;
       text-align: right;
       padding-right: 4px; }
-    .login-form .form-group input {
+    .fm-v .form-group input {
       -webkit-box-flex: 1;
       -webkit-flex: 1 1 auto;
           -ms-flex: 1 1 auto;
