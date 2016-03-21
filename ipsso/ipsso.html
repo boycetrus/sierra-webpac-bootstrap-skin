@@ -1,176 +1,92 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <title>Library Log in</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
-    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-    <meta name="viewport" content="width = device-width, user-scalable = no">
-    <script type="text/javascript" src="/scripts/common.js"></script>
-    <!--<link rel="stylesheet" type="text/css" href="/apps/CAS/resources/login_mobile.css">
-    <link rel="stylesheet" type="text/css" href="/apps/CAS/resources/login.css" media="screen and (min-device-width: 481px)"> -->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Login - Sutherland Shire Council Libraries</title>
+  <meta name="description" content="Login to your library account to renew loans, search the catalogue, place holds and pay fees">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" href="/apps/CAS/resources/login_mobile.css"  />
-	<style type="text/css" media="screen and (min-width: 481px)">
-    <!--
-    @import url("/apps/CAS/resources/login.css");
-    -->
-    </style>
-    <!--[if IE]><link rel="stylesheet" type="text/css" href="/apps/CAS/resources/login.css"  media="screen" /><![endif]-->
-    <link href="/apps/CAS/resources/login_mobile.css" rel="stylesheet" type="text/css" media="handheld, only screen and (max-device-width: 480px)" />
-
+  <link rel="stylesheet" href="login.css">
 </head>
 
 <body id="cas">
-<!--[if IE]>
-<div id="ie">
-<![endif]-->
-<div class="loginPage">
 
-<div class="loginTop">
-&nbsp;<!-- Prevent div collapse -->
-<div class="loginTopLogo">
-<img src="/screens/logo_sm.jpg" alt="">
-</div>
-</div>
-
-<!-- Use for dual external and library authentication: -->
-<div class="loginArea loginArea2Col">
-<!-- Use for library-only authentication: -->
-<!--<div class="loginArea loginArea1Col"> -->
-<div class="clearfloats"></div>
-<form id="fm1">
-	<!-- Message from client webapp to be displayed on the CAS login screen -->
-  	<div id="clientmessage">
-	<!--display any errors-->
-  	</div> <!-- end clientmessage -->
-
-    <!-- If not using campus/external verification you can comment out this section up to "end loginldap" -->
-<div id="login_ldap">
-    <fieldset>
-        <legend>Campus Login</legend>
-        <label for="extpatid">Username</label>
-        <div class="loginFieldBg">
-          <input id="extpatid" name="extpatid" type="text" value="" size="20" maxlength="40" tabindex="5" class="loginField">
+  <div class="parent">
+    <div class="child">
+      <div class="form-block">
+      <header>
+        <img src="http://www.sutherlandshire.nsw.gov.au/files/templates/00000000-0000-0000-0000-000000000000/006a54a2-c659-42e2-9e84-eb119442657e/library-logo.png" alt="logo" />
+        <span>Libraries</span>
+    </header>
+      <form class="login-form">
+      <p class="lead">Login to your Account</h1>
+      <div class="ipssopinentry">
+        <div class="form-group">
+          <label for="code">Card No.</label>
+          <input id="code" name="code" type="text" class="form-control" placeholder="22232...">
         </div>
-        <label for="extpatpw">Password</label>
-        <div class="loginFieldBg">
-          <input id="extpatpw" name="extpatpw" type="password" value="" size="20" maxlength="40" tabindex="10" class="loginField">
+        <div class="form-group">
+          <label for="pin">PIN</label>
+          <input id="pin" name="pin" type="password" class="form-control">
         </div>
-        <!-- This button is a duplicate submit for convenience on mobile devices. -->
-        <input name="extpatsubmit" type="button" value="Submit" tabindex="12" class="loginSubmit" onclick="document.forms['fm1'].submit();">
-    </fieldset>
-    </div>
-<!-- end loginldap -->
-
-
-	<!--display login form-->
-	<div id="login">
-	  <fieldset>
-	    <legend>Library Account Login</legend>
-
-	        <label for="name">Name</label>
-            <div class="loginFieldBg">
-              <input id="name" name="name" type="text" value="" size="20" maxlength="40" tabindex="15" class="loginField">
-	        </div>
-
-            <fieldset class="barcodeAltChoice">
-            <legend>Enter your barcode or login name</legend>
-
-              <label for="code">Barcode</label>
-              <div class="loginFieldBg">
-        	      <input id="code" name="code" type="password" value="" size="20" maxlength="40" tabindex="20" class="loginField">
-		      </div>
-
-              <label for="user_name">Or: Your login/user name</label>
-              <div class="loginFieldBg">
-                  <input id="user_name" name="username" type="text" value="" size="20" maxlength="25" tabindex="25" class="loginField">
-	          </div>
-
-            </fieldset>
-
-			<div id="ipssopinentry">
-            <label for="pin">PIN</label>
-            <div class="loginFieldBg">
-              <input id="pin" name="pin" type="password" value="" size="20" maxlength="40" tabindex="30" class="loginField">
-	        </div>
-			</div>
+        <p id="pw-reset" class="help-block"><a href="/pinreset">Forgot PIN?</a></p>
+      </div>
+      <!-- /ipssopinentry -->
 
 <!--ifneedspin-->
-			<fieldset class="newpin" id="ipssonewpin">
-            <legend>Please enter a new PIN</legend>
-                <label for="pin1">New PIN</label>
-                <div class="loginFieldBg">
-                  <input id="pin1" name="pin1" type="password" value="" size="20" maxlength="40" tabindex="35" class="loginField">
-	            </div>
+      <fieldset id="ipssonewpin">
+        <p class="lead">Please enter a new PIN.</p>
+        <div class="form-group">
+          <label for="pin1">New PIN</label>
+          <input id="pin1" name="pin1" type="password" class="form-control">
+        </div>
 
-                <label for="pin2">Retype new PIN</label>
-                <div class="loginFieldBg">
-                  <input id="pin2" name="pin2" type="password" value="" size="20" maxlength="40" tabindex="40" class="loginField">
-                </div>
-
-            </fieldset>
+        <div class="form-group">
+          <label for="pin2">Retype PIN</label>
+          <input id="pin2" name="pin2" type="password" class="form-control">
+        </div>
+      </fieldset>
 <!--xif-->
-        <!-- This button is hidden unless using mobile devices. Even if hidden it enables Enter key to submit. -->
-        <input type="submit" name="Log In" class="loginSubmit">
 
-	  </fieldset>
-	</div>  <!-- end login -->
-    <div class="clearfloats"></div>
-    <div class="formButtons">
-    	<a href="#" onclick="document.forms['fm1'].submit();"><div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Submit</span></span></div></div></a>
-  	</div>
-</form>
+      <!-- Message from client webapp to be displayed on the CAS login screen e.g. -->
+      <!-- <p id="status" class="errors">You have entered invalid account information Please try again.</p> -->
+      <div id="clientmessage">
+        <!--display any errors-->
+      </div> <!-- end clientmessage -->
 
-<!--Enable form focus-->
-<script type="text/javascript"><!--//--><![CDATA[//><!--
-//Hide the main PIN entry if the new pin section is active.
-try { if ( document.getElementById("ipssonewpin") ) {
-	document.getElementById("ipssopinentry").style.display="none"; } }
-catch(err) {}
+      <div class="buttons">
+        <button type="submit" class="btn btn-primary">Sign In</button>
+        <a href="/selfreg" class="btn btn-default">Join the Library</a>
+      </div>
+    </form>
+    <footer>
+      <p><a href="//www.sutherlandshire.nsw.gov.au/library">home</a> <a href="//encore.sutherlandshire.nsw.gov.au">library catalogue</a></p>
+    </footer>
+      </div>
+      <!-- /form-block -->
+    </div><!-- /child -->
+  </div><!-- /parent -->
 
-//Look for the first field in the external patron part of the form. This field will get cursor focus.
-var ipssoFirstField;
-try { ipssoFirstField = document.forms[0].extpatid; }
-catch(err) {
-}
-//If we still don't have a field, look for the name field in the library account part.
-if ( ipssoFirstField==undefined ) { ipssoFirstField = document.forms[0].name; }
-//Set focus. Ignore errors.
-try { ipssoFirstField.focus(); }
-catch(err) {}
+<!-- <script type="text/javascript">
 
-document.onkeydown = enterSubmit
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5861779-9']);
+  _gaq.push(['_trackPageview']);
 
-function enterSubmit(e) {
-var keycode;
-if (window.event) keycode = window.event.keyCode;
-else if (e) keycode = e.which;
-if (keycode==13)
- document.forms[0].submit();
-}
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
 
-//--><!]]></script>
+</script> -->
 
 
-</div> <!-- end loginArea -->
-
-<div class="loginActions">
-<span class="loginActionText">New to the library?</span>
-<span class="loginActionScreenOnly"><a href="/selfreg">Create an account</a></span>
-<span class="loginActionSeparator"></span>
-<span class="loginActionScreenOnly"><a href="/pinreset">Forget Your PIN?</a></span>
-<span class="loginActionSeparator"></span>
-<span class="loginAction"><a href="/">Home</a></span>
-</div>
-</div> <!-- loginPage -->
-
-<!--[if IE]>
-</div>
-<![endif]-->
-<!-- IPSSO html form updated 2010 June 29 -->
 
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="jquery-1.11.3.min.js"><\/script>')</script>
 <script type="text/javascript" src="/scripts/common.js"></script>
 <script src="ipsso.js"></script>
 </body>
