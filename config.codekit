@@ -395,6 +395,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/ipsso\/library-logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12129,
+		"inputAbbreviatedPath": "\/ipsso\/library-logo.png",
+		"outputAbbreviatedPath": "\/ipsso\/library-logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/ipsso\/login-orig.css": {
 		"fileType": 16,
 		"ignore": 0,
