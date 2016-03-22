@@ -1,8 +1,3 @@
-//Hide the main PIN entry if the new pin section is active.
-// try { if ( document.getElementById("ipssonewpin") ) {
-// 	document.getElementById("ipssopinentry").style.display="none"; } }
-// catch(err) {}
-
 //Look for the first field in the external patron part of the form. This field will get cursor focus.
 // var ipssoFirstField;
 // try { ipssoFirstField = document.forms[0].extpatid; }
@@ -14,22 +9,17 @@
 // try { ipssoFirstField.focus(); }
 // catch(err) {}
 
-// function enterSubmit(e) {
-// var keycode;
-// if (window.event) keycode = window.event.keyCode;
-// else if (e) keycode = e.which;
-// if (keycode===13)
-//  document.forms[0].submit();
-// }
-//
-// document.onkeydown = enterSubmit;
-
 $(document).ready(function() {
+
+// add the bootstrap alert-danger classes to the error messages
   $('#status').addClass('alert alert-danger');
 
-  var newpinreq = $('#ipssonewpin');
-  if (newpinreq) {
+// Hide the main PIN entry if the new pin section is active.
+  var newpin = $('#ipssonewpin');
+  if (newpin.length > 0) {
     $('#ipssopinentry').hide();
+  } else {
+    return false;
   }
 
 });
