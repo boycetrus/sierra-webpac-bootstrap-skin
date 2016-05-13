@@ -55,8 +55,8 @@ ICON_CLEAR_FORM=<div class="buttonFullBold" id="ICON_CLEAR_FORM">Clear Form</div
 ICON_DELETE_SELECTED=<div class="button80" id="ICON_DELETE_SELECTED">Delete Selected</div>
 ICON_SELECT_ALL=<div class="button80" id="ICON_SELECT_ALL">Save All</div>
 RESOURCETABLE=valign="top"|cellpadding="0" cellspacing="0" border="0"||Resources
-INSERTTAG_INHEAD=<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4"><script type="text/javascript" src="/screens/iiilangswitch.js"></script><link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print"><script type="text/javascript" src="/screens/bibdisplay.js"></script>
-INSERTTAG_HTML=<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html lang="en">
+INSERTTAG_INHEAD=<meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="/screens/style.css" rel="stylesheet"><link href="/screens/print.css" rel="stylesheet" media="print"><link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,700italic,600,600italic' rel='stylesheet' type='text/css'><!--[if lt IE 9]><link href="/screens/ie.css" media="screen, projection" rel="stylesheet" type="text/css" /><script src="js/html5shiv-printshiv.js"></script><![endif]-->
+INSERTTAG_HTML=<!DOCTYPE html><html lang="en">
 RIGHT_CELL_WIDTH=18|25
 SSLPORT=82:443|2082:444|81:446|63879:63889
 CUSTOM_MESSAGES=F
@@ -180,7 +180,7 @@ HOLDINGS_POS=atpR
 #HOTLINK=i^020,c^09,n^505
 ICON_BIB_HOLDINGS_ITEMS=<span id="ICON_BIB_HOLDINGS_ITEMS">View Copies</span>
 #ICON_NEARBY=<span id="ICON_NEARBY"><img src="/screens/bullet.gif" alt="Nearby on shelf" border="0"></span>
-ICON_BIB_PAGING_CAPTION=<span id="ICON_BIB_PAGING_CAPTION"></span> 
+ICON_BIB_PAGING_CAPTION=<span id="ICON_BIB_PAGING_CAPTION"></span>
 ICON_BIB_PAGING_NEXT=<div class="button80" id="ICON_BIB_PAGING_NEXT">Next Record</div>
 ICON_BIB_PAGING_PREV=<div class="button80" id="ICON_BIB_PAGING_PREV">Previous Record</div>
 ICON_RECORDLINK=<div id="ICON_RECORDLINK"><a href="%s">%s</a></div>
@@ -268,7 +268,7 @@ ICON_REQUEST=<div class="buttonFullBold" id="ICON_REQUEST">Request</div>
 #REQFILLTIME=14|<br>Request available in approximately %d days|<br>Current estimated availability: approximately %d days|<br>This material may be immediately available
 REQUEST=Hold this item|bib|ask|Y
 REQUEST_ARTICLE_IFCHKIN=Y
-#REQUEST_INSTRUCTION=Please enter any special instructions: 
+#REQUEST_INSTRUCTION=Please enter any special instructions:
 REQUEST_MULTI=Request All Items in Book Cart|bib|ask
 
 # Patron Record
