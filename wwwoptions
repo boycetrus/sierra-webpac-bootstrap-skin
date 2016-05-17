@@ -48,7 +48,7 @@ FORM_FOCUS=true
 ICON_CANCEL=<div class="buttonFullBold" id="ICON_CANCEL">Cancel</div>
 ICON_OK=<div class="buttonFull" id="ICON_OK">OK</div>
 ICON_PREVPAGE=<div class="buttonFull" id="ICON_PREVPAGE">Previous Screen</div>
-ICON_SUBMIT=<div class="buttonFullBold" id="ICON_SUBMIT">Submit</div>
+ICON_SUBMIT=<button type="submit" class="btn btn-primary" id="ICON_SUBMIT">Go</button>
 ICON_UPDATELIST=<div class="buttonFull" id="ICON_UPDATELIST">Update List</div>
 ICON_CLEAR_ALL=<div class="button80" id="ICON_CLEAR_ALL">Clear All</div>
 ICON_CLEAR_FORM=<div class="buttonFullBold" id="ICON_CLEAR_FORM">Clear Form</div>
