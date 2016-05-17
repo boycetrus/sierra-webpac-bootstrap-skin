@@ -24,4 +24,8 @@ $(document).ready(function() {
 // end popover
 
 
+// add bootstrap classes to Sierra system generated code where necessary
+
+  $('form#search select').addClass('form-control');
+
 });
