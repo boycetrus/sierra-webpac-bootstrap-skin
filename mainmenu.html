@@ -17,7 +17,7 @@
 <h1 class="sr-only">Search</h1>
 
 
-<div id="searchForm" class="well well-lg">
+<div id="searchForm" class="center-block well well-lg">
 <form action="/search/" method="get" name="search" id="search" class="form-inline">
 
 <!--{nosort}-->
@@ -33,9 +33,9 @@
 	<label for="searchtype" class="sr-only">Search type</label>
 	<select name="searchtype" id="searchtype" class="form-control">
 		<!--
-			Add options for each index field code you want to offer
-			for searching. check the list of field codes in Sierra under:
-			Admin > Parameters > General > Index Labels
+		Add options for each index field code you want to offer
+		for searching. check the list of field codes in Sierra under:
+		Admin > Parameters > General > Index Labels
 		-->
 		<option value="X" selected="selected">Keyword</option>
 		<option value="t">Title</option>
@@ -52,14 +52,14 @@
 	<label for="searcharg" class="sr-only">Search term</label>
 	<input class="form-control" name="searcharg" id="searcharg" type="text" placeholder="type your search words">
 </div>
-
+in
 <div class="form-group">
 <!--{scope}-->
 </div>
 
 				<!--{submit}-->
 
-<button type="submit" class="btn btn-primary" id="icon_Submit">Go</button>
+<button type="submit" class="btn btn-primary" id="icon_Submit">Search</button>
 
 <!-- Don't think this is necessary
 
@@ -75,10 +75,12 @@
 <!--</fieldset> optional-->
 </form>
 <!-- /search -->
+
+<p class="text-right"><a href="search/X">Advanced Search</a></p>
 </div>
 <!-- /searchForm -->
 
-<div class="mainMenuAdvSearch"><a href="search/X">Advanced Search</a></div>
+
 
 <!--{botlogo}-->
 </body>
