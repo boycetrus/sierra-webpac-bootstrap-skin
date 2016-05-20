@@ -1,0 +1,15 @@
+// basic search form
+
+.search-form-container {
+  display: flex;
+}
+
+.search-form {
+  margin: auto;
+  > p {
+    margin-top: $line-height-computed / 2;
+  }
+  @media (min-width: $screen-sm-min) {
+    text-align: right;
+  }
+}
