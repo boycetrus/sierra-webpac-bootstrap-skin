@@ -45,7 +45,6 @@ $googleplus-red: #dd4b39;
 $instagram-blue: #03508f;
 
 
-
 //== Scaffolding
 //
 //## Settings for some of the most global styles.
@@ -67,13 +66,16 @@ $link-hover-decoration: underline !default;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+$bold:                    600;
+$extra-bold:              700;
+
+$font-family-sans-serif:  "Source Sans Pro", Arial, sans-serif !default;
+$font-family-serif:       Georgia, Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
 
-$font-size-base:          14px !default;
+$font-size-base:          16px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 
@@ -91,7 +93,7 @@ $line-height-computed:    floor(($font-size-base * $line-height-base)) !default;
 
 //** By default, this inherits from the `<body>`.
 $headings-font-family:    inherit !default;
-$headings-font-weight:    500 !default;
+$headings-font-weight:    normal !default;
 $headings-line-height:    1.1 !default;
 $headings-color:          inherit !default;
 
@@ -173,9 +175,9 @@ $table-border-color:            #ddd !default;
 
 $btn-font-weight:                normal !default;
 
-$btn-default-color:              #333 !default;
-$btn-default-bg:                 #fff !default;
-$btn-default-border:             #ccc !default;
+$btn-default-color:              $gray-dark !default;
+$btn-default-bg:                 $gray-faint !default;
+$btn-default-border:             darken($btn-default-bg, 10%) !default;
 
 $btn-primary-color:              #fff !default;
 $btn-primary-bg:                 $brand-primary !default;
@@ -351,7 +353,8 @@ $grid-columns:              12 !default;
 $grid-gutter-width:         30px !default;
 // Navbar collapse
 //** Point at which the navbar becomes uncollapsed.
-$grid-float-breakpoint:     $screen-sm-min !default;
+// original  $grid-float-breakpoint:     $screen-sm-min !default;
+$grid-float-breakpoint:     923px !default;  // magic number
 //** Point at which the navbar begins collapsing.
 $grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
 
@@ -508,9 +511,9 @@ $pager-disabled-color:                 $pagination-disabled-color !default;
 //
 //##
 
-$jumbotron-padding:              30px !default;
-$jumbotron-color:                inherit !default;
-$jumbotron-bg:                   $gray-lighter !default;
+$jumbotron-padding:              15px !default;
+$jumbotron-color:                $gray-faint !default;
+$jumbotron-bg:                   $gray-dark !default;
 $jumbotron-heading-color:        inherit !default;
 $jumbotron-font-size:            ceil(($font-size-base * 1.5)) !default;
 
@@ -519,21 +522,21 @@ $jumbotron-font-size:            ceil(($font-size-base * 1.5)) !default;
 //
 //## Define colors for form feedback states and, by default, alerts.
 
-$state-success-text:             #3c763d !default;
-$state-success-bg:               #dff0d8 !default;
-$state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
+$state-success-text:             darken($brand-success, 15%) !default; // original #3c763d
+$state-success-bg:               lighten($brand-success, 45%) !default; // original #dff0d8
+$state-success-border:           darken(adjust-hue($state-success-bg, -10), 10%) !default;
 
-$state-info-text:                #31708f !default;
-$state-info-bg:                  #d9edf7 !default;
-$state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%) !default;
+$state-info-text:                darken($brand-info, 15%) !default; // original #31708f
+$state-info-bg:                  lighten($brand-info, 50%) !default; // original #d9edf7
+$state-info-border:              darken($state-info-bg, 12%) !default;
 
-$state-warning-text:             #8a6d3b !default;
-$state-warning-bg:               #fcf8e3 !default;
-$state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%) !default;
+$state-warning-text:             darken($brand-warning, 10%) !default; // original #8a6d3b
+$state-warning-bg:               lighten($brand-warning, 50%) !default; // original #fcf8e3
+$state-warning-border:           darken($state-warning-bg, 10%) !default;
 
-$state-danger-text:              #a94442 !default;
-$state-danger-bg:                #f2dede !default;
-$state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
+$state-danger-text:              darken($brand-danger, 10%) !default; // original #a94442
+$state-danger-bg:                lighten(adjust_hue($brand-danger, 10), 49%) !default; // original #f2dede
+$state-danger-border:            darken($state-danger-bg, 10%) !default;
 
 
 //== Tooltips
@@ -645,7 +648,7 @@ $modal-sm:                    300px !default;
 
 $alert-padding:               15px !default;
 $alert-border-radius:         $border-radius-base !default;
-$alert-link-font-weight:      bold !default;
+$alert-link-font-weight:      $bold !default;
 
 $alert-success-bg:            $state-success-bg !default;
 $alert-success-text:          $state-success-text !default;
@@ -801,7 +804,7 @@ $badge-active-color:          $link-color !default;
 //** Badge background color in active nav link
 $badge-active-bg:             #fff !default;
 
-$badge-font-weight:           bold !default;
+$badge-font-weight:           $bold !default;
 $badge-line-height:           1 !default;
 $badge-border-radius:         10px !default;
 
@@ -815,7 +818,7 @@ $breadcrumb-padding-horizontal: 15px !default;
 //** Breadcrumb background color
 $breadcrumb-bg:                 #f5f5f5 !default;
 //** Breadcrumb text color
-$breadcrumb-color:              #ccc !default;
+$breadcrumb-color:              $gray-light !default;
 //** Text color of current page in the breadcrumb
 $breadcrumb-active-color:       $gray-light !default;
 //** Textual separator for between breadcrumb elements
@@ -838,12 +841,11 @@ $carousel-indicator-border-color:             #fff !default;
 
 $carousel-caption-color:                      #fff !default;
 
-
 //== Close
 //
 //##
 
-$close-font-weight:           bold !default;
+$close-font-weight:           $bold !default;
 $close-color:                 #000 !default;
 $close-text-shadow:           0 1px 0 #fff !default;
 
@@ -869,7 +871,7 @@ $pre-scrollable-max-height:   340px !default;
 //##
 
 //** Horizontal offset for forms and lists.
-$component-offset-horizontal: 180px !default;
+$component-offset-horizontal: 200px !default;
 //** Text muted color
 $text-muted:                  $gray-light !default;
 //** Abbreviations and acronyms border color
