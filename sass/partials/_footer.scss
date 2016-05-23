@@ -16,8 +16,13 @@ footer {
   //   padding: 0 1em;
   // }
   .ssc-logo {
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
     a {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-wrap: nowrap;
       color: #ffffff;
       text-decoration: none;
     }
