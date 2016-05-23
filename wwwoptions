@@ -48,14 +48,14 @@ FORM_FOCUS=true
 ICON_CANCEL=<div class="buttonFullBold" id="ICON_CANCEL">Cancel</div>
 ICON_OK=<div class="buttonFull" id="ICON_OK">OK</div>
 ICON_PREVPAGE=<div class="buttonFull" id="ICON_PREVPAGE">Previous Screen</div>
-ICON_SUBMIT=<div class="buttonFullBold" id="ICON_SUBMIT">Submit</div>
+#ICON_SUBMIT=<button type="submit" class="btn btn-primary" id="ICON_SUBMIT">Go</button>
 ICON_UPDATELIST=<div class="buttonFull" id="ICON_UPDATELIST">Update List</div>
 ICON_CLEAR_ALL=<div class="button80" id="ICON_CLEAR_ALL">Clear All</div>
 ICON_CLEAR_FORM=<div class="buttonFullBold" id="ICON_CLEAR_FORM">Clear Form</div>
 ICON_DELETE_SELECTED=<div class="button80" id="ICON_DELETE_SELECTED">Delete Selected</div>
 ICON_SELECT_ALL=<div class="button80" id="ICON_SELECT_ALL">Save All</div>
 RESOURCETABLE=valign="top"|cellpadding="0" cellspacing="0" border="0"||Resources
-INSERTTAG_INHEAD=<meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="/screens/style.css" rel="stylesheet"><link href="/screens/print.css" rel="stylesheet" media="print"><link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,700italic,600,600italic' rel='stylesheet' type='text/css'><!--[if lt IE 9]><link href="/screens/ie.css" media="screen, projection" rel="stylesheet" type="text/css" /><script src="js/html5shiv-printshiv.js"></script><![endif]-->
+INSERTTAG_INHEAD=<meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="/screens/print.css" rel="stylesheet" media="print"><link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,700italic,600,600italic' rel='stylesheet' type='text/css'><!--[if lt IE 9]><link href="/screens/ie.css" media="screen, projection" rel="stylesheet" type="text/css" /><script src="js/html5shiv-printshiv.js"></script><![endif]-->
 INSERTTAG_HTML=<!DOCTYPE html><html lang="en">
 RIGHT_CELL_WIDTH=18|25
 SSLPORT=82:443|2082:444|81:446|63879:63889
