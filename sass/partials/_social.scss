@@ -1,0 +1,111 @@
+.social {
+  background-color: $powderblue;
+  padding: $padding-base-horizontal 0;
+
+  .contact {
+    margin-bottom: $font-size-large;
+    font-size: $font-size-large;
+    line-height: $line-height-small;
+
+    span {
+      padding-right: 1em;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    span:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+.socmedia-buttons {
+  > a {
+  text-decoration: none;
+  }
+  .stay-in-touch {
+    display: block;
+    font-size: $font-size-large;
+    line-height: $line-height-small;
+  }
+}
+
+.socmedia-btn {
+  font-size: 40px; //magic number
+  margin-left: $padding-base-vertical;
+
+  [data-icon]:before {
+    padding-right: 0;
+  }
+}
+
+.email-btn {
+  margin-top: -21px; // magic number
+}
+.facebook-btn {
+  color: $facebook-blue;
+  &:hover {
+    color: darken($facebook-blue, 10);
+  }
+}
+.pinterest-btn {
+  color: $pinterest-red;
+  &:hover {
+    color: darken($pinterest-red, 10);
+  }
+}
+.twitter-btn {
+  color: $twitter-blue;
+  &:hover {
+    color: darken($twitter-blue, 10);
+  }
+}
+.vimeo-btn {
+  color: $vimeo-green;
+  &:hover {
+    color: darken($vimeo-green, 10);
+  }
+}
+.rss-btn {
+  color: $orange;
+  &:hover {
+    color: darken($orange, 10);
+  }
+}
+.instagram-btn {
+  color: $instagram-blue;
+  &:hover {
+    color: darken($instagram-blue, 10);
+  }
+}
+
+
+
+@media screen and (min-width: $screen-sm-min) {
+  .social {
+    .btn.email-btn {
+      margin-left: $padding-base-vertical;
+    }
+    .contact {
+      margin-bottom: 0;
+    }
+
+  }
+  .socmedia-buttons {
+    text-align: right;
+    a {
+    }
+  }
+}
+
+@media screen and (min-width: $screen-md-min) {
+
+  .social {
+    .stay-in-touch {
+      display: inline;
+      font-size: $font-size-large;
+      line-height: $font-size-large*2.75;
+      float: right;
+      margin-left: $padding-base-horizontal;
+    }
+  }
+}

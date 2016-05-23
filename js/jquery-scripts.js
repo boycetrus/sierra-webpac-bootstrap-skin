@@ -23,6 +23,8 @@ $(document).ready(function() {
   $('.tool-tip').tooltip();
 // end popover
 
+// remove innovative webpac branding from footer
+  $('body > span').remove();
 
 // add bootstrap classes to Sierra system generated code where necessary
 
