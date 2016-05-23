@@ -3570,19 +3570,19 @@ tbody.collapse.in {
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap;
   height: 50px;
-  font-size: 20px;
-  color: #ffffff; }
-  /* line 179, ../sass/bootstrap/_navbar.scss */
+  font-size: 20px; }
+  /* line 178, ../sass/bootstrap/_navbar.scss */
   .navbar-brand:hover, .navbar-brand:focus {
     text-decoration: none; }
-  /* line 184, ../sass/bootstrap/_navbar.scss */
+  /* line 183, ../sass/bootstrap/_navbar.scss */
   .navbar-brand img {
     display: block;
     height: 50px; }
-  /* line 189, ../sass/bootstrap/_navbar.scss */
+  /* line 188, ../sass/bootstrap/_navbar.scss */
   .navbar-brand .logo-text {
     padding-left: 9px;
-    border-left: 1px solid #ffffff; }
+    border-left: 1px solid #ffffff;
+    color: #ffffff; }
   @media (min-width: 923px) {
     /* line 195, ../sass/bootstrap/_navbar.scss */
     .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {

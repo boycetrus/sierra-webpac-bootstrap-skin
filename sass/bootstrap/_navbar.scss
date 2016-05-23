@@ -174,7 +174,6 @@
   flex-wrap: nowrap;
   height: 50px; //set to logo max-height
   font-size: $font-size-large;
-  color: #ffffff;
 
   &:hover,
   &:focus {
@@ -189,6 +188,7 @@
   .logo-text {
     padding-left: 9px; // magic number based on logo size
     border-left: 1px solid #ffffff;
+    color: #ffffff;
   }
 
   @media (min-width: $grid-float-breakpoint) {
