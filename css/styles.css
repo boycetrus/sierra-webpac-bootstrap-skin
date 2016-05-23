@@ -5863,5 +5863,15 @@ footer {
   /* line 18, ../sass/partials/_footer.scss */
   footer .ssc-logo {
     text-align: right; }
+    /* line 20, ../sass/partials/_footer.scss */
+    footer .ssc-logo img {
+      max-width: 200px; }
+    /* line 23, ../sass/partials/_footer.scss */
+    footer .ssc-logo span {
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 300;
+      border-left: 1px solid #ffffff;
+      padding: 6px 14px; }
 
 /*# sourceMappingURL=styles.css.map */
