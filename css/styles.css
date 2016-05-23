@@ -5864,15 +5864,17 @@ footer {
   footer .ssc-logo {
     text-align: right; }
     /* line 20, ../sass/partials/_footer.scss */
+    footer .ssc-logo a {
+      color: #ffffff;
+      text-decoration: none; }
+    /* line 24, ../sass/partials/_footer.scss */
     footer .ssc-logo img {
       max-width: 200px; }
-    /* line 23, ../sass/partials/_footer.scss */
-    footer .ssc-logo span a {
-      color: #ffffff;
+    /* line 27, ../sass/partials/_footer.scss */
+    footer .ssc-logo span {
       font-size: 24px;
       font-weight: 300;
       border-left: 1px solid #ffffff;
-      padding: 6px 14px;
-      text-decoration: none; }
+      padding: 6px 14px; }
 
 /*# sourceMappingURL=styles.css.map */
