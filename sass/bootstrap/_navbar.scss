@@ -161,19 +161,33 @@
 // Brand/project name
 
 .navbar-brand {
-  float: left;
-  padding: $navbar-padding-vertical $navbar-padding-horizontal;
+  // original bootstrap values below need to be adjusted depending on the size of the logo
+  // float: left;
+  // padding: $navbar-padding-vertical $navbar-padding-horizontal;
+  // font-size: $font-size-large;
+  // line-height: $line-height-computed;
+  // height: $navbar-height;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  height: 50px; //set to logo max-height
   font-size: $font-size-large;
-  line-height: $line-height-computed;
-  height: $navbar-height;
 
   &:hover,
   &:focus {
     text-decoration: none;
   }
 
-  > img {
+  img {
     display: block;
+    height: 50px;
+  }
+
+  .logo-text {
+    padding-left: 9px; // magic number based on logo size
+    border-left: 1px solid #ffffff;
   }
 
   @media (min-width: $grid-float-breakpoint) {
