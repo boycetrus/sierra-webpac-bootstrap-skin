@@ -5745,4 +5745,123 @@ button.close {
     .search-form {
       text-align: right; } }
 
+/* line 1, ../sass/partials/_social.scss */
+.social {
+  background-color: #E9F2F7;
+  padding: 12px 0; }
+  /* line 5, ../sass/partials/_social.scss */
+  .social .contact {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.5; }
+    /* line 10, ../sass/partials/_social.scss */
+    .social .contact span {
+      padding-right: 1em;
+      white-space: nowrap;
+      overflow: hidden; }
+    /* line 15, ../sass/partials/_social.scss */
+    .social .contact span:last-child {
+      padding-right: 0; }
+
+/* line 22, ../sass/partials/_social.scss */
+.socmedia-buttons > a {
+  text-decoration: none; }
+/* line 25, ../sass/partials/_social.scss */
+.socmedia-buttons .stay-in-touch {
+  display: block;
+  font-size: 20px;
+  line-height: 1.5; }
+
+/* line 32, ../sass/partials/_social.scss */
+.socmedia-btn {
+  font-size: 40px;
+  margin-left: 6px; }
+  /* line 36, ../sass/partials/_social.scss */
+  .socmedia-btn [data-icon]:before {
+    padding-right: 0; }
+
+/* line 41, ../sass/partials/_social.scss */
+.email-btn {
+  margin-top: -21px; }
+
+/* line 44, ../sass/partials/_social.scss */
+.facebook-btn {
+  color: #3b5998; }
+  /* line 46, ../sass/partials/_social.scss */
+  .facebook-btn:hover {
+    color: #2d4373; }
+
+/* line 50, ../sass/partials/_social.scss */
+.pinterest-btn {
+  color: #cb2027; }
+  /* line 52, ../sass/partials/_social.scss */
+  .pinterest-btn:hover {
+    color: #9f191f; }
+
+/* line 56, ../sass/partials/_social.scss */
+.twitter-btn {
+  color: #00aced; }
+  /* line 58, ../sass/partials/_social.scss */
+  .twitter-btn:hover {
+    color: #0087ba; }
+
+/* line 62, ../sass/partials/_social.scss */
+.vimeo-btn {
+  color: #aad450; }
+  /* line 64, ../sass/partials/_social.scss */
+  .vimeo-btn:hover {
+    color: #93c130; }
+
+/* line 68, ../sass/partials/_social.scss */
+.rss-btn {
+  color: #E39800; }
+  /* line 70, ../sass/partials/_social.scss */
+  .rss-btn:hover {
+    color: #b07600; }
+
+/* line 74, ../sass/partials/_social.scss */
+.instagram-btn {
+  color: #03508f; }
+  /* line 76, ../sass/partials/_social.scss */
+  .instagram-btn:hover {
+    color: #02345d; }
+
+@media screen and (min-width: 768px) {
+  /* line 85, ../sass/partials/_social.scss */
+  .social .btn.email-btn {
+    margin-left: 6px; }
+  /* line 88, ../sass/partials/_social.scss */
+  .social .contact {
+    margin-bottom: 0; }
+
+  /* line 93, ../sass/partials/_social.scss */
+  .socmedia-buttons {
+    text-align: right; } }
+@media screen and (min-width: 992px) {
+  /* line 103, ../sass/partials/_social.scss */
+  .social .stay-in-touch {
+    display: inline;
+    font-size: 20px;
+    line-height: 55px;
+    float: right;
+    margin-left: 12px; } }
+/* line 1, ../sass/partials/_footer.scss */
+footer {
+  background: #333333;
+  background-image: -webkit-linear-gradient(top, #333333, #222222);
+  background-image: linear-gradient(to bottom, #333333, #222222);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  color: #dedede; }
+  /* line 8, ../sass/partials/_footer.scss */
+  footer a {
+    color: #6aade4; }
+  /* line 11, ../sass/partials/_footer.scss */
+  footer a:hover,
+  footer a:focus {
+    color: #E9F2F7; }
+  /* line 18, ../sass/partials/_footer.scss */
+  footer .ssc-logo {
+    text-align: right; }
+
 /*# sourceMappingURL=styles.css.map */

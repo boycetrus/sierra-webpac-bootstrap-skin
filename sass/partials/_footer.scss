@@ -1,0 +1,21 @@
+footer {
+  background: $gray-dark;
+  background-image: linear-gradient(to bottom, $gray-dark, $gray-darker);
+  padding-top: $padding-large-horizontal*1.5;
+  padding-bottom: $padding-large-horizontal*1.5;
+  color: $gray-lighter;
+
+  a {
+    color: $lightblue;
+  }
+  a:hover,
+  a:focus {
+    color: $powderblue;
+  }
+  // > .container-fluid.page-wrap {
+  //   padding: 0 1em;
+  // }
+  .ssc-logo {
+    text-align: right;
+  }
+}
