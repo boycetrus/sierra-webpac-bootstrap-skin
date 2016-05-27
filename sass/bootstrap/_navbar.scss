@@ -180,8 +180,15 @@
     text-decoration: none;
   }
 
-  > img {
+  img {
     display: block;
+    height: 50px;
+  }
+
+  .logo-text {
+    padding-left: 9px; // magic number based on logo size
+    border-left: 1px solid #ffffff;
+    color: #ffffff;
   }
 
   @media (min-width: $grid-float-breakpoint) {
