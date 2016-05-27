@@ -5744,6 +5744,10 @@ main {
   /* line 13, ../sass/partials/_searchform.scss */
   .search-form > p {
     margin-top: 11px; }
+  /* line 16, ../sass/partials/_searchform.scss */
+  .search-form .lead {
+    text-align: left;
+    margin: 0 0 11px; }
   @media (min-width: 768px) {
     /* line 11, ../sass/partials/_searchform.scss */
     .search-form {
