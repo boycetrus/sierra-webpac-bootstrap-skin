@@ -5762,6 +5762,10 @@ main {
   /* line 13, ../sass/partials/_searchform.scss */
   .search-form > p {
     margin-top: 11px; }
+  /* line 16, ../sass/partials/_searchform.scss */
+  .search-form .lead {
+    text-align: left;
+    margin: 0 0 11px; }
   @media (min-width: 768px) {
     /* line 11, ../sass/partials/_searchform.scss */
     .search-form {
@@ -5874,15 +5878,16 @@ footer {
   background-image: linear-gradient(to bottom, #333333, #222222);
   padding-top: 24px;
   padding-bottom: 24px;
-  color: #dedede; }
-  /* line 8, ../sass/partials/_footer.scss */
+  color: #dedede;
+  min-height: 20vh; }
+  /* line 9, ../sass/partials/_footer.scss */
   footer a {
     color: #6aade4; }
-  /* line 11, ../sass/partials/_footer.scss */
+  /* line 12, ../sass/partials/_footer.scss */
   footer a:hover,
   footer a:focus {
     color: #E9F2F7; }
-  /* line 18, ../sass/partials/_footer.scss */
+  /* line 19, ../sass/partials/_footer.scss */
   footer .ssc-logo {
     display: -webkit-box;
     display: -webkit-flex;
@@ -5892,7 +5897,7 @@ footer {
     -webkit-justify-content: flex-end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
-    /* line 21, ../sass/partials/_footer.scss */
+    /* line 22, ../sass/partials/_footer.scss */
     footer .ssc-logo a {
       display: -webkit-box;
       display: -webkit-flex;
@@ -5911,10 +5916,10 @@ footer {
               flex-wrap: nowrap;
       color: #ffffff;
       text-decoration: none; }
-    /* line 29, ../sass/partials/_footer.scss */
+    /* line 30, ../sass/partials/_footer.scss */
     footer .ssc-logo img {
       max-width: 200px; }
-    /* line 32, ../sass/partials/_footer.scss */
+    /* line 33, ../sass/partials/_footer.scss */
     footer .ssc-logo span {
       font-size: 24px;
       font-weight: 300;
