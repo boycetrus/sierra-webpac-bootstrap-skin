@@ -4,11 +4,11 @@ main {
 
 // basic search form
 
-.search-form-container {
+.webpac-form-container {
   display: flex;
 }
 
-.search-form {
+.webpac-form {
   margin: auto;
   > p {
     margin-top: $line-height-computed / 2;
