@@ -308,8 +308,8 @@ PATRON_FIELDS=n/a|a/a|t/a|F/43
 #PATRON_NOTICES=apz
 PIN_ALPHA_NUM=true
 PIN_NUM_ONLY=false
-#PIN_RESET=true
-#PIN_RESET_EMAIL=Request to reset your library PIN|INSERT LIBRARY FROM EMAIL HERE|INSERT LIBRARY REPLY-TO EMAIL HERE
+PIN_RESET=true
+PIN_RESET_EMAIL=Request to reset your library PIN|INSERT LIBRARY FROM EMAIL HERE|INSERT LIBRARY REPLY-TO EMAIL HERE
 PSTARTOVER=/search
 SEEPUDATE=true
 TABLEPARAM_PATDISP=border="0" name="tableparam_patdisp"|border="0" name="tableparam_patdisp"|border="0" name="tableparam_patdisp"
