@@ -28,6 +28,9 @@ $(document).ready(function() {
 
 // add bootstrap classes to Sierra system generated code where necessary
 
+  // forms
   $('form#search select').addClass('form-control');
+  $('form#pinreset input').addClass('form-control');
+
 
 });

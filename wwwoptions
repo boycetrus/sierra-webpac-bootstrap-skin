@@ -283,7 +283,7 @@ ICON_BUT_PAT_RENEWALL=<div class="button80Bold" id="ICON_BUT_PAT_RENEWALL">Renew
 ICON_BUT_PAT_RENEWMARK=<div class="button80Bold" id="ICON_BUT_PAT_RENEWMARK">Renew Marked</div>
 ICON_BUT_PAT_SORTBYCHKOUT=<div class="button80Bold" id="ICON_BUT_PAT_SORTBYCHKOUT">Sort by Checkout</div>
 ICON_BUT_PAT_SORTBYDUE=<div class="button80Bold" id="ICON_BUT_PAT_SORTBYDUE">Sort by Due Date</div>
-ICON_BUT_PAT_SUBMIT=<div class="button80Bold" id="ICON_BUT_PAT_SUBMIT">Submit</div>
+#ICON_BUT_PAT_SUBMIT=<button type="submit" class="btn btn-primary" id="icon_Submit">Submit</button>
 ICON_BUT_PSTARTOVER=<div class="button80Bold" id="ICON_BUT_PSTARTOVER">Start Over</div>
 #BUT_RET2PREC=
 ICON_BUT_UPDATE_HOLDS=<div class="button80Bold" id="ICON_BUT_UPDATE_HOLDS">Update List</div>
@@ -308,8 +308,8 @@ PATRON_FIELDS=n/a|a/a|t/a|F/43
 #PATRON_NOTICES=apz
 PIN_ALPHA_NUM=true
 PIN_NUM_ONLY=false
-#PIN_RESET=true
-#PIN_RESET_EMAIL=Request to reset your library PIN|INSERT LIBRARY FROM EMAIL HERE|INSERT LIBRARY REPLY-TO EMAIL HERE
+PIN_RESET=true
+PIN_RESET_EMAIL=Request to reset your library PIN|INSERT LIBRARY FROM EMAIL HERE|INSERT LIBRARY REPLY-TO EMAIL HERE
 PSTARTOVER=/search
 SEEPUDATE=true
 TABLEPARAM_PATDISP=border="0" name="tableparam_patdisp"|border="0" name="tableparam_patdisp"|border="0" name="tableparam_patdisp"
