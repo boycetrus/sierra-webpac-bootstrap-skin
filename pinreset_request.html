@@ -73,40 +73,80 @@
 
 <div class="row">
   <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-    <h2>
-      <a role="button" data-toggle="collapse" href="#loginHelp" aria-expanded="false" aria-controls="loginHelp">
-        Still Having Trouble? <span class="caret"></span>
-      </a>
-    </h2>
+    <h2>Still Having Trouble? </h2>
+      <div class="panel-group" id="loginHelp" role="tablist" aria-multiselectable="true">
 
-    <div id="loginHelp" class="collapse">
-      <!--Enter your organisation's help text here -->
-      <h3>If you didn't receive the reset email&hellip;</h3>
-      <p>The reset email is sent to the email address that you have given the Library. If you don't
-        receive the reset email within a few mintues:</p>
-      <ul>
-        <li>The message may have been categorised by your email client as spam. Check your spam or junk
-          mail folder to see if the message is there.</li>
-        <li>The Library may not have your current email address on file. If you have not provided your
-          current email address you will not be able to reset your PIN online. Please contact the Library
-          for further assistance on 9710 0351.</li>
-      </ul>
-      <h3>If you don't have a PIN&hellip;</h3>
-      <p>While most members have provided a PIN there are a small number of people who don't have a PIN
-        entered in there record. Return to the Account Login form and enter your library card number only
-        (leave the PIN field blank) and submit the form:</p>
-        <ul>
-          <li>If you don't have a PIN already you will be prompted to enter one.</li>
-          <li>If you receive an error message then you do have a current PIN. Follow the prompts to reset
-            your PIN or contact the Library for further assistance on 9710 0351.</li>
-        </ul>
-        <h3>If you don't know your library card number&hellip;</h3>
-        <p>Your library card number is underneath the barcode on your library card. If you have lost your
-         library card you will not be able to login to your account online. Please contact the Library
-         for further assistance on 9710 0351.</p>
-    </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingEmail">
+            <h3 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#loginHelp" href="#noEmail" aria-expanded="false" aria-controls="noEmail">
+              If you didn't receive the reset email&hellip;
+              </a>
+            </h3>
+          </div>
+          <div id="noEmail" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEmail">
+            <div class="panel-body">
+              <p>The reset email is sent to the email address that you have given the Library. If you don't
+                receive the reset email within a few mintues:</p>
+              <ul>
+                <li>The message may have been categorised by your email client as spam. Check your spam or junk
+                  mail folder to see if the message is there.</li>
+                <li>The Library may not have your current email address on file. If you have not provided your
+                  current email address you will not be able to reset your PIN online. Please contact the Library
+                  for further assistance on 9710 0351.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--/ end #email panel -->
+
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingPin">
+            <h3 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#loginHelp" href="#noPin" aria-expanded="false" aria-controls="noPin">
+                If you don't have a PIN&hellip;
+              </a>
+            </h3>
+          </div>
+          <div id="noPin" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingPin">
+            <div class="panel-body">
+              <p>While most members have provided a PIN there are a small number of people who don't have a PIN
+              entered in there record. Return to the Account Login form and enter your library card number only
+              (leave the PIN field blank) and submit the form:</p>
+              <ul>
+                <li>If you don't have a PIN already you will be prompted to enter one.</li>
+                <li>If you receive an error message then you do have a current PIN. Follow the prompts to reset
+                  your PIN or contact the Library for further assistance on 9710 0351.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- / end #PIN panel -->
+
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingBarcode">
+            <h3 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#loginHelp" href="#noBarcode" aria-expanded="false" aria-controls="noBarcode">
+                If you don't know your library card number&hellip;
+              </a>
+            </h3>
+          </div>
+          <div id="noBarcode" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingBarcode">
+            <div class="panel-body">
+              <p>Your library card number is underneath the barcode on your library card. If you have lost your
+               library card you will not be able to login to your account online. Please contact the Library
+               for further assistance on 9710 0351.</p>
+            </div>
+          </div>
+        </div>
+        <!-- / end #barcode panel -->
+
+      </div>
+      <!-- / loginHelp -->
+
   </div>
 </div>
+<!-- /row -->
 
 <!--{botlogo}-->
 
