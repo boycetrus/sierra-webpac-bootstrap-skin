@@ -303,9 +303,9 @@ MODIFY_PFLDS=z
 #MODIFY_PFLDS=ahtpzHx
 MY_WEBPAC=false,2,0-255
 NEWPIN_MSG=Please enter a Personal Identification Number (PIN)
-PATRON_FIELDS=n/a|a/a|t/a|F/43
-#Note that in the PATRON_MSG web option you should replace z with the field tag used on your system for messages.
-#PATRON_MSG=z|Message from the library
+PATRON_FIELDS=n/a|t/a|z/a|F/43
+#Note that in the PATRON_MSG web option you should replace m with the field tag used on your system for messages.
+PATRON_MSG=m|You have a message from the library
 #PATRON_NOTICES=apz
 PIN_ALPHA_NUM=true
 PIN_NUM_ONLY=false
@@ -316,7 +316,7 @@ SEEPUDATE=true
 TABLEPARAM_PATDISP=border="0" name="tableparam_patdisp"|border="0" name="tableparam_patdisp"|border="0" name="tableparam_patdisp"
 TABLEPARAM_PATFUNC=border="0" name="tableparam_patfunc"|border="0" name="tableparam_patfunc"|border="0" name="tableparam_patfunc"
 TIMEOUT_POPUP=600
-EXP_MSG=10|Your record expires in %n day(s) on %d.
+EXP_MSG=3000|Your record expires in %n day(s) on %d. You will need to visit the library and ask staff to confirm your account details.
 IPSSO_USEHTML=true
 
 # My Millennium
