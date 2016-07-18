@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+//define global variables
+  var $loggedInMsg = $('#LOGGEDIN_MSG').text().split(', ');
+  var $patronFirstName = $loggedInMsg[1];
+  console.log($patronFirstName);
+
 //set up google analytics event tracking based on data attributes
   $('.js-ga-tracking').on('click', function() {
     var category = $(this).data('ga-category');
@@ -31,6 +36,10 @@ $(document).ready(function() {
   // forms
   $('form#search select').addClass('form-control');
   $('form#pinreset input').addClass('form-control');
+
+  //patronview_web.html
+  $('#expirationMsg').addClass('alert alert-danger');
+
 
 
 });
