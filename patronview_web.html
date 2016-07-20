@@ -17,8 +17,18 @@
 <!--{msgsbtn}-->
 <!--{xif}-->
 
-    <a class="btn btn-primary" href="#">Edit Profile</a>
-    <a href="#" class="btn btn-primary">Change PIN</a>
+    <a class="btn btn-primary" role="button">
+<!--{ifmodifypatinfo}-->
+<!--{modifypatinfobtn}-->
+<!--{xif}-->
+      <!-- Edit Profile -->
+    </a>
+    <a class="btn btn-primary" role="button">
+<!--{ifmodifypin}-->
+<!--{modifypinbtn}-->
+<!--{xif}-->
+      <!-- Change PIN -->
+    </a>
   </div>
 </div><!-- /panel-->
 
@@ -27,6 +37,12 @@
 </div>
 
 <div class="patActions">
+
+<!--{ifchkouts}-->
+<div class="patActionsLinks">
+<!--{chkoutsbtn}-->
+</div>
+<!--{xif}-->
 
 <!--{ifholds}-->
 <div class="patActionsLinks">
@@ -46,18 +62,6 @@
 </div>
 <!--{xif}-->
 
-<!--{ifchkouts}-->
-<div class="patActionsLinks">
-<!--{chkoutsbtn}-->
-</div>
-<!--{xif}-->
-
-<!--{ifmodifypatinfo}-->
-<div class="patActionsLinks">
-<!--{modifypatinfobtn}-->
-</div>
-<!--{xif}-->
-
 <!--{ifprograms}-->
 <div class="patActionsLinks">
 <!--{programsbtn}-->
@@ -67,12 +71,6 @@
 <!--{ifbookings}-->
 <div class="patActionsLinks">
 <!--{bookingsbtn}-->
-</div>
-<!--{xif}-->
-
-<!--{ifmodifypin}-->
-<div class="patActionsLinks">
-<!--{modifypinbtn}-->
 </div>
 <!--{xif}-->
 
