@@ -36,6 +36,7 @@ $(document).ready(function() {
   // topogo
   var acctMenuText = 'hello ' + $patronFirstName + '<span class="caret"</span>';
   $('#accountMenu').html(acctMenuText);
+  $('#ret2prec a').text('My Account');
 
   // forms
   $('form#search select').addClass('form-control');
