@@ -39,6 +39,7 @@ $(document).ready(function() {
 
   //patronview_web.html
   $('#expirationMsg').addClass('alert alert-danger');
+  $('#patronInfo .panel-body a').addClass('btn btn-primary');
 
 
 
