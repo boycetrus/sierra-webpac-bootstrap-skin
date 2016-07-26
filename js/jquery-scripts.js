@@ -1,8 +1,9 @@
 $(document).ready(function() {
 
 //define global variables
+  var $patronFirstName;
   var $loggedInMsg = $('#LOGGEDIN_MSG').text().split(', ');
-  var $patronFirstName = $loggedInMsg[1];
+  $patronFirstName = $loggedInMsg[1];
   console.log($patronFirstName);
 
 //set up google analytics event tracking based on data attributes
@@ -33,7 +34,7 @@ $(document).ready(function() {
 
 // add bootstrap classes to Sierra system generated code where necessary
 
-  // topogo
+  // toplogo
   if ($patronFirstName !== 'undefined') {
     var acctMenuText = 'hello ' + $patronFirstName + '<span class="caret"</span>';
     $('#accountMenu').html(acctMenuText);
