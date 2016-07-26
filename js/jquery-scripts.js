@@ -1,7 +1,8 @@
+var $patronFirstName;
+
 $(document).ready(function() {
 
 //define global variables
-  var $patronFirstName;
   var $loggedInMsg = $('#LOGGEDIN_MSG').text().split(', ');
   $patronFirstName = $loggedInMsg[1];
   console.log($patronFirstName);
