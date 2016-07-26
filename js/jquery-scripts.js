@@ -34,9 +34,12 @@ $(document).ready(function() {
 // add bootstrap classes to Sierra system generated code where necessary
 
   // topogo
-  var acctMenuText = 'hello ' + $patronFirstName + '<span class="caret"</span>';
-  $('#accountMenu').html(acctMenuText);
-  $('#ret2prec a').text('My Account');
+  if ($patronFirstName !== 'undefined') {
+    var acctMenuText = 'hello ' + $patronFirstName + '<span class="caret"</span>';
+    $('#accountMenu').html(acctMenuText);
+    $('#ret2prec a').text('My Account');
+  }
+
 
   // forms
   $('form#search select').addClass('form-control');
