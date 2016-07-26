@@ -279,7 +279,7 @@ BUT_PAT_CANCELMARK=/screens/pat_cancelmark.gif
 ICON_BUT_PAT_CANCELMARK=<div class="button80Bold" id="ICON_BUT_PAT_CANCELMARK">Cancel Selected</div>
 ICON_BUT_PAT_INFO=Edit Profile
 ICON_BUT_PAT_MSGS=<span id="ICON_BUT_PAT_MSGS">Message from the library</span>
-ICON_BUT_PAT_PIN=<span id="icon_but_pat_pin">Change PIN</span>
+ICON_BUT_PAT_PIN=Change PIN
 ICON_BUT_PAT_RENEWALL=<div class="button80Bold" id="ICON_BUT_PAT_RENEWALL">Renew All</div>
 ICON_BUT_PAT_RENEWMARK=<div class="button80Bold" id="ICON_BUT_PAT_RENEWMARK">Renew Marked</div>
 ICON_BUT_PAT_SORTBYCHKOUT=<div class="button80Bold" id="ICON_BUT_PAT_SORTBYCHKOUT">Sort by Checkout</div>
