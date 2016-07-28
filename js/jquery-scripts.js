@@ -47,6 +47,7 @@ $(document).ready(function() {
   $('form#pinreset input').addClass('form-control');
 
   //patronview_web.html
+  $('#LOGGEDIN_MSG').remove();
   $('#expirationMsg').addClass('alert alert-danger');
   $('#patronInfo .panel-body a').addClass('btn btn-primary');
 
