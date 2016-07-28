@@ -37,9 +37,8 @@ $(document).ready(function() {
 
   // toplogo
   if ($patronFirstName !== undefined) {
-    var acctMenuText = 'hello ' + $patronFirstName + '<span class="caret"</span>';
-    $('#accountMenu').html(acctMenuText);
-    $('#ret2prec a').text('My Account');
+    var acctMenuText = 'hello ' + $patronFirstName;
+    $('#ret2prec a').text(acctMenuText);
   }
 
   // forms
@@ -47,7 +46,7 @@ $(document).ready(function() {
   $('form#pinreset input').addClass('form-control');
 
   //patronview_web.html
-  $('#LOGGEDIN_MSG').remove();
+  $('#LOGGEDIN_MSG').delay(2000).fadeOut().nextAll('br').remove();
   $('#expirationMsg').addClass('alert alert-danger');
   $('#patronInfo .panel-body a').addClass('btn btn-primary');
 
