@@ -1,7 +1,11 @@
 .modify-patron-info {
-  margin: $padding-large-vertical;
+  margin: $padding-large-vertical 0;
 }
 
 .modify-patron-info + .alert {
   margin-bottom: 0;
+}
+
+.patActions  > li:empty{
+  display: none;
 }

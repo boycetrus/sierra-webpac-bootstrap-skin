@@ -4667,10 +4667,13 @@ main {
       text-align: right; } }
 
 .modify-patron-info {
-  margin: 10px; }
+  margin: 10px 0; }
 
 .modify-patron-info + .alert {
   margin-bottom: 0; }
+
+.patActions > li:empty {
+  display: none; }
 
 .social {
   background-color: #E9F2F7;
