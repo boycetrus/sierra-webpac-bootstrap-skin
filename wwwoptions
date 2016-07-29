@@ -315,7 +315,7 @@ SEEPUDATE=true
 TABLEPARAM_PATDISP=border="0" name="tableparam_patdisp"|border="0" name="tableparam_patdisp"|border="0" name="tableparam_patdisp"
 TABLEPARAM_PATFUNC=border="0" name="tableparam_patfunc"|border="0" name="tableparam_patfunc"|border="0" name="tableparam_patfunc"
 TIMEOUT_POPUP=600
-EXP_MSG=3000|Your record expires in %n day(s) on %d. You will need to visit the Library  and ask staff to confirm your account details.
+EXP_MSG=3000|WARNING: Your account expires in %n day(s) on %d. We use expiry dates to ensure our records are correct. Please ask staff to confirm your details on your next visit. If you don't visit the library before the expiry date you will not be able to access your account online.
 IPSSO_USEHTML=true
 
 # My Millennium

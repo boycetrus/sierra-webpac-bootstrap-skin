@@ -50,6 +50,4 @@ $(document).ready(function() {
   $('#expirationMsg').addClass('alert alert-danger');
   $('#patronInfo .panel-body a').addClass('btn btn-primary');
 
-
-
 });
