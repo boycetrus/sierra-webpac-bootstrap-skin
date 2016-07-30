@@ -58,4 +58,6 @@ $(document).ready(function() {
     }
   });
 
+  $('.patfunct > form > a').addClass('btn btn-default btn-xs');
+
 });

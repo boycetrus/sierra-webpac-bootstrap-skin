@@ -275,7 +275,7 @@ REQUEST_MULTI=Request All Items in Book Cart|bib|ask
 # Patron Record
 ICON_BUT_PAT_CANCEL=<span id="ICON_BUT_PAT_CANCEL">Cancel</span>
 ICON_BUT_PAT_CANCELALL=<span id="ICON_BUT_PAT_CANCELALL">Cancel All</span>
-BUT_PAT_CANCELMARK=/screens/pat_cancelmark.gif
+# BUT_PAT_CANCELMARK=/screens/pat_cancelmark.gif
 ICON_BUT_PAT_CANCELMARK=<span id="ICON_BUT_PAT_CANCELMARK">Cancel Selected</span>
 ICON_BUT_PAT_INFO=Edit Profile
 ICON_BUT_PAT_MSGS=<span id="ICON_BUT_PAT_MSGS">Message from the library</span>
