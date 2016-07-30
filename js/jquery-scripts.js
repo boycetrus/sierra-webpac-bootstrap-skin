@@ -50,4 +50,11 @@ $(document).ready(function() {
   $('#expirationMsg').addClass('alert alert-danger');
   $('#patronInfo .panel-body a').addClass('btn btn-primary');
 
+    //loop through the patActions tabs and remove the empty ones
+  $('#patActions > li').each( function(i) {
+    if (this.text().length < 2) {
+      this.remove();
+    }
+  });
+
 });
