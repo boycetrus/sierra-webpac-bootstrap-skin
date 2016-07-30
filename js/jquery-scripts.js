@@ -52,8 +52,11 @@ $(document).ready(function() {
 
     //loop through the patActions tabs and remove the empty ones
   $('#patActions > li').each( function(i) {
-    var tabName = this.text();
+    var tabName = $(this).text();
     console.log(tabName);
-    });
+    if (tabName.length < 2) {
+      $(this).remove();
+    }
+  });
 
 });
