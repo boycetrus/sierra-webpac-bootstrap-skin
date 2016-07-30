@@ -273,31 +273,31 @@ REQUEST_ARTICLE_IFCHKIN=Y
 REQUEST_MULTI=Request All Items in Book Cart|bib|ask
 
 # Patron Record
-ICON_BUT_PAT_CANCEL=<div class="button80Bold" id="ICON_BUT_PAT_CANCEL">Cancel</div>
-ICON_BUT_PAT_CANCELALL=<div class="button80Bold" id="ICON_BUT_PAT_CANCELALL">Cancel All</div>
+ICON_BUT_PAT_CANCEL=<span id="ICON_BUT_PAT_CANCEL">Cancel</span>
+ICON_BUT_PAT_CANCELALL=<span id="ICON_BUT_PAT_CANCELALL">Cancel All</span>
 BUT_PAT_CANCELMARK=/screens/pat_cancelmark.gif
-ICON_BUT_PAT_CANCELMARK=<div class="button80Bold" id="ICON_BUT_PAT_CANCELMARK">Cancel Selected</div>
+ICON_BUT_PAT_CANCELMARK=<span id="ICON_BUT_PAT_CANCELMARK">Cancel Selected</span>
 ICON_BUT_PAT_INFO=Edit Profile
 ICON_BUT_PAT_MSGS=<span id="ICON_BUT_PAT_MSGS">Message from the library</span>
 ICON_BUT_PAT_PIN=Change PIN
-ICON_BUT_PAT_RENEWALL=<div class="button80Bold" id="ICON_BUT_PAT_RENEWALL">Renew All</div>
-ICON_BUT_PAT_RENEWMARK=<div class="button80Bold" id="ICON_BUT_PAT_RENEWMARK">Renew Marked</div>
-ICON_BUT_PAT_SORTBYCHKOUT=<div class="button80Bold" id="ICON_BUT_PAT_SORTBYCHKOUT">Sort by Checkout</div>
-ICON_BUT_PAT_SORTBYDUE=<div class="button80Bold" id="ICON_BUT_PAT_SORTBYDUE">Sort by Due Date</div>
+ICON_BUT_PAT_RENEWALL=<span id="ICON_BUT_PAT_RENEWALL">Renew All</span>
+ICON_BUT_PAT_RENEWMARK=<span id="ICON_BUT_PAT_RENEWMARK">Renew Marked</span>
+ICON_BUT_PAT_SORTBYCHKOUT=<span id="ICON_BUT_PAT_SORTBYCHKOUT">Sort by Checkout</span>
+ICON_BUT_PAT_SORTBYDUE=<span id="ICON_BUT_PAT_SORTBYDUE">Sort by Due Date</span>
 ICON_BUT_PAT_SUBMIT=<button type="submit" class="btn btn-primary">Submit</button>
-ICON_BUT_PSTARTOVER=<div class="button80Bold" id="ICON_BUT_PSTARTOVER">Start Over</div>
+ICON_BUT_PSTARTOVER=<span id="ICON_BUT_PSTARTOVER">Start Over</span>
 # BUT_RET2PREC=<span id="ret2prec-text">My Account</span>
-ICON_BUT_UPDATE_HOLDS=<div class="button80Bold" id="ICON_BUT_UPDATE_HOLDS">Update List</div>
+ICON_BUT_UPDATE_HOLDS=<span id="ICON_BUT_UPDATE_HOLDS">Update List</span>
 CHANGE_HOLD_LOC=true
 FREEZE_HOLDS=true
-ICON_CLOSEWINDOW=<div class="button80Bold" id="ICON_CLOSEWINDOW">Close Window</div>
-ICON_CONFIRM_YES=<div class="button80Bold" id="ICON_CONFIRM_YES">Yes</div>
-ICON_CONFIRM_NO=<div class="button80Bold" id="ICON_CONFIRM_NO">No</div>
-ICON_PAT_CANCELALL=<div class="button80Bold" id="ICON_PAT_CANCELALL">Cancel All</div>
-ICON_PAT_CANCELMARK=<div class="button80Bold" id="ICON_PAT_CANCELMARK">Cancel Selected</div>
+ICON_CLOSEWINDOW=<span id="ICON_CLOSEWINDOW">Close Window</span>
+ICON_CONFIRM_YES=<span id="ICON_CONFIRM_YES">Yes</span>
+ICON_CONFIRM_NO=<span id="ICON_CONFIRM_NO">No</span>
+ICON_PAT_CANCELALL=<span id="ICON_PAT_CANCELALL">Cancel All</span>
+ICON_PAT_CANCELMARK=<span id="ICON_PAT_CANCELMARK">Cancel Selected</span>
 ICON_PIN_RESET=<span id="ICON_PIN_RESET">Forget Your PIN?</span>
-ICON_SORTPUDATE=<div class="button80Bold" id="ICON_SORTPUDATE">Sort by Pickup</div>
-ICON_SORTREQDATE=<div class="button80Bold" id="ICON_SORTREQDATE">Sort by Request</div>
+ICON_SORTPUDATE=<span id="ICON_SORTPUDATE">Sort by Pickup</span>
+ICON_SORTREQDATE=<span id="ICON_SORTREQDATE">Sort by Request</span>
 MIN_PIN_LENGTH=4
 MODIFY_PFLDS=optz
 MY_WEBPAC=false,2,0-255

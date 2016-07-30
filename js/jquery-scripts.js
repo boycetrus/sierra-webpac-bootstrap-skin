@@ -54,7 +54,6 @@ $(document).ready(function() {
   $('#patActions > li').each( function(i) {
     var tabName = $(this).text();
     if (tabName.length < 4) {
-      console.log(this);
       this.remove();
     }
   });
