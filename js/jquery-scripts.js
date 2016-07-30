@@ -54,7 +54,6 @@ $(document).ready(function() {
   $('#patActions > li').each( function(i) {
     var tabName = this.text();
     console.log(tabName);
-    }
-  });
+    });
 
 });
