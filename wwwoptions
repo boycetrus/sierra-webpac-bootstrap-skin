@@ -236,15 +236,15 @@ SUPPRESS_CARD=UI
 # My Lists
 MY_LISTS=true
 ICON_MYLISTS=<span id="ICON_MYLISTS">My Lists</span>
-ICON_MYLISTS_EXPORT=<div class="button80Bold" id="ICON_MYLISTS_EXPORT">Export List</div>
-ICON_MYLISTS_MOVE=<div class="button80Bold" id="ICON_MYLISTS_MOVE">Move Marked</div>
-ICON_MYLISTS_REQUEST=<div class="button80Bold" id="ICON_MYLISTS_REQUEST">Request</div>
-ICON_MYLISTS_REMOVE_DUPLICATES=<div class="button80Bold" id="ICON_MYLISTS_REMOVE_DUPLICATES">Remove Duplicates</div>
-ICON_MYLISTS_RENAME=<div class="button80Bold" id="ICON_MYLISTS_RENAME">Change Name/Description</div>
+ICON_MYLISTS_EXPORT=<span id="ICON_MYLISTS_EXPORT">Export List</span>
+ICON_MYLISTS_MOVE=<span id="ICON_MYLISTS_MOVE">Move Marked</span>
+ICON_MYLISTS_REQUEST=<span id="ICON_MYLISTS_REQUEST">Request</span>
+ICON_MYLISTS_REMOVE_DUPLICATES=<span id="ICON_MYLISTS_REMOVE_DUPLICATES">Remove Duplicates</span>
+ICON_MYLISTS_RENAME=<span id="ICON_MYLISTS_RENAME">Change Name/Description</span>
 ICON_MYLISTS_SAVE=<div class="buttonFullBold" id="ICON_MYLISTS_SAVE">Add to My Lists</div>
 ICON_MYLISTS_SAVE_TO_LIST=<div class="buttonFullBold" id="ICON_MYLISTS_SAVE_TO_LIST">Add Marked to My Lists</div>
 ICON_MYLISTS_BRIEF=<div class="buttonFullBold" id="ICON_MYLISTS_BRIEF">Add to My Lists</div>
-ICON_BACK_TO_MYLISTS=<div class="button80Bold" id="ICON_BACK_TO_MYLISTS">Back to My Lists</div>
+ICON_BACK_TO_MYLISTS=<span id="ICON_BACK_TO_MYLISTS">Back to My Lists</span>
 ICON_MYLISTS_RECORD=<div class="buttonFullBold" id="ICON_MYLISTS_RECORD">Add to My Lists</div>
 
 # Saving and Exporting
@@ -252,7 +252,7 @@ ICON_MYLISTS_RECORD=<div class="buttonFullBold" id="ICON_MYLISTS_RECORD">Add to 
 ICON_BUT_BIBEXPORT=<div class="buttonFull" id="ICON_BUT_BIBEXPORT">Add to Bag</div>
 ICON_BUT_CLEAR_MARKED=<div class="buttonFullBold" id="ICON_BUT_CLEAR_MARKED">Empty Bag</div>
 ICON_BUT_EXPORT_MULTI=<div class="buttonFullBold" id="ICON_BUT_EXPORT_MULTI">Export Saved</div>
-ICON_BUT_EXPORT_VIEW_SAVES=<div class="button80Bold" id="ICON_BUT_EXPORT_VIEW_SAVES">View Bag</div>
+ICON_BUT_EXPORT_VIEW_SAVES=<span id="ICON_BUT_EXPORT_VIEW_SAVES">View Bag</span>
 ICON_BUT_VIEW_SAVES=<div class="buttonFullBold" id="ICON_BUT_VIEW_SAVES">View Bag</div>
 EMAILOP=From the library catalog|staff@library.org|
 EXPORT_SELECT_TABLE=Sendto:browser,email,local|Format:full,brief,marc,procite,endnote
@@ -319,20 +319,20 @@ EXP_MSG=3000|WARNING: Your account expires in %n day(s) on %d. We use expiry dat
 IPSSO_USEHTML=true
 
 # My Millennium
-ICON_BUT_PAT_PSEARCH_REMOVE=<div class="button80Bold" id="ICON_BUT_PAT_PSEARCH_REMOVE">Delete All Searches</div>
+ICON_BUT_PAT_PSEARCH_REMOVE=<span id="ICON_BUT_PAT_PSEARCH_REMOVE">Delete All Searches</span>
 BUT_PAT_PSEARCH_UPDATE=/screens/updatelist.gif
-ICON_BUT_PAT_PSEARCH_UPDATE=<div class="button80Bold" id="ICON_BUT_PAT_PSEARCH_UPDATE">Update List</div>
+ICON_BUT_PAT_PSEARCH_UPDATE=<span id="ICON_BUT_PAT_PSEARCH_UPDATE">Update List</span>
 BUT_PAT_SEARCH=/screens/pat_search.gif
 ICON_BUT_PAT_GETPSAVEDRECS=<span id="ICON_BUT_PAT_GETPSAVEDRECS">Preferred Searches</span>
 CIRC_HIST_LIMIT_TEXT=Limit to titles which aren't in my Reading History
 HAS_ALTERNATE_ID=false
 ALTERNATE_ID_EMAIL=username@replacesitename.com|Your login name has changed
-ICON_PAT_DELETE_ALL=<div class="button80Bold" id="ICON_PAT_DELETE_ALL">Delete All</div>
-ICON_PAT_DELETE_MARKED=<div class="button80Bold" id="ICON_PAT_DELETE_MARKED">Delete Marked</div>
+ICON_PAT_DELETE_ALL=<span id="ICON_PAT_DELETE_ALL">Delete All</span>
+ICON_PAT_DELETE_MARKED=<span id="ICON_PAT_DELETE_MARKED">Delete Marked</span>
 ICON_READING_HISTORY=<span id="ICON_READING_HISTORY">Reading History</span>
-ICON_READING_HISTORY_OPTIN=<div class="button80Bold" id="ICON_READING_HISTORY_OPTIN">Opt In</div>
-ICON_READING_HISTORY_OPTOUT=<div class="button80Bold" id="ICON_READING_HISTORY_OPTOUT">Opt Out</div>
-ICON_READING_HISTORY_EXPORT=<div class="button80Bold" id="ICON_READING_HISTORY_EXPORT">Export My Reading List</div>
+ICON_READING_HISTORY_OPTIN=<span id="ICON_READING_HISTORY_OPTIN">Opt In</span>
+ICON_READING_HISTORY_OPTOUT=<span id="ICON_READING_HISTORY_OPTOUT">Opt Out</span>
+ICON_READING_HISTORY_EXPORT=<span id="ICON_READING_HISTORY_EXPORT">Export My Reading List</span>
 LOGGEDIN_MSG=<span class="loggedInMessage" id="LOGGEDIN_MSG">You are logged in <span class="loggedInMoreInfo">to %s</span> as %s</span>
 NO_REVERIFY=acq,book,ill,media,mmf,req,wam,z39,mfrpro
 PATRONVIEW_START=holds,ill,mylists,fines,chkouts,bookings,psearch,mffavs,readhist,patrate,patreview,programs

@@ -59,6 +59,6 @@ $(document).ready(function() {
   });
 
   $('.patfunct > form > a').addClass('btn btn-default btn-xs');
-  $('.patfunct table').addClass('table').wrap( '<div class="table-repsonsive"></div>');
+  $('.patfunct table').addClass('table').wrap( '<div class="table-responsive"></div>');
 
 });
