@@ -4678,7 +4678,7 @@ main {
 .account-info {
   display: flex;
   flex-direction: column; }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     .account-info {
       flex-direction: row; } }
 

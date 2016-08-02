@@ -14,7 +14,7 @@
 .account-info {
   display: flex;
   flex-direction: column;
-  @media (min-width: $screen-sm-min) {
+  @media (min-width: $screen-md-min) {
     flex-direction: row;
   }
 }
