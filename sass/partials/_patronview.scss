@@ -16,5 +16,11 @@
   flex-direction: column;
   @media (min-width: $screen-md-min) {
     flex-direction: row;
+    .patActions {
+      flex: 0 0 245px;
+    }
+    .patfunct {
+      flex: 1;
+    }
   }
 }
