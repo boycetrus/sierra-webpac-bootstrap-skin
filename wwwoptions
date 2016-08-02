@@ -235,7 +235,7 @@ SUPPRESS_CARD=UI
 
 # My Lists
 MY_LISTS=true
-ICON_MYLISTS=<span id="ICON_MYLISTS">My Lists</span>
+ICON_MYLISTS=My Saved Lists
 ICON_MYLISTS_EXPORT=<span id="ICON_MYLISTS_EXPORT">Export List</span>
 ICON_MYLISTS_MOVE=<span id="ICON_MYLISTS_MOVE">Move Marked</span>
 ICON_MYLISTS_REQUEST=<span id="ICON_MYLISTS_REQUEST">Request</span>
