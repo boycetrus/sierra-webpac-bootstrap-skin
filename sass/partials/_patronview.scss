@@ -9,3 +9,12 @@
 .patActions  > li:empty{
   display: none;
 }
+
+
+.account-info {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $screen-xs-min) {
+    flex-direction: row;
+  }
+}
