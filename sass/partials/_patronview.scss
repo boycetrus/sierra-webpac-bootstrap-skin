@@ -6,21 +6,21 @@
   margin-bottom: 0;
 }
 
-.patActions  > li:empty{
-  display: none;
-}
+// .patActions  > li:empty{
+//   display: none;
+// }
 
 
-.account-info {
-  display: flex;
-  flex-direction: column;
-  @media (min-width: $screen-md-min) {
-    flex-direction: row;
-    .patActions {
-      flex: 0 0 245px;
-    }
-    .patfunct {
-      flex: 1;
-    }
-  }
-}
+// .account-info {
+//   display: flex;
+//   flex-direction: column;
+//   @media (min-width: $screen-md-min) {
+//     flex-direction: row;
+//     .patActions {
+//       flex: 0 0 245px;
+//     }
+//     .patfunct {
+//       flex: 1;
+//     }
+//   }
+// }

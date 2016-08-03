@@ -4672,20 +4672,6 @@ main {
 .modify-patron-info + .alert {
   margin-bottom: 0; }
 
-.patActions > li:empty {
-  display: none; }
-
-.account-info {
-  display: flex;
-  flex-direction: column; }
-  @media (min-width: 992px) {
-    .account-info {
-      flex-direction: row; }
-      .account-info .patActions {
-        flex: 0 0 245px; }
-      .account-info .patfunct {
-        flex: 1; } }
-
 .social {
   background-color: #E9F2F7;
   padding: 12px 0; }

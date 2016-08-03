@@ -34,9 +34,12 @@
   </div>
 </div><!-- /panel-->
 
-<div id="accountInfo" class="account-info">
-
-  <ul id="patActions" class="patActions nav nav-pills nav-stacked">
+<!-- Single button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    My Account <span class="caret"></span>
+  </button>
+  <ul id="patActions" class="patActions dropdown-menu">
     <li>
 <!--{ifchkouts}-->
 <!--{chkoutsbtn}-->
@@ -110,7 +113,24 @@
 
 <!--{patfeeds}-->
   </ul>
-<!-- /patActions -->
+</div>
+
+
+
+  <!--
+  to layout patron actions links next to patfunc table using flexbox...
+
+  <div id="accountInfo" class="account-info">
+  <ul id="patActions" class="patActions nav nav-pills nav-stacked">
+  </ul>
+
+  <div class="patfunct">
+  add {patfunc} token
+  </div>
+  </div>
+  </div>
+  -->
+
 
   <div class="patfunct">
 <!-- start patfunc token -->
@@ -118,8 +138,7 @@
 <!-- end patfunc token -->
   </div>
 
-</div>
-<!-- /account-info -->
+
 
 <!--{botlogo}-->
 

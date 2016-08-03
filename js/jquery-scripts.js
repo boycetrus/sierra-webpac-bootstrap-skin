@@ -37,7 +37,7 @@ $(document).ready(function() {
 
   // toplogo
   if ($patronFirstName !== undefined) {
-    var acctMenuText = 'hello ' + $patronFirstName;
+    var acctMenuText = 'Welcome ' + $patronFirstName;
     $('#ret2prec a').text(acctMenuText);
   }
 
@@ -46,15 +46,17 @@ $(document).ready(function() {
   $('form#pinreset input').addClass('form-control');
 
   //patronview_web.html
-  $('#LOGGEDIN_MSG').delay(2000).fadeOut().nextAll('br').remove();
+  $('#LOGGEDIN_MSG').remove().nextAll('br').remove();
   $('#expirationMsg').addClass('alert alert-danger');
   $('#patronInfo .panel-body a').addClass('btn btn-primary');
 
     //loop through the patActions tabs and remove the empty ones
-  $('#patActions > li').each( function(i) {
+  $('#patActions > li').each( function() {
     var tabName = $(this).text();
     if (tabName.length < 4) {
-      this.remove();
+      console.log(this);
+      console.log($(this));
+      //this.remove();
     }
   });
 
