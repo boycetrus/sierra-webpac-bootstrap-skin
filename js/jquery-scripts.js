@@ -46,21 +46,28 @@ $(document).ready(function() {
   $('form#pinreset input').addClass('form-control');
 
   //patronview_web.html
-  $('#LOGGEDIN_MSG').remove().nextAll('br').remove();
+  $('#LOGGEDIN_MSG').nextAll('br').remove();
+  $('#LOGGEDIN_MSG').remove();
   $('#expirationMsg').addClass('alert alert-danger');
   $('#patronInfo .panel-body a').addClass('btn btn-primary');
 
     //loop through the patActions tabs and remove the empty ones
   $('#patActions > li').each( function() {
     var tabName = $(this).text();
+    console.log(this);
+    console.log($(this));
     if (tabName.length < 4) {
-      console.log(this);
-      console.log($(this));
-      //this.remove();
+      this.remove();
     }
   });
 
   $('.patfunct > form > a').addClass('btn btn-default btn-xs');
-  $('.patfunct table').addClass('table').wrap( '<div class="table-responsive"></div>');
+  $('.patfunct table').addClass('table table-bordered').wrap( '<div class="table-responsive"></div>');
+
+  //move the patFunc title out of the table and make it a Heading
+  var patFuncHeading = $('tr.patFuncTitle th:first').text();
+  $('<h2></h2>').appendTo('.patron-actions');
+  $('.patron-actions h2').text(patFuncHeading);
+  $('tr.patFuncTitle').remove();
 
 });
