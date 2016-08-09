@@ -55,12 +55,13 @@ $(document).ready(function() {
   $('#patActions > li').each( function() {
     var tabName = $(this).text();
     if (tabName.length < 10) {
-      console.log(this);
       this.remove();
     }
   });
 
+  $('.patfunct > span > a').unwrap();
   $('.patfunct > form > a').addClass('btn btn-default btn-xs');
+  $('.patfunct > a').addClass('btn btn-default btn-xs');
   $('.patfunct table').addClass('table table-bordered').wrap( '<div class="table-responsive"></div>');
 
   //move the patFunc title out of the table and make it a Heading
