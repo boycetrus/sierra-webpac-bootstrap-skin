@@ -62,12 +62,15 @@ $(document).ready(function() {
   $('.patfunct > span > a').unwrap();
   $('.patfunct > form > a').addClass('btn btn-default btn-xs');
   $('.patfunct > a').addClass('btn btn-default btn-xs');
-  $('.patfunct table').addClass('table table-bordered').wrap( '<div class="table-responsive"></div>');
+  //$('.patfunct table').addClass('table table-bordered').wrap( '<div class="table-responsive"></div>');
 
   //move the patFunc title out of the table and make it a Heading
   var patFuncHeading = $('tr.patFuncTitle th:first').text();
   $('<h2></h2>').appendTo('.patron-actions');
   $('.patron-actions h2').text(patFuncHeading);
   $('tr.patFuncTitle').remove();
+
+  // call stacktable.js on the table
+  $('#patFunc').stacktable();
 
 });
