@@ -2,6 +2,12 @@
 <nav class="navbar navbar-inverse navbar-static-top">
   <div class="container-fluid">
     <div class="navbar-header">
+      <a role="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNavbar">
+        <span class="sr-only">Toggle Menu</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
       <a class="navbar-brand" href="http://www.sutherlandshire.nsw.gov.au/library">
         <img alt="Sutherland Shire Council Libraries" src="/screens/ssc-logo-white.png" />
         <span class="sr-only">Sutherland Shire Council</span>
@@ -9,17 +15,14 @@
       </a>
     </div>
 
-    <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Search <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="//encore.sutherlandshire.nsw.gov.au">Encore (recommended)</a></li>
-            <li><a href="/search/">Classic Catalogue</a></li>
-          </ul>
-        </li>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/search/">Search</a></li>
         <li><a href="/patroninfo">Login</a></li>
       </ul>
-  </div><!-- /container-fluid -->
+    </div><!-- /#mainNavbar -->
+  </div><!-- /.container-fluid -->
 </nav>
 
 <main class="container-fluid">
