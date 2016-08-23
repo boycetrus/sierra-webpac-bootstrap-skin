@@ -1,0 +1,15 @@
+.stacktable.small-only {
+  display: table;
+}
+.stacktable.large-only {
+  display: none;
+}
+
+@media (min-width: $screen-sm-min) {
+  .stacktable.small-only {
+    display: none;
+  }
+  .stacktable.large-only {
+    display: table;
+  }
+}
