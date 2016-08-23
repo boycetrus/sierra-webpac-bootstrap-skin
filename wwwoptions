@@ -137,7 +137,7 @@ ICON_PAGING_PREV=<span id="ICON_PAGING_PREV">Prev</span>
 ICON_PROGRAM=<span id="ICON_PROGRAM"><img src="/screens/media_program.gif" border="0" alt="Library Event"></span>
 ICON_RESOURCE=<span id="ICON_RESOURCE"><img src="/screens/media_resource.gif" alt="Internet Resource"></span>
 ICON_SAVEALLPAGE=<div class="buttonFull" id="ICON_SAVEALLPAGE">Add All On Page</div>
-ICON_SAVEMARKED=<div class="buttonFull" id="ICON_SAVEMARKED">Add Marked to Bag</div>
+ICON_SAVEMARKED=<div class="buttonFull" id="ICON_SAVEMARKED">Add Selected to Bag</div>
 IMAGE_MATTYPE-=/screens/media_book.gif
 IMAGE_MATTYPEa=/screens/media_book.gif
 IMAGE_MATTYPEb=/screens/media_archive.gif
@@ -237,12 +237,12 @@ SUPPRESS_CARD=UI
 MY_LISTS=true
 ICON_MYLISTS=My Saved Lists
 ICON_MYLISTS_EXPORT=<span id="ICON_MYLISTS_EXPORT">Export List</span>
-ICON_MYLISTS_MOVE=<span id="ICON_MYLISTS_MOVE">Move Marked</span>
+ICON_MYLISTS_MOVE=<span id="ICON_MYLISTS_MOVE">Move Selected</span>
 ICON_MYLISTS_REQUEST=<span id="ICON_MYLISTS_REQUEST">Request</span>
 ICON_MYLISTS_REMOVE_DUPLICATES=<span id="ICON_MYLISTS_REMOVE_DUPLICATES">Remove Duplicates</span>
 ICON_MYLISTS_RENAME=<span id="ICON_MYLISTS_RENAME">Change Name/Description</span>
 ICON_MYLISTS_SAVE=<div class="buttonFullBold" id="ICON_MYLISTS_SAVE">Add to My Lists</div>
-ICON_MYLISTS_SAVE_TO_LIST=<div class="buttonFullBold" id="ICON_MYLISTS_SAVE_TO_LIST">Add Marked to My Lists</div>
+ICON_MYLISTS_SAVE_TO_LIST=<div class="buttonFullBold" id="ICON_MYLISTS_SAVE_TO_LIST">Add Selected to My Lists</div>
 ICON_MYLISTS_BRIEF=<div class="buttonFullBold" id="ICON_MYLISTS_BRIEF">Add to My Lists</div>
 ICON_BACK_TO_MYLISTS=<span id="ICON_BACK_TO_MYLISTS">Back to My Lists</span>
 ICON_MYLISTS_RECORD=<div class="buttonFullBold" id="ICON_MYLISTS_RECORD">Add to My Lists</div>
@@ -328,7 +328,7 @@ CIRC_HIST_LIMIT_TEXT=Limit to titles which aren't in my Reading History
 HAS_ALTERNATE_ID=false
 ALTERNATE_ID_EMAIL=username@replacesitename.com|Your login name has changed
 ICON_PAT_DELETE_ALL=<span id="ICON_PAT_DELETE_ALL">Delete All</span>
-ICON_PAT_DELETE_MARKED=<span id="ICON_PAT_DELETE_MARKED">Delete Marked</span>
+ICON_PAT_DELETE_MARKED=<span id="ICON_PAT_DELETE_MARKED">Delete Selected</span>
 ICON_READING_HISTORY=<span id="ICON_READING_HISTORY">Reading History</span>
 ICON_READING_HISTORY_OPTIN=<span id="ICON_READING_HISTORY_OPTIN">Opt In</span>
 ICON_READING_HISTORY_OPTOUT=<span id="ICON_READING_HISTORY_OPTOUT">Opt Out</span>
