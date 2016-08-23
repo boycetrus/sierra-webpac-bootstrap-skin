@@ -131,7 +131,7 @@ ICON_962LINK=<span id="ICON_962LINK"><img src="/screens/bullet.gif" alt="" borde
 ICON_BOOKCART_SAVED=<div class="buttonFull" id="ICON_BOOKCART_SAVED">Remove From Bag</div>
 ICON_FULLRECORD=<span id="ICON_FULLRECORD">See Full Record</span>
 ICON_LOCATEINRESULTS=<div style="buttonFull" id="ICON_LOCATEINRESULTS">Locate in results</div>
-ICON_PAGING_CAPTION=<span id="ICON_PAGING_CAPTION">Result Page&nbsp;</span>
+ICON_PAGING_CAPTION=<span id="ICON_PAGING_CAPTION">Result Page</span>
 ICON_PAGING_NEXT=<span id="ICON_PAGING_NEXT">Next</span>
 ICON_PAGING_PREV=<span id="ICON_PAGING_PREV">Prev</span>
 ICON_PROGRAM=<span id="ICON_PROGRAM"><img src="/screens/media_program.gif" border="0" alt="Library Event"></span>
@@ -281,7 +281,7 @@ ICON_BUT_PAT_INFO=Edit Profile
 ICON_BUT_PAT_MSGS=<span id="ICON_BUT_PAT_MSGS">Message from the library</span>
 ICON_BUT_PAT_PIN=Change PIN
 ICON_BUT_PAT_RENEWALL=<span id="ICON_BUT_PAT_RENEWALL">Renew All</span>
-ICON_BUT_PAT_RENEWMARK=<span id="ICON_BUT_PAT_RENEWMARK">Renew Marked</span>
+ICON_BUT_PAT_RENEWMARK=<span id="ICON_BUT_PAT_RENEWMARK">Renew Selected</span>
 ICON_BUT_PAT_SORTBYCHKOUT=<span id="ICON_BUT_PAT_SORTBYCHKOUT">Sort by Checkout</span>
 ICON_BUT_PAT_SORTBYDUE=<span id="ICON_BUT_PAT_SORTBYDUE">Sort by Due Date</span>
 ICON_BUT_PAT_SUBMIT=<button type="submit" class="btn btn-primary">Submit</button>

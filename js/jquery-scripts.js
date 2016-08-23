@@ -70,7 +70,14 @@ $(document).ready(function() {
   $('.patron-actions h2').text(patFuncHeading);
   $('tr.patFuncTitle').remove();
 
-  // call stacktable.js on the table
-  $('#patFunc').stacktable();
+  // call stacktable.js on the patfunctable
+  $('form[name="checkout_form"] table').stacktable();
+  $('form[name="PSEARCHFORM"] table').stacktable({
+    headIndex: 2
+  });
+  $('form[name="PHISTORYFORM"] table').stacktable({
+    headIndex: 2
+  });
+  $('form[name="mylists_form"] table').stacktable();
 
 });

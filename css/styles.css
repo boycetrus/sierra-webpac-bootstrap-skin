@@ -4677,9 +4677,8 @@ td {
 
 .patfunct {
   margin-bottom: 10px; }
-
-.patfunct a.btn {
-  margin-bottom: 10px; }
+  .patfunct a.btn {
+    margin-bottom: 10px; }
 
 .social {
   background-color: #E9F2F7;
@@ -4788,6 +4787,14 @@ footer {
 
 .stacktable.small-only {
   display: table; }
+  .stacktable.small-only .st-head-row {
+    border-top: 4px double #777777;
+    border-left: 1px solid #777777;
+    border-right: 1px solid #777777; }
+  .stacktable.small-only td.st-key {
+    border-left: 1px solid #777777; }
+  .stacktable.small-only td.st-val {
+    border-right: 1px solid #777777; }
 
 .stacktable.large-only {
   display: none; }
