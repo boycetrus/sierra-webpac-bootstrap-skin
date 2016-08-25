@@ -72,12 +72,13 @@ $(document).ready(function() {
 
   // call stacktable.js on the patfunctable
   $('form[name="checkout_form"] table').stacktable();
+  $('form[name="hold_form"] table').stacktable();
+  $('form[name="mylists_form"] table').stacktable();
   $('form[name="PSEARCHFORM"] table').stacktable({
     headIndex: 2
   });
   $('form[name="PHISTORYFORM"] table').stacktable({
     headIndex: 2
   });
-  $('form[name="mylists_form"] table').stacktable();
-
+  
 });
