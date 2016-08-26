@@ -45,13 +45,13 @@ $(document).ready(function() {
   $('form#search select').addClass('form-control');
   $('form#pinreset input').addClass('form-control');
 
-  //patronview_web.html
+//patronview_web.html
   $('#LOGGEDIN_MSG').nextAll('br').remove();
   $('#LOGGEDIN_MSG').remove();
   $('#expirationMsg').addClass('alert alert-danger');
   $('#patronInfo .panel-body a').addClass('btn btn-primary');
 
-    //loop through the patActions tabs and remove the empty ones
+  //loop through the patActions tabs and remove the empty ones
   $('#patActions > li').each( function() {
     var tabName = $(this).text();
     if (tabName.length < 10) {
@@ -59,10 +59,10 @@ $(document).ready(function() {
     }
   });
 
+  //make icon links into buttons
   $('.patfunct > span > a').unwrap();
   $('.patfunct > form > a').addClass('btn btn-default btn-xs');
   $('.patfunct > a').addClass('btn btn-default btn-xs');
-  //$('.patfunct table').addClass('table table-bordered').wrap( '<div class="table-responsive"></div>');
 
   //move the patFunc title out of the table and make it a Heading
   var patFuncHeading = $('tr.patFuncTitle th:first').text();
@@ -70,9 +70,16 @@ $(document).ready(function() {
   $('.patron-actions h2').text(patFuncHeading);
   $('tr.patFuncTitle').remove();
 
-  // call stacktable.js on the patfunctable
+
+//call stacktable.js on the patfunctable
+  //checkout_form
   $('form[name="checkout_form"] table').stacktable();
-  $('form[name="hold_form"] table').stacktable();
+  $('form[name="checkout_form"] .stacktable.small-only .patFuncHeaders').remove();
+
+  $('.confirmationprompt').addClass('alert alert-success');
+
+  // hold_form
+  $('form[name="hold_form"] table').cardtable();
   $('form[name="mylists_form"] table').stacktable();
   $('form[name="PSEARCHFORM"] table').stacktable({
     headIndex: 2
@@ -80,5 +87,5 @@ $(document).ready(function() {
   $('form[name="PHISTORYFORM"] table').stacktable({
     headIndex: 2
   });
-  
+
 });

@@ -4796,6 +4796,9 @@ footer {
   .stacktable.small-only td.st-val {
     border-right: 1px solid #777777; }
 
+.table-bordered.stacktable.small-only {
+  border-bottom: 4px double #777777; }
+
 .stacktable.large-only {
   display: none; }
 

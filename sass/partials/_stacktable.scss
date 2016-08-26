@@ -12,6 +12,9 @@
     border-right: 1px solid $gray-light;
   }
 }
+.table-bordered.stacktable.small-only {
+    border-bottom: 4px double $gray-light;
+}
 .stacktable.large-only {
   display: none;
 }
