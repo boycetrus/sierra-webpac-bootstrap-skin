@@ -63,6 +63,8 @@ $(document).ready(function() {
   $('.patfunct > span > a').unwrap();
   $('.patfunct > form > a').addClass('btn btn-default btn-xs');
   $('.patfunct > a').addClass('btn btn-default btn-xs');
+  $('.patfunct > #checkoutbuttons0 > a').addClass('btn btn-default btn-xs');
+
 
   //move the patFunc title out of the table and make it a Heading
   var patFuncHeading = $('tr.patFuncTitle th:first').text();
@@ -71,12 +73,16 @@ $(document).ready(function() {
   $('tr.patFuncTitle').remove();
 
 
-//call stacktable.js on the patfunctable
+//call stacktable.js on the patfunctable and fix the problems
   //checkout_form
   $('form[name="checkout_form"] table').stacktable();
   $('form[name="checkout_form"] .stacktable.small-only .patFuncHeaders').remove();
-
+  $('form[name="checkout_form"] .stacktable.small-only input[type="checkbox"]').wrap('<label></label>').after(' Select');
   $('.confirmationprompt').addClass('alert alert-success');
+      //do the renew confirmation buttons work outside the form tag?
+  $('#checkoutbuttons0 > a').addClass('btn btn-success btn-xs');
+  $('#checkoutbuttons0').appendTo('.confirmationprompt');
+  $('#checkoutbuttons1').remove();
 
   // hold_form
   $('form[name="hold_form"] table').cardtable();
