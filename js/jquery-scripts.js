@@ -51,10 +51,10 @@ $(document).ready(function() {
   $('#expirationMsg').addClass('alert alert-danger');
   $('#patronInfo .panel-body a').addClass('btn btn-primary');
 
-  //loop through the patActions tabs and remove the empty ones
+  //loop through the patActions and remove the empty ones
   $('#patActions > li').each( function() {
-    var tabName = $(this).text();
-    if (tabName.length < 10) {
+    var patActionName = $(this).text();
+    if (patActionName.length < 10) {
       this.remove();
     }
   });
@@ -83,7 +83,7 @@ $(document).ready(function() {
   $('#checkoutbuttons0').appendTo('.confirmationprompt');
   $('#checkoutbuttons1').remove();
   $('#renewfailmsg').prependTo('.patfunct').addClass('alert alert-danger');
-    // add alert class depending on renew fail or succes
+    // add table row class depending on renew fail or success
   $('.patFuncStatus:contains("RENEW FAILED")').closest('tr').addClass('danger');
   $('.patFuncStatus:contains("RENEWED")').closest('tr').addClass('success');
 
