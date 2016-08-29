@@ -60,7 +60,7 @@ INSERTTAG_INHEAD=<meta name="viewport" content="width=device-width, initial-scal
 INSERTTAG_HTML=<!DOCTYPE html><html lang="en">
 RIGHT_CELL_WIDTH=18|25
 SSLPORT=82:443|2082:444|81:446|63879:63889
-CUSTOM_MESSAGES=F
+CUSTOM_MESSAGES=T
 STARTOVER=/search
 STATGROUP=login
 STYLESHEET=/screens/styles.css

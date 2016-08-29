@@ -4672,6 +4672,17 @@ main {
 .modify-patron-info + .alert {
   margin-bottom: 0; }
 
+.confirmationprompt {
+  font-size: 1em;
+  color: inherit; }
+  .confirmationprompt > span {
+    display: block; }
+    @media (min-width: 768px) {
+      .confirmationprompt > span {
+        display: inline-block;
+        white-space: nowrap;
+        margin-left: 1em; } }
+
 td {
   font-family: "Source Sans Pro", Arial, sans-serif; }
 
