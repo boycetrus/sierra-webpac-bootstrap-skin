@@ -1,0 +1,29 @@
+.stacktable.small-only {
+  display: table;
+  .st-head-row {
+    border-top: 4px double $gray-light;
+    border-left: 1px solid $gray-light;
+    border-right: 1px solid $gray-light;
+  }
+  td.st-key {
+    border-left: 1px solid $gray-light;
+  }
+  td.st-val {
+    border-right: 1px solid $gray-light;
+  }
+}
+.table-bordered.stacktable.small-only {
+    border-bottom: 4px double $gray-light;
+}
+.stacktable.large-only {
+  display: none;
+}
+
+@media (min-width: $screen-sm-min) {
+  .stacktable.small-only {
+    display: none;
+  }
+  .stacktable.large-only {
+    display: table;
+  }
+}

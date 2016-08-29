@@ -45,29 +45,56 @@ $(document).ready(function() {
   $('form#search select').addClass('form-control');
   $('form#pinreset input').addClass('form-control');
 
-  //patronview_web.html
+//patronview_web.html
   $('#LOGGEDIN_MSG').nextAll('br').remove();
   $('#LOGGEDIN_MSG').remove();
   $('#expirationMsg').addClass('alert alert-danger');
   $('#patronInfo .panel-body a').addClass('btn btn-primary');
 
-    //loop through the patActions tabs and remove the empty ones
+  //loop through the patActions and remove the empty ones
   $('#patActions > li').each( function() {
-    var tabName = $(this).text();
-    if (tabName.length < 10) {
+    var patActionName = $(this).text();
+    if (patActionName.length < 10) {
       this.remove();
     }
   });
 
+  //make icon links into buttons
   $('.patfunct > span > a').unwrap();
   $('.patfunct > form > a').addClass('btn btn-default btn-xs');
   $('.patfunct > a').addClass('btn btn-default btn-xs');
-  $('.patfunct table').addClass('table table-bordered').wrap( '<div class="table-responsive"></div>');
+  $('.patfunct > #checkoutbuttons0 > a').addClass('btn btn-default btn-xs');
+
 
   //move the patFunc title out of the table and make it a Heading
   var patFuncHeading = $('tr.patFuncTitle th:first').text();
   $('<h2></h2>').appendTo('.patron-actions');
   $('.patron-actions h2').text(patFuncHeading);
   $('tr.patFuncTitle').remove();
+
+
+//call stacktable.js on the patfunctable and fix the problems
+  //checkout_form
+  $('form[name="checkout_form"] table').stacktable();
+  $('form[name="checkout_form"] .stacktable.small-only .patFuncHeaders').remove();
+  $('form[name="checkout_form"] .stacktable.small-only input[type="checkbox"]').wrap('<label></label>').after(' Select');
+  $('.confirmationprompt').addClass('alert alert-success');
+  $('#checkoutbuttons0 > a').addClass('btn btn-success btn-xs');
+  $('#checkoutbuttons0').appendTo('.confirmationprompt');
+  $('#checkoutbuttons1').remove();
+  $('#renewfailmsg').prependTo('.patfunct').addClass('alert alert-danger');
+    // add table row class depending on renew fail or success
+  $('.patFuncStatus:contains("RENEW FAILED")').closest('tr').addClass('danger');
+  $('.patFuncStatus:contains("RENEWED")').closest('tr').addClass('success');
+
+  // hold_form
+  $('form[name="hold_form"] table').cardtable();
+  $('form[name="mylists_form"] table').stacktable();
+  $('form[name="PSEARCHFORM"] table').stacktable({
+    headIndex: 2
+  });
+  $('form[name="PHISTORYFORM"] table').stacktable({
+    headIndex: 2
+  });
 
 });

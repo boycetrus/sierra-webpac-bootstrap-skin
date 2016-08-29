@@ -1,5 +1,9 @@
 <!--{toplogo}-->
 
+<div id="expirationMsg">
+<!--{expmsg}-->
+</div>
+
 <div id="patronInfo" class="patron-info panel panel-default">
   <div class="panel-heading"  data-toggle="collapse" href="#patronInfoContent" aria-expanded="true" aria-controls="patronInfoContent">
     <h2 class="panel-title">Personal Information</h2>
@@ -25,10 +29,6 @@
 <!--{ifmodifypin}-->
 <!--{modifypinbtn}-->
 <!--{xif}-->
-    </div>
-
-    <div id="expirationMsg">
-<!--{expmsg}-->
     </div>
 
   </div>
@@ -62,6 +62,23 @@
 <!--{xif}-->
       </li>
       <li>
+<!--{ifcirchist}-->
+<!--{circhistbtn}-->
+<!--{xif}-->
+      </li>
+      <li>
+<!--{ifmylists}-->
+<!--{mylists}-->
+<!--{xif}-->
+      </li>
+      <li>
+<!--{ifpsearch}-->
+<!--{psearchbtn}-->
+<!--{xif}-->
+      </li>
+
+<!-- patron functions below have not been tested -->
+      <li>
 <!--{ifprograms}-->
 <!--{programsbtn}-->
 <!--{xif}-->
@@ -77,18 +94,8 @@
 <!--{xif}-->
       </li>
       <li>
-<!--{ifpsearch}-->
-<!--{psearchbtn}-->
-<!--{xif}-->
-      </li>
-      <li>
 <!--{ifmffav}-->
 <!--{mffavbtn}-->
-<!--{xif}-->
-      </li>
-      <li>
-<!--{ifcirchist}-->
-<!--{circhistbtn}-->
 <!--{xif}-->
       </li>
       <li>
@@ -99,11 +106,6 @@
       <li>
 <!--{ifpatreview}-->
 <!--{patreviewbtn}-->
-<!--{xif}-->
-      </li>
-      <li>
-<!--{ifmylists}-->
-<!--{mylists}-->
 <!--{xif}-->
       </li>
       <li>
@@ -128,8 +130,8 @@
 
 
 <!--{botlogo}-->
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://files-stackablejs.netdna-ssl.com/stacktable.min.js"></script>
   <script src="/screens/global-min.js"></script>
 </body>
 </html>

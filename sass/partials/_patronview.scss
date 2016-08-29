@@ -6,24 +6,22 @@
   margin-bottom: 0;
 }
 
-// .patActions  > li:empty{
-//   display: none;
-// }
+//checkout_form pages
+.confirmationprompt {
+  font-size: 1em;
+  > span {
+    display: block;
+    @media(min-width: $screen-sm-min) {
+      display: inline;
+      white-space: nowrap;
+    }
+  }
+}
 
-
-// .account-info {
-//   display: flex;
-//   flex-direction: column;
-//   @media (min-width: $screen-md-min) {
-//     flex-direction: row;
-//     .patActions {
-//       flex: 0 0 245px;
-//     }
-//     .patfunct {
-//       flex: 1;
-//     }
-//   }
-// }
+.patFuncStatus em,
+.patFuncRenewCount {
+  display: block;
+}
 
 // patfunc table styles
 td {
@@ -31,9 +29,9 @@ td {
 }
 
 .patfunct {
-    margin-bottom: $padding-large-vertical;
-}
+  margin-bottom: $padding-large-vertical;
 
-.patfunct a.btn {
+  a.btn {
     margin-bottom: $padding-large-vertical;
+  }
 }

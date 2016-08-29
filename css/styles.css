@@ -4672,14 +4672,26 @@ main {
 .modify-patron-info + .alert {
   margin-bottom: 0; }
 
+.confirmationprompt {
+  font-size: 1em; }
+  .confirmationprompt > span {
+    display: block; }
+    @media (min-width: 768px) {
+      .confirmationprompt > span {
+        display: inline;
+        white-space: nowrap; } }
+
+.patFuncStatus em,
+.patFuncRenewCount {
+  display: block; }
+
 td {
   font-family: "Source Sans Pro", Arial, sans-serif; }
 
 .patfunct {
   margin-bottom: 10px; }
-
-.patfunct a.btn {
-  margin-bottom: 10px; }
+  .patfunct a.btn {
+    margin-bottom: 10px; }
 
 .social {
   background-color: #E9F2F7;
@@ -4785,3 +4797,27 @@ footer {
       font-weight: 300;
       border-left: 1px solid #ffffff;
       padding: 6px 14px; }
+
+.stacktable.small-only {
+  display: table; }
+  .stacktable.small-only .st-head-row {
+    border-top: 4px double #777777;
+    border-left: 1px solid #777777;
+    border-right: 1px solid #777777; }
+  .stacktable.small-only td.st-key {
+    border-left: 1px solid #777777; }
+  .stacktable.small-only td.st-val {
+    border-right: 1px solid #777777; }
+
+.table-bordered.stacktable.small-only {
+  border-bottom: 4px double #777777; }
+
+.stacktable.large-only {
+  display: none; }
+
+@media (min-width: 768px) {
+  .stacktable.small-only {
+    display: none; }
+
+  .stacktable.large-only {
+    display: table; } }

@@ -60,7 +60,7 @@ INSERTTAG_INHEAD=<meta name="viewport" content="width=device-width, initial-scal
 INSERTTAG_HTML=<!DOCTYPE html><html lang="en">
 RIGHT_CELL_WIDTH=18|25
 SSLPORT=82:443|2082:444|81:446|63879:63889
-CUSTOM_MESSAGES=F
+CUSTOM_MESSAGES=T
 STARTOVER=/search
 STATGROUP=login
 STYLESHEET=/screens/styles.css
@@ -94,11 +94,11 @@ AVS_MODIFY_TAG=X
 AVS_TAG=XYZ
 ICON_BUT_MODIFY=<div class="buttonFull" id="ICON_BUT_MODIFY">Modify Search</div>
 ICON_BUT_SHOWSIM=<div class="buttonFull" id="ICON_BUT_SHOWSIM">More Like This</div>
-ICON_REL_GROUP_1=<span id="ICON_REL_GROUP_1"><img src="/screens/relevance5.gif" alt="Most relevant">&nbsp;<h1 class="browseSuperEntryTitle">Most relevant titles</h1>&nbsp;</span>
-ICON_REL_GROUP_2=<span id="ICON_REL_GROUP_2"><img src="/screens/relevance4.gif" alt="Highly relevant">&nbsp;<h1 class="browseSuperEntryTitle">Highly relevant titles</h1>&nbsp;a</span>
-ICON_REL_GROUP_3=<span id="ICON_REL_GROUP_3"><img src="/screens/relevance3.gif" alt="Very relevant">&nbsp;<h1 class="browseSuperEntryTitle">Very relevant titles</h1>&nbsp;</span>
-ICON_REL_GROUP_4=<span id="ICON_REL_GROUP_4"><img src="/screens/relevance2.gif" alt="Relevant">&nbsp;<h1 class="browseSuperEntryTitle">Relevant titles</h1>&nbsp;></span>
-ICON_REL_GROUP_5=<span id="ICON_REL_GROUP_5"><img src="/screens/relevance1.gif" alt="Other relevant">&nbsp;<h1 class="browseSuperEntryTitle">Other relevant titles</h1>&nbsp;</span>
+ICON_REL_GROUP_1=<span data-option="ICON_REL_GROUP_1"><img src="/screens/relevance5.gif" alt="Most relevant">&nbsp;<h1 class="browseSuperEntryTitle">Most relevant titles</h1>&nbsp;</span>
+ICON_REL_GROUP_2=<span data-option="ICON_REL_GROUP_2"><img src="/screens/relevance4.gif" alt="Highly relevant">&nbsp;<h1 class="browseSuperEntryTitle">Highly relevant titles</h1>&nbsp;a</span>
+ICON_REL_GROUP_3=<span data-option="ICON_REL_GROUP_3"><img src="/screens/relevance3.gif" alt="Very relevant">&nbsp;<h1 class="browseSuperEntryTitle">Very relevant titles</h1>&nbsp;</span>
+ICON_REL_GROUP_4=<span data-option="ICON_REL_GROUP_4"><img src="/screens/relevance2.gif" alt="Relevant">&nbsp;<h1 class="browseSuperEntryTitle">Relevant titles</h1>&nbsp;></span>
+ICON_REL_GROUP_5=<span data-option="ICON_REL_GROUP_5"><img src="/screens/relevance1.gif" alt="Other relevant">&nbsp;<h1 class="browseSuperEntryTitle">Other relevant titles</h1>&nbsp;</span>
 IMAGE_AVS1=/screens/relevance1.gif
 IMAGE_AVS2=/screens/relevance2.gif
 IMAGE_AVS3=/screens/relevance3.gif
@@ -125,19 +125,19 @@ ICON_BUT_UNLIMAVAIL=<div class="buttonFull" id="ICON_BUT_UNLIMAVAIL">Show All</d
 DISPLAY_245=atd
 EXTENDED=CT
 HEADING_LENGTH=100
-ICON_856LINK=<span id="ICON_856LINK"><img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Website</span>
-ICON_962LINK=<span id="ICON_962LINK"><img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Digital Image</span>
+ICON_856LINK=<span data-option="ICON_856LINK"><img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Website</span>
+ICON_962LINK=<span data-option="ICON_962LINK"><img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Digital Image</span>
 # ICON_BOOKCART=<div class="buttonFull">Add to Bag Briefcit</div>
 ICON_BOOKCART_SAVED=<div class="buttonFull" id="ICON_BOOKCART_SAVED">Remove From Bag</div>
-ICON_FULLRECORD=<span id="ICON_FULLRECORD">See Full Record</span>
+ICON_FULLRECORD=<span data-option="ICON_FULLRECORD">See Full Record</span>
 ICON_LOCATEINRESULTS=<div style="buttonFull" id="ICON_LOCATEINRESULTS">Locate in results</div>
-ICON_PAGING_CAPTION=<span id="ICON_PAGING_CAPTION">Result Page&nbsp;</span>
-ICON_PAGING_NEXT=<span id="ICON_PAGING_NEXT">Next</span>
-ICON_PAGING_PREV=<span id="ICON_PAGING_PREV">Prev</span>
-ICON_PROGRAM=<span id="ICON_PROGRAM"><img src="/screens/media_program.gif" border="0" alt="Library Event"></span>
-ICON_RESOURCE=<span id="ICON_RESOURCE"><img src="/screens/media_resource.gif" alt="Internet Resource"></span>
+ICON_PAGING_CAPTION=<span data-option="ICON_PAGING_CAPTION">Result Page</span>
+ICON_PAGING_NEXT=<span data-option="ICON_PAGING_NEXT">Next</span>
+ICON_PAGING_PREV=<span data-option="ICON_PAGING_PREV">Prev</span>
+ICON_PROGRAM=<span data-option="ICON_PROGRAM"><img src="/screens/media_program.gif" border="0" alt="Library Event"></span>
+ICON_RESOURCE=<span data-option="ICON_RESOURCE"><img src="/screens/media_resource.gif" alt="Internet Resource"></span>
 ICON_SAVEALLPAGE=<div class="buttonFull" id="ICON_SAVEALLPAGE">Add All On Page</div>
-ICON_SAVEMARKED=<div class="buttonFull" id="ICON_SAVEMARKED">Add Marked to Bag</div>
+ICON_SAVEMARKED=<div class="buttonFull" id="ICON_SAVEMARKED">Add Selected to Bag</div>
 IMAGE_MATTYPE-=/screens/media_book.gif
 IMAGE_MATTYPEa=/screens/media_book.gif
 IMAGE_MATTYPEb=/screens/media_archive.gif
@@ -179,9 +179,9 @@ ICON_BUT_RTRNTB=<div class="buttonFull" id="ICON_BUT_RTRNTB">Return to Browse</d
 DISPLAY_856=z|true
 HOLDINGS_POS=atpR
 # HOTLINK=i^020,c^09,n^505
-ICON_BIB_HOLDINGS_ITEMS=<span id="ICON_BIB_HOLDINGS_ITEMS">View Copies</span>
-# ICON_NEARBY=<span id="ICON_NEARBY"><img src="/screens/bullet.gif" alt="Nearby on shelf" border="0"></span>
-ICON_BIB_PAGING_CAPTION=<span id="ICON_BIB_PAGING_CAPTION"></span>
+ICON_BIB_HOLDINGS_ITEMS=<span data-option="ICON_BIB_HOLDINGS_ITEMS">View Copies</span>
+# ICON_NEARBY=<span data-option="ICON_NEARBY"><img src="/screens/bullet.gif" alt="Nearby on shelf" border="0"></span>
+ICON_BIB_PAGING_CAPTION=<span data-option="ICON_BIB_PAGING_CAPTION"></span>
 ICON_BIB_PAGING_NEXT=<div class="button80" id="ICON_BIB_PAGING_NEXT">Next Record</div>
 ICON_BIB_PAGING_PREV=<div class="button80" id="ICON_BIB_PAGING_PREV">Previous Record</div>
 ICON_RECORDLINK=<div id="ICON_RECORDLINK"><a href="%s">%s</a></div>
@@ -236,15 +236,15 @@ SUPPRESS_CARD=UI
 # My Lists
 MY_LISTS=true
 ICON_MYLISTS=My Saved Lists
-ICON_MYLISTS_EXPORT=<span id="ICON_MYLISTS_EXPORT">Export List</span>
-ICON_MYLISTS_MOVE=<span id="ICON_MYLISTS_MOVE">Move Marked</span>
-ICON_MYLISTS_REQUEST=<span id="ICON_MYLISTS_REQUEST">Request</span>
-ICON_MYLISTS_REMOVE_DUPLICATES=<span id="ICON_MYLISTS_REMOVE_DUPLICATES">Remove Duplicates</span>
-ICON_MYLISTS_RENAME=<span id="ICON_MYLISTS_RENAME">Change Name/Description</span>
+ICON_MYLISTS_EXPORT=<span data-option="ICON_MYLISTS_EXPORT">Export List</span>
+ICON_MYLISTS_MOVE=<span data-option="ICON_MYLISTS_MOVE">Move Selected</span>
+ICON_MYLISTS_REQUEST=<span data-option="ICON_MYLISTS_REQUEST">Request</span>
+ICON_MYLISTS_REMOVE_DUPLICATES=<span data-option="ICON_MYLISTS_REMOVE_DUPLICATES">Remove Duplicates</span>
+ICON_MYLISTS_RENAME=<span data-option="ICON_MYLISTS_RENAME">Change Name/Description</span>
 ICON_MYLISTS_SAVE=<div class="buttonFullBold" id="ICON_MYLISTS_SAVE">Add to My Lists</div>
-ICON_MYLISTS_SAVE_TO_LIST=<div class="buttonFullBold" id="ICON_MYLISTS_SAVE_TO_LIST">Add Marked to My Lists</div>
+ICON_MYLISTS_SAVE_TO_LIST=<div class="buttonFullBold" id="ICON_MYLISTS_SAVE_TO_LIST">Add Selected to My Lists</div>
 ICON_MYLISTS_BRIEF=<div class="buttonFullBold" id="ICON_MYLISTS_BRIEF">Add to My Lists</div>
-ICON_BACK_TO_MYLISTS=<span id="ICON_BACK_TO_MYLISTS">Back to My Lists</span>
+ICON_BACK_TO_MYLISTS=<span data-option="ICON_BACK_TO_MYLISTS">Back to My Lists</span>
 ICON_MYLISTS_RECORD=<div class="buttonFullBold" id="ICON_MYLISTS_RECORD">Add to My Lists</div>
 
 # Saving and Exporting
@@ -252,7 +252,7 @@ ICON_MYLISTS_RECORD=<div class="buttonFullBold" id="ICON_MYLISTS_RECORD">Add to 
 ICON_BUT_BIBEXPORT=<div class="buttonFull" id="ICON_BUT_BIBEXPORT">Add to Bag</div>
 ICON_BUT_CLEAR_MARKED=<div class="buttonFullBold" id="ICON_BUT_CLEAR_MARKED">Empty Bag</div>
 ICON_BUT_EXPORT_MULTI=<div class="buttonFullBold" id="ICON_BUT_EXPORT_MULTI">Export Saved</div>
-ICON_BUT_EXPORT_VIEW_SAVES=<span id="ICON_BUT_EXPORT_VIEW_SAVES">View Bag</span>
+ICON_BUT_EXPORT_VIEW_SAVES=<span data-option="ICON_BUT_EXPORT_VIEW_SAVES">View Bag</span>
 ICON_BUT_VIEW_SAVES=<div class="buttonFullBold" id="ICON_BUT_VIEW_SAVES">View Bag</div>
 EMAILOP=From the library catalog|staff@library.org|
 EXPORT_SELECT_TABLE=Sendto:browser,email,local|Format:full,brief,marc,procite,endnote
@@ -273,37 +273,37 @@ REQUEST_ARTICLE_IFCHKIN=Y
 REQUEST_MULTI=Request All Items in Book Cart|bib|ask
 
 # Patron Record
-ICON_BUT_PAT_CANCEL=<span id="ICON_BUT_PAT_CANCEL">Cancel</span>
-ICON_BUT_PAT_CANCELALL=<span id="ICON_BUT_PAT_CANCELALL">Cancel All</span>
+ICON_BUT_PAT_CANCEL=<span data-option="ICON_BUT_PAT_CANCEL">Cancel</span>
+ICON_BUT_PAT_CANCELALL=<span data-option="ICON_BUT_PAT_CANCELALL">Cancel All</span>
 # BUT_PAT_CANCELMARK=/screens/pat_cancelmark.gif
-ICON_BUT_PAT_CANCELMARK=<span id="ICON_BUT_PAT_CANCELMARK">Cancel Selected</span>
+ICON_BUT_PAT_CANCELMARK=<span data-option="ICON_BUT_PAT_CANCELMARK">Cancel Selected</span>
 ICON_BUT_PAT_INFO=Edit Profile
-ICON_BUT_PAT_MSGS=<span id="ICON_BUT_PAT_MSGS">Message from the library</span>
+ICON_BUT_PAT_MSGS=<span data-option="ICON_BUT_PAT_MSGS">Message from the library</span>
 ICON_BUT_PAT_PIN=Change PIN
-ICON_BUT_PAT_RENEWALL=<span id="ICON_BUT_PAT_RENEWALL">Renew All</span>
-ICON_BUT_PAT_RENEWMARK=<span id="ICON_BUT_PAT_RENEWMARK">Renew Marked</span>
-ICON_BUT_PAT_SORTBYCHKOUT=<span id="ICON_BUT_PAT_SORTBYCHKOUT">Sort by Checkout</span>
-ICON_BUT_PAT_SORTBYDUE=<span id="ICON_BUT_PAT_SORTBYDUE">Sort by Due Date</span>
+ICON_BUT_PAT_RENEWALL=<span data-option="ICON_BUT_PAT_RENEWALL">Renew All</span>
+ICON_BUT_PAT_RENEWMARK=<span data-option="ICON_BUT_PAT_RENEWMARK">Renew Selected</span>
+ICON_BUT_PAT_SORTBYCHKOUT=<span data-option="ICON_BUT_PAT_SORTBYCHKOUT">Sort by Checkout</span>
+ICON_BUT_PAT_SORTBYDUE=<span data-option="ICON_BUT_PAT_SORTBYDUE">Sort by Due Date</span>
 ICON_BUT_PAT_SUBMIT=<button type="submit" class="btn btn-primary">Submit</button>
-ICON_BUT_PSTARTOVER=<span id="ICON_BUT_PSTARTOVER">Start Over</span>
+ICON_BUT_PSTARTOVER=<span data-option="ICON_BUT_PSTARTOVER">Start Over</span>
 # BUT_RET2PREC=<span id="ret2prec-text">My Account</span>
-ICON_BUT_UPDATE_HOLDS=<span id="ICON_BUT_UPDATE_HOLDS">Update List</span>
+ICON_BUT_UPDATE_HOLDS=<span data-option="ICON_BUT_UPDATE_HOLDS">Update List</span>
 CHANGE_HOLD_LOC=true
 FREEZE_HOLDS=true
-ICON_CLOSEWINDOW=<span id="ICON_CLOSEWINDOW">Close Window</span>
-ICON_CONFIRM_YES=<span id="ICON_CONFIRM_YES">Yes</span>
-ICON_CONFIRM_NO=<span id="ICON_CONFIRM_NO">No</span>
-ICON_PAT_CANCELALL=<span id="ICON_PAT_CANCELALL">Cancel All</span>
-ICON_PAT_CANCELMARK=<span id="ICON_PAT_CANCELMARK">Cancel Selected</span>
-ICON_PIN_RESET=<span id="ICON_PIN_RESET">Forget Your PIN?</span>
-ICON_SORTPUDATE=<span id="ICON_SORTPUDATE">Sort by Pickup</span>
-ICON_SORTREQDATE=<span id="ICON_SORTREQDATE">Sort by Request</span>
+ICON_CLOSEWINDOW=<span data-option="ICON_CLOSEWINDOW">Close Window</span>
+ICON_CONFIRM_YES=<span data-option="ICON_CONFIRM_YES">Yes</span>
+ICON_CONFIRM_NO=<span data-option="ICON_CONFIRM_NO">No</span>
+ICON_PAT_CANCELALL=<span data-option="ICON_PAT_CANCELALL">Cancel All</span>
+ICON_PAT_CANCELMARK=<span data-option="ICON_PAT_CANCELMARK">Cancel Selected</span>
+ICON_PIN_RESET=<span data-option="ICON_PIN_RESET">Forget Your PIN?</span>
+ICON_SORTPUDATE=<span data-option="ICON_SORTPUDATE">Sort by Pickup</span>
+ICON_SORTREQDATE=<span data-option="ICON_SORTREQDATE">Sort by Request</span>
 MIN_PIN_LENGTH=4
 MODIFY_PFLDS=optz
 MY_WEBPAC=false,2,0-255
 NEWPIN_MSG=Please enter a Personal Identification Number (PIN)
 PATRON_FIELDS=n/a|t/a|F/43|z/a|
-#Note that in the PATRON_MSG web option you should replace z with the field tag used on your system for messages.
+# Note that in the PATRON_MSG web option you should replace z with the field tag used on your system for messages.
 PATRON_MSG=m|You have a message from the Library
 # PATRON_NOTICES=apz
 PIN_ALPHA_NUM=true
@@ -313,26 +313,26 @@ PIN_RESET_EMAIL=Request to reset your library PIN|library@ssc.nsw.gov.au|library
 PSTARTOVER=/search
 SEEPUDATE=true
 TABLEPARAM_PATDISP=border="0" name="tableparam_patdisp"|border="0" name="tableparam_patdisp"|border="0" name="tableparam_patdisp"
-TABLEPARAM_PATFUNC=border="0" name="tableparam_patfunc"|border="0" name="tableparam_patfunc"|border="0" name="tableparam_patfunc"
+TABLEPARAM_PATFUNC=id="patFunc" class="table table-bordered"|id="patFunc" class="table table-bordered"|id="patFunc" class="table table-bordered"
 TIMEOUT_POPUP=600
 EXP_MSG=3000|WARNING: Your account expires in %n day(s) on %d. We use expiry dates to ensure our records are correct. Please ask staff to confirm your details on your next visit. If you don't visit the library before the expiry date you will not be able to access your account online.
 IPSSO_USEHTML=true
 
 # My Millennium
-ICON_BUT_PAT_PSEARCH_REMOVE=<span id="ICON_BUT_PAT_PSEARCH_REMOVE">Delete All Searches</span>
+ICON_BUT_PAT_PSEARCH_REMOVE=<span data-option="ICON_BUT_PAT_PSEARCH_REMOVE">Delete All Searches</span>
 BUT_PAT_PSEARCH_UPDATE=/screens/updatelist.gif
-ICON_BUT_PAT_PSEARCH_UPDATE=<span id="ICON_BUT_PAT_PSEARCH_UPDATE">Update List</span>
+ICON_BUT_PAT_PSEARCH_UPDATE=<span data-option="ICON_BUT_PAT_PSEARCH_UPDATE">Update List</span>
 BUT_PAT_SEARCH=/screens/pat_search.gif
-ICON_BUT_PAT_GETPSAVEDRECS=<span id="ICON_BUT_PAT_GETPSAVEDRECS">Preferred Searches</span>
+ICON_BUT_PAT_GETPSAVEDRECS=<span data-option="ICON_BUT_PAT_GETPSAVEDRECS">Preferred Searches</span>
 CIRC_HIST_LIMIT_TEXT=Limit to titles which aren't in my Reading History
 HAS_ALTERNATE_ID=false
 ALTERNATE_ID_EMAIL=username@replacesitename.com|Your login name has changed
-ICON_PAT_DELETE_ALL=<span id="ICON_PAT_DELETE_ALL">Delete All</span>
-ICON_PAT_DELETE_MARKED=<span id="ICON_PAT_DELETE_MARKED">Delete Marked</span>
-ICON_READING_HISTORY=<span id="ICON_READING_HISTORY">Reading History</span>
-ICON_READING_HISTORY_OPTIN=<span id="ICON_READING_HISTORY_OPTIN">Opt In</span>
-ICON_READING_HISTORY_OPTOUT=<span id="ICON_READING_HISTORY_OPTOUT">Opt Out</span>
-ICON_READING_HISTORY_EXPORT=<span id="ICON_READING_HISTORY_EXPORT">Export My Reading List</span>
+ICON_PAT_DELETE_ALL=<span data-option="ICON_PAT_DELETE_ALL">Delete All</span>
+ICON_PAT_DELETE_MARKED=<span data-option="ICON_PAT_DELETE_MARKED">Delete Selected</span>
+ICON_READING_HISTORY=<span data-option="ICON_READING_HISTORY">Reading History</span>
+ICON_READING_HISTORY_OPTIN=<span data-option="ICON_READING_HISTORY_OPTIN">Opt In</span>
+ICON_READING_HISTORY_OPTOUT=<span data-option="ICON_READING_HISTORY_OPTOUT">Opt Out</span>
+ICON_READING_HISTORY_EXPORT=<span data-option="ICON_READING_HISTORY_EXPORT">Export My Reading List</span>
 LOGGEDIN_MSG=<span class="loggedInMessage" id="LOGGEDIN_MSG">You are logged in <span class="loggedInMoreInfo">to %s</span> as %s</span>
 NO_REVERIFY=acq,book,ill,media,mmf,req,wam,z39,mfrpro
 PATRONVIEW_START=chkouts,holds,ill,fines,readhist,mylists,psearch,mffavs,patrate,patreview,bookings,programs
@@ -342,15 +342,15 @@ TOPLOGO_LOGGEDIN=Y
 
 # Patron Ratings
 ICON_PATRATE=<span class="button" id="ICON_PATRATE"><img src="/screens/patrate.gif" alt=""><span class="buttonText">My Ratings</span></span>
-ICON_RATE_GROUP=<span id="ICON_RATE_GROUP"><img src="/screens/rate_group.gif" border="0" width="15" height="14" alt="Rated %d stars out of 5 based on %n ratings" title="Rated %d stars out of 5 based on %n ratings"></span>
-ICON_RATE_MY=<span id="ICON_RATE_MY"><img src="/screens/rate_my.gif" border="0" width="15" height="14" alt="You rated this %d stars out of 5" title="You rated this %d stars out of 5"></span>
-ICON_RATE_NEED=<span id="ICON_RATE_NEED"><img src="/screens/rate_need.gif" border="0" width="15" height="14" alt="Rate this material!" title="Rate this material!"></span>
-ICON_RATE_NO=<span id="ICON_RATE_NO"><img src="/screens/rate_no.gif" border="0" width="75" height="14" alt="No one has rated this material" title="No one has rated this material"></span>
-ICON_RATE_PAD=<span id="ICON_RATE_PAD"><img src="/screens/rate_pad.gif" border="0" width="15" height="14" alt="Rated %d stars out of 5 based on %n ratings" title="Rated %d stars out of 5 based on %n ratings"></span>
+ICON_RATE_GROUP=<span data-option="ICON_RATE_GROUP"><img src="/screens/rate_group.gif" border="0" width="15" height="14" alt="Rated %d stars out of 5 based on %n ratings" title="Rated %d stars out of 5 based on %n ratings"></span>
+ICON_RATE_MY=<span data-option="ICON_RATE_MY"><img src="/screens/rate_my.gif" border="0" width="15" height="14" alt="You rated this %d stars out of 5" title="You rated this %d stars out of 5"></span>
+ICON_RATE_NEED=<span data-option="ICON_RATE_NEED"><img src="/screens/rate_need.gif" border="0" width="15" height="14" alt="Rate this material!" title="Rate this material!"></span>
+ICON_RATE_NO=<span data-option="ICON_RATE_NO"><img src="/screens/rate_no.gif" border="0" width="75" height="14" alt="No one has rated this material" title="No one has rated this material"></span>
+ICON_RATE_PAD=<span data-option="ICON_RATE_PAD"><img src="/screens/rate_pad.gif" border="0" width="15" height="14" alt="Rated %d stars out of 5 based on %n ratings" title="Rated %d stars out of 5 based on %n ratings"></span>
 # PATRATE=true
 # PATREVIEW=1
-ICON_PATREVIEW=<span id="ICON_PATREVIEW">My Reviews</span>
-ICON_PATREVIEW_ADD=<span id="ICON_PATREVIEW_ADD">Add a Review</span>
+ICON_PATREVIEW=<span data-option="ICON_PATREVIEW">My Reviews</span>
+ICON_PATREVIEW_ADD=<span data-option="ICON_PATREVIEW_ADD">Add a Review</span>
 PATREVIEW_ABUSE_NOTIFY=Review abuse reported|Example Library|web@example.org
 
 # Ecommerce
@@ -361,28 +361,28 @@ DONATE_NOTIFY=A new donation has been received|circadm@example.org|donormgmt@exa
 ICON_PAY=<div class="buttonFull" id="ICON_PAY">Pay Online</div>
 ICON_PAY_CLEAR_ALL=<div class="buttonFull" id="ICON_PAY_CLEAR_ALL">Clear All</div>
 ICON_PAY_SELECT_ALL=<div class="buttonFull" id="ICON_PAY_SELECT_ALL">Select All</div>
-ICON_PRINT=<span id="ICON_PRINT">Print</span>
+ICON_PRINT=<span data-option="ICON_PRINT">Print</span>
 ICON_PAY_CONTINUE=<div class="buttonFull" id="ICON_PAY_CONTINUE">Continue</div>
 MINDONATE=1000|Donations must be at least $10.00 to cover processing costs. Thank you.
 PAYAMTS=500|Please visit the library to pay this amount|00
 
 # Bookings
 BOOKINGS=no|true|true|false
-BOOKINGS_DAY_LEGEND=<span class="bookingsLegend">Library closed on <span id="closed">X</span> hours. No items available on <span id="unavailable">grayed out</span> hours.</span>
-BOOKINGS_MONTH_LEGEND=<span class="bookingsLegend">Library closed on <span id="closed">X</span> days. No items available on <span id="unavailable">grayed out</span> days.</span>
+BOOKINGS_DAY_LEGEND=<span class="bookingsLegend">Library closed on <span id="closed">&times;</span> hours. No items available on <span id="unavailable">grayed out</span> hours.</span>
+BOOKINGS_MONTH_LEGEND=<span class="bookingsLegend">Library closed on <span id="closed">&times;</span> days. No items available on <span id="unavailable">grayed out</span> days.</span>
 BOOKINGS_REPEAT=true
 ICON_BOOKINGS_HEADER=<div class="button80" id="ICON_BOOKINGS_HEADER">Book This Material</div>
-ICON_DAILYCAL=<span id="ICON_DAILYCAL">View Daily Calendar</span>
-ICON_HOURLYCAL=<span id="ICON_HOURLYCAL">View Hourly Calendar</span>
-ICON_NEXTCAL=<span id="ICON_NEXTCAL">Next</span>
-ICON_PREVCAL=<span id="ICON_PREVCAL">Previous</span>
+ICON_DAILYCAL=<span data-option="ICON_DAILYCAL">View Daily Calendar</span>
+ICON_HOURLYCAL=<span data-option="ICON_HOURLYCAL">View Hourly Calendar</span>
+ICON_NEXTCAL=<span data-option="ICON_NEXTCAL">Next</span>
+ICON_PREVCAL=<span data-option="ICON_PREVCAL">Previous</span>
 
 # ILL
 ICON_BUT_ILL_CANCEL=<div class="buttonFull" id="ICON_BUT_ILL_CANCEL">Cancel</div>
-ICON_BUT_ILL_FORM=<span id="ICON_BUT_ILL_FORM=">Interlibrary Loan Form</span>
-ICON_BUT_ILL_HOME=<span id="ICON_BUT_ILL_HOME">New Request</span>
-ICON_BUT_PAT_ILL_FORM=<span id="ICON_BUT_PAT_ILL_FORM">Interlibrary Loan Form</span>
-ICON_BUT_PAT_ILL=<span id="ICON_BUT_PAT_ILL">Interlibrary Loan</span>
+ICON_BUT_ILL_FORM=<span data-option="ICON_BUT_ILL_FORM=">Interlibrary Loan Form</span>
+ICON_BUT_ILL_HOME=<span data-option="ICON_BUT_ILL_HOME">New Request</span>
+ICON_BUT_PAT_ILL_FORM=<span data-option="ICON_BUT_PAT_ILL_FORM">Interlibrary Loan Form</span>
+ICON_BUT_PAT_ILL=<span data-option="ICON_BUT_PAT_ILL">Interlibrary Loan</span>
 ILL_CONF_EMAIL_SUBJECT=Library notification of Inter-library Loan request
 ILL_HOME=/screens/ill.html
 
@@ -418,15 +418,15 @@ BUT_FULL_TEXT=/screens/full_text.gif
 WEBADDRESS=http://www.amazon.com/gp/search/ref=sr_adv_b/?search-alias=stripbooks&amp;field-keywords=%s|I|http://www.amazon.com/gp/search/ref=sr_adv_b/?search-alias=stripbooks&field-isbn=%s|More Information|-1
 
 # WebBridge/Pathfinder Pro
-ICON_BUT_CLOSEFRAME=<span id="ICON_BUT_CLOSEFRAME">Close Frame</span>
-ICON_BUT_RESOURCELINK=<span id="ICON_BUT_RESOURCELINK">Other Resources</span>
-ICON_BUT_RET2RESOURCE=<span id="ICON_BUT_RET2RESOURCE">Back</span>
+ICON_BUT_CLOSEFRAME=<span data-option="ICON_BUT_CLOSEFRAME">Close Frame</span>
+ICON_BUT_RESOURCELINK=<span data-option="ICON_BUT_RESOURCELINK">Other Resources</span>
+ICON_BUT_RET2RESOURCE=<span data-option="ICON_BUT_RET2RESOURCE">Back</span>
 RESLINK=bibresourcetop|browseresourcetop||
 # WBHEADERTEXT=The following resources may provide additional information about<br>#HEADER#
 
 # Patron Feeds
 RSS_MIN_TTL=10
-ICON_PATFEED=<span id="ICON_PATFEED">My Record Feeds</span>
+ICON_PATFEED=<span data-option="ICON_PATFEED">My Record Feeds</span>
 PATFEED_CONFIG=Your Library Record News|Follow links to library record for full details.
 PATFEED_FINES_INCURRED_RECENTLY=You have new fines or fees
 PATFEED_HOLDS_READY=Your materials are ready to be picked up
@@ -442,10 +442,10 @@ PATFEED_PROGRAM_SESSION_TOMORROW=An event that you have registered for is coming
 PATFEED_PROGRAM_SESSION_TODAY=An event that you have registered for is coming up today. Please log on to My Account for the event date, time and location.
 
 # Z39.50
-ICON_BUT_EMAIL=<span id="ICON_BUT_EMAIL">Email</span>
+ICON_BUT_EMAIL=<span data-option="ICON_BUT_EMAIL">Email</span>
 ICON_BUT_NEXTREC=<div class="buttonFull" id="ICON_BUT_NEXTREC">Next Record</div>
 ICON_BUT_PREVREC=<div class="buttonFull" id="ICON_BUT_PREVREC">Previous Record</div>
-ICON_BUT_Z39_ANOTHER=<span id="ICON_BUT_Z39_ANOTHER">Another Database</span>
+ICON_BUT_Z39_ANOTHER=<span data-option="ICON_BUT_Z39_ANOTHER">Another Database</span>
 ICON_BUT_Z39_REQUEST=Z39 Request
 ICON_BUT_Z39SEARCH=Search Other Libraries
 Z39BROADCAST=Z39.50 Broadcast Search:Please select the Z39.50 servers to which you want to send your search
@@ -521,11 +521,11 @@ ICON_BUT_PAT_PROGRAMS=Library Events
 ICON_BUT_PAT_SORTBYDATE=<div class="button80Bold" id="ICON_BUT_PAT_SORTBYDATE">Sort by Date</div>
 ICON_BUT_PAT_SORTBYNAME=<div class="button80Bold" id="ICON_BUT_PAT_SORTBYNAME">Sort by Name</div>
 ICON_RET2PROG=<div class="button80Bold" id="ICON_RET2PROG">Return to Programs</div>
-ICON_REGISTER=<span id="ICON_REGISTER">Click to Register</span>
-ICON_ADD_TO_WAITLIST=<span id="ICON_ADD_TO_WAITLIST">Add to Waitlist</span>
-ICON_VIEW_ADDITIONAL_SESSIONS=<span id="ICON_VIEW_ADDITIONAL_SESSTIONS>View Additional Sessions</span>
-ICON_HIDE_ADDITIONAL_SESSIONS=<span id="ICON_HIDE_ADDITIONAL_SESSIONS">Hide Additional Sessions</span>
-ICON_PROGRAM_CAL=<span ID="ICON_PROGRAM_CAL">Events Calendar</span>
+ICON_REGISTER=<span data-option="ICON_REGISTER">Click to Register</span>
+ICON_ADD_TO_WAITLIST=<span data-option="ICON_ADD_TO_WAITLIST">Add to Waitlist</span>
+ICON_VIEW_ADDITIONAL_SESSIONS=<span data-option="ICON_VIEW_ADDITIONAL_SESSTIONS>View Additional Sessions</span>
+ICON_HIDE_ADDITIONAL_SESSIONS=<span data-option="ICON_HIDE_ADDITIONAL_SESSIONS">Hide Additional Sessions</span>
+ICON_PROGRAM_CAL=<span data-option="ICON_PROGRAM_CAL">Events Calendar</span>
 TABLEPARAM_PROG_SECTIONS=width="100%" border="1" cellspacing="0" align="center" name="tableparam_prog_sections"
 BOTLOGO_ENCORE=@screens/botlogo_encore.html
 WEBLINKS_ENCORE=0
