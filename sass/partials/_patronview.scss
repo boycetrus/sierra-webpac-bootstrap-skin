@@ -9,13 +9,11 @@
 //checkout_form pages
 .confirmationprompt {
   font-size: 1em;
-  color: inherit;
   > span {
     display: block;
     @media(min-width: $screen-sm-min) {
-      display: inline-block;
+      display: inline;
       white-space: nowrap;
-      margin-left: 1em;
     }
   }
 }

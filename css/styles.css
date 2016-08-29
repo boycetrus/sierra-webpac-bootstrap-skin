@@ -4673,15 +4673,13 @@ main {
   margin-bottom: 0; }
 
 .confirmationprompt {
-  font-size: 1em;
-  color: inherit; }
+  font-size: 1em; }
   .confirmationprompt > span {
     display: block; }
     @media (min-width: 768px) {
       .confirmationprompt > span {
-        display: inline-block;
-        white-space: nowrap;
-        margin-left: 1em; } }
+        display: inline;
+        white-space: nowrap; } }
 
 td {
   font-family: "Source Sans Pro", Arial, sans-serif; }
