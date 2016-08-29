@@ -18,6 +18,11 @@
   }
 }
 
+.patFuncStatus em,
+.patFuncRenewCount {
+  display: block;
+}
+
 // patfunc table styles
 td {
   font-family: $font-family-base;

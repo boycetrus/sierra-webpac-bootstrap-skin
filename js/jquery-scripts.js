@@ -79,10 +79,13 @@ $(document).ready(function() {
   $('form[name="checkout_form"] .stacktable.small-only .patFuncHeaders').remove();
   $('form[name="checkout_form"] .stacktable.small-only input[type="checkbox"]').wrap('<label></label>').after(' Select');
   $('.confirmationprompt').addClass('alert alert-success');
-      //do the renew confirmation buttons work outside the form tag?
   $('#checkoutbuttons0 > a').addClass('btn btn-success btn-xs');
   $('#checkoutbuttons0').appendTo('.confirmationprompt');
   $('#checkoutbuttons1').remove();
+  $('#renewfailmsg').prependTo('.patfunct').addClass('alert alert-danger');
+    // add alert class depending on renew fail or succes
+  $('.patFuncStatus:contains("RENEW FAILED")').closest('tr').addClass('danger');
+  $('.patFuncStatus:contains("RENEWED")').closest('tr').addClass('success');
 
   // hold_form
   $('form[name="hold_form"] table').cardtable();

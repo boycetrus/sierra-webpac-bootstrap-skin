@@ -4681,6 +4681,10 @@ main {
         display: inline;
         white-space: nowrap; } }
 
+.patFuncStatus em,
+.patFuncRenewCount {
+  display: block; }
+
 td {
   font-family: "Source Sans Pro", Arial, sans-serif; }
 
