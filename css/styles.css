@@ -4666,6 +4666,10 @@ main {
     .webpac-form {
       text-align: right; } }
 
+.patron-actions,
+.patron-profile {
+  margin-top: 1em; }
+
 .modify-patron-info {
   margin: 10px 0; }
 

@@ -49,12 +49,12 @@ $(document).ready(function() {
   $('#LOGGEDIN_MSG').nextAll('br').remove();
   $('#LOGGEDIN_MSG').remove();
   $('#expirationMsg').addClass('alert alert-danger');
-  $('.modify-patron-info a').addClass('btn btn-primary');  
+  $('.modify-patron-info a').addClass('btn btn-primary');
 
   //loop through the patActions and remove the empty ones
   $('#patActions > li').each( function() {
     var patActionName = $(this).text();
-    if (patActionName.length < 10) {
+    if (patActionName.length < 4) {
       this.remove();
     }
   });
@@ -68,8 +68,8 @@ $(document).ready(function() {
 
   //move the patFunc title out of the table and make it a Heading
   var patFuncHeading = $('tr.patFuncTitle th:first').text();
-  $('<h2></h2>').appendTo('.patron-actions');
-  $('.patron-actions h2').text(patFuncHeading);
+  $('<h2></h2>').prependTo('.patfunct');
+  $('.patfunct h2').text(patFuncHeading);
   $('tr.patFuncTitle').remove();
 
 
