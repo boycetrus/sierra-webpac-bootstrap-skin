@@ -4669,9 +4669,6 @@ main {
 .modify-patron-info {
   margin: 10px 0; }
 
-.modify-patron-info + .alert {
-  margin-bottom: 0; }
-
 .confirmationprompt {
   font-size: 1em; }
   .confirmationprompt > span {

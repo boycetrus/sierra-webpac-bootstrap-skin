@@ -49,7 +49,7 @@ $(document).ready(function() {
   $('#LOGGEDIN_MSG').nextAll('br').remove();
   $('#LOGGEDIN_MSG').remove();
   $('#expirationMsg').addClass('alert alert-danger');
-  $('#patronInfo .panel-body a').addClass('btn btn-primary');
+  $('.modify-patron-info a').addClass('btn btn-primary');  
 
   //loop through the patActions and remove the empty ones
   $('#patActions > li').each( function() {
