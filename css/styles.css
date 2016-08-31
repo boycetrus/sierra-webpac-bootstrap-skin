@@ -4800,7 +4800,8 @@ footer {
       padding: 6px 14px; }
 
 .stacktable.small-only {
-  display: table; }
+  display: table;
+  border-top: 4px double #777777; }
   .stacktable.small-only .st-head-row {
     border-top: 4px double #777777;
     border-left: 1px solid #777777;

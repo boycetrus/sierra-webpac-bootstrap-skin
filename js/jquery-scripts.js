@@ -88,7 +88,9 @@ $(document).ready(function() {
   $('.patFuncStatus:contains("RENEWED")').closest('tr').addClass('success');
 
   // hold_form
-  $('form[name="hold_form"] table').stacktable();
+  $('.patFuncPickupLabel').addClass('sr-only');
+  $('form[name="hold_form"] table').cardtable();
+  $('form[name="hold_form"] .stacktable.small-only:first-child').remove();
 
   $('form[name="mylists_form"] table').stacktable();
   $('form[name="PSEARCHFORM"] table').stacktable({

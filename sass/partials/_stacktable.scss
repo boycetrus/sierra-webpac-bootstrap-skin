@@ -1,5 +1,6 @@
 .stacktable.small-only {
   display: table;
+  border-top: 4px double $gray-light;
   .st-head-row {
     border-top: 4px double $gray-light;
     border-left: 1px solid $gray-light;
