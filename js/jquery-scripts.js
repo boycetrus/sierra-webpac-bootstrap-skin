@@ -88,13 +88,14 @@ $(document).ready(function() {
   $('.patFuncStatus:contains("RENEWED")').closest('tr').addClass('success');
 
   // hold_form
-  $('form[name="hold_form"] table').cardtable();
+  $('form[name="hold_form"] table').stacktable();
+
   $('form[name="mylists_form"] table').stacktable();
   $('form[name="PSEARCHFORM"] table').stacktable({
-    headIndex: 2
+    headIndex: 1
   });
   $('form[name="PHISTORYFORM"] table').stacktable({
-    headIndex: 2
+    headIndex: 1
   });
 
 });
