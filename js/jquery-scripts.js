@@ -69,7 +69,7 @@ $(document).ready(function() {
   $('.patfunct > span > a').unwrap();
   $('.patfunct > form > a').addClass('btn btn-default btn-xs');
   $('.patfunct > a').addClass('btn btn-default btn-xs');
-  //$('.patfunct > form > a:contains("Apply Changes")').addClass('disabled');
+  $('.patfunct > form > a:contains("Apply Changes")').addClass('disabled');
   $('.patfunct > #checkoutbuttons0 > a').addClass('btn btn-default btn-xs');
 
 
@@ -96,13 +96,13 @@ $(document).ready(function() {
 
   // hold_form
   $('.patFuncPickupLabel').addClass('sr-only');
-  $('#hold_form table').cardtable();
-  $('#hold_form .stacktable.small-only:first-child').remove();
-  $('#hold_form th.patFuncHeaders:contains("CANCEL IF NOT")').text('EXPIRY DATE');
-  $('#hold_form .st-key:contains("CANCEL IF NOT")').text('EXPIRY DATE');
+  $('form[name="hold_form"] table').cardtable();
+  $('form[name="hold_form"] .stacktable.small-only:first-child').remove();
+  $('form[name="hold_form"] th.patFuncHeaders:contains("CANCEL IF NOT")').text('EXPIRY DATE');
+  $('form[name="hold_form"] .st-key:contains("CANCEL IF NOT")').text('EXPIRY DATE');
   $('.patFuncFreezeLabel').addClass('sr-only');
-  //$('#hold_form input[type="checkbox"]').on('change', applyChangeReminder);
-  //$('#hold_form select').on('change', applyChangeReminder);
+  $('form[name="hold_form"] input[type="checkbox"]').on('change', applyChangeReminder);
+  $('form[name="hold_form"] select').on('change', applyChangeReminder);
 
   $('form[name="mylists_form"] table').stacktable();
   $('form[name="PSEARCHFORM"] table').stacktable({
