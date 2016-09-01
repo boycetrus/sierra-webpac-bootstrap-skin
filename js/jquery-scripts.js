@@ -1,9 +1,9 @@
 var $patronFirstName;
 
 function applyChangeReminder() {
-  $('a > span:contains("Update List")').parent('a')
-  .removeClass('btn-default btn-xs')
-  .addClass('btn-success btn-sm');
+  $('a > span:contains("Apply Changes")').parent('a')
+  .removeClass('btn-default disabled')
+  .addClass('btn-success');
 }
 
 $(document).ready(function() {
@@ -69,6 +69,7 @@ $(document).ready(function() {
   $('.patfunct > span > a').unwrap();
   $('.patfunct > form > a').addClass('btn btn-default btn-xs');
   $('.patfunct > a').addClass('btn btn-default btn-xs');
+  $('.patfunct > form > a:contains("Apply Changes")').addClass('disabled');
   $('.patfunct > #checkoutbuttons0 > a').addClass('btn btn-default btn-xs');
 
 

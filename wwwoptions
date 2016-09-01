@@ -287,7 +287,7 @@ ICON_BUT_PAT_SORTBYDUE=<span data-option="ICON_BUT_PAT_SORTBYDUE">Sort by Due Da
 ICON_BUT_PAT_SUBMIT=<button type="submit" class="btn btn-primary">Submit</button>
 ICON_BUT_PSTARTOVER=<span data-option="ICON_BUT_PSTARTOVER">Start Over</span>
 # BUT_RET2PREC=<span id="ret2prec-text">My Account</span>
-ICON_BUT_UPDATE_HOLDS=<span data-option="ICON_BUT_UPDATE_HOLDS">Update List</span>
+ICON_BUT_UPDATE_HOLDS=<span data-option="ICON_BUT_UPDATE_HOLDS">Apply Changes</span>
 CHANGE_HOLD_LOC=true
 FREEZE_HOLDS=true
 ICON_CLOSEWINDOW=<span data-option="ICON_CLOSEWINDOW">Close Window</span>
