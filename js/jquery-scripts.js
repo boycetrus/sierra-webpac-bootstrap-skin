@@ -1,5 +1,9 @@
 var $patronFirstName;
 
+function applyChangeReminder() {
+  alert('Click on Update List to apply your changes');
+}
+
 $(document).ready(function() {
 
 //define global variables
@@ -93,6 +97,9 @@ $(document).ready(function() {
   $('form[name="hold_form"] .stacktable.small-only:first-child').remove();
   $('form[name="hold_form"] th.patFuncHeaders:contains("CANCEL IF NOT")').text('EXPIRY DATE');
   $('form[name="hold_form"] .st-key:contains("CANCEL IF NOT")').text('EXPIRY DATE');
+  $('.patFuncFreezeLabel').addClass('sr-only');
+  $('form[name="hold_form"] input[type="checkbox"]').on('change', applyChangeReminder);
+  $('form[name="hold_form"] select').on('change', applyChangeReminder);
 
   $('form[name="mylists_form"] table').stacktable();
   $('form[name="PSEARCHFORM"] table').stacktable({
