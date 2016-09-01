@@ -1,7 +1,9 @@
 var $patronFirstName;
 
 function applyChangeReminder() {
-  alert('Click on Update List to apply your changes');
+  $('a > span:contains("Update List")').parent('a')
+  .removeClass('btn-default btn-xs')
+  .addClass('btn-success btn-sm');
 }
 
 $(document).ready(function() {
