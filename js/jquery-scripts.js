@@ -91,6 +91,8 @@ $(document).ready(function() {
   $('.patFuncPickupLabel').addClass('sr-only');
   $('form[name="hold_form"] table').cardtable();
   $('form[name="hold_form"] .stacktable.small-only:first-child').remove();
+  $('form[name="hold_form"] th.patFuncHeaders:contains("CANCEL IF NOT")').text('EXPIRY DATE');
+  $('form[name="hold_form"] .st-key:contains("CANCEL IF NOT")').text('EXPIRY DATE');
 
   $('form[name="mylists_form"] table').stacktable();
   $('form[name="PSEARCHFORM"] table').stacktable({

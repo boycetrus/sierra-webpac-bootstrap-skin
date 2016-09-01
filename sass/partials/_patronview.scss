@@ -7,9 +7,18 @@
   margin: $padding-large-vertical 0;
 }
 
-// .modify-patron-info + .alert {
-//   margin-bottom: 0;
-// }
+// patfunc table styles
+td {
+  font-family: $font-family-base;
+}
+
+.patfunct {
+  margin-bottom: $padding-large-vertical;
+
+  a.btn {
+    margin-bottom: $padding-large-vertical;
+  }
+}
 
 //checkout_form pages
 .confirmationprompt {
@@ -22,21 +31,12 @@
     }
   }
 }
+//hold_form pages
+.patFuncCancel {
+  text-align: left;
+}
 
 .patFuncStatus em,
 .patFuncRenewCount {
   display: block;
-}
-
-// patfunc table styles
-td {
-  font-family: $font-family-base;
-}
-
-.patfunct {
-  margin-bottom: $padding-large-vertical;
-
-  a.btn {
-    margin-bottom: $padding-large-vertical;
-  }
 }

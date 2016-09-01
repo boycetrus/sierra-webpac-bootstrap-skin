@@ -4673,6 +4673,14 @@ main {
 .modify-patron-info {
   margin: 10px 0; }
 
+td {
+  font-family: "Source Sans Pro", Arial, sans-serif; }
+
+.patfunct {
+  margin-bottom: 10px; }
+  .patfunct a.btn {
+    margin-bottom: 10px; }
+
 .confirmationprompt {
   font-size: 1em; }
   .confirmationprompt > span {
@@ -4682,17 +4690,12 @@ main {
         display: inline;
         white-space: nowrap; } }
 
+.patFuncCancel {
+  text-align: left; }
+
 .patFuncStatus em,
 .patFuncRenewCount {
   display: block; }
-
-td {
-  font-family: "Source Sans Pro", Arial, sans-serif; }
-
-.patfunct {
-  margin-bottom: 10px; }
-  .patfunct a.btn {
-    margin-bottom: 10px; }
 
 .social {
   background-color: #E9F2F7;
