@@ -358,11 +358,11 @@ CC_APPROVED=Your payment has been approved.
 CC_DECLINED=Sorry. Your payment has been declined. Please confirm your information is entered correctly or pay at the library.
 CC_EMAIL_RECEIPT=Receipt for payment to Your Library|circadm@example.org|onlinepayments@example.org
 DONATE_NOTIFY=A new donation has been received|circadm@example.org|donormgmt@example.org
-ICON_PAY=<div class="buttonFull" id="ICON_PAY">Pay Online</div>
-ICON_PAY_CLEAR_ALL=<div class="buttonFull" id="ICON_PAY_CLEAR_ALL">Clear All</div>
-ICON_PAY_SELECT_ALL=<div class="buttonFull" id="ICON_PAY_SELECT_ALL">Select All</div>
+ICON_PAY=<span class="ecommerce ecommerce-pay" data-option="ICON_PAY">Pay Online</span>
+ICON_PAY_CLEAR_ALL=<span class="ecommerce ecommerce-clear" data-option="ICON_PAY_CLEAR_ALL">Clear All</span>
+ICON_PAY_SELECT_ALL=<span class="ecommerce ecommerce-select data-option="ICON_PAY_SELECT_ALL">Select All</span>
 ICON_PRINT=<span data-option="ICON_PRINT">Print</span>
-ICON_PAY_CONTINUE=<div class="buttonFull" id="ICON_PAY_CONTINUE">Continue</div>
+ICON_PAY_CONTINUE=<span class="ecommerce ecommerce-continue" data-option="ICON_PAY_CONTINUE">Continue</span>
 MINDONATE=1000|Donations must be at least $10.00 to cover processing costs. Thank you.
 PAYAMTS=500|Please visit the library to pay this amount|00
 
