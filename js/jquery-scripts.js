@@ -107,7 +107,9 @@ $(document).ready(function() {
   // fines_form
   $('h2:contains("FINES")').next('table#patFunc').addClass('patfunc-fines');
   $('.ecommerce-pay').parents('a').eq(0).addClass('btn btn-primary').insertBefore('table.patfunc-fines');
-  //$('.ecommerce-pay').parents('a').eq(1).addClass('btn btn-primary').insertAfter('table.patfunc-fines');
+  $('.patfunc-fines .ecommerce-pay').parents('a').addClass('btn btn-primary').insertAfter('table.patfunc-fines');
+  $('#patFunc tr:first-child').remove();
+  $('#patFunc tr:last-child').remove();
 
   $('form[name="mylists_form"] table').stacktable();
   $('form[name="PSEARCHFORM"] table').stacktable({
