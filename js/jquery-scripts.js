@@ -108,8 +108,11 @@ $(document).ready(function() {
   $('h2:contains("FINES")').next('table#patFunc').addClass('patfunc-fines');
   $('.ecommerce-pay').parents('a').eq(0).addClass('btn btn-primary').insertBefore('table.patfunc-fines');
   $('.patfunc-fines .ecommerce-pay').parents('a').addClass('btn btn-primary').insertAfter('table.patfunc-fines');
-  $('#patFunc tr:first-child').remove();
-  $('#patFunc tr:last-child').remove();
+  $('.patfunc-fines tr:first-child').remove();
+  $('.patfunc-fines tr:last-child').remove();
+  $('td.patFuncFinesEntryTitle').attr('colspan','3'); //temporary fix until move text to different td
+  $('.patFuncFinesEntryDetail td:last-child').remove();
+  $('.patFuncFinesTotal td:last-child').remove();
 
   $('form[name="mylists_form"] table').stacktable();
   $('form[name="PSEARCHFORM"] table').stacktable({
