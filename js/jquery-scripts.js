@@ -104,6 +104,11 @@ $(document).ready(function() {
   $('form[name="hold_form"] input[type="checkbox"]').on('change', applyChangeReminder);
   $('form[name="hold_form"] select').on('change', applyChangeReminder);
 
+  // fines_form
+  $('h2:contains("FINES")').next('table#patFunc').addClass('patfunc-fines');
+  $('.ecommerce-pay').parents('a').eq(0).addClass('btn btn-primary').insertBefore('table.patfunc-fines');
+  //$('.ecommerce-pay').parents('a').eq(1).addClass('btn btn-primary').insertAfter('table.patfunc-fines');
+
   $('form[name="mylists_form"] table').stacktable();
   $('form[name="PSEARCHFORM"] table').stacktable({
     headIndex: 1
