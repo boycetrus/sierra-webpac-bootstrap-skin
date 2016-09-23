@@ -4693,6 +4693,9 @@ td {
 .patFuncCancel {
   text-align: left; }
 
+.patfunc-fines.table {
+  width: auto; }
+
 .patFuncStatus em,
 .patFuncRenewCount {
   display: block; }

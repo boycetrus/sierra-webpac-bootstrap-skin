@@ -110,9 +110,13 @@ $(document).ready(function() {
   $('.patfunc-fines .ecommerce-pay').parents('a').addClass('btn btn-primary').insertAfter('table.patfunc-fines');
   $('.patfunc-fines tr:first-child').remove();
   $('.patfunc-fines tr:last-child').remove();
-  // $('td.patFuncFinesEntryTitle').attr('colspan','3'); //temporary fix until move text to different td
-  // $('.patFuncFinesEntryDetail td:last-child').remove();
-  // $('.patFuncFinesTotal td:last-child').remove();
+  $('.patFuncFinesDetailDateLabel').removeAttr('colspan');
+  $('.patFuncFinesEntryDetail td:first-child').remove();
+  $('.patFuncFinesDetailDate td:first-child').remove();
+  $('.patFuncFinesTotalLabel').removeAttr('colspan');
+  $('td.patFuncFinesEntryTitle').attr('colspan','2')
+  $('.patFuncFinesEntryDetail td:last-child').remove();
+  $('.patFuncFinesTotal td:last-child').remove();
 
   $('form[name="mylists_form"] table').stacktable();
   $('form[name="PSEARCHFORM"] table').stacktable({
