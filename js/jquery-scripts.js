@@ -114,7 +114,7 @@ $(document).ready(function() {
   $('.patFuncFinesEntryDetail td:first-child').remove();
   $('.patFuncFinesDetailDate td:first-child').remove();
   $('.patFuncFinesTotalLabel').removeAttr('colspan');
-  $('td.patFuncFinesEntryTitle').attr('colspan','2')
+  $('td.patFuncFinesEntryTitle').attr('colspan','2');
   $('.patFuncFinesEntryDetail td:last-child').remove();
   $('.patFuncFinesTotal td:last-child').remove();
 
@@ -122,8 +122,16 @@ $(document).ready(function() {
   $('form[name="PSEARCHFORM"] table').stacktable({
     headIndex: 1
   });
-  $('form[name="PHISTORYFORM"] table').stacktable({
-    headIndex: 1
-  });
+
+  // reading history form
+  $('<nav aria-label="reading history pagination"><ul class="pagination"></ul></nav>').insertBefore('form[name="PHISTORYFORM"] table#patFunc');
+  $('form[name="PHISTORYFORM"] .browsePager > span').data('option','ICON_PAGING_CAPTION').remove();
+  $('form[name="PHISTORYFORM"] td.browsePager')
+    .children()
+    .wrap('<li></li>')
+    .appendTo('form[name="PHISTORYFORM"] ul.pagination');
+  // $('form[name="PHISTORYFORM"] table').stacktable({
+  //   headIndex: 1
+  // });
 
 });
