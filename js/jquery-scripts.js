@@ -126,10 +126,7 @@ $(document).ready(function() {
   // reading history form
   $('<nav aria-label="reading history pagination"><ul class="pagination"></ul></nav>').insertBefore('form[name="PHISTORYFORM"] table#patFunc');
   $('form[name="PHISTORYFORM"] .browsePager > span').data('option','ICON_PAGING_CAPTION').remove();
-  $('form[name="PHISTORYFORM"] td.browsePager')
-    .children()
-    .wrap('<li></li>')
-    .appendTo('form[name="PHISTORYFORM"] ul.pagination');
+  $('form[name="PHISTORYFORM"] td.browsePager').children().appendTo('form[name="PHISTORYFORM"] ul.pagination').wrap('<li></li>');
   // $('form[name="PHISTORYFORM"] table').stacktable({
   //   headIndex: 1
   // });
