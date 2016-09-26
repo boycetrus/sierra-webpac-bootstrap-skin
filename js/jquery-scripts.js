@@ -118,11 +118,6 @@ $(document).ready(function() {
   $('.patFuncFinesEntryDetail td:last-child').remove();
   $('.patFuncFinesTotal td:last-child').remove();
 
-  $('form[name="mylists_form"] table').stacktable();
-  $('form[name="PSEARCHFORM"] table').stacktable({
-    headIndex: 1
-  });
-
   // reading history form
   $('<nav class="reading-history-pagination text-center" aria-label="reading history pagination"><ul class="pagination"></ul></nav>').insertAfter('form[name="PHISTORYFORM"] table#patFunc');
   $('form[name="PHISTORYFORM"] .browsePager > span').data('option','ICON_PAGING_CAPTION').remove();
@@ -140,5 +135,14 @@ $(document).ready(function() {
   $('form[name="PHISTORYFORM"] tr.browsePager').remove();
   $('form[name="PHISTORYFORM"] table').cardtable();
   $('form[name="PHISTORYFORM"] table.stacktable.small-only:first-child').remove();
+
+  // My Lists form
+  $('form[name="mylists_form"] table').cardtable();
+  $('form[name="mylists_form"] table.stacktable.small-only:first-child').remove();
+
+  $('form[name="PSEARCHFORM"] table').stacktable({
+    headIndex: 1
+  });
+
 
 });
