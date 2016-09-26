@@ -138,8 +138,7 @@ $(document).ready(function() {
   });
   $('nav.reading-history-pagination').clone().insertBefore('form[name="PHISTORYFORM"] table#patFunc');
   $('form[name="PHISTORYFORM"] tr.browsePager').remove();
-  $('form[name="PHISTORYFORM"] table').cardtable({
-    headIndex: 1
-  });
+  $('form[name="PHISTORYFORM"] table').cardtable();
+  $('form[name="PHISTORYFORM"] table.stacktable.small-only:first-child').remove();
 
 });
