@@ -127,13 +127,12 @@ $(document).ready(function() {
   $('<nav class="reading-history-pagination" aria-label="reading history pagination"><ul class="pagination"></ul></nav>').insertAfter('form[name="PHISTORYFORM"] table#patFunc');
   $('form[name="PHISTORYFORM"] .browsePager > span').data('option','ICON_PAGING_CAPTION').remove();
   $('form[name="PHISTORYFORM"] td.browsePager').eq(0).children().appendTo('form[name="PHISTORYFORM"] ul.pagination');
-  $('form[name="PHISTORYFORM"] ul.pagination').children().each(function(i){
+  $('form[name="PHISTORYFORM"] ul.pagination').children().each(function(){
     if ($(this).is('strong')) {
-      console.log(i + " : strong");
       var pgNum = $(this).text();
-      $(this).replaceWith("<span>" + pgNum + "</span>").wrap('<li class="active"></li>');
+      $(this).replaceWith("<span>" + pgNum + "</span>");
+      $('ul.pagination > span').wrap('<li class="active"></li>');
     } else if ($(this).is('a')) {
-      console.log(i + " : a");
       $(this).wrap('<li></li>');
     }
   });
