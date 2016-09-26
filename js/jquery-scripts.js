@@ -80,6 +80,7 @@ $(document).ready(function() {
   $('tr.patFuncTitle').remove();
 
 
+
 //call stacktable.js on the patfunctable and fix the problems
   //checkout_form
   $('form[name="checkout_form"] table').stacktable();
@@ -121,6 +122,7 @@ $(document).ready(function() {
   // reading history form
   $('<nav class="reading-history-pagination text-center" aria-label="reading history pagination"><ul class="pagination"></ul></nav>').insertAfter('form[name="PHISTORYFORM"] table#patFunc');
   $('form[name="PHISTORYFORM"] .browsePager > span').data('option','ICON_PAGING_CAPTION').remove();
+  $('form[name="PHISTORYFORM"] th.patFuncHeaders:contains("Mark")').text('Select');
   $('form[name="PHISTORYFORM"] td.browsePager').eq(0).children().appendTo('form[name="PHISTORYFORM"] ul.pagination');
   $('form[name="PHISTORYFORM"] ul.pagination').children().each(function(){
     if ($(this).is('strong')) {
@@ -137,6 +139,7 @@ $(document).ready(function() {
   $('form[name="PHISTORYFORM"] table.stacktable.small-only:first-child').remove();
 
   // My Lists form
+  $('form[name="mylists_form"] th.patFuncHeaders:contains("Mark")').text('Select');
   $('form[name="mylists_form"] table').cardtable();
   $('form[name="mylists_form"] table.stacktable.small-only:first-child').remove();
 
