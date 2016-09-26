@@ -124,9 +124,17 @@ $(document).ready(function() {
   });
 
   // reading history form
-  $('<nav aria-label="reading history pagination"><ul class="pagination"></ul></nav>').insertBefore('form[name="PHISTORYFORM"] table#patFunc');
+  $('<nav aria-label="reading history pagination"><ul class="pagination"></ul></nav>').insertAfter('form[name="PHISTORYFORM"] table#patFunc');
   $('form[name="PHISTORYFORM"] .browsePager > span').data('option','ICON_PAGING_CAPTION').remove();
-  $('form[name="PHISTORYFORM"] td.browsePager').children().appendTo('form[name="PHISTORYFORM"] ul.pagination').wrap('<li></li>');
+  $('form[name="PHISTORYFORM"] td.browsePager').eq(0).children().appendTo('form[name="PHISTORYFORM"] ul.pagination');
+  $('form[name="PHISTORYFORM"] ul.pagination').each(function(i){
+    if ($(this).is('strong')) {
+      console.log(i + " : strong");
+    } else if ($(this).is('a')) {
+      console.log(i + " : a");
+    }
+  });
+  $('form[name="PHISTORYFORM"] tr.browsePager').remove();
   // $('form[name="PHISTORYFORM"] table').stacktable({
   //   headIndex: 1
   // });
