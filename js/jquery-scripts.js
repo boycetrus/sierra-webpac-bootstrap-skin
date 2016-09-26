@@ -124,7 +124,7 @@ $(document).ready(function() {
   });
 
   // reading history form
-  $('<nav class="reading-history-pagination" aria-label="reading history pagination"><ul class="pagination"></ul></nav>').insertAfter('form[name="PHISTORYFORM"] table#patFunc');
+  $('<nav class="reading-history-pagination text-center" aria-label="reading history pagination"><ul class="pagination"></ul></nav>').insertAfter('form[name="PHISTORYFORM"] table#patFunc');
   $('form[name="PHISTORYFORM"] .browsePager > span').data('option','ICON_PAGING_CAPTION').remove();
   $('form[name="PHISTORYFORM"] td.browsePager').eq(0).children().appendTo('form[name="PHISTORYFORM"] ul.pagination');
   $('form[name="PHISTORYFORM"] ul.pagination').children().each(function(){
@@ -136,9 +136,10 @@ $(document).ready(function() {
       $(this).wrap('<li></li>');
     }
   });
+  $('nav.reading-history-pagination').clone().insertBefore('form[name="PHISTORYFORM"] table#patFunc');
   $('form[name="PHISTORYFORM"] tr.browsePager').remove();
-  // $('form[name="PHISTORYFORM"] table').stacktable({
-  //   headIndex: 1
-  // });
+  $('form[name="PHISTORYFORM"] table').cardtable({
+    headIndex: 1
+  });
 
 });
