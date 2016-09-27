@@ -143,9 +143,19 @@ $(document).ready(function() {
   $('form[name="mylists_form"] table').cardtable();
   $('form[name="mylists_form"] table.stacktable.small-only:first-child').remove();
 
-  $('form[name="PSEARCHFORM"] table').stacktable({
-    headIndex: 1
-  });
+  // Preferred Searches Form
+  //$('form[name="PSEARCHFORM"] th.patFuncHeaders:first-child').text('Remove');
+  //$('form[name="PSEARCHFORM"] th.patFuncHeaders:nth-child(2)').text('Email');
+  $('form[name="PSEARCHFORM"] td.patFuncMark > input').wrap('<div class="checkbox"><label></label></div>');
+  $('form[name="PSEARCHFORM"] .patFuncEntry .patFuncMark:first-child input').append("Remove");
+  $('form[name="PSEARCHFORM"] .patFuncEntry .patFuncMark:nth-child(2) input').append("Email");
+  $('form[name="PSEARCHFORM"] .patFuncPSrchBtn a').addClass('btn btn-primary btn-xs');
+
+
+
+  // $('form[name="PSEARCHFORM"] table').stacktable({
+  //   headIndex: 1
+  // });
 
 
 });
