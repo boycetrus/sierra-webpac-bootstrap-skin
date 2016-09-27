@@ -39,6 +39,14 @@ td {
 .patfunc-fines.table {
   width: auto;
 }
+.patFuncFinesDetailDateLabel {
+  text-transform: lowercase;
+  text-align: right;
+}
+.patFuncFinesEntryTitle,
+.patFuncFinesTotalLabel {
+  font-weight: 700;
+}
 
 .patFuncStatus em,
 .patFuncRenewCount {
