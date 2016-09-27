@@ -149,6 +149,7 @@ $(document).ready(function() {
   $('form[name="PSEARCHFORM"] td.patFuncMark > input').wrap('<div class="checkbox"><label></label></div>');
   $('form[name="PSEARCHFORM"] td.patFuncPSrchType strong').wrapInner('<h3></h3>');
   $('form[name="PSEARCHFORM"] #patFunc').removeClass('table table-bordered');
+  $('form[name="PSEARCHFORM"] #patFunc tr.patFuncHeaders').removeClass('table table-bordered');
   $('form[name="PSEARCHFORM"] #patFunc td').removeAttr('width');
   $('form[name="PSEARCHFORM"] .patFuncEntry .patFuncMark:first-child label').append("Remove");
   $('form[name="PSEARCHFORM"] .patFuncEntry .patFuncMark:nth-child(2) label').append("Email");
