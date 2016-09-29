@@ -321,7 +321,7 @@ IPSSO_USEHTML=true
 # My Millennium
 ICON_BUT_PAT_PSEARCH_REMOVE=<span data-option="ICON_BUT_PAT_PSEARCH_REMOVE">Delete All Searches</span>
 BUT_PAT_PSEARCH_UPDATE=/screens/updatelist.gif
-ICON_BUT_PAT_PSEARCH_UPDATE=<span data-option="ICON_BUT_PAT_PSEARCH_UPDATE">Update List</span>
+ICON_BUT_PAT_PSEARCH_UPDATE=<span data-option="ICON_BUT_PAT_PSEARCH_UPDATE">Apply Changes</span>
 BUT_PAT_SEARCH=/screens/pat_search.gif
 ICON_BUT_PAT_GETPSAVEDRECS=<span data-option="ICON_BUT_PAT_GETPSAVEDRECS">Preferred Searches</span>
 CIRC_HIST_LIMIT_TEXT=Limit to titles which aren't in my Reading History

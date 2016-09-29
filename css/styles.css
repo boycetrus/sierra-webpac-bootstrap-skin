@@ -4708,6 +4708,17 @@ td {
 .patFuncRenewCount {
   display: block; }
 
+.pref-search tr.patFuncEntry {
+  display: flex;
+  align-items: baseline;
+  flex-direction: row-reverse;
+  padding-top: 10px; }
+.pref-search tr.patFuncEntry > td:not(:last-child) {
+  padding-left: 1em; }
+.pref-search tr.patFuncEntry > td.patFuncTitle {
+  flex-grow: 1;
+  font-weight: 600; }
+
 .social {
   background-color: #E9F2F7;
   padding: 12px 0; }

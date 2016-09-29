@@ -52,3 +52,19 @@ td {
 .patFuncRenewCount {
   display: block;
 }
+//preferred searches form
+.pref-search {
+  tr.patFuncEntry {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row-reverse;
+    padding-top: $padding-large-vertical;
+  }
+  tr.patFuncEntry > td:not(:last-child) {
+    padding-left: 1em;
+  }
+  tr.patFuncEntry > td.patFuncTitle {
+    flex-grow: 1;
+    font-weight: 600;
+  }
+}

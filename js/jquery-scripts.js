@@ -1,7 +1,7 @@
 var $patronFirstName;
 
 function applyChangeReminder() {
-  $('a > span:contains("Apply Changes")').parent('a')
+  $('a:contains("Apply Changes")').parent('a')  // $('a > span:contains("Apply Changes")').parent('a')
   .removeClass('btn-default disabled')
   .addClass('btn-success');
 }
@@ -144,16 +144,15 @@ $(document).ready(function() {
   $('form[name="mylists_form"] table.stacktable.small-only:first-child').remove();
 
   // Preferred Searches Form
-  //$('form[name="PSEARCHFORM"] th.patFuncHeaders:first-child').text('Remove');
-  //$('form[name="PSEARCHFORM"] th.patFuncHeaders:nth-child(2)').text('Email');
   $('form[name="PSEARCHFORM"] td.patFuncMark > input').wrap('<div class="checkbox"><label></label></div>');
   $('form[name="PSEARCHFORM"] td.patFuncPSrchType strong').wrapInner('<h3></h3>');
-  $('form[name="PSEARCHFORM"] #patFunc').removeClass('table table-bordered');
-  $('form[name="PSEARCHFORM"] #patFunc tr.patFuncHeaders').removeClass('table table-bordered');
+  $('form[name="PSEARCHFORM"] #patFunc').removeClass('table table-bordered').addClass('pref-search');
+  $('form[name="PSEARCHFORM"] #patFunc tr.patFuncHeaders').remove();
   $('form[name="PSEARCHFORM"] #patFunc td').removeAttr('width');
   $('form[name="PSEARCHFORM"] .patFuncEntry .patFuncMark:first-child label').append("Remove");
   $('form[name="PSEARCHFORM"] .patFuncEntry .patFuncMark:nth-child(2) label').append("Email");
   $('form[name="PSEARCHFORM"] .patFuncPSrchBtn a').addClass('btn btn-primary btn-xs');
+  $('form[name="PSEARCHFORM"] input[type="checkbox"]').on('change', applyChangeReminder);
 
 
 
