@@ -4832,7 +4832,8 @@ footer {
     border-left: 1px solid #777777;
     border-right: 1px solid #777777; }
   .stacktable.small-only td.st-key {
-    border-left: 1px solid #777777; }
+    border-left: 1px solid #777777;
+    width: 110px; }
   .stacktable.small-only td.st-val {
     border-right: 1px solid #777777; }
 

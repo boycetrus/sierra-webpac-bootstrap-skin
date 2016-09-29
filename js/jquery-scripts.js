@@ -1,9 +1,7 @@
 var $patronFirstName;
 
 function applyChangeReminder() {
-  $('a:contains("Apply Changes")').parent('a')  // $('a > span:contains("Apply Changes")').parent('a')
-  .removeClass('btn-default disabled')
-  .addClass('btn-success');
+  $('a:contains("Apply Changes")').removeClass('btn-default disabled').addClass('btn-success');
 }
 
 $(document).ready(function() {

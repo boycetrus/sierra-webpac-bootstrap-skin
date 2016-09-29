@@ -8,6 +8,7 @@
   }
   td.st-key {
     border-left: 1px solid $gray-light;
+    width: 110px;  //magic number
   }
   td.st-val {
     border-right: 1px solid $gray-light;
