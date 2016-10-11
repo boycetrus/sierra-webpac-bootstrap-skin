@@ -167,9 +167,4 @@ $(document).ready(function() {
 
 
 
-  // $('form[name="PSEARCHFORM"] table').stacktable({
-  //   headIndex: 1
-  // });
-
-
 });

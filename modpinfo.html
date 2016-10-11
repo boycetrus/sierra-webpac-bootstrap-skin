@@ -1,71 +1,55 @@
-<div class="minHeight">
-<div class="fullPage">
-<div class="pageContent">
-<div class="pageContentInner popupContentInner">
-<!--Beginning main page content-->
-<h1 class="popupFormHeading">Modify Patron Information</h1>
-<div id="accessibleForm" class="form1Part">
+<div class="container-fluid">
+  <h1>Personal Information</h1>
+
 <!--{formbegin}-->
-<fieldset>
-<legend>
-<!--{newpinfo}-->
-</legend>
 
-<!--
-<div class="formEntryArea">
-<label for="name"><span class="formLabel">
-Alias/Nickname:
-</span>
--->
- <!--{user_name}-->
- <!--
-</label>
-</div>
--->
-
-<div class="formEntryArea">
-<span class="formLabel">
+  <div class="form-group">
 <!--{addr1prompt}-->
-</span>
 <!--{addr1a}-->
+<!--{addr1b}-->
+    <span id="addrHelp" class="help-block">Please visit any Sutherland Shire Library to update your address. We require you to show identification for your new address.</span>
+  </div>
 
-</div>
-
-<div class="formEntryArea">
-<span class="formLabel"><label for="addr1c">
-State
-</label></span>
-<!--{addr1c}-->
-
-</div>
-
-<div class="formEntryArea">
-<span class="formLabel"><label for="addr1d">
-ZIP Code
-</label></span>
-<!--{addr1d}-->
-
-</div>
-
-<div class="formEntryArea">
-<span class="formLabel">
+  <div class="form-group">
 <!--{emailprompt}-->
-</span>
 <!--{email}-->
-</div>
+    <span id="emailHelp" class="help-block">An email address is required if you want to receive notifications and reminders from the library via email.</span>
+  </div>
 
-<div class="formEntryArea">
+  <div class="form-group">
+<!--{mobileprompt}-->
+<!--{mobile}-->
+    <span id="mobileHelp" class="help-block">If you want to receive SMS notifications and reminders from the Library ensure your mobile number is in this field only and you <em>Opt In</em> below.</span>
+  </div>
+
+  <div class="form-group">
+<!--{phone1prompt}-->
+<!--{phone1}-->
+  </div>
+
+  <div class="form-group">
+<!--{phone2prompt}-->
+<!--{phone2}-->
+  </div>
+
+  <div id="noticePref" class="form-group">
 <!--{notices}-->
-</div>
+    <span id="noticeHelp" class="help-block">NOTE: Overdue reminders are only available via email.</span>
+  </div>
 
-<div class="formButtonArea">
+  <div id="sms" class="form-group">
+<!--{ifhassms2}-->
+<!--{smsmod}-->
+<!--{xif}-->
+    <span id="smsHelp" class="help-block">If you are having problems with SMS alerts or your status is <span class="text-danger">Rejected</span> please contact Sutherland Library.</span>
+  </div>
+
 <!--{submit}-->
 <!--{cancel}-->
-</div>
-</fieldset>
+
 <!--{formend}-->
-</div><!-- accessibleForm -->
-</div><!-- popupContentInner -->
-</div><!-- pageContent -->
-</div><!-- fullPage -->
+
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="/screens/global-min.js"></script>
