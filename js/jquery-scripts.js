@@ -140,6 +140,11 @@ $(document).ready(function() {
   $('form[name="mylists_form"] th.patFuncHeaders:contains("Mark")').text('Select');
   $('form[name="mylists_form"] table').cardtable();
   $('form[name="mylists_form"] table.stacktable.small-only:first-child').remove();
+  $('form[name="renameList"] .formEntryArea').addClass('form-group');
+  $('form[name="renameList"] input').addClass('form-control');
+  $('form[name="renameList"] textarea').addClass('form-control');
+  $('form[name="renameList"] .formButtonArea a:first-child').addClass('btn btn-primary btn-xs');
+  $('form[name="renameList"] .formButtonArea a:nth-child(2)').addClass('btn btn-default btn-xs');
 
   // Preferred Searches Form
   $('form[name="PSEARCHFORM"] td.patFuncMark > input').wrap('<div class="checkbox"><label></label></div>');
