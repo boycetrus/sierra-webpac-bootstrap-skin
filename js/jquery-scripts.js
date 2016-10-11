@@ -4,7 +4,7 @@ function applyChangeReminder() {
   $('a:contains("Apply Changes")').removeClass('btn-default disabled').addClass('btn-success');
 }
 
-$(document).ready(function() {
+$(function() {
 
 //define global variables
   var $loggedInMsg = $('#LOGGEDIN_MSG').text().split(', ');
@@ -164,7 +164,5 @@ $(document).ready(function() {
   $('form[name="PSEARCHFORM"] .patFuncEntry .patFuncMark:nth-child(2) label').append("Email");
   $('form[name="PSEARCHFORM"] .patFuncPSrchBtn a').addClass('btn btn-primary btn-xs');
   $('form[name="PSEARCHFORM"] input[type="checkbox"]').on('change', applyChangeReminder);
-
-
 
 });
