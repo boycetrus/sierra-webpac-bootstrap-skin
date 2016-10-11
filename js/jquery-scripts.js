@@ -147,6 +147,9 @@ $(document).ready(function() {
   $('form[name="renameList"] .formButtonArea a:nth-child(2)').addClass('btn btn-default btn-xs');
   $('form[name="newlistForm"] select').addClass('form-control');
   $('form[name="newlistForm"] select').parent().addClass('form-group');
+  $('form[name="newlistForm"] #newlist .formEntryArea').addClass('form-group');
+  $('form[name="newlistForm"] input').addClass('form-control');
+  $('form[name="newlistForm"] textarea').addClass('form-control');
   $('form[name="newlistForm"] .formButtonArea a:first-child').addClass('btn btn-primary btn-xs');
   $('form[name="newlistForm"] .formButtonArea a:nth-child(2)').addClass('btn btn-default btn-xs');
 
