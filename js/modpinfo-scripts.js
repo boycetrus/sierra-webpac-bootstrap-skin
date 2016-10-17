@@ -5,9 +5,15 @@ $(function() {
 
   $('.email input').attr('type','email').addClass('form-control');
   $('.phone input').attr('type','number').addClass('form-control');
-  $('#noticePref input').next('br').remove().wrap('<label class="radio-inline"></label>');
+  $('#noticePref input').next('br').remove();
+  $('#noticePref input').wrap('<label class="radio-inline"></label>');
+  $('#sms > h3').replaceWith('<strong>Additional mobile alerts via SMS</strong>');
+  $('.patFuncMobileEntryArea').addClass('checkbox');
+  $('#sms input').prependTo('#sms label');
+  $('.smsStatus').addClass('text-danger');
+  $('.smsStatus:contains("opted in")').removeClass('text-danger').addClass('text-success');
 
   $('.form-buttons a:first-child').addClass('btn btn-primary');
-  $('.form-buttons a').not().eq(0).addClass('btn btn-default');
+  $('.form-buttons a').not().eq(1).addClass('btn btn-default');
 
 });

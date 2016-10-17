@@ -15,6 +15,7 @@
 # Saving and Exporting
 # Requesting
 # Patron Record
+# SMS Options
 # My Millennium
 # Patron Ratings
 # Ecommerce
@@ -46,10 +47,10 @@ ICON_BUT_CLOSEWINDOW=<div class="buttonFull" id="ICON_BUT_CLOSEWINDOW">Close Win
 ICON_BUT_RET2CAT=<div class="buttonFull" id="ICON_BUT_RET2CAT">Return to Catalog</div>
 ICON_BUT_STARTOVER=<div class="buttonFull" id="ICON_BUT_STARTOVER">Start Over</div>
 FORM_FOCUS=true
-ICON_CANCEL=<div class="buttonFullBold" id="ICON_CANCEL">Cancel</div>
+ICON_CANCEL=<span data-icon="ICON_CANCEL">Cancel</span>
 ICON_OK=<div class="buttonFull" id="ICON_OK">OK</div>
 ICON_PREVPAGE=<div class="buttonFull" id="ICON_PREVPAGE">Previous Screen</div>
-# ICON_SUBMIT=<button type="submit" class="btn btn-primary" id="ICON_SUBMIT">Go</button>
+# ICON_SUBMIT=<button type="submit" class="btn btn-primary" data-icon="ICON_SUBMIT">Submit</button>
 ICON_UPDATELIST=<div class="buttonFull" id="ICON_UPDATELIST">Update List</div>
 ICON_CLEAR_ALL=<div class="button80" id="ICON_CLEAR_ALL">Clear All</div>
 ICON_CLEAR_FORM=<div class="buttonFullBold" id="ICON_CLEAR_FORM">Clear Form</div>
@@ -317,6 +318,10 @@ TABLEPARAM_PATFUNC=id="patFunc" class="table table-bordered"|id="patFunc" class=
 TIMEOUT_POPUP=600
 EXP_MSG=3000|WARNING: Your account expires in %n day(s) on %d. We use expiry dates to ensure our records are correct. Please ask staff to confirm your details on your next visit. If you don't visit the library before the expiry date you will not be able to access your account online.
 IPSSO_USEHTML=true
+
+#SMS Options
+SMS_OPTOUT_WARN=You will be opted out of SMS notification.
+SMS_PHONE_WARN=Your mobile number will be changed.
 
 # My Millennium
 ICON_BUT_PAT_PSEARCH_REMOVE=<span data-option="ICON_BUT_PAT_PSEARCH_REMOVE">Delete All Searches</span>
