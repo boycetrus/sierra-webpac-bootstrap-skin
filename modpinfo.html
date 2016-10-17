@@ -1,6 +1,8 @@
 <div class="container-fluid">
   <h1>Personal Information</h1>
 
+  <div class="editpinfo">
+
 <!--{formbegin}-->
 
   <div class="form-group address">
@@ -10,19 +12,19 @@
 ,
 <!--{addr1b}-->
     </p>
-    <span id="addrHelp" class="help-block">Please visit any Sutherland Shire Library to update your address. We require you to show identification for your new address.</span>
+    <span id="addrHelp" class="help-block hidden">Please visit any Sutherland Shire Library to update your address. We require you to show identification for your new address.</span>
   </div>
 
   <div class="form-group email">
 <!--{emailprompt}-->
 <!--{email}-->
-    <span id="emailHelp" class="help-block">An email address is required if you want to receive notifications and reminders from the library via email.</span>
+    <span id="emailHelp" class="help-block hidden">An email address is required if you want to receive notifications and reminders from the library via email.</span>
   </div>
 
   <div class="form-group phone">
 <!--{mobileprompt}-->
 <!--{mobile}-->
-    <span id="mobileHelp" class="help-block">If you want to receive SMS notifications and reminders from the Library ensure your mobile number is in this field only and you <em>Opt In</em> below.</span>
+    <span id="mobileHelp" class="help-block hidden">If you want to receive SMS notifications and reminders from the Library ensure your mobile number is in this field only and you <em>Opt In</em> below.</span>
   </div>
 
   <div class="form-group phone">
@@ -37,14 +39,14 @@
 
   <div id="noticePref" class="radio">
 <!--{notices}-->
-    <span id="noticeHelp" class="help-block">NOTE: Overdue reminders are only available via email.</span>
+    <span id="noticeHelp" class="help-block hidden">NOTE: Overdue reminders are only available via email.</span>
   </div>
 
   <div id="sms">
 <!--{ifhassms2}-->
 <!--{smsmod}-->
 <!--{xif}-->
-    <span id="smsHelp" class="help-block">If you are having problems with SMS alerts or your status is <span class="text-danger">Rejected</span> please contact Sutherland Library.</span>
+    <span id="smsHelp" class="help-block hidden">If you are having problems with SMS alerts or your status is <span class="text-danger">Rejected</span> please contact Sutherland Library.</span>
   </div>
 
   <div class="form-buttons">
@@ -53,6 +55,7 @@
   </div>
 
 <!--{formend}-->
+  </div>
 
 </div>
 

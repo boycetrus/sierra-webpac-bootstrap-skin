@@ -4671,7 +4671,10 @@ main {
   margin-top: 1em; }
 
 .modify-patron-info {
-  margin: 10px 0; }
+  margin: 22px 0; }
+
+.editpinfo .form-buttons {
+  margin-bottom: 33px; }
 
 td {
   font-family: "Source Sans Pro", Arial, sans-serif; }

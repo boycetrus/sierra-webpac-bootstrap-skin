@@ -16,4 +16,6 @@ $(function() {
   $('.form-buttons a:first-child').addClass('btn btn-primary');
   $('.form-buttons a').not().eq(1).addClass('btn btn-default');
 
+  
+
 });
