@@ -2,6 +2,7 @@ $(function() {
 
   $('textarea').addClass('form-control');
   $('select').addClass('form-control');
+  $('input[type="password"]').addClass('form-control');
 
   $('.email input').attr('type','email').addClass('form-control');
   $('.phone input').attr('type','number').addClass('form-control');
@@ -23,5 +24,10 @@ $(function() {
   $('.editpinfo input').on('blur', function() {
     $(this).closest('div').children('.help-block').addClass('hidden');
   });
+
+  //add close button to change PIN form
+  $('.formButtonArea').addClass('form-buttons');
+  $('<button type="button" id="closeBtn" class="btn btn-default">Cancel</button>').appendTo('.formButtonArea');
+  $('#closeBtn').on('click', close_it() );
 
 });
