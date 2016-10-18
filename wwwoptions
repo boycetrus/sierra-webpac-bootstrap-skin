@@ -302,7 +302,7 @@ ICON_SORTREQDATE=<span data-option="ICON_SORTREQDATE">Sort by Request</span>
 MIN_PIN_LENGTH=4
 MODIFY_PFLDS=optz
 MY_WEBPAC=false,2,0-255
-NEWPIN_MSG=Please enter a Personal Identification Number (PIN)
+NEWPIN_MSG=Enter your current PIN or password
 PATRON_FIELDS=n/a|a/a-z|o/a|t/a|z/a|F/43|
 # Note that in the PATRON_MSG web option you should replace z with the field tag used on your system for messages.
 PATRON_MSG=m|You have a message from the Library
