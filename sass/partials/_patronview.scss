@@ -11,6 +11,9 @@
   .form-buttons {
     margin-bottom: floor(($line-height-computed * 1.5));
   }
+  .btn + .btn {
+    margin-left: $padding-base-horizontal;
+  }
 }
 
 // patfunc table styles

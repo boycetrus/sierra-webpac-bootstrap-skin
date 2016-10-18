@@ -4675,6 +4675,8 @@ main {
 
 .editpinfo .form-buttons {
   margin-bottom: 33px; }
+.editpinfo .btn + .btn {
+  margin-left: 12px; }
 
 td {
   font-family: "Source Sans Pro", Arial, sans-serif; }
