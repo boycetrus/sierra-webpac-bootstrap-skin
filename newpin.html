@@ -3,14 +3,7 @@
 
   <div class="editpinfo">
 
-<!--{iferrmsg}-->
-    <div class="alert alert-danger">
-      <strong>Error</strong>:&nbsp;
-<!--{errmsg}-->
-    </div>
-<!--{xif}-->
-
-    <form target="_self" method="post">
+    <form target="_self" method="post" id="changePin">
 
       <div class="form-group">
         <label for="pin">Current PIN</label>
@@ -22,15 +15,22 @@
         <p>PINs must be at least 4 characters or more. They can be a mix of numbers and letters.</p>
 
         <div class="form-group">
-        <!--{pin1prompt}-->
-        <!--{pin1}-->
+<!--{pin1prompt}-->
+<!--{pin1}-->
         </div>
 
         <div class="form-group">
-        <!--{pin2prompt}-->
-        <!--{pin2}-->
+<!--{pin2prompt}-->
+<!--{pin2}-->
         </div>
       </fieldset>
+
+<!--{iferrmsg}-->
+      <div class="alert alert-danger">
+        <strong>Error</strong>:&nbsp;
+<!--{errmsg}-->
+      </div>
+<!--{xif}-->
 
 <!--{submit}-->
 

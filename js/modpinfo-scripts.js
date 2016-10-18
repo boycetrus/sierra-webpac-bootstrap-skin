@@ -14,8 +14,8 @@ $(function() {
   $('.smsStatus').addClass('text-danger');
   $('.smsStatus:contains("opted in")').removeClass('text-danger').addClass('text-success');
 
-  $('.form-buttons a:first-child').addClass('btn btn-primary');
-  $('.form-buttons a').not().eq(1).addClass('btn btn-default');
+  $('.form-buttons a:contains("Submit")').addClass('btn btn-primary');
+  $('.form-buttons a:contains("Cancel")').addClass('btn btn-default');
 
   //toggle show/hide help-block text on input focus
   $('.editpinfo input').on('focus', function() {
@@ -27,7 +27,7 @@ $(function() {
 
   //add close button to change PIN form
   $('.formButtonArea').addClass('form-buttons');
-  $('<button type="button" id="closeBtn" class="btn btn-default">Cancel</button>').appendTo('.formButtonArea');
+  $(' <button type="button" id="closeBtn" class="btn btn-default">Cancel</button>').appendTo('.formButtonArea');
   $('#closeBtn').on('click', function() {
     window.close();
     return false;
