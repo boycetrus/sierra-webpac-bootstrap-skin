@@ -14,9 +14,6 @@ $(function() {
   $('.smsStatus').addClass('text-danger');
   $('.smsStatus:contains("opted in")').removeClass('text-danger').addClass('text-success');
 
-  $('.form-buttons a:contains("Submit")').addClass('btn btn-primary');
-  $('.form-buttons a:contains("Cancel")').addClass('btn btn-default');
-
   //toggle show/hide help-block text on input focus
   $('.editpinfo input').on('focus', function() {
     $(this).closest('div').children('.help-block').removeClass('hidden');
@@ -32,5 +29,8 @@ $(function() {
     window.close();
     return false;
   });
+
+  $('.form-buttons a:contains("Submit")').addClass('btn btn-primary');
+  $('.form-buttons a:contains("Cancel")').addClass('btn btn-default');
 
 });

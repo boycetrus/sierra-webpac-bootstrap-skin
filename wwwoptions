@@ -285,7 +285,7 @@ ICON_BUT_PAT_RENEWALL=<span data-option="ICON_BUT_PAT_RENEWALL">Renew All</span>
 ICON_BUT_PAT_RENEWMARK=<span data-option="ICON_BUT_PAT_RENEWMARK">Renew Selected</span>
 ICON_BUT_PAT_SORTBYCHKOUT=<span data-option="ICON_BUT_PAT_SORTBYCHKOUT">Sort by Checkout</span>
 ICON_BUT_PAT_SORTBYDUE=<span data-option="ICON_BUT_PAT_SORTBYDUE">Sort by Due Date</span>
-ICON_BUT_PAT_SUBMIT=<button type="submit" class="btn btn-primary">Submit</button>
+ICON_BUT_PAT_SUBMIT=<span data-option="ICON_BUT_PAT_SUBMIT">Submit</span>
 ICON_BUT_PSTARTOVER=<span data-option="ICON_BUT_PSTARTOVER">Start Over</span>
 # BUT_RET2PREC=<span id="ret2prec-text">My Account</span>
 ICON_BUT_UPDATE_HOLDS=<span data-option="ICON_BUT_UPDATE_HOLDS">Apply Changes</span>
