@@ -16,6 +16,12 @@ $(function() {
   $('.form-buttons a:first-child').addClass('btn btn-primary');
   $('.form-buttons a').not().eq(1).addClass('btn btn-default');
 
-  
+  //toggle show/hide help-block text on input focus
+  $('.editpinfo input').on('focus', function() {
+    $(this).next('.help-block').removeClass('hidden');
+  });
+  $('.editpinfo input').on('blur', function() {
+    $(this).next('.help-block').addClass('hidden');
+  });
 
 });
