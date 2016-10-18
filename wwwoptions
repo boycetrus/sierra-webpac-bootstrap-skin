@@ -43,7 +43,7 @@ AVAILLIM=<span class="availLimMessage">Limit search to available items</span>|<s
 AVAILLIM_STATS=-,o
 BOTLOGO=@screens/botlogo.html
 ICON_BUT_CANCEL=<div class="buttonFull" id="ICON_BUT_CANCEL">Cancel</div>
-ICON_BUT_CLOSEWINDOW=<div class="buttonFull" id="ICON_BUT_CLOSEWINDOW">Close Window</div>
+ICON_BUT_CLOSEWINDOW=<span class="btn btn-primary" data-option="ICON_BUT_CLOSEWINDOW">Close</span>
 ICON_BUT_RET2CAT=<div class="buttonFull" id="ICON_BUT_RET2CAT">Return to Catalog</div>
 ICON_BUT_STARTOVER=<div class="buttonFull" id="ICON_BUT_STARTOVER">Start Over</div>
 FORM_FOCUS=true
