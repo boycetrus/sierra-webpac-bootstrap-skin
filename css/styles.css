@@ -1590,7 +1590,7 @@ label {
   display: inline-block;
   max-width: 100%;
   margin-bottom: 5px;
-  font-weight: bold; }
+  font-weight: 600; }
 
 input[type="search"] {
   -webkit-box-sizing: border-box;
