@@ -18,10 +18,10 @@ $(function() {
 
   //toggle show/hide help-block text on input focus
   $('.editpinfo input').on('focus', function() {
-    $(this).next('.help-block').removeClass('hidden');
+    $(this).parentsUntil('div').children('.help-block').removeClass('hidden');
   });
   $('.editpinfo input').on('blur', function() {
-    $(this).next('.help-block').addClass('hidden');
+    $(this).parentsUntil('div').children('.help-block').addClass('hidden');
   });
 
 });
