@@ -1,5 +1,6 @@
 .stacktable.small-only {
   display: table;
+  border-top: 4px double $gray-light;
   .st-head-row {
     border-top: 4px double $gray-light;
     border-left: 1px solid $gray-light;
@@ -7,6 +8,7 @@
   }
   td.st-key {
     border-left: 1px solid $gray-light;
+    width: 110px;  //magic number
   }
   td.st-val {
     border-right: 1px solid $gray-light;

@@ -1,9 +1,29 @@
-.modify-patron-info {
-  margin: $padding-large-vertical 0;
+.patron-actions,
+.patron-profile {
+  margin-top: 1em;
 }
 
-.modify-patron-info + .alert {
-  margin-bottom: 0;
+.modify-patron-info {
+  margin: $line-height-computed 0;
+}
+
+.editpinfo {
+  .form-buttons {
+    margin-bottom: floor(($line-height-computed * 1.5));
+  }
+}
+
+// patfunc table styles
+td {
+  font-family: $font-family-base;
+}
+
+.patfunct {
+  margin-bottom: $padding-large-vertical;
+
+  a.btn {
+    margin-bottom: $padding-large-vertical;
+  }
 }
 
 //checkout_form pages
@@ -17,21 +37,40 @@
     }
   }
 }
+//hold_form pages
+.patFuncCancel {
+  text-align: left;
+}
+//fines patfunc-fines pages
+.patfunc-fines.table {
+  width: auto;
+}
+.patFuncFinesDetailDateLabel {
+  text-transform: lowercase;
+  text-align: right;
+}
+.patFuncFinesEntryTitle,
+.patFuncFinesTotalLabel {
+  font-weight: 700;
+}
 
 .patFuncStatus em,
 .patFuncRenewCount {
   display: block;
 }
-
-// patfunc table styles
-td {
-  font-family: $font-family-base;
-}
-
-.patfunct {
-  margin-bottom: $padding-large-vertical;
-
-  a.btn {
-    margin-bottom: $padding-large-vertical;
+//preferred searches form
+.pref-search {
+  tr.patFuncEntry {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row-reverse;
+    padding-top: $padding-large-vertical;
+  }
+  tr.patFuncEntry > td:not(:last-child) {
+    padding-left: 1em;
+  }
+  tr.patFuncEntry > td.patFuncTitle {
+    flex-grow: 1;
+    font-weight: 600;
   }
 }

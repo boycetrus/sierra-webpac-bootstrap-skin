@@ -15,6 +15,7 @@
 # Saving and Exporting
 # Requesting
 # Patron Record
+# SMS Options
 # My Millennium
 # Patron Ratings
 # Ecommerce
@@ -46,10 +47,10 @@ ICON_BUT_CLOSEWINDOW=<div class="buttonFull" id="ICON_BUT_CLOSEWINDOW">Close Win
 ICON_BUT_RET2CAT=<div class="buttonFull" id="ICON_BUT_RET2CAT">Return to Catalog</div>
 ICON_BUT_STARTOVER=<div class="buttonFull" id="ICON_BUT_STARTOVER">Start Over</div>
 FORM_FOCUS=true
-ICON_CANCEL=<div class="buttonFullBold" id="ICON_CANCEL">Cancel</div>
+ICON_CANCEL=<span data-icon="ICON_CANCEL">Cancel</span>
 ICON_OK=<div class="buttonFull" id="ICON_OK">OK</div>
 ICON_PREVPAGE=<div class="buttonFull" id="ICON_PREVPAGE">Previous Screen</div>
-# ICON_SUBMIT=<button type="submit" class="btn btn-primary" id="ICON_SUBMIT">Go</button>
+# ICON_SUBMIT=<button type="submit" class="btn btn-primary" data-icon="ICON_SUBMIT">Submit</button>
 ICON_UPDATELIST=<div class="buttonFull" id="ICON_UPDATELIST">Update List</div>
 ICON_CLEAR_ALL=<div class="button80" id="ICON_CLEAR_ALL">Clear All</div>
 ICON_CLEAR_FORM=<div class="buttonFullBold" id="ICON_CLEAR_FORM">Clear Form</div>
@@ -287,7 +288,7 @@ ICON_BUT_PAT_SORTBYDUE=<span data-option="ICON_BUT_PAT_SORTBYDUE">Sort by Due Da
 ICON_BUT_PAT_SUBMIT=<button type="submit" class="btn btn-primary">Submit</button>
 ICON_BUT_PSTARTOVER=<span data-option="ICON_BUT_PSTARTOVER">Start Over</span>
 # BUT_RET2PREC=<span id="ret2prec-text">My Account</span>
-ICON_BUT_UPDATE_HOLDS=<span data-option="ICON_BUT_UPDATE_HOLDS">Update List</span>
+ICON_BUT_UPDATE_HOLDS=<span data-option="ICON_BUT_UPDATE_HOLDS">Apply Changes</span>
 CHANGE_HOLD_LOC=true
 FREEZE_HOLDS=true
 ICON_CLOSEWINDOW=<span data-option="ICON_CLOSEWINDOW">Close Window</span>
@@ -302,10 +303,10 @@ MIN_PIN_LENGTH=4
 MODIFY_PFLDS=optz
 MY_WEBPAC=false,2,0-255
 NEWPIN_MSG=Please enter a Personal Identification Number (PIN)
-PATRON_FIELDS=n/a|t/a|F/43|z/a|
+PATRON_FIELDS=n/a|a/a-z|o/a|t/a|z/a|F/43|
 # Note that in the PATRON_MSG web option you should replace z with the field tag used on your system for messages.
 PATRON_MSG=m|You have a message from the Library
-# PATRON_NOTICES=apz
+PATRON_NOTICES=aozm
 PIN_ALPHA_NUM=true
 PIN_NUM_ONLY=false
 PIN_RESET=true
@@ -318,10 +319,14 @@ TIMEOUT_POPUP=600
 EXP_MSG=3000|WARNING: Your account expires in %n day(s) on %d. We use expiry dates to ensure our records are correct. Please ask staff to confirm your details on your next visit. If you don't visit the library before the expiry date you will not be able to access your account online.
 IPSSO_USEHTML=true
 
+#SMS Options
+SMS_OPTOUT_WARN=You will be opted out of SMS notification.
+SMS_PHONE_WARN=Your mobile number will be changed.
+
 # My Millennium
 ICON_BUT_PAT_PSEARCH_REMOVE=<span data-option="ICON_BUT_PAT_PSEARCH_REMOVE">Delete All Searches</span>
 BUT_PAT_PSEARCH_UPDATE=/screens/updatelist.gif
-ICON_BUT_PAT_PSEARCH_UPDATE=<span data-option="ICON_BUT_PAT_PSEARCH_UPDATE">Update List</span>
+ICON_BUT_PAT_PSEARCH_UPDATE=<span data-option="ICON_BUT_PAT_PSEARCH_UPDATE">Apply Changes</span>
 BUT_PAT_SEARCH=/screens/pat_search.gif
 ICON_BUT_PAT_GETPSAVEDRECS=<span data-option="ICON_BUT_PAT_GETPSAVEDRECS">Preferred Searches</span>
 CIRC_HIST_LIMIT_TEXT=Limit to titles which aren't in my Reading History
@@ -358,11 +363,11 @@ CC_APPROVED=Your payment has been approved.
 CC_DECLINED=Sorry. Your payment has been declined. Please confirm your information is entered correctly or pay at the library.
 CC_EMAIL_RECEIPT=Receipt for payment to Your Library|circadm@example.org|onlinepayments@example.org
 DONATE_NOTIFY=A new donation has been received|circadm@example.org|donormgmt@example.org
-ICON_PAY=<div class="buttonFull" id="ICON_PAY">Pay Online</div>
-ICON_PAY_CLEAR_ALL=<div class="buttonFull" id="ICON_PAY_CLEAR_ALL">Clear All</div>
-ICON_PAY_SELECT_ALL=<div class="buttonFull" id="ICON_PAY_SELECT_ALL">Select All</div>
+ICON_PAY=<span class="ecommerce ecommerce-pay" data-option="ICON_PAY">Pay Online</span>
+ICON_PAY_CLEAR_ALL=<span class="ecommerce ecommerce-clear" data-option="ICON_PAY_CLEAR_ALL">Clear All</span>
+ICON_PAY_SELECT_ALL=<span class="ecommerce ecommerce-select data-option="ICON_PAY_SELECT_ALL">Select All</span>
 ICON_PRINT=<span data-option="ICON_PRINT">Print</span>
-ICON_PAY_CONTINUE=<div class="buttonFull" id="ICON_PAY_CONTINUE">Continue</div>
+ICON_PAY_CONTINUE=<span class="ecommerce ecommerce-continue" data-option="ICON_PAY_CONTINUE">Continue</span>
 MINDONATE=1000|Donations must be at least $10.00 to cover processing costs. Thank you.
 PAYAMTS=500|Please visit the library to pay this amount|00
 
@@ -496,7 +501,7 @@ MF_ICON_LOGOFFACCOUNT=Logout
 MF_ICON_MFFAVS_GROUP=Save Group
 MF_ICON_NEW_SEARCH=New Search
 MF_ICON_PATRON_REC=Return to Patron Record
-MF_ICON_PATSUBMIT=<div class="buttonFull" id="MF_ICON_PATSUBMIT">Submit</div>
+MF_ICON_PATSUBMIT=<div class="buttonFull" data-icon="MF_ICON_PATSUBMIT">Submit</div>
 MF_ICON_PREVSEARCH=Previous Search
 MF_ICON_PRINT=Print
 MF_ICON_RET2CAT=Back to Catalog

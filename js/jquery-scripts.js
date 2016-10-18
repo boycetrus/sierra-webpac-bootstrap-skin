@@ -1,6 +1,10 @@
 var $patronFirstName;
 
-$(document).ready(function() {
+function applyChangeReminder() {
+  $('a:contains("Apply Changes")').removeClass('btn-default disabled').addClass('btn-success');
+}
+
+$(function() {
 
 //define global variables
   var $loggedInMsg = $('#LOGGEDIN_MSG').text().split(', ');
@@ -49,12 +53,12 @@ $(document).ready(function() {
   $('#LOGGEDIN_MSG').nextAll('br').remove();
   $('#LOGGEDIN_MSG').remove();
   $('#expirationMsg').addClass('alert alert-danger');
-  $('#patronInfo .panel-body a').addClass('btn btn-primary');
+  $('.modify-patron-info a').addClass('btn btn-primary');
 
   //loop through the patActions and remove the empty ones
   $('#patActions > li').each( function() {
     var patActionName = $(this).text();
-    if (patActionName.length < 10) {
+    if (patActionName.length < 4) {
       this.remove();
     }
   });
@@ -63,14 +67,16 @@ $(document).ready(function() {
   $('.patfunct > span > a').unwrap();
   $('.patfunct > form > a').addClass('btn btn-default btn-xs');
   $('.patfunct > a').addClass('btn btn-default btn-xs');
+  $('.patfunct > form > a:contains("Apply Changes")').addClass('disabled');
   $('.patfunct > #checkoutbuttons0 > a').addClass('btn btn-default btn-xs');
 
 
   //move the patFunc title out of the table and make it a Heading
   var patFuncHeading = $('tr.patFuncTitle th:first').text();
-  $('<h2></h2>').appendTo('.patron-actions');
-  $('.patron-actions h2').text(patFuncHeading);
+  $('<h2></h2>').prependTo('.patfunct');
+  $('.patfunct h2').text(patFuncHeading);
   $('tr.patFuncTitle').remove();
+
 
 
 //call stacktable.js on the patfunctable and fix the problems
@@ -88,13 +94,75 @@ $(document).ready(function() {
   $('.patFuncStatus:contains("RENEWED")').closest('tr').addClass('success');
 
   // hold_form
+  $('.patFuncPickupLabel').addClass('sr-only');
   $('form[name="hold_form"] table').cardtable();
-  $('form[name="mylists_form"] table').stacktable();
-  $('form[name="PSEARCHFORM"] table').stacktable({
-    headIndex: 2
+  $('form[name="hold_form"] .stacktable.small-only:first-child').remove();
+  $('form[name="hold_form"] th.patFuncHeaders:contains("CANCEL IF NOT")').text('EXPIRY DATE');
+  $('form[name="hold_form"] .st-key:contains("CANCEL IF NOT")').text('EXPIRY DATE');
+  $('.patFuncFreezeLabel').addClass('sr-only');
+  $('form[name="hold_form"] input[type="checkbox"]').on('change', applyChangeReminder);
+  $('form[name="hold_form"] select').on('change', applyChangeReminder);
+
+  // fines_form
+  $('h2:contains("FINES")').next('table#patFunc').addClass('patfunc-fines');
+  $('.ecommerce-pay').parents('a').eq(0).addClass('btn btn-primary').insertBefore('table.patfunc-fines');
+  $('.patfunc-fines .ecommerce-pay').parents('a').addClass('btn btn-primary').insertAfter('table.patfunc-fines');
+  $('.patfunc-fines tr:first-child').remove();
+  $('.patfunc-fines tr:last-child').remove();
+  $('.patFuncFinesDetailDateLabel').removeAttr('colspan');
+  $('.patFuncFinesEntryDetail td:first-child').remove();
+  $('.patFuncFinesDetailDate td:first-child').remove();
+  $('.patFuncFinesTotalLabel').removeAttr('colspan');
+  $('td.patFuncFinesEntryTitle').attr('colspan','2');
+  $('.patFuncFinesEntryDetail td:last-child').remove();
+  $('.patFuncFinesTotal td:last-child').remove();
+
+  // reading history form
+  $('<nav class="reading-history-pagination text-center" aria-label="reading history pagination"><ul class="pagination"></ul></nav>').insertAfter('form[name="PHISTORYFORM"] table#patFunc');
+  $('form[name="PHISTORYFORM"] .browsePager > span').data('option','ICON_PAGING_CAPTION').remove();
+  $('form[name="PHISTORYFORM"] th.patFuncHeaders:contains("Mark")').text('Select');
+  $('form[name="PHISTORYFORM"] td.browsePager').eq(0).children().appendTo('form[name="PHISTORYFORM"] ul.pagination');
+  $('form[name="PHISTORYFORM"] ul.pagination').children().each(function(){
+    if ($(this).is('strong')) {
+      var pgNum = $(this).text();
+      $(this).replaceWith("<span>" + pgNum + "</span>");
+      $('ul.pagination > span').wrap('<li class="active"></li>');
+    } else if ($(this).is('a')) {
+      $(this).wrap('<li></li>');
+    }
   });
-  $('form[name="PHISTORYFORM"] table').stacktable({
-    headIndex: 2
-  });
+  $('nav.reading-history-pagination').clone().insertBefore('form[name="PHISTORYFORM"] table#patFunc');
+  $('form[name="PHISTORYFORM"] tr.browsePager').remove();
+  $('form[name="PHISTORYFORM"] table').cardtable();
+  $('form[name="PHISTORYFORM"] table.stacktable.small-only:first-child').remove();
+
+  // My Lists form
+  $('form[name="mylists_form"] th.patFuncHeaders:contains("Mark")').text('Select');
+  $('form[name="mylists_form"] table').cardtable();
+  $('form[name="mylists_form"] table.stacktable.small-only:first-child').remove();
+  $('form[name="renameList"] .formEntryArea').addClass('form-group');
+  $('form[name="renameList"] input').addClass('form-control');
+  $('form[name="renameList"] textarea').addClass('form-control');
+  $('form[name="renameList"] .formButtonArea a:first-child').addClass('btn btn-primary btn-xs');
+  $('form[name="renameList"] .formButtonArea a:nth-child(2)').addClass('btn btn-default btn-xs');
+  $('form[name="newlistForm"] select').addClass('form-control');
+  $('form[name="newlistForm"] select').parent().addClass('form-group');
+  $('form[name="newlistForm"] #newlist .formEntryArea').addClass('form-group');
+  $('form[name="newlistForm"] input').addClass('form-control');
+  $('form[name="newlistForm"] textarea').addClass('form-control');
+  $('form[name="newlistForm"] .formButtonArea a:first-child').addClass('btn btn-primary btn-xs');
+  $('form[name="newlistForm"] .formButtonArea a:nth-child(2)').addClass('btn btn-default btn-xs');
+
+
+  // Preferred Searches Form
+  $('form[name="PSEARCHFORM"] td.patFuncMark > input').wrap('<div class="checkbox"><label></label></div>');
+  $('form[name="PSEARCHFORM"] td.patFuncPSrchType strong').wrapInner('<h3></h3>');
+  $('form[name="PSEARCHFORM"] #patFunc').removeClass('table table-bordered').addClass('pref-search');
+  $('form[name="PSEARCHFORM"] #patFunc tr.patFuncHeaders').remove();
+  $('form[name="PSEARCHFORM"] #patFunc td').removeAttr('width');
+  $('form[name="PSEARCHFORM"] .patFuncEntry .patFuncMark:first-child label').append("Remove");
+  $('form[name="PSEARCHFORM"] .patFuncEntry .patFuncMark:nth-child(2) label').append("Email");
+  $('form[name="PSEARCHFORM"] .patFuncPSrchBtn a').addClass('btn btn-primary btn-xs');
+  $('form[name="PSEARCHFORM"] input[type="checkbox"]').on('change', applyChangeReminder);
 
 });

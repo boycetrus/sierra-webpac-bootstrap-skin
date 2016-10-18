@@ -4,13 +4,114 @@
 <!--{expmsg}-->
 </div>
 
-<div id="patronInfo" class="patron-info panel panel-default">
-  <div class="panel-heading"  data-toggle="collapse" href="#patronInfoContent" aria-expanded="true" aria-controls="patronInfoContent">
-    <h2 class="panel-title">Personal Information</h2>
-  </div>
-  <div id="patronInfoContent" class="panel-body collapse in">
-  <!--{patron}-->
+<div id="patronChooser">
 
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#patronAccount" aria-controls="patronAccount" role="tab" data-toggle="tab">My Account</a></li>
+    <li role="presentation"><a href="#patronProfile" aria-controls="patronProfile" role="tab" data-toggle="tab">My Profile</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="patronAccount">
+
+      <div class="patron-actions">
+        <div class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Select an Option <span class="caret"></span>
+          </button>
+          <ul id="patActions" class="patActions dropdown-menu">
+            <li>
+<!--{ifchkouts}-->
+<!--{chkoutsbtn}-->
+<!--{xif}-->
+</li>
+<li>
+<!--{ifholds}-->
+<!--{holdsbtn}-->
+<!--{xif}-->
+</li>
+<li>
+<!--{ifill}-->
+<!--{illbtn}-->
+<!--{xif}-->
+</li>
+<li>
+<!--{iffines}-->
+<!--{finesbtn}-->
+<!--{xif}-->
+</li>
+<li>
+<!--{ifcirchist}-->
+<!--{circhistbtn}-->
+<!--{xif}-->
+</li>
+<li>
+<!--{ifmylists}-->
+<!--{mylists}-->
+<!--{xif}-->
+</li>
+<li>
+<!--{ifpsearch}-->
+<!--{psearchbtn}-->
+<!--{xif}-->
+</li>
+
+      <!-- *** patron functions below have not been tested -->
+<li>
+<!--{ifprograms}-->
+<!--{programsbtn}-->
+<!--{xif}-->
+</li>
+<li>
+<!--{ifbookings}-->
+<!--{bookingsbtn}-->
+<!--{xif}-->
+</li>
+<li>
+<!--{ifmsgs}-->
+<!--{msgsbtn}-->
+<!--{xif}-->
+</li>
+<li>
+<!--{ifmffav}-->
+<!--{mffavbtn}-->
+<!--{xif}-->
+</li>
+<li>
+<!--{ifpatrate}-->
+<!--{patratebtn}-->
+<!--{xif}-->
+</li>
+<li>
+<!--{ifpatreview}-->
+<!--{patreviewbtn}-->
+<!--{xif}-->
+</li>
+<li>
+<!--{ifprogreg}-->
+<!--{progregcal}-->
+<!--{xif}-->
+</li>
+<li>
+<!--{patfeeds}-->
+</li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="patfunct">
+<!-- start patfunc token -->
+<!--{patfunc}-->
+<!-- end patfunc token -->
+      </div>
+    </div>
+    <!-- my account -->
+
+    <div role="tabpanel" class="tab-pane" id="patronProfile">
+      <div class="patron-profile">
 <!--{ifpatimage}-->
 <!--{patimage}-->
 <!--{xif}-->
@@ -20,8 +121,9 @@
 <!--{ifmsgs}-->
 <!--{msgsbtn}-->
 <!--{xif}-->
+      </div>
 
-    <div class="modify-patron-info">
+      <div class="modify-patron-info">
 <!--{ifmodifypatinfo}-->
 <!--{modifypatinfobtn}-->
 <!--{xif}-->
@@ -29,103 +131,13 @@
 <!--{ifmodifypin}-->
 <!--{modifypinbtn}-->
 <!--{xif}-->
+      </div>
     </div>
-
+    <!-- /my profile -->
   </div>
-</div><!-- /panel-->
 
-<!-- Single button -->
-<div class="patron-actions">
-  <div class="btn-group">
-    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      My Account <span class="caret"></span>
-    </button>
-    <ul id="patActions" class="patActions dropdown-menu">
-      <li>
-<!--{ifchkouts}-->
-<!--{chkoutsbtn}-->
-<!--{xif}-->
-      </li>
-      <li>
-<!--{ifholds}-->
-<!--{holdsbtn}-->
-<!--{xif}-->
-      </li>
-      <li>
-<!--{ifill}-->
-<!--{illbtn}-->
-<!--{xif}-->
-      </li>
-      <li>
-<!--{iffines}-->
-<!--{finesbtn}-->
-<!--{xif}-->
-      </li>
-      <li>
-<!--{ifcirchist}-->
-<!--{circhistbtn}-->
-<!--{xif}-->
-      </li>
-      <li>
-<!--{ifmylists}-->
-<!--{mylists}-->
-<!--{xif}-->
-      </li>
-      <li>
-<!--{ifpsearch}-->
-<!--{psearchbtn}-->
-<!--{xif}-->
-      </li>
-
-<!-- patron functions below have not been tested -->
-      <li>
-<!--{ifprograms}-->
-<!--{programsbtn}-->
-<!--{xif}-->
-      </li>
-      <li>
-<!--{ifbookings}-->
-<!--{bookingsbtn}-->
-<!--{xif}-->
-      </li>
-      <li>
-<!--{ifmsgs}-->
-<!--{msgsbtn}-->
-<!--{xif}-->
-      </li>
-      <li>
-<!--{ifmffav}-->
-<!--{mffavbtn}-->
-<!--{xif}-->
-      </li>
-      <li>
-<!--{ifpatrate}-->
-<!--{patratebtn}-->
-<!--{xif}-->
-      </li>
-      <li>
-<!--{ifpatreview}-->
-<!--{patreviewbtn}-->
-<!--{xif}-->
-      </li>
-      <li>
-<!--{ifprogreg}-->
-<!--{progregcal}-->
-<!--{xif}-->
-      </li>
-      <li>
-<!--{patfeeds}-->
-      </li>
-    </ul>
-  </div>
 </div>
-
-
-<div class="patfunct">
-<!-- start patfunc token -->
-<!--{patfunc}-->
-<!-- end patfunc token -->
-</div>
+<!-- / patronChooser -->
 
 
 

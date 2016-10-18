@@ -50,7 +50,7 @@ abbr[title] {
 
 b,
 strong {
-  font-weight: bold; }
+  font-weight: 600; }
 
 dfn {
   font-style: italic; }
@@ -1590,7 +1590,7 @@ label {
   display: inline-block;
   max-width: 100%;
   margin-bottom: 5px;
-  font-weight: bold; }
+  font-weight: 600; }
 
 input[type="search"] {
   -webkit-box-sizing: border-box;
@@ -4666,11 +4666,23 @@ main {
     .webpac-form {
       text-align: right; } }
 
-.modify-patron-info {
-  margin: 10px 0; }
+.patron-actions,
+.patron-profile {
+  margin-top: 1em; }
 
-.modify-patron-info + .alert {
-  margin-bottom: 0; }
+.modify-patron-info {
+  margin: 22px 0; }
+
+.editpinfo .form-buttons {
+  margin-bottom: 33px; }
+
+td {
+  font-family: "Source Sans Pro", Arial, sans-serif; }
+
+.patfunct {
+  margin-bottom: 10px; }
+  .patfunct a.btn {
+    margin-bottom: 10px; }
 
 .confirmationprompt {
   font-size: 1em; }
@@ -4681,17 +4693,34 @@ main {
         display: inline;
         white-space: nowrap; } }
 
+.patFuncCancel {
+  text-align: left; }
+
+.patfunc-fines.table {
+  width: auto; }
+
+.patFuncFinesDetailDateLabel {
+  text-transform: lowercase;
+  text-align: right; }
+
+.patFuncFinesEntryTitle,
+.patFuncFinesTotalLabel {
+  font-weight: 700; }
+
 .patFuncStatus em,
 .patFuncRenewCount {
   display: block; }
 
-td {
-  font-family: "Source Sans Pro", Arial, sans-serif; }
-
-.patfunct {
-  margin-bottom: 10px; }
-  .patfunct a.btn {
-    margin-bottom: 10px; }
+.pref-search tr.patFuncEntry {
+  display: flex;
+  align-items: baseline;
+  flex-direction: row-reverse;
+  padding-top: 10px; }
+.pref-search tr.patFuncEntry > td:not(:last-child) {
+  padding-left: 1em; }
+.pref-search tr.patFuncEntry > td.patFuncTitle {
+  flex-grow: 1;
+  font-weight: 600; }
 
 .social {
   background-color: #E9F2F7;
@@ -4799,13 +4828,15 @@ footer {
       padding: 6px 14px; }
 
 .stacktable.small-only {
-  display: table; }
+  display: table;
+  border-top: 4px double #777777; }
   .stacktable.small-only .st-head-row {
     border-top: 4px double #777777;
     border-left: 1px solid #777777;
     border-right: 1px solid #777777; }
   .stacktable.small-only td.st-key {
-    border-left: 1px solid #777777; }
+    border-left: 1px solid #777777;
+    width: 110px; }
   .stacktable.small-only td.st-val {
     border-right: 1px solid #777777; }
 
