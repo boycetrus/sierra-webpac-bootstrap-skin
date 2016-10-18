@@ -28,6 +28,9 @@ $(function() {
   //add close button to change PIN form
   $('.formButtonArea').addClass('form-buttons');
   $('<button type="button" id="closeBtn" class="btn btn-default">Cancel</button>').appendTo('.formButtonArea');
-  $('#closeBtn').on('click', close_it() );
+  $('#closeBtn').on('click', function() {
+    window.close();
+    return false;
+  });
 
 });
