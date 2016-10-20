@@ -368,7 +368,7 @@ CC_EMAIL_RECEIPT=Receipt for your payment to Sutherland Shire Libraries|library-
 # DONATE_NOTIFY=A new donation has been received|library-no-reply@ssc.nsw.gov.au|mboyce@ssc.nsw.gov.au
 ECOM_LINK_FINES_DESCRIPTION=Library Fees
 ECOM_LINK_SEND_PERSONAL=z
-ICON_PAY=<span data-icon="ICON_PAY">Pay Online</span>
+ICON_PAY=<span class="ecommerce-pay" data-icon="ICON_PAY">Pay Online</span>
 ICON_PAY_CLEAR_ALL=<span data-icon="ICON_PAY_CLEAR_ALL">Clear All</span>
 ICON_PAY_SELECT_ALL=<span data-icon="ICON_PAY_SELECT_ALL">Select All</span>
 ICON_PRINT=<button class="btn btn-default">Print</button>
