@@ -361,17 +361,22 @@ ICON_PATREVIEW_ADD=<span data-option="ICON_PATREVIEW_ADD">Add a Review</span>
 PATREVIEW_ABUSE_NOTIFY=Review abuse reported|Example Library|web@example.org
 
 # Ecommerce
-CC_APPROVED=Your payment has been approved.
-CC_DECLINED=Sorry. Your payment has been declined. Please confirm your information is entered correctly or pay at the library.
-CC_EMAIL_RECEIPT=Receipt for payment to Your Library|circadm@example.org|onlinepayments@example.org
-DONATE_NOTIFY=A new donation has been received|circadm@example.org|donormgmt@example.org
-ICON_PAY=<span class="ecommerce ecommerce-pay" data-option="ICON_PAY">Pay Online</span>
-ICON_PAY_CLEAR_ALL=<span class="ecommerce ecommerce-clear" data-option="ICON_PAY_CLEAR_ALL">Clear All</span>
-ICON_PAY_SELECT_ALL=<span class="ecommerce ecommerce-select data-option="ICON_PAY_SELECT_ALL">Select All</span>
-ICON_PRINT=<span data-option="ICON_PRINT">Print</span>
-ICON_PAY_CONTINUE=<span class="ecommerce ecommerce-continue" data-option="ICON_PAY_CONTINUE">Continue</span>
-MINDONATE=1000|Donations must be at least $10.00 to cover processing costs. Thank you.
-PAYAMTS=500|Please visit the library to pay this amount|00
+CC_APPROVED=Success! Your payment has been approved. Save or Print this page as a receipt of your payment.
+CC_DECLINED=Your payment could not be completed. Please confirm your information is entered correctly or pay at the library.
+CC_EMAIL_RECEIPT=Receipt for your payment to Sutherland Shire Libraries|library-no-reply@ssc.ns.gov.au|library@ssc.nsw.gov.au
+# DONATE_NOTIFY=A new donation has been received|library-no-reply@ssc.nsw.gov.au|mboyce@ssc.nsw.gov.au
+ECOM_LINK_FINES_DESCRIPTION=Library Fees
+ECOM_LINK_SEND_PERSONAL=z
+ICON_PAY=<span class="teal-button">Pay Online</span>
+ICON_PAY_CLEAR_ALL=<span class="grey-button">Clear All</span>
+ICON_PAY_SELECT_ALL=<span class="grey-button">Select All</span>
+ICON_PRINT=<button class="btn btn-default">Print</button>
+ICON_PAY_CONTINUE=<span class="teal-button">Continue</span>
+MINDONATE=10000|Donations must be at least $10.00 to cover processing costs. Thank you.
+PAYAMTS=250|Online payments are only accepted for amounts over $2.50.|0
+ECOM_LINK_FINES_DONE=Success! Thank you for your payment. Click on OK to close this window and return to your account, then Refresh the page (F5) to see your updated balance.
+ECOM_LINK_DONATE_DONE=Success! Your payment has been approved. Thank you for your donation.
+
 
 # Bookings
 BOOKINGS=no|true|true|false
