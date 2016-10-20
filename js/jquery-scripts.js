@@ -107,8 +107,8 @@ $(function() {
   $('h2:contains("FINES")').next('table#patFunc').addClass('patfunc-fines');
   $('.ecommerce-pay').parents('a').eq(0).addClass('btn btn-primary').insertBefore('table.patfunc-fines');
   $('.patfunc-fines .ecommerce-pay').parents('a').addClass('btn btn-primary').insertAfter('table.patfunc-fines');
-  $('.patfunc-fines tr:first-child').remove();
-  $('.patfunc-fines tr:last-child').remove();
+  //$('.patfunc-fines tr:first-child').remove();
+  //$('.patfunc-fines tr:last-child').remove();
   $('.patFuncFinesDetailDateLabel').removeAttr('colspan');
   $('.patFuncFinesEntryDetail td:first-child').remove();
   $('.patFuncFinesDetailDate td:first-child').remove();

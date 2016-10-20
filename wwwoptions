@@ -361,6 +361,7 @@ ICON_PATREVIEW_ADD=<span data-option="ICON_PATREVIEW_ADD">Add a Review</span>
 PATREVIEW_ABUSE_NOTIFY=Review abuse reported|Example Library|web@example.org
 
 # Ecommerce
+# These options are set for Linked Ecommerce
 CC_APPROVED=Success! Your payment has been approved. Save or Print this page as a receipt of your payment.
 CC_DECLINED=Your payment could not be completed. Please confirm your information is entered correctly or pay at the library.
 CC_EMAIL_RECEIPT=Receipt for your payment to Sutherland Shire Libraries|library-no-reply@ssc.ns.gov.au|library@ssc.nsw.gov.au
