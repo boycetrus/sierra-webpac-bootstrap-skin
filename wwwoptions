@@ -367,11 +367,11 @@ CC_EMAIL_RECEIPT=Receipt for your payment to Sutherland Shire Libraries|library-
 # DONATE_NOTIFY=A new donation has been received|library-no-reply@ssc.nsw.gov.au|mboyce@ssc.nsw.gov.au
 ECOM_LINK_FINES_DESCRIPTION=Library Fees
 ECOM_LINK_SEND_PERSONAL=z
-ICON_PAY=<span class="teal-button">Pay Online</span>
-ICON_PAY_CLEAR_ALL=<span class="grey-button">Clear All</span>
-ICON_PAY_SELECT_ALL=<span class="grey-button">Select All</span>
+ICON_PAY=<span data-icon="ICON_PAY">Pay Online</span>
+ICON_PAY_CLEAR_ALL=<span data-icon="ICON_PAY_CLEAR_ALL">Clear All</span>
+ICON_PAY_SELECT_ALL=<span data-icon="ICON_PAY_SELECT_ALL">Select All</span>
 ICON_PRINT=<button class="btn btn-default">Print</button>
-ICON_PAY_CONTINUE=<span class="teal-button">Continue</span>
+ICON_PAY_CONTINUE=<span data-icon="ICON_PAY_CONTINUE">Next</span>
 MINDONATE=10000|Donations must be at least $10.00 to cover processing costs. Thank you.
 PAYAMTS=250|Online payments are only accepted for amounts over $2.50.|0
 ECOM_LINK_FINES_DONE=Success! Thank you for your payment. Click on OK to close this window and return to your account, then Refresh the page (F5) to see your updated balance.

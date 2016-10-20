@@ -1,71 +1,66 @@
-<div class="pageContentInner popupContentInner">
-<!--Beginning main page content-->
-<h1 class="popupFormHeading">Pay Online</h1>
+<div class="container-fluid">
 
-<p>Membership privileges are withdrawn when your outstanding balance exceeds:</p>
-<ol>
-<li>$10.00 (adult members)</li>
-<li>$2.50 (junior members)</li>
-</ol>
+  <h1 class="popupFormHeading">Pay Online</h1>
 
-<p>Payments are accepted via Visa or Mastercard.<br />
-Minimum payment amount is $2.50.</p>
+  <p>Membership privileges are withdrawn when your outstanding balance exceeds:</p>
+  <ol>
+    <li>$10.00 (adult members)</li>
+    <li>$2.50 (junior members)</li>
+  </ol>
 
-<p><strong>Please contact the Library on 9710 0351 if you have any concerns or questions about online payments.</strong></p>
+  <p>Payments are accepted via Visa or Mastercard.<br />
+  Minimum payment amount is $2.50.</p>
 
-<div id="accessibleForm" class = "popupForm form1Part">
-<!--{formbegin}-->
-<div class="errormessage">
+  <p><strong>Please contact the Library on 9710 0351 if you have any concerns or questions about online payments.</strong></p>
+
+  <div class="alert alert-danger">
+    Error:
 <!--{error_msg}-->
-</div>
+  </div>
 
-<div class="msg">
-<!--{declined_msg}-->
-</div>
+  <div id="payform" class="payform well">
+  <!--{formbegin}-->
 
-<!-- Main Page containing "left" and "right" boxes to standardize presentation of Fines and Payment info. -->
-<div class="ecommerceFormOptions">
-<h2>Select the fees you wish to pay</h2>
-<fieldset>
+  <h2>Select the fees you wish to pay</h2>
 
-<div class="payForm formButtonArea">
-<!--{clearall}-->
-<!--{selectall}-->
-</div>
+  <div class="formButtonArea form-buttons">
+  <!--{clearall}-->
+  <!--{selectall}-->
+  </div>
 
-<div class="payFormFines formEntryArea">
-<!--{finestable}-->
-</div>
+  <div class="payFormFines formEntryArea">
+  <!--{finestable}-->
+  </div>
 
-<div class="payFormTotals formEntryArea">
-<div>
-Total of selected fees &amp; fines: 
-  <!-- totalfinesprompt}-->
-<!--{amount}-->
-</div>
+  <div class="payFormTotals formEntryArea">
+  <div>
+  Total of selected fees &amp; fines:
+    <!-- totalfinesprompt}-->
+  <!--{amount}-->
+  </div>
 
-  <!-- servicechargeprompt} -->
-  <!-- servicecharge}-->
+    <!-- servicechargeprompt} -->
+    <!-- servicecharge}-->
 
-<div class="totalfees">
-Amount you are about to pay:
-<!--{total}-->
-</div>
-</div>
-</fieldset>
-</div>
+  <div class="totalfees">
+  Amount you are about to pay:
+  <!--{total}-->
+  </div>
+  </div>
+  </fieldset>
+  </div>
 
-<div class="alert alert-block alert-error">
-  <p><strong>IMPORTANT!</strong> Click continue and enter your credit card details to pay. Payment processing can take several minutes. After submitting your payment do not close this window or navigate away from this page until you receive confirmation of the transaction. Should you encounter any errors or problems telephone the library on 9710 0351.</p>
-</div>
+  <div class="alert alert-block alert-error">
+    <p><strong>IMPORTANT!</strong> Click continue and enter your credit card details to pay. Payment processing can take several minutes. After submitting your payment do not close this window or navigate away from this page until you receive confirmation of the transaction. Should you encounter any errors or problems telephone the library on 9710 0351.</p>
+  </div>
 
-<div class="payForm formButtonArea">
-<!--{continue}-->
-<!--{cancel}-->
-</div>
+  <div class="payForm formButtonArea">
+  <!--{continue}-->
+  <!--{cancel}-->
+  </div>
 
 
-<!--{formend}-->
-</div><!-- accessibleForm -->
-<div class="clear"></div>
-</div><!-- popupContentInner -->
+  <!--{formend}-->
+  </div><!-- accessibleForm -->
+
+</div><!-- container -->
