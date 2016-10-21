@@ -372,7 +372,7 @@ ICON_PAY=<span class="ecommerce-pay" data-icon="ICON_PAY">Pay Online</span>
 ICON_PAY_CLEAR_ALL=<span data-icon="ICON_PAY_CLEAR_ALL">Clear All</span>
 ICON_PAY_SELECT_ALL=<span data-icon="ICON_PAY_SELECT_ALL">Select All</span>
 ICON_PRINT=<button class="btn btn-default">Print</button>
-ICON_PAY_CONTINUE=<span data-icon="ICON_PAY_CONTINUE">Next</span>
+ICON_PAY_CONTINUE=<span data-icon="ICON_PAY_CONTINUE">Continue</span>
 MINDONATE=10000|Donations must be at least $10.00 to cover processing costs. Thank you.
 PAYAMTS=250|Online payments are only accepted for amounts over $2.50.|0
 ECOM_LINK_FINES_DONE=Success! Thank you for your payment. Click on OK to close this window and return to your account, then Refresh the page (F5) to see your updated balance.

@@ -1,6 +1,6 @@
 <div class="container-fluid">
 
-  <h1 class="popupFormHeading">Pay Online</h1>
+  <h1>Pay Online</h1>
 
   <p>Membership privileges are withdrawn when your outstanding balance exceeds:</p>
   <ol>
@@ -11,56 +11,48 @@
   <p>Payments are accepted via Visa or Mastercard.<br />
   Minimum payment amount is $2.50.</p>
 
-  <p><strong>Please contact the Library on 9710 0351 if you have any concerns or questions about online payments.</strong></p>
-
   <div class="alert alert-danger">
-    Error:
+    <strong>Error</strong>:
 <!--{error_msg}-->
   </div>
 
-  <div id="payform" class="payform well">
-  <!--{formbegin}-->
+  <div id="payForm" class="payform well">
+<!--{formbegin}-->
 
-  <h2>Select the fees you wish to pay</h2>
+    <h2 class="h4">Select the fees you wish to pay</h2>
 
-  <div class="formButtonArea form-buttons">
-  <!--{clearall}-->
-  <!--{selectall}-->
-  </div>
+    <p class="form-buttons">
+<!--{selectall}-->
+<!--{clearall}-->
+    </p>
 
-  <div class="payFormFines formEntryArea">
-  <!--{finestable}-->
-  </div>
+    <div class="payFormFines">
+<!--{finestable}-->
 
-  <div class="payFormTotals formEntryArea">
-  <div>
-  Total of selected fees &amp; fines:
-    <!-- totalfinesprompt}-->
-  <!--{amount}-->
-  </div>
+      <!-- we don't currently charge service fees but if we do we need to add the servicecharge tokens -->
+      <!-- {servicechargeprompt} -->
+      <!-- {servicecharge}-->
+    </div>
 
-    <!-- servicechargeprompt} -->
-    <!-- servicecharge}-->
+    <div class="payFormTotals">
+      <!-- if we enable servi charge we may also want to test the amount token - not exactly sure how it differs from the total token below -->
+      <!-- {totalfinesprompt}-->
+      <!--{amount}-->
 
-  <div class="totalfees">
-  Amount you are about to pay:
-  <!--{total}-->
-  </div>
-  </div>
-  </fieldset>
-  </div>
+      <p class="lead">You are about to pay:
+<!--{total}-->
+      </p>
+    </div>
 
-  <div class="alert alert-block alert-error">
-    <p><strong>IMPORTANT!</strong> Click continue and enter your credit card details to pay. Payment processing can take several minutes. After submitting your payment do not close this window or navigate away from this page until you receive confirmation of the transaction. Should you encounter any errors or problems telephone the library on 9710 0351.</p>
-  </div>
+    <div class="form-buttons">
+<!--{continue}-->
+      <button type="button" id="closeBtn" class="btn btn-default">Cancel</button>
+    </div>
 
-  <div class="payForm formButtonArea">
-  <!--{continue}-->
-  <!--{cancel}-->
-  </div>
-
-
-  <!--{formend}-->
-  </div><!-- accessibleForm -->
+<!--{formend}-->
+</div><!-- payform -->
 
 </div><!-- container -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="/screens/patron-update-min.js"></script>
