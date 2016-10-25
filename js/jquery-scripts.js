@@ -59,7 +59,7 @@ $(function() {
   $('#patActions > li').each( function() {
     var patActionName = $(this).text();
     if (patActionName.length < 4) {
-      this.remove();
+      $(this).remove();
     }
   });
 
