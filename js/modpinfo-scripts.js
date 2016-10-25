@@ -2,7 +2,9 @@ $(function() {
 
   $('textarea').addClass('form-control');
   $('select').addClass('form-control');
+  $('input[type="password"]').addClass('form-control');
 
+  // edit profile form
   $('.email input').attr('type','email').addClass('form-control');
   $('.phone input').attr('type','number').addClass('form-control');
   $('#noticePref input').next('br').remove();
@@ -13,9 +15,6 @@ $(function() {
   $('.smsStatus').addClass('text-danger');
   $('.smsStatus:contains("opted in")').removeClass('text-danger').addClass('text-success');
 
-  $('.form-buttons a:first-child').addClass('btn btn-primary');
-  $('.form-buttons a').not().eq(1).addClass('btn btn-default');
-
   //toggle show/hide help-block text on input focus
   $('.editpinfo input').on('focus', function() {
     $(this).closest('div').children('.help-block').removeClass('hidden');
@@ -23,5 +22,20 @@ $(function() {
   $('.editpinfo input').on('blur', function() {
     $(this).closest('div').children('.help-block').addClass('hidden');
   });
+
+  //add close button to change PIN form
+  $('.formButtonArea').addClass('form-buttons');
+  $('<button type="button" id="closeBtn" class="btn btn-default">Cancel</button>').appendTo('.formButtonArea');
+  $('#closeBtn').on('click', function() {
+    window.close();
+    return false;
+  });
+
+  // pay online form
+  $('#payForm .select-buttons a').addClass('btn btn-default btn-xs');
+
+  $('.form-buttons a:contains("Submit")').addClass('btn btn-primary');
+  $('.form-buttons a:contains("Continue")').addClass('btn btn-primary');
+  $('.form-buttons a:contains("Cancel")').addClass('btn btn-default');
 
 });

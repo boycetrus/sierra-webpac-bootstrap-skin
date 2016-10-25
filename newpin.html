@@ -1,56 +1,46 @@
-<div class="minHeight">
-<div class="fullPage">
-<div class="pageContent">
-<div class="pageContentInner popupContentInner">
-<!--Beginning main page content-->
-<h1 class="popupFormHeading">Create a Patron Identification Number (PIN)</h1>
+<div class="container-fluid">
+  <h1>Update Your PIN/Password</h1>
+
+  <div class="editpinfo well">
+
+    <form target="_self" method="post" id="changePin">
+
+      <div class="form-group">
+        <label for="pin">Current PIN</label>
+<!--{pin}-->
+      </div>
+
+      <fieldset>
+        <legend>Choose a new PIN/Password</legend>
+        <p>PINs must be at least 4 characters or more. They can be a mix of numbers and letters.</p>
+
+        <div class="form-group">
+<!--{pin1prompt}-->
+<!--{pin1}-->
+        </div>
+
+        <div class="form-group">
+<!--{pin2prompt}-->
+<!--{pin2}-->
+        </div>
+      </fieldset>
 
 <!--{iferrmsg}-->
-<div class="errormessage">
+      <div class="alert alert-danger">
+        <strong>Error</strong>:&nbsp;
 <!--{errmsg}-->
-</div>
+      </div>
 <!--{xif}-->
 
-<form target="_self" method="post" id="accessibleForm" class="form1Part">
-
-<!--Optionally you can display pininstructions here, though it normally doesn't make sense on the newpin form. -->
-<fieldset>
-<!--
-<legend> -->
-  <!--{pininstructions}-->
-<!--</legend> -->
-<div class="formEntryArea">
-<span class="formLabel">
-<!--{pinprompt}-->
-</span>
-<!--{pin}-->
-</div>
-<div class="formEntryArea formFieldsetInner">
-<fieldset>
-<legend>
-<!--{newpinmsg}-->
-</legend>
-<div class="formEntryArea">
-<span class="formLabel">
-<!--{pin1prompt}-->
-</span>
-<!--{pin1}-->
-</div>
-<div class="formEntryArea">
-<span class="formLabel">
-<!--{pin2prompt}-->
-</span>
-<!--{pin2}-->
-</div>
-</fieldset>
-</div><!--formFieldsetInner -->
-<div class="formButtonArea">
 <!--{submit}-->
-</div>
-</fieldset><!--Close the pininstructions fieldset -->
-</form>
 
-</div><!--popupContentInner -->
-</div><!--pageContent -->
-</div><!--fullPage -->
-</div><!--minHeight -->
+    </form>
+
+  </div>
+  <!-- /editpinfo -->
+
+</div>
+<!-- /container -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="/screens/patron-update-min.js"></script>

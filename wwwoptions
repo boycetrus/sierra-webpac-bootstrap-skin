@@ -43,7 +43,7 @@ AVAILLIM=<span class="availLimMessage">Limit search to available items</span>|<s
 AVAILLIM_STATS=-,o
 BOTLOGO=@screens/botlogo.html
 ICON_BUT_CANCEL=<div class="buttonFull" id="ICON_BUT_CANCEL">Cancel</div>
-ICON_BUT_CLOSEWINDOW=<div class="buttonFull" id="ICON_BUT_CLOSEWINDOW">Close Window</div>
+ICON_BUT_CLOSEWINDOW=<span class="btn btn-primary" data-option="ICON_BUT_CLOSEWINDOW">Close</span>
 ICON_BUT_RET2CAT=<div class="buttonFull" id="ICON_BUT_RET2CAT">Return to Catalog</div>
 ICON_BUT_STARTOVER=<div class="buttonFull" id="ICON_BUT_STARTOVER">Start Over</div>
 FORM_FOCUS=true
@@ -285,7 +285,7 @@ ICON_BUT_PAT_RENEWALL=<span data-option="ICON_BUT_PAT_RENEWALL">Renew All</span>
 ICON_BUT_PAT_RENEWMARK=<span data-option="ICON_BUT_PAT_RENEWMARK">Renew Selected</span>
 ICON_BUT_PAT_SORTBYCHKOUT=<span data-option="ICON_BUT_PAT_SORTBYCHKOUT">Sort by Checkout</span>
 ICON_BUT_PAT_SORTBYDUE=<span data-option="ICON_BUT_PAT_SORTBYDUE">Sort by Due Date</span>
-ICON_BUT_PAT_SUBMIT=<button type="submit" class="btn btn-primary">Submit</button>
+ICON_BUT_PAT_SUBMIT=<span data-option="ICON_BUT_PAT_SUBMIT">Submit</span>
 ICON_BUT_PSTARTOVER=<span data-option="ICON_BUT_PSTARTOVER">Start Over</span>
 # BUT_RET2PREC=<span id="ret2prec-text">My Account</span>
 ICON_BUT_UPDATE_HOLDS=<span data-option="ICON_BUT_UPDATE_HOLDS">Apply Changes</span>
@@ -302,12 +302,14 @@ ICON_SORTREQDATE=<span data-option="ICON_SORTREQDATE">Sort by Request</span>
 MIN_PIN_LENGTH=4
 MODIFY_PFLDS=optz
 MY_WEBPAC=false,2,0-255
-NEWPIN_MSG=Please enter a Personal Identification Number (PIN)
+NEWPIN_MSG=Enter your current PIN or password
+NEWPIN1_PROMPT=Enter a New PIN
+NEWPIN2_PROMPT=Retype your new PIN
 PATRON_FIELDS=n/a|a/a-z|o/a|t/a|z/a|F/43|
 # Note that in the PATRON_MSG web option you should replace z with the field tag used on your system for messages.
 PATRON_MSG=m|You have a message from the Library
 PATRON_NOTICES=aozm
-PIN_ALPHA_NUM=true
+PIN_ALPHA_NUM=false
 PIN_NUM_ONLY=false
 PIN_RESET=true
 PIN_RESET_EMAIL=Request to reset your library PIN|library@ssc.nsw.gov.au|library@ssc.nsw.gov.au
@@ -359,17 +361,23 @@ ICON_PATREVIEW_ADD=<span data-option="ICON_PATREVIEW_ADD">Add a Review</span>
 PATREVIEW_ABUSE_NOTIFY=Review abuse reported|Example Library|web@example.org
 
 # Ecommerce
-CC_APPROVED=Your payment has been approved.
-CC_DECLINED=Sorry. Your payment has been declined. Please confirm your information is entered correctly or pay at the library.
-CC_EMAIL_RECEIPT=Receipt for payment to Your Library|circadm@example.org|onlinepayments@example.org
-DONATE_NOTIFY=A new donation has been received|circadm@example.org|donormgmt@example.org
-ICON_PAY=<span class="ecommerce ecommerce-pay" data-option="ICON_PAY">Pay Online</span>
-ICON_PAY_CLEAR_ALL=<span class="ecommerce ecommerce-clear" data-option="ICON_PAY_CLEAR_ALL">Clear All</span>
-ICON_PAY_SELECT_ALL=<span class="ecommerce ecommerce-select data-option="ICON_PAY_SELECT_ALL">Select All</span>
-ICON_PRINT=<span data-option="ICON_PRINT">Print</span>
-ICON_PAY_CONTINUE=<span class="ecommerce ecommerce-continue" data-option="ICON_PAY_CONTINUE">Continue</span>
-MINDONATE=1000|Donations must be at least $10.00 to cover processing costs. Thank you.
-PAYAMTS=500|Please visit the library to pay this amount|00
+# These options are set for Linked Ecommerce
+CC_APPROVED=Success! Your payment has been approved. Save or Print this page as a receipt of your payment.
+CC_DECLINED=Your payment could not be completed. Please confirm your information is entered correctly or pay at the library.
+CC_EMAIL_RECEIPT=Receipt for your payment to Sutherland Shire Libraries|library-no-reply@ssc.ns.gov.au|library@ssc.nsw.gov.au
+# DONATE_NOTIFY=A new donation has been received|library-no-reply@ssc.nsw.gov.au|mboyce@ssc.nsw.gov.au
+ECOM_LINK_FINES_DESCRIPTION=Library Fees
+ECOM_LINK_SEND_PERSONAL=z
+ICON_PAY=<span class="ecommerce-pay" data-icon="ICON_PAY">Pay Online</span>
+ICON_PAY_CLEAR_ALL=<span data-icon="ICON_PAY_CLEAR_ALL">Clear All</span>
+ICON_PAY_SELECT_ALL=<span data-icon="ICON_PAY_SELECT_ALL">Select All</span>
+ICON_PRINT=<button class="btn btn-default">Print</button>
+ICON_PAY_CONTINUE=<span data-icon="ICON_PAY_CONTINUE">Continue</span>
+MINDONATE=10000|Donations must be at least $10.00 to cover processing costs. Thank you.
+PAYAMTS=250|Online payments are only accepted for amounts over $2.50.|0
+ECOM_LINK_FINES_DONE=Success! Thank you for your payment. Click on OK to close this window and return to your account, then Refresh the page (F5) to see your updated balance.
+ECOM_LINK_DONATE_DONE=Success! Your payment has been approved. Thank you for your donation.
+
 
 # Bookings
 BOOKINGS=no|true|true|false
