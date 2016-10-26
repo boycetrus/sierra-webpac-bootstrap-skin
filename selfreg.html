@@ -4,63 +4,66 @@
 <p class="lead">Fill out all fields on this form to join the Sutherland Shire Council Libraries. Visit the library within 6 weeks of joining online to confirm your membership and recieve your library card.</p>
 <div id="selfreg" class="well">
 
-<form method="post" class="form-horizontal" autocomplete="off">
-<!--
-The hidden template name below provides the patron template name IF a template name is not defined in the selfreg URL or in the selfreg_template web option.
--->
-<!--
-<input type="hidden" name="TemplateName" value="YOUR_VALUE">
--->
+	<form method="post" class="form-horizontal" autocomplete="off">
 
-<div class="formEntryArea">
-<span class="formLabel"><label for="street_aaddress">House no. &amp; Street:<span class="formRequired">*</span></label></span>
+	<!--
+	The hidden template name below provides the patron template name IF a template name is not defined in the selfreg URL or in the selfreg_template web option.
+	-->
+	<!--
+	<input type="hidden" name="TemplateName" value="YOUR_VALUE">
+	-->
+
+		<div class="form-group">
+		  <label for="street_aaddress" class="col-sm-3 control-label">House no. &amp; Street</label>
+		  <div class="col-sm-9">
 <!--{street}-->
-</div>
-<div class="formEntryArea">
-<span class="formLabel"><label for="city_aaddress">Suburb State Postcode:<span class="formRequired">*</span></label></span>
+		  </div>
+		</div>
+
+		<div class="form-group">
+			<label for="city_aaddress" class="col-sm-3 control-label">Suburb State Postcode</label>
 <!--{city}-->
-<span class="formLabelExample formNote">Please add 2 spaces between the city, state &amp; postcode. eg. SUTHERLAND [space][space] NSW [space][space] 2232</span>
-</div>
+			<p class="help-block">Please add 2 spaces between the city, state &amp; postcode. eg. SUTHERLAND [space][space] NSW [space][space] 2232</p>
+		</div>
 
-
-<div class="formEntryArea">
-<span class="formLabel"><label for="zemailaddr">Email:<span class="formRequired">*</span></label></span>
+		<div class="form-group">
+			<label for="zemailaddr" class="col-sm-3 control-label">Email</label>
 <!--{emailaddress}-->
-</div>
-<div class="formEntryArea">
-<span class="formLabel"><label for="tphone1">Phone:<span class="formRequired">*</span></label></span>
-<!--{phone1}-->
-<span class="formLabelExample formNote">No spaces please, eg. 95234321</span>
-</div>
-<div class="formEntryArea">
-<span class="formLabel"><label for="F051birthdate">Date of Birth:<span class="formRequired">*</span></label></span>
+		</div>
+
+		<div class="form-group">
+			<label for="tphone1" class="col-sm-3 control-label">Phone</label>
+<!--{city}-->
+			<p class="help-block">No spaces please, eg. 95234321</p>
+		</div>
+
+		<div class="form-group">
+			<label for="F051birthdate" class="col-sm-3 control-label">Date of Birth</label>
 <!--{birthdate}-->
-<span class="formLabelExample formNote">Enter your DOB in the format DD/MM/YYYY. eg. 29/01/1980</span>
-</div>
+			<p class="help-block">Enter your DOB in the format DD/MM/YYYY. eg. 29/01/1980</p>
+		</div>
 
-<div class="warning">
-  <p>Important: by submitting this form you are agreeing to comply with the restrictions set out on this page and with the Libary's general <a href="http://www.sutherlandshire.nsw.gov.au/Library/Membership/Conditions_of_Membership" target="_blank">Conditions of Membership</a>.</p>
-  <p>To confirm your membership you must visit any Sutherland Shire Library within 6 weeks, complete a printed application form and show personal identification, whereupon you will be issued a permanent library card. If you don't confirm your account your membership will be cancelled and you will need to re-join.</p>
-</div>
-
-
-<div class="formButtonArea">
-<input type="submit" value="submit" class="teal-button" />
-
-<p class="pullRight alignRight">No thanks, I want to Join in person at a library <br>
-<a href="http://www.sutherlandshire.nsw.gov.au/files/8bd438d8-acd3-4010-ba18-a19e00bbd952/membership-form.pdf" class="grey-button" target="_blank">Print Application Form</a></p>
-</div>
-
+		<div class="alert alert-info">
+		  <p>Important: by submitting this form you are agreeing to comply with the restrictions set out on this page and with the Libary's general <a href="http://www.sutherlandshire.nsw.gov.au/Library/Membership/Conditions_of_Membership" target="_blank">Conditions of Membership</a>.</p>
+		  <p>To confirm your membership you must visit any Sutherland Shire Library within 6 weeks, complete a printed application form and show personal identification, whereupon you will be issued a permanent library card. If you don't confirm your account your membership will be cancelled and you will need to re-join.</p>
+		</div>
 
 <!--{iferrmsg}-->
-<div class="alert alert-danger">
+		<div class="alert alert-danger">
 <!--{errmsg}-->
-</div>
+		</div>
 <!--{xif}-->
 
+		<div class="form-buttons">
+			<input type="submit" value="submit" class="btn btn-primary" />
 
-</form>
-</div> <!-- /#selfreg -->
+			<p class="pullRight alignRight">No thanks, I want to Join in person at a library <br>
+			<a href="http://www.sutherlandshire.nsw.gov.au/files/8bd438d8-acd3-4010-ba18-a19e00bbd952/membership-form.pdf" class="grey-button" target="_blank">Print Application Form</a></p>
+		</div>
+
+	</form>
+</div>
+<!-- /#selfreg -->
 
 
 <!--{botlogo}-->
