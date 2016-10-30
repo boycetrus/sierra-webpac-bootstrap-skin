@@ -5,3 +5,7 @@
 
 
 //@codekit-prepend "validate.js";
+
+//@codekit-prepend "selfreg-jquery-scripts.js";
+
+//@codekit-prepend "selfreg-validate-form.js";

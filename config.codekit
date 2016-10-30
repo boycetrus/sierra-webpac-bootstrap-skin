@@ -497,17 +497,6 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/js\/min\/selfreg-min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/min\/selfreg-min.js",
-		"outputAbbreviatedPath": "\/js\/min\/min\/selfreg-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/js\/modpinfo-scripts.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -591,6 +580,28 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/production\/selfreg-min.js",
 		"outputAbbreviatedPath": "\/js\/production\/min\/selfreg-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/selfreg-jquery-scripts.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/selfreg-jquery-scripts.js",
+		"outputAbbreviatedPath": "\/js\/min\/selfreg-jquery-scripts-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/selfreg-validate-form.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/js\/selfreg-validate-form.js",
+		"outputAbbreviatedPath": "\/js\/min\/selfreg-validate-form-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
