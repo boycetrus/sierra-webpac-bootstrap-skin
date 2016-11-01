@@ -1,5 +1,5 @@
 $(function() {
-  $('#selfreg .form-group input').addClass('form-control');
+  $('#selfreg .form-text input').addClass('form-control');
 
   $('#zemailaddr input').attr('type','email');
   $('#tphone1 input').attr('type','tel');
