@@ -4,7 +4,7 @@
 <p class="lead">Fill out all fields on this form to join the Sutherland Shire Council Libraries. Visit the library within 6 weeks of joining online to confirm your membership and recieve your library card.</p>
 <div id="selfreg" class="well">
 
-	<form method="post" class="form-horizontal" autocomplete="off">
+	<form method="post" name="selfreg" class="form-horizontal" autocomplete="off">
 
 	<!--
 	The hidden template name below provides the patron template name IF a template name is not defined in the selfreg URL or in the selfreg_template web option.
@@ -57,7 +57,24 @@
 			</div>
 		</div>
 
-		<div class="alert alert-info">
+		<div class="form-group">
+	    <div class="col-sm-offset-4 col-sm-6 col-md-5">
+	      <div class="checkbox">
+	        <label>
+	          <input type="checkbox">I have read and understand the Conditions of Membership
+	        </label>
+	      </div>
+	    </div>
+			<div class="col-sm-offset-4 col-sm-6 col-md-5">
+	      <div class="checkbox">
+	        <label>
+	          <input type="checkbox"> I understand that I must visit a library within 6 weeks to confirm my membership
+	        </label>
+	      </div>
+	    </div>
+	  </div>
+
+		<div class="alert alert-info hidden">
 		  <p>Important: by submitting this form you are agreeing to comply with the restrictions set out on this page and with the Libary's general <a href="http://www.sutherlandshire.nsw.gov.au/Library/Membership/Conditions_of_Membership" target="_blank">Conditions of Membership</a>.</p>
 		  <p>To confirm your membership you must visit any Sutherland Shire Library within 6 weeks, complete a printed application form and show personal identification, whereupon you will be issued a permanent library card. If you don't confirm your account your membership will be cancelled and you will need to re-join.</p>
 		</div>
@@ -68,11 +85,11 @@
 		</div>
 <!--{xif}-->
 
-		<div class="form-buttons">
-			<input type="submit" value="submit" class="btn btn-primary" />
-
-			<p class="pullRight alignRight">No thanks, I want to Join in person at a library <br>
-			<a href="http://www.sutherlandshire.nsw.gov.au/files/8bd438d8-acd3-4010-ba18-a19e00bbd952/membership-form.pdf" class="grey-button" target="_blank">Print Application Form</a></p>
+		<div class="form-buttons row">
+			<div class="col-sm-offset-4 col-sm-6 col-md-5">
+				<input type="submit" value="submit" class="btn btn-primary" />
+				<a href="http://www.sutherlandshire.nsw.gov.au/files/8bd438d8-acd3-4010-ba18-a19e00bbd952/membership-form.pdf" target="_blank">Print an Application Form</a>
+			</div>
 		</div>
 
 	</form>
