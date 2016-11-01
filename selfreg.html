@@ -5,7 +5,7 @@
 <ul class="nav nav-tabs">
   <li role="presentation" class="active"><a>Register</a></li>
   <li role="presentation">
-		<a href="http://webpac.sutherlandshire.nsw.gov.au/patroninfo" target="_blank">Login</a>
+		<a href="/patroninfo">Login</a>
 	</li>
 </ul>
 <div id="selfreg" class="well">
@@ -18,6 +18,20 @@
 	<!--
 	<input type="hidden" name="TemplateName" value="YOUR_VALUE">
 	-->
+
+		<div id="nfirst" class="form-group form-text">
+		  <label for="nfirst" class="col-sm-4 control-label">Given Names</label>
+		  <div class="col-sm-6 col-md-5">
+<!--{firstname}-->
+		  </div>
+		</div>
+
+		<div id="nlast" class="form-group form-text">
+		  <label for="nlast" class="col-sm-4 control-label">Family Name</label>
+		  <div class="col-sm-6 col-md-5">
+<!--{lastname}-->
+		  </div>
+		</div>
 
 		<div id="street_aaddress" class="form-group form-text">
 		  <label for="street_aaddress" class="col-sm-4 control-label">House no. &amp; Street</label>
@@ -67,7 +81,7 @@
 	    <div class="col-sm-offset-4 col-sm-6 col-md-5">
 	      <div class="checkbox">
 	        <label>
-	          <input type="checkbox">I have read and understand the Conditions of Membership
+	          <input type="checkbox">I have read and understand the <a href="http://www.sutherlandshire.nsw.gov.au/Community/Library/Membership/Conditions-of-Membership" target="_blank">Conditions of Membership</a>
 	        </label>
 	      </div>
 	    </div>
@@ -80,10 +94,10 @@
 	    </div>
 	  </div>
 
-		<div class="alert alert-info hidden">
+		<!-- <div class="alert alert-info">
 		  <p>Important: by submitting this form you are agreeing to comply with the restrictions set out on this page and with the Libary's general <a href="http://www.sutherlandshire.nsw.gov.au/Library/Membership/Conditions_of_Membership" target="_blank">Conditions of Membership</a>.</p>
 		  <p>To confirm your membership you must visit any Sutherland Shire Library within 6 weeks, complete a printed application form and show personal identification, whereupon you will be issued a permanent library card. If you don't confirm your account your membership will be cancelled and you will need to re-join.</p>
-		</div>
+		</div> -->
 
 <!--{iferrmsg}-->
 		<div class="alert alert-danger">
