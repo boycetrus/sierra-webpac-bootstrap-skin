@@ -64,7 +64,7 @@
 		<div id="tphone1" class="form-group form-text">
 			<label for="tphone1" class="col-sm-4 control-label">Phone</label>
 			<div class="col-sm-6 col-md-5">
-<!--{city}-->
+<!--{phone1}-->
 				<p class="help-block">No spaces please, eg. 95234321</p>
 			</div>
 		</div>
@@ -73,7 +73,7 @@
 			<label for="F051birthdate" class="col-sm-4 control-label">Date of Birth</label>
 			<div class="col-sm-6 col-md-5">
 <!--{birthdate}-->
-				<p class="help-block">Enter your DOB in the format DD/MM/YYYY. eg. 29/01/1980</p>
+				<p class="help-block">Enter your DOB in the format day/month/year. eg. 29/01/1980</p>
 			</div>
 		</div>
 
@@ -99,11 +99,11 @@
 		  <p>To confirm your membership you must visit any Sutherland Shire Library within 6 weeks, complete a printed application form and show personal identification, whereupon you will be issued a permanent library card. If you don't confirm your account your membership will be cancelled and you will need to re-join.</p>
 		</div> -->
 
-<!--{iferrmsg}-->
-		<div class="alert alert-danger">
-<!--{errmsg}-->
+  <!--{iferrmsg}-->
+		<div id="selfrefErrors" class="alert alert-danger">
+  <!--{errmsg}-->
 		</div>
-<!--{xif}-->
+  <!--{xif}-->
 
 		<div class="form-group form-buttons">
 			<div class="col-sm-offset-4 col-sm-2">
@@ -121,7 +121,48 @@
 
 <!--{botlogo}-->
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="screens/validate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	<script src="/screens/selfreg-min.js"></script>
+  <script>
+  var validator = new FormValidator('selfreg', [{
+      name: 'nfirst',
+      display: 'Given Names',
+      rules: 'required'
+  }, {
+      name: 'nlast',
+      display: 'Family Name',
+      rules: 'required'
+  }, {
+      name: 'nEmail',
+      display: 'do not enter',
+      rules: 'max_length[0]'
+  }, {
+      name: 'stre_aadress',
+      display: 'Street Address',
+      rules: 'required'
+  }, {
+      name: 'city_aaddress',
+      display: 'Suburb, State, Postcode',
+      rules: 'required'
+  }, {
+      name: 'zemailaddr',
+      display: 'Email address',
+      rules: 'required|valid_email'
+  }, {
+        name: 'tphone1',
+        display: 'Telephone No',
+        rules: 'required|numeric'
+  }, {
+        name: 'F051birthdate',
+        display: 'Date of Birth',
+        rules: 'required|exact_length[10]'
+  }], function(errors, event) {
+        if (errors.length > 0) {
+          console.log(errors);
+          event.preventDefault();
+        }
+  });
+  </script>
 </body>
 </html>

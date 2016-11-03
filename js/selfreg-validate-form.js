@@ -32,19 +32,17 @@ var validator = new FormValidator('selfreg', [{
       rules: 'required|exact_length[10]'
 }], function(errors, event) {
       if (errors.length > 0) {
-        console.log('it is running');
-        // Show the errors
-        var displayErrors = document.getElementById('selfRegMessage');
-        displayErrors.className = displayErrors.className + " alert alert-error";
-        var errorString = '';
-        for (var i = 0; i < errors.length; i++) {
-          errorString += errors[i].message + '<br />';
-        }
-        displayErrors.innerHTML = errorString;
+        console.log(errors);
+        // var displayErrors = document.getElementById('selfRegMessage');
+        // displayErrors.className = displayErrors.className + " alert alert-error";
+        // var errorString = '';
+        // for (var i = 0; i < errors.length; i++) {
+        //   errorString += errors[i].message + '<br />';
+        // }
+        // displayErrors.innerHTML = errorString;
         event.preventDefault();
       } else {
         console.log('it is not running');
         var obj = getFormHandleForm(1);
-        obj.submit();
       }
 }); //FormValidator
