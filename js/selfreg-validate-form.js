@@ -11,7 +11,7 @@ var validator = new FormValidator('selfreg', [{
     display: 'do not enter',
     rules: 'max_length[0]'
 }, {
-    name: 'stre_aadress',
+    name: 'stre_aaddress',
     display: 'Street Address',
     rules: 'required'
 }, {
@@ -42,11 +42,19 @@ var validator = new FormValidator('selfreg', [{
       if (errors.length > 0) {
         event.preventDefault();
         console.log(errors);
-        var errorString = '';
+
+        // clear any errors generated from previous invalid submissions
+        $('p.invalid-input').remove();
+        $('.form-group').removeClass('has-error');
+
+        // loop through errors and highlight invalid fields
         for (var i = 0; i < errors.length; i++) {
-          errorString += errors[i].message + '<br />';
+          var errorField = errors[i].element;
+          var errorHelp = '<p class="text-danger invalid-input">' + errors[i].message + '</span>';
+          $(errorField).closest('.form-group').addClass('has-error');
+          $(errorHelp).insertBefore(errorField);
         }
-        $('#selfregErrors').html(errorString).removeClass('hidden');
+        $('#selfregErrors').removeClass('hidden');
       } else {
         console.log('no errors detected');
         return;
