@@ -101,6 +101,8 @@
 
   <!--{iferrmsg}-->
 		<div id="selfregErrors" class="alert alert-danger hidden">
+      <h2 class="h4">There are errors in your application.</h2>
+      <p>Please check and correct the following inputs and resubmit the form:</p>
   <!--{errmsg}-->
 		</div>
   <!--{xif}-->
@@ -172,8 +174,10 @@
           var errorString = '';
           for (var i = 0; i < errors.length; i++) {
             errorString += errors[i].message + '<br />';
+            var errorField = errors[i].element;
+            $(errorField).closest('.form-group').addClass('has-error');
           }
-          $('#selfregErrors').html(errorString).removeClass('hidden');
+          $('#selfregErrors').append(errorString).removeClass('hidden');
         } else {
           console.log('no errors detected');
           return;
