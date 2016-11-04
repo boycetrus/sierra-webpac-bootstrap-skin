@@ -19,28 +19,28 @@
 	<input type="hidden" name="TemplateName" value="YOUR_VALUE">
 	-->
 
-		<div id="nfirst" class="form-group form-text">
+		<div id="firstName" class="form-group form-text">
 		  <label for="nfirst" class="col-sm-4 control-label">Given Names</label>
 		  <div class="col-sm-6 col-md-5">
 <!--{firstname}-->
 		  </div>
 		</div>
 
-		<div id="nlast" class="form-group form-text">
+		<div id="lastName" class="form-group form-text">
 		  <label for="nlast" class="col-sm-4 control-label">Family Name</label>
 		  <div class="col-sm-6 col-md-5">
 <!--{lastname}-->
 		  </div>
 		</div>
 
-		<div id="street_aaddress" class="form-group form-text">
+		<div id="streetAddress" class="form-group form-text">
 		  <label for="street_aaddress" class="col-sm-4 control-label">House no. &amp; Street</label>
 		  <div class="col-sm-6 col-md-5">
 <!--{street}-->
 		  </div>
 		</div>
 
-		<div id="city_aaddress" class="form-group form-text">
+		<div id="cityAddress" class="form-group form-text">
 			<label for="city_aaddress" class="col-sm-4 control-label">Suburb State Postcode</label>
 			<div class="col-sm-6 col-md-5">
 <!--{city}-->
@@ -49,19 +49,19 @@
 			</div>
 		</div>
 
-		<div id="nEmail" class="hidden">
+		<div id="hpotEmail" class="hidden">
 			<label for="nEmail">Do not enter anything in this field:</label>
 		  <input id="nEmail" type="text" name="nEmail">
 		</div>
 
-		<div id="zemailaddr" class="form-group form-text">
+		<div id="emailAddress" class="form-group form-text">
 			<label for="zemailaddr" class="col-sm-4 control-label">Email</label>
 			<div class="col-sm-6 col-md-5">
 <!--{emailaddress}-->
 			</div>
 		</div>
 
-		<div id="tphone1" class="form-group form-text">
+		<div id="telephone" class="form-group form-text">
 			<label for="tphone1" class="col-sm-4 control-label">Phone</label>
 			<div class="col-sm-6 col-md-5">
 <!--{phone1}-->
@@ -69,7 +69,7 @@
 			</div>
 		</div>
 
-		<div id="F051birthdate" class="form-group form-text">
+		<div id="birthdate" class="form-group form-text">
 			<label for="F051birthdate" class="col-sm-4 control-label">Date of Birth</label>
 			<div class="col-sm-6 col-md-5">
 <!--{birthdate}-->
@@ -100,7 +100,7 @@
 		</div> -->
 
   <!--{iferrmsg}-->
-		<div id="selfrefErrors" class="alert alert-danger">
+		<div id="selfregErrors" class="alert alert-danger hidden">
   <!--{errmsg}-->
 		</div>
   <!--{xif}-->
@@ -159,8 +159,16 @@
         rules: 'required|exact_length[10]'
   }], function(errors, event) {
         if (errors.length > 0) {
-          console.log(errors);
           event.preventDefault();
+          console.log(errors);
+          var errorString = '';
+          for (var i = 0; i < errors.length; i++) {
+            errorString += errors[i].message + '<br />';
+          }
+          $('#selfregErrors').html(errorString).removeClass('hidden');
+        } else {
+          console.log('no errors detected');
+          return;
         }
   });
   </script>
