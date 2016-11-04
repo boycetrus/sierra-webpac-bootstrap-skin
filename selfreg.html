@@ -81,14 +81,14 @@
 	    <div class="col-sm-offset-4 col-sm-6 col-md-5">
 	      <div class="checkbox">
 	        <label>
-	          <input type="checkbox">I have read and understand the <a href="http://www.sutherlandshire.nsw.gov.au/Community/Library/Membership/Conditions-of-Membership" target="_blank">Conditions of Membership</a>
+	          <input name="condMembership" id="condMembership" type="checkbox">I have read and understand the <a href="http://www.sutherlandshire.nsw.gov.au/Community/Library/Membership/Conditions-of-Membership" target="_blank">Conditions of Membership</a>
 	        </label>
 	      </div>
 	    </div>
 			<div class="col-sm-offset-4 col-sm-6 col-md-5">
 	      <div class="checkbox">
 	        <label>
-	          <input type="checkbox"> I understand that I must visit a library within 6 weeks to confirm my membership
+	          <input name="confirmVisit" id="confirmVisit" type="checkbox"> I understand that I must visit a library within 6 weeks to confirm my membership
 	        </label>
 	      </div>
 	    </div>
@@ -157,6 +157,14 @@
         name: 'F051birthdate',
         display: 'Date of Birth',
         rules: 'required|exact_length[10]'
+  }, {
+        name: 'condMembership',
+        display: 'confirmation of the Conditions of Membership',
+        rules: 'required'
+  }, {
+        name: 'confirmVisit',
+        display: 'Confirmation Visit',
+        rules: 'required'
   }], function(errors, event) {
         if (errors.length > 0) {
           event.preventDefault();

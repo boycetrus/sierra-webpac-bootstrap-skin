@@ -30,6 +30,14 @@ var validator = new FormValidator('selfreg', [{
       name: 'F051birthdate',
       display: 'Date of Birth',
       rules: 'required|exact_length[10]'
+}, {
+      name: 'condMembership',
+      display: 'confirmation of the Conditions of Membership',
+      rules: 'required'
+}, {
+      name: 'confirmVisit',
+      display: 'Confirmation Visit',
+      rules: 'required'
 }], function(errors, event) {
       if (errors.length > 0) {
         event.preventDefault();
