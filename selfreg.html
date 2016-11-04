@@ -94,18 +94,16 @@
 	    </div>
 	  </div>
 
-		<!-- <div class="alert alert-info">
-		  <p>Important: by submitting this form you are agreeing to comply with the restrictions set out on this page and with the Libary's general <a href="http://www.sutherlandshire.nsw.gov.au/Library/Membership/Conditions_of_Membership" target="_blank">Conditions of Membership</a>.</p>
-		  <p>To confirm your membership you must visit any Sutherland Shire Library within 6 weeks, complete a printed application form and show personal identification, whereupon you will be issued a permanent library card. If you don't confirm your account your membership will be cancelled and you will need to re-join.</p>
-		</div> -->
-
-  <!--{iferrmsg}-->
 		<div id="selfregErrors" class="alert alert-danger hidden">
-      <h2 class="h4">There are errors in your application.</h2>
-      <p>Please check and correct the following inputs and resubmit the form:</p>
-  <!--{errmsg}-->
+      <p>There are errors in your application that prevent it from being submitted. Please check and correct the highlighted inputs and resubmit the form.</p>
 		</div>
-  <!--{xif}-->
+
+<!--{iferrmsg}-->
+		<div class="alert alert-danger">
+<!--{errmsg}-->
+		</div>
+<!--{xif}-->
+
 
 		<div class="form-group form-buttons">
 			<div class="col-sm-offset-4 col-sm-2">
@@ -172,17 +170,18 @@
           event.preventDefault();
           console.log(errors);
 
-          //write some code to clear previous errors here
+          //write some code to clear errors generated from previous invalid submissions
+          $('p.invalid-input').remove();
+          $('.form-group').removeClass('has-error');
 
-          //var errorString = '';
+          // loop through errors and highlight invalid fields
           for (var i = 0; i < errors.length; i++) {
-            //errorString += errors[i].message + '<br />';
             var errorField = errors[i].element;
-            var errorHelp = '<span>' + errors[i].message + '</span>';
+            var errorHelp = '<p class="text-danger invalid-input">' + errors[i].message + '</span>';
             $(errorField).closest('.form-group').addClass('has-error');
-            $(errorHelp).insertAfter(errorField);
+            $(errorHelp).insertBefore(errorField);
           }
-          //$('#selfregErrors').append(errorString).removeClass('hidden');
+          $('#selfregErrors').removeClass('hidden');
         } else {
           console.log('no errors detected');
           return;
