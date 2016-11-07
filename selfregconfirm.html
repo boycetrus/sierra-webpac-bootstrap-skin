@@ -14,49 +14,39 @@
 <body>
 <!--{toplogo}-->
 
-<h1 class="pageHeading">Registration Confirmation</h1>
-
 <!--{iferrmsg}-->
-<div class="errorMessage alert alert-danger">
+  <div class="alert alert-danger">
 <!--{errmsg}-->
-</div>
+  </div>
 <!--{else}-->
-<p>
-<!--{name}-->
-, thank you for registering. You currently have limited privileges.
-</p>
-<p>
-Your barcode is:
-<strong>
-<!--{barcode}-->
-</strong>
-<span class="helpNote">(Remember this code)</span>
-</p>
 
-<p>
-User name:
-<strong>
-<!--{user_name}-->
-</strong>
-<!--{patroninfo}-->
-</p>
+  <h1 class="pageHeading">Registration Confirmation</h1>
+
+  <p class="alert alert-success"><strong>Congratulations!</strong> Your registration was successful. Welcome to Sutherland Shire Council Libraries.</p>
+
+  <p>A copy of this information has been sent to the email address you provided. You have registered with the following details:</p>
+
+  <p class="lead">Name: <strong>
+<!--{name}-->
+    </strong><br>
+    Barcode: <strong>
+<!--{barcode}-->
+    </strong><br>
+    Temporary PIN: <strong>
+<!--{barcode}-->
+    </strong> <small>You will create a new PIN when you login to your account</small>
+  </p>
+
 <!--{xif}-->
 
-<div class="formButtonArea">
+  <div class="formButtonArea">
 <!--{ret2cat}-->
-</div>
+  </div>
 
 <!--{botlogo}-->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-<script src="/screens/global-min.js"></script>
-</body>
-</html>
-
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="/screens/selfreg-min.js"></script>
 
 </body>
 </html>
