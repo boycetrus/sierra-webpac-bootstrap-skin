@@ -19,6 +19,17 @@
 	<input type="hidden" name="TemplateName" value="YOUR_VALUE">
 	-->
 
+    <div id="selfregErrors" class="alert alert-danger hidden">
+      <p>There are errors in your application that prevent it from being submitted. Please check and correct the highlighted inputs and resubmit the form.</p>
+    </div>
+
+<!--{iferrmsg}-->
+    <div class="alert alert-danger">
+<!--{errmsg}-->
+    </div>
+<!--{xif}-->
+
+
 		<div id="firstName" class="form-group form-text">
 		  <label for="nfirst" class="col-sm-4 control-label">Given Names</label>
 		  <div class="col-sm-6 col-md-5">
@@ -94,17 +105,6 @@
 	    </div>
 	  </div>
 
-		<div id="selfregErrors" class="alert alert-danger hidden">
-      <p>There are errors in your application that prevent it from being submitted. Please check and correct the highlighted inputs and resubmit the form.</p>
-		</div>
-
-<!--{iferrmsg}-->
-		<div class="alert alert-danger">
-<!--{errmsg}-->
-		</div>
-<!--{xif}-->
-
-
 		<div class="form-group form-buttons">
 			<div class="col-sm-offset-4 col-sm-2">
 				<input type="submit" value="submit" class="btn btn-primary" />
@@ -124,6 +124,6 @@
 	<script src="screens/validate.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	<script src="/screens/selfreg-min.js"></script>
-  
+
 </body>
 </html>
