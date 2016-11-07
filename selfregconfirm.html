@@ -12,36 +12,39 @@
 	<![endif]-->
 </head>
 <body>
-<!--{toplogo}-->
+<div class="alert alert-success alert-dismissible">
+  <!--{toplogo}-->
 
-<!--{iferrmsg}-->
+  <!--{iferrmsg}-->
   <div class="alert alert-danger">
-<!--{errmsg}-->
+  <!--{errmsg}-->
   </div>
-<!--{else}-->
+  <!--{else}-->
   <h1 class="sr-only">Registration Confirmation</h1>
-  <p class="alert alert-success"><strong>Congratulations!</strong> Your registration was successful. Welcome to Sutherland Shire Council Libraries.</p>
+  <div class="alert alert-success alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <p><strong>Congratulations!</strong> Your registration was successful. Welcome to Sutherland Shire Council Libraries.</p>
+  </div>
 
-  <p>A copy of this information has been sent to the email address you provided. You have registered with the following details:</p>
-
-  <p class="lead">Name: <strong>
-<!--{name}-->
-    </strong><br>
+  <div class="alert alert-info alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <p class="h4">Important! You currently have limited privileges</p>
+    <p>To receive full membership benfits, you must visit a Library within 6 weeks
+       to confirm your details and receive your library card.<div class="alert alert-success alert-dismissible">
+         <p class="h4">Important! You currently have limited privileges</p>
+         <p>To receive full membership benfits, you must visit a Library within 6 weeks
+            to confirm your details and receive your library card. Full details are provided in your welcome email.</p>
+       </div>r>
     Barcode: <strong>
-<!--{barcode}-->
+  <!--{barcode}-->
     </strong><br>
     Temporary PIN: <strong>
-<!--{barcode}-->
-    </strong> <small>You will create a new PIN when you login to your account</small>
+  <!--{barcode}-->
+    </strong><br>
+    <small>(You will create a new PIN when you login to your account)</small>
   </p>
 
-  <h2 class="h4">Important <small>You currently have limited privileges</small></h2>
-  <p>To receive full membership benfits, you must visit a Sutherland Shire Library wihtin 6 weeks
-     to confirm your details and receive your library card. You will need to bring some
-     identification showing your name and address - full details are available in your welcome email.</p>
-
   <h2>What Next?</h2>
-  <p>Complete your account profile:</p>
   <p><strong>Create a PIN</strong><br>
     Login to your account with the membership details above. You will be promtped to choose a new PIN for security.</p>
   <p><strong>Add your mobile phone number</strong><br>
@@ -51,18 +54,19 @@
     To protect our member's privacy we do not keep a record of what you borrow by default. If you would like
     us to keep your Reading History you can opt in from your account after logging in.</p>
 
-<!--{xif}-->
+  <!--{xif}-->
 
 
   <div class="formButtonArea">
     <a href="/patroninfo" class="btn btn-primary">Login</a>
-<!--{ret2cat}-->
+  <!--{ret2cat}-->
   </div>
 
-<!--{botlogo}-->
+  <!--{botlogo}-->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="/screens/selfreg-min.js"></script>
+</div>
 
 </body>
 </html>
