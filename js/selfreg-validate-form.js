@@ -46,6 +46,7 @@ var validator = new FormValidator('selfreg', [{
         // clear any errors generated from previous invalid submissions
         $('p.invalid-input').remove();
         $('.form-group').removeClass('has-error');
+        $('#selfregErrors:not(.hidden)').addClass('hidden'); 
 
         // loop through errors and highlight invalid fields
         for (var i = 0; i < errors.length; i++) {
@@ -57,6 +58,6 @@ var validator = new FormValidator('selfreg', [{
         $('#selfregErrors').removeClass('hidden');
       } else {
         console.log('no errors detected');
-        $('#slefreg > form').submit();
+        $('#selfreg > form').submit();
       }
 });
