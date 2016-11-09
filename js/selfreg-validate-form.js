@@ -57,6 +57,6 @@ var validator = new FormValidator('selfreg', [{
         $('#selfregErrors').removeClass('hidden');
       } else {
         console.log('no errors detected');
-        return;
+        $('#slefreg > form').submit();
       }
 });
