@@ -1,153 +1,126 @@
 <!--{toplogo}-->
-<div class="pageContentInner">
-<h1 class="pageHeader">Welcome! This is Patron Self Registration</h1>
-<p>This page allows you to register on-line as a patron of our library. You will have limited privileges.</p>
-<div id="accessibleForm" class="form1Part">
-<form method="post" class="unpadded" autocomplete="off"  onsubmit="return selfRegChecker();">
-<!--
-The hidden template name below provides the patron template name IF a template name is not defined in the selfreg URL or in the selfreg_template web option.
--->
-<!--
-<input type="hidden" name="TemplateName" value="YOUR_VALUE">
--->
+
+<h1>Join the Library</h1>
+<p class="lead">Fill out all fields on this form to join the Sutherland Shire Council Libraries. Visit the library within 6 weeks of joining online to confirm your membership and recieve your library card.</p>
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active"><a>Register</a></li>
+  <li role="presentation">
+		<a href="/patroninfo">Login</a>
+	</li>
+</ul>
+<div id="selfreg" class="well">
+
+	<form method="post" name="selfreg" class="form-horizontal" autocomplete="off">
+
+	<!--
+	The hidden template name below provides the patron template name IF a template name is not defined in the selfreg URL or in the selfreg_template web option.
+	-->
+	<!--
+	<input type="hidden" name="TemplateName" value="YOUR_VALUE">
+	-->
+
+    <div id="selfregErrors" class="alert alert-danger hidden">
+      <p>There are errors in your application that prevent it from being submitted. Please check and correct the highlighted inputs and resubmit the form.</p>
+    </div>
+
 <!--{iferrmsg}-->
-<div class="errormessage">
+    <div class="alert alert-danger">
 <!--{errmsg}-->
-</div>
+    </div>
 <!--{xif}-->
-<div class="errormessage" id="selfRegMessage">
-</div>
-<fieldset>
-<legend>Please enter the following information: (<span class="formRequired">*</span> means required field)</legend>
 
-<div class="formEntryArea">
-<span class="formLabel"><label for="nfirst">First name:<span class="formRequired">*</span></label></span>
+
+		<div id="firstName" class="form-group form-text">
+		  <label for="nfirst" class="col-sm-4 control-label">Given Names</label>
+		  <div class="col-sm-6 col-md-5">
 <!--{firstname}-->
-</div>
-<div class="formEntryArea">
-<span class="formLabel"><label for="nlast">Last name:<span class="formRequired">*</span></label></span>
+		  </div>
+		</div>
+
+		<div id="lastName" class="form-group form-text">
+		  <label for="nlast" class="col-sm-4 control-label">Family Name</label>
+		  <div class="col-sm-6 col-md-5">
 <!--{lastname}-->
-</div>
-<!-- For optional Alternate ID:
-<div class="formEntryArea">
-<span class="formLabel"><label for="user_name">Alias/Nickname:</label></span>
- -->
-   <!--{user_name}-->
-<!-- For optional Alternate ID:
-</div>
--->
-<div class="formEntryArea">
-<span class="formLabel"><label for="stre_aaddress">Address:<span class="formRequired">*</span></label></span>
+		  </div>
+		</div>
+
+		<div id="streetAddress" class="form-group form-text">
+		  <label for="street_aaddress" class="col-sm-4 control-label">House no. &amp; Street</label>
+		  <div class="col-sm-6 col-md-5">
 <!--{street}-->
-</div>
-<div class="formEntryArea">
-<span class="formLabel"><label for="city_aaddress">City:<span class="formRequired">*</span></label></span>
+		  </div>
+		</div>
+
+		<div id="cityAddress" class="form-group form-text">
+			<label for="city_aaddress" class="col-sm-4 control-label">Suburb State Postcode</label>
+			<div class="col-sm-6 col-md-5">
 <!--{city}-->
-</div>
-<div class="formEntryArea">
-<span class="formLabel"><label for="stat_aaddress">State:<span class="formRequired">*</span></label></span>
-<!--{state}-->
-</div>
-<div class="formEntryArea">
-<span class="formLabel"><label for="post_aaddress">ZIP Code:<span class="formRequired">*</span></label></span>
-<!--{postalcode}-->
-</div>
-<div class="formEntryArea">
-<span class="formLabel"><label for="zemailaddr">Email:</label></span>
+				<p class="help-block hidden">Please add 2 spaces between the city, state &amp; postcode.<br>
+					eg. SUTHERLAND [space][space] NSW [space][space] 2232</p>
+			</div>
+		</div>
+
+		<div id="hpotEmail" class="hidden">
+			<label for="nEmail">Do not enter anything in this field:</label>
+		  <input id="nEmail" type="text" name="nEmail">
+		</div>
+
+		<div id="emailAddress" class="form-group form-text">
+			<label for="zemailaddr" class="col-sm-4 control-label">Email</label>
+			<div class="col-sm-6 col-md-5">
 <!--{emailaddress}-->
+			</div>
+		</div>
+
+		<div id="telephone" class="form-group form-text">
+			<label for="tphone1" class="col-sm-4 control-label">Phone</label>
+			<div class="col-sm-6 col-md-5">
+<!--{phone1}-->
+				<p class="help-block hidden">No spaces please, eg. 95234321</p>
+			</div>
+		</div>
+
+		<div id="birthdate" class="form-group form-text">
+			<label for="F051birthdate" class="col-sm-4 control-label">Date of Birth</label>
+			<div class="col-sm-6 col-md-5">
+<!--{birthdate}-->
+				<p class="help-block hidden">Enter your DOB in the format day/month/year. eg. 29/01/1980</p>
+			</div>
+		</div>
+
+		<div class="form-group form-checkbox">
+	    <div class="col-sm-offset-4 col-sm-6 col-md-5">
+	      <div class="checkbox">
+	        <label>
+	          <input name="condMembership" id="condMembership" type="checkbox">I have read and understand the <a href="http://www.sutherlandshire.nsw.gov.au/Community/Library/Membership/Conditions-of-Membership" target="_blank">Conditions of Membership</a>
+	        </label>
+	      </div>
+	    </div>
+			<div class="col-sm-offset-4 col-sm-6 col-md-5">
+	      <div class="checkbox">
+	        <label>
+	          <input name="confirmVisit" id="confirmVisit" type="checkbox"> I understand that I must visit a library within 6 weeks to confirm my membership
+	        </label>
+	      </div>
+	    </div>
+	  </div>
+
+		<div class="form-group form-buttons">
+			<div class="col-sm-offset-4 col-sm-2">
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</div>
+		</div>
+
+	</form>
 </div>
-<div class="formButtonArea">
-<span>
-<!--{submit}-->
-</span>
-</div>
-</fieldset>
+<!-- /#selfreg -->
 
-</form>
-</div> <!--accessibleForm -->
-</div><!-- pageContentInner -->
 
-<script type="text/javascript">
-function selfRegChecker(){
-var regForm = document.getElementsByTagName("INPUT");
-var messageDiv = document.getElementById("selfRegMessage");
-for(i=0;i<regForm.length;i++){
-switch(regForm[i].id){
-case "nfirst":
-if (regForm[i].value==null||regForm[i].value==""){
-var message = document.createTextNode("Oops... Please supply your First Name to Register.");
-messageDiv.innerHTML ="";
-messageDiv.appendChild(message);
-regForm[i].focus();
-return false;
-}
-break;
-case "nlast":
-if (regForm[i].value==null||regForm[i].value==""){
-var message = document.createTextNode("Oops... Please supply your Last Name to Register.");
-messageDiv.innerHTML ="";
-messageDiv.appendChild(message);
-regForm[i].focus();
-return false;
-}
-break;
-case "stre_aaddress":
-if (regForm[i].value==null||regForm[i].value==""){
-var message = document.createTextNode("Oops... Please supply your Address to Register.");
-messageDiv.innerHTML ="";
-messageDiv.appendChild(message);
-regForm[i].focus();
-return false;
-}
-break;
-case "city_aaddress":
-if (regForm[i].value==null||regForm[i].value==""){
-var message = document.createTextNode("Oops... Please supply your City to Register.");
-messageDiv.innerHTML ="";
-messageDiv.appendChild(message);
-regForm[i].focus();
-return false;
-}
-break;
-case "stat_aaddress":
-if (regForm[i].value==null||regForm[i].value==""){
-var message = document.createTextNode("Oops... Please supply your State to Register.");
-messageDiv.innerHTML ="";
-messageDiv.appendChild(message);
-regForm[i].focus();
-return false;
-}
-break;
-case "nlast":
-if (regForm[i].value==null||regForm[i].value==""){
-var message = document.createTextNode("Oops... Please supply your Last Name to Register.");
-messageDiv.innerHTML ="";
-messageDiv.appendChild(message);
-regForm[i].focus();
-return false;
-}
-break;
-case "post_aaddress":
-if (regForm[i].value==null||regForm[i].value==""){
-var message = document.createTextNode("Oops... Please supply your Zip Code to Register.");
-messageDiv.innerHTML ="";
-messageDiv.appendChild(message);
-regForm[i].focus();
-return false;
-}
-break;
-}
-}
-return true;
-}
-
-function iiiDoSubmit_1()
-{
-//getFormHandleForm() is in common.js
-	if(selfRegChecker()){
-		var obj = getFormHandleForm(1);
-		obj.submit();
-	}
-}
-</script>
 <!--{botlogo}-->
+
+	<script src="screens/validate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="/screens/selfreg-min.js"></script>
+
+</body>
+</html>
