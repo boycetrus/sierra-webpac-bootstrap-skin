@@ -128,8 +128,8 @@ EXTENDED=CT
 HEADING_LENGTH=100
 ICON_856LINK=<span data-option="ICON_856LINK"><img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Website</span>
 ICON_962LINK=<span data-option="ICON_962LINK"><img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Digital Image</span>
-# ICON_BOOKCART=<div class="buttonFull">Add to Bag Briefcit</div>
-ICON_BOOKCART_SAVED=<div class="buttonFull" id="ICON_BOOKCART_SAVED">Remove From Bag</div>
+ICON_BOOKCART=<span data-icon="ICON_BOOKCART">Add to Basket</span>
+ICON_BOOKCART_SAVED=<span data-icon="ICON_BOOKCART_SAVED">Remove From Basket</span>
 ICON_FULLRECORD=<span data-option="ICON_FULLRECORD">See Full Record</span>
 ICON_LOCATEINRESULTS=<div style="buttonFull" id="ICON_LOCATEINRESULTS">Locate in results</div>
 ICON_PAGING_CAPTION=<span data-option="ICON_PAGING_CAPTION">Result Page</span>
