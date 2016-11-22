@@ -1,83 +1,49 @@
-<!-- Sierra Example Set -->
-<!-- This File Last Changed: 15 Oct 2015 -->
+  <!-- Book covers not included on brief citation display without a reliable cover service -->
+  <!--{ifhasbookjacket}-->
+  <!--{bookjacket}-->
+  <!--{xif}-->
+
 <tr>
-<td class="briefcitCell">
-
-<div class="briefcitRow">
-
-<div class="briefcitLeft">
-
-<div class="briefcitEntryNum">
-<!-- start entrynum token -->
-<!--{entrynum}-->
-<!-- end entrynum token -->
-</div> <!-- briefcitEntryNum -->
-
-<div class="briefcitMark">
-<!-- start mark token -->
-<!--{mark}-->
-<!-- end mark token -->
-</div> <!-- briefcitMark -->
-
-<div class="briefcitMedia">
-<!-- start media token -->
-<!--{media}-->
-<!-- end media token -->
-</div> <!-- briefcitMedia -->
-<div class="briefcitYear">
-<!--{year}-->
-</div>
-
-</div> <!-- briefcitLeft -->
-
-
-<div class="briefcitJacket">
-<!-- start bookjacket token -->
-<!--{bookjacket}-->
-<!-- end bookjacket token -->
-</div> <!-- briefcitJacket -->
-
-
-<div class="briefcitDetail">
-
-<div class="briefcitDetailMain">
+<td class="briefcitCell row">
 
 <!-- start nohitmsg token -->
 <!--{nohitmsg}-->
-<!-- end nothitmsg token -->
-<h2 class="briefcitTitle">
-<!-- start linkfieldspec:VbT token -->
-<!--{linkfieldspec:VbT}-->
-<!-- end linkfieldspec:VbT token -->
-</h2>
-<div class="briefcitAuthor">
-<!-- start fieldspec:Vba token -->
+
+
+  <div class="briefcitDetail col-xs-12">
+    <h2 class="h3">
+<!--{linkfieldspec:Vbt245abnh}-->
+    </h2>
+
+    <p class="author">
 <!--{fieldspec:Vba}-->
-<!-- end fieldspec:Vba token -->
-</div>
-<div class"briefcitPublisher">
-<!-- start fieldspec:Vbp token -->
-<!--{fieldspec:Vbp}-->
-<!-- end fieldspec:Vbp token -->
-</div>
-<div class="briefcitRatings">
-<h2>Rating:</h2>
-<!-- start rating token -->
-<!--{rating}-->
-<!-- end rating token -->
-</div> <!-- briefcitRatings -->
+    </p>
 
-<div class="briefcitRequest">
-<!-- start request token -->
-<!--{request}-->
-<!-- end request token -->
-</div> <!-- briefcitRequest -->
+    <p class="mattype">
+<!--{media}-->
+    </p>
 
-<span class="briefcitStatus">
-<!-- start holds token -->
+    <div class="panel panel-default copy-status">
+      <div class="panel-heading">Availability</div>
+      <div class="panel-body">
+        <p>
+<!--{holdingsmsg}-->
+. &nbsp;
 <!--{holds}-->
-<!-- end holds token -->
-</span> <!-- briefcitStatus -->
+          <button class="btn btn-default btn-xs" type="button" data-toggle="collapse" data-target="#" aria-expanded="false" aria-controls="collapseExample">Show Copies</button>
+        </p>
+      </div>
+<!--{items}-->
+    </div>
+
+    <div class="briefcitRequest">
+<!--{request}-->
+<!--{mark}-->
+    </div> <!-- briefcitRequest -->
+
+  </div>
+  <!-- /briefcitDetail -->
+
 
 <div class="briefcitActions">
 
@@ -100,16 +66,7 @@
 <!-- end more962 token -->
 <!--{xif}-->
 </div> <!-- briefcitActions -->
-</div> <!-- briefcitDetailMain -->
 
-<!-- Start items token -->
-<!--{items}-->
-<!-- End items token -->
 
-</div> <!-- briefcitDetail -->
-
-<div class="briefcitClear"></div>
-
-</div> <!-- briefcitRow -->
 </td>
 </tr>

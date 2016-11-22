@@ -1,4 +1,3 @@
-
 #<!-- Sierra Example Set -->*/
 #<!-- This File Last Changed: 17 Dec 2015 -->*/
 
@@ -128,8 +127,8 @@ EXTENDED=CT
 HEADING_LENGTH=100
 ICON_856LINK=<span data-option="ICON_856LINK"><img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Website</span>
 ICON_962LINK=<span data-option="ICON_962LINK"><img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Digital Image</span>
-# ICON_BOOKCART=<div class="buttonFull">Add to Bag Briefcit</div>
-ICON_BOOKCART_SAVED=<div class="buttonFull" id="ICON_BOOKCART_SAVED">Remove From Bag</div>
+ICON_BOOKCART=<span data-icon="ICON_BOOKCART">Add to Basket</span>
+ICON_BOOKCART_SAVED=<span data-icon="ICON_BOOKCART_SAVED">Remove From Basket</span>
 ICON_FULLRECORD=<span data-option="ICON_FULLRECORD">See Full Record</span>
 ICON_LOCATEINRESULTS=<div style="buttonFull" id="ICON_LOCATEINRESULTS">Locate in results</div>
 ICON_PAGING_CAPTION=<span data-option="ICON_PAGING_CAPTION">Result Page</span>
@@ -139,31 +138,31 @@ ICON_PROGRAM=<span data-option="ICON_PROGRAM"><img src="/screens/media_program.g
 ICON_RESOURCE=<span data-option="ICON_RESOURCE"><img src="/screens/media_resource.gif" alt="Internet Resource"></span>
 ICON_SAVEALLPAGE=<div class="buttonFull" id="ICON_SAVEALLPAGE">Add All On Page</div>
 ICON_SAVEMARKED=<div class="buttonFull" id="ICON_SAVEMARKED">Add Selected to Bag</div>
-IMAGE_MATTYPE-=/screens/media_book.gif
-IMAGE_MATTYPEa=/screens/media_book.gif
-IMAGE_MATTYPEb=/screens/media_archive.gif
-IMAGE_MATTYPEc=/screens/media_printedmusic.gif
-IMAGE_MATTYPEd=/screens/media_musicmanuscript.gif
-IMAGE_MATTYPEe=/screens/media_map.gif
-IMAGE_MATTYPEf=/screens/media_mapmanuscript.gif
-IMAGE_MATTYPEg=/screens/media_film.gif
-IMAGE_MATTYPEh=/screens/media_electronicdoc.gif
-IMAGE_MATTYPEi=/screens/media_cdbook.gif
-IMAGE_MATTYPEj=/screens/media_musicalsound.gif
-IMAGE_MATTYPEk=/screens/media_photo.gif
-IMAGE_MATTYPEl=/screens/media_largeprint.gif
-IMAGE_MATTYPEm=/screens/media_computerfile.gif
-IMAGE_MATTYPEn=/screens/media_newspaper.gif
-IMAGE_MATTYPEo=/screens/media_kit.gif
-IMAGE_MATTYPEq=/screens/media_ebook.gif
-IMAGE_MATTYPEr=/screens/media_3dartwork.gif
-IMAGE_MATTYPEs=/screens/media_tapebook.gif
-IMAGE_MATTYPEt=/screens/media_manuscript.gif
-IMAGE_MATTYPEu=/screens/media_dvd.gif
-IMAGE_MATTYPEv=/screens/media_vhs.gif
-IMAGE_MATTYPEw=/screens/media_periodical.gif
-IMAGE_MATTYPEz=/screens/media_bestseller.gif
-IMAGE_MATTYPE2=/screens/media_article.gif
+#IMAGE_MATTYPE-=/screens/media_book.gif
+#IMAGE_MATTYPEa=/screens/media_book.gif
+#IMAGE_MATTYPEb=/screens/media_archive.gif
+#IMAGE_MATTYPEc=/screens/media_printedmusic.gif
+#IMAGE_MATTYPEd=/screens/media_musicmanuscript.gif
+#IMAGE_MATTYPEe=/screens/media_map.gif
+#IMAGE_MATTYPEf=/screens/media_mapmanuscript.gif
+#IMAGE_MATTYPEg=/screens/media_film.gif
+#IMAGE_MATTYPEh=/screens/media_electronicdoc.gif
+#IMAGE_MATTYPEi=/screens/media_cdbook.gif
+#IMAGE_MATTYPEj=/screens/media_musicalsound.gif
+#IMAGE_MATTYPEk=/screens/media_photo.gif
+#IMAGE_MATTYPEl=/screens/media_largeprint.gif
+#IMAGE_MATTYPEm=/screens/media_computerfile.gif
+#IMAGE_MATTYPEn=/screens/media_newspaper.gif
+#IMAGE_MATTYPEo=/screens/media_kit.gif
+#IMAGE_MATTYPEq=/screens/media_ebook.gif
+#IMAGE_MATTYPEr=/screens/media_3dartwork.gif
+#IMAGE_MATTYPEs=/screens/media_tapebook.gif
+#IMAGE_MATTYPEt=/screens/media_manuscript.gif
+#IMAGE_MATTYPEu=/screens/media_dvd.gif
+#IMAGE_MATTYPEv=/screens/media_vhs.gif
+#IMAGE_MATTYPEw=/screens/media_periodical.gif
+#IMAGE_MATTYPEz=/screens/media_bestseller.gif
+#IMAGE_MATTYPE2=/screens/media_article.gif
 INDEX_EXT=coi
 MEDIA=2
 NO_COPIES=Currently no copies available
