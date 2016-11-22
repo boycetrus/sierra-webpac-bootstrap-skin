@@ -1,0 +1,26 @@
+//reset table layout
+
+table.browseScreen,
+table.browseScreen tbody,
+table.browseScreen tr,
+table.browseScreen td {
+    display: block;
+}
+
+table.bibItems {
+  display: table;
+  tbody {
+    display: table-row-group;
+  }
+  tr {
+    display: table-row;
+  }
+  td {
+    display: table-cell;
+  }
+}
+
+.bibItemsHeader {
+  font-weight: $bold;
+  text-align: left;
+}

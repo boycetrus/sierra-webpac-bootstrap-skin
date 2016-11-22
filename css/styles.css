@@ -4722,6 +4722,25 @@ td {
   flex-grow: 1;
   font-weight: 600; }
 
+table.browseScreen,
+table.browseScreen tbody,
+table.browseScreen tr,
+table.browseScreen td {
+  display: block; }
+
+table.bibItems {
+  display: table; }
+  table.bibItems tbody {
+    display: table-row-group; }
+  table.bibItems tr {
+    display: table-row; }
+  table.bibItems td {
+    display: table-cell; }
+
+.bibItemsHeader {
+  font-weight: 600;
+  text-align: left; }
+
 .social {
   background-color: #E9F2F7;
   padding: 12px 0; }
