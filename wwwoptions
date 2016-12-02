@@ -266,7 +266,7 @@ ICON_BUT_REQUEST_ALL=<div class="buttonFullBold" id="ICON_BUT_REQUEST_ALL">Reque
 ICON_BUT_REQUEST_MULTI=<div class="buttonFullBold" id="ICON_BUT_REQUEST_MULTI">Request Saved</div>
 ICON_BUT_REQUEST_RESET=<div class="buttonFullBold" id="ICON_BUT_REQUEST_RESET">Reset Form</div>
 ICON_BUT_REQUEST_SELECTED=<div class="buttonFullBold" id="ICON_BUT_REQUEST_SELECTED">Request Selected</div>
-ICON_REQUEST=<div class="buttonFullBold" id="ICON_REQUEST">Request</div>
+ICON_REQUEST=<span data-icon="ICON_REQUEST">Place Hold</span>
 # REQFILLTIME=14|<br>Request available in approximately %d days|<br>Current estimated availability: approximately %d days|<br>This material may be immediately available
 REQUEST=Hold this item|bib|ask|Y
 REQUEST_ARTICLE_IFCHKIN=Y
