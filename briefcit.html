@@ -4,51 +4,54 @@
   <!--{xif}-->
 
 <tr>
-<td class="briefcitCell row">
+<td class="briefcitCell"><!-- result list -->
 
 <!-- start nohitmsg token -->
 <!--{nohitmsg}-->
 
 
-  <div class="briefcitDetail col-xs-12">
-    <div class="panel panel-default">
+    <div class="panel panel-default briefcitResult"><!-- result-item -->
       <div class="panel-heading">
         <h3 class="panel-title">
+<!--{entrynum}-->
 <!--{linkfieldspec:Vbt245abnh}-->
         </h3>
       </div>
-      <div class="panel-body">
-
-        <p class="author">
+      <div class="panel-body briefcitDetail"><!-- /result-detail -->
+        <div class="briefcit-data">
+          <p class="author">
 <!--{fieldspec:Vba}-->
-        </p>
-
-        <p class="mattype">
+          </p>
+          <p class="mattype">
 <!--{media}-->
-          <br />
-    <!--{holdingsmsg}-->
+            <br>
+<!--{year}-->
+            <br>
+<!--{holdingsmsg}-->
 <!--{holds}-->
-        </p>
+          </p>
+        </div>
 
-        <p class="briefcitRequest">
+        <div class="briefcit-actions">
+          <p class="briefcitRequest">
 <!--{request}-->
-        </p>
-        <!-- briefcitRequest -->
-
-        <p class="briefcitMark">
+          </p>
+          <!-- briefcitRequest -->
+          <p class="briefcitMark">
 <!--{mark}-->
-        </p>
-        <!-- /briefcitMark -->
-
+          </p>
+          <!-- /briefcitMark -->
+        </div>
+        <!-- /briefcit-actions -->
       </div>
       <!-- /panel-body -->
 
+      <div class="briefcit-status">
 <!--{items}-->
-
+      </div>
     </div>
-    <!-- /panel -->
-  </div>
-  <!-- /briefcitDetail -->
+    <!-- /briefcitResult -->
+
 
 
 
