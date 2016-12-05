@@ -95,16 +95,16 @@ AVS_MODIFY_TAG=X
 AVS_TAG=XYZ
 ICON_BUT_MODIFY=<div class="buttonFull" id="ICON_BUT_MODIFY">Modify Search</div>
 ICON_BUT_SHOWSIM=<div class="buttonFull" id="ICON_BUT_SHOWSIM">More Like This</div>
-ICON_REL_GROUP_1=<span data-option="ICON_REL_GROUP_1"><img src="/screens/relevance5.gif" alt="Most relevant">&nbsp;<h1 class="browseSuperEntryTitle">Most relevant titles</h1>&nbsp;</span>
-ICON_REL_GROUP_2=<span data-option="ICON_REL_GROUP_2"><img src="/screens/relevance4.gif" alt="Highly relevant">&nbsp;<h1 class="browseSuperEntryTitle">Highly relevant titles</h1>&nbsp;a</span>
-ICON_REL_GROUP_3=<span data-option="ICON_REL_GROUP_3"><img src="/screens/relevance3.gif" alt="Very relevant">&nbsp;<h1 class="browseSuperEntryTitle">Very relevant titles</h1>&nbsp;</span>
-ICON_REL_GROUP_4=<span data-option="ICON_REL_GROUP_4"><img src="/screens/relevance2.gif" alt="Relevant">&nbsp;<h1 class="browseSuperEntryTitle">Relevant titles</h1>&nbsp;></span>
-ICON_REL_GROUP_5=<span data-option="ICON_REL_GROUP_5"><img src="/screens/relevance1.gif" alt="Other relevant">&nbsp;<h1 class="browseSuperEntryTitle">Other relevant titles</h1>&nbsp;</span>
-IMAGE_AVS1=/screens/relevance1.gif
-IMAGE_AVS2=/screens/relevance2.gif
-IMAGE_AVS3=/screens/relevance3.gif
-IMAGE_AVS4=/screens/relevance4.gif
-IMAGE_AVS5=/screens/relevance5.gif
+ICON_REL_GROUP_1=<h2 data-option="ICON_REL_GROUP_1" class="browseSuperEntryTitle">Most relevant titles</h2>
+ICON_REL_GROUP_2=<h2 data-option="ICON_REL_GROUP_2" class="browseSuperEntryTitle">Highly relevant titles</h2>
+ICON_REL_GROUP_3=<h2 data-option="ICON_REL_GROUP_3" class="browseSuperEntryTitle">Very relevant titles</h2>
+ICON_REL_GROUP_4=<h2 data-option="ICON_REL_GROUP_4" class="browseSuperEntryTitle">Relevant titles</h2>
+ICON_REL_GROUP_5=<h2 data-option="ICON_REL_GROUP_5" class="browseSuperEntryTitle">Other relevant titles</h2>
+# IMAGE_AVS1=/screens/relevance1.gif
+# IMAGE_AVS2=/screens/relevance2.gif
+# IMAGE_AVS3=/screens/relevance3.gif
+# IMAGE_AVS4=/screens/relevance4.gif
+# IMAGE_AVS5=/screens/relevance5.gif
 # ICON_AWS_BYRELEVANCE_LINK=
 # ICON_AWS_BYDATE_LINK=
 # ICON_AWS_BYTITLE_LINK=
@@ -170,7 +170,7 @@ NO_COPIES=Currently no copies available
 SORT_BROWSE=t:Title|a:Author|c:Year|r:Reverse Year|n:Call Number|m:Material Type
 SORT_MEDIA=amcdji
 SUPPRESS_YEAR=False
-TABLEPARAM_BRIEFCIT=true|border="0" cellpadding="0" width="100%" name="tableparam_briefcit"
+TABLEPARAM_BRIEFCIT=true|class="briefcit" data-option="tableparam_briefcit"
 TABLEPARAM_BROWSE=width="100%" cellpadding="0" cellspacing="0" border="0" name="tableparam_browse"|align="center" cellpadding="0" cellspacing="0" border="0" name="tableparam_browse"|width="100%" cellpadding="0" cellspacing="0" border="0" name="tableparam_browse"|cellpadding="0" cellspacing="0" border="0" name="tableparam_browse"
 # Record Displays
 BIB_TOC_HEADER=<strong>Table of Contents</strong>
