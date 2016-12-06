@@ -8,4 +8,5 @@ $(function() {
   $('table.briefcit tr.browseHeader').remove();
   $('table.briefcit > tbody > tr:first-child').insertBefore(topPagination);
   $('table.briefcit > tbody').addClass('briefcit-list');
+  $('table.briefcit tr.browseSuperEntry').addClass('page-header');
 });

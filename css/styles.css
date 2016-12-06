@@ -4744,9 +4744,8 @@ table.browseScreen tr.briefcit-item {
   flex-basis: 100%; }
   @media (min-width: 768px) and (max-width: 991px) {
     table.browseScreen tr.briefcit-item {
-      flex-basis: 49%; }
-      table.browseScreen tr.briefcit-item:nth-child(2n+1) {
-        margin-right: 2%; } }
+      flex-basis: 48%;
+      margin-right: 2%; } }
   @media (min-width: 992px) {
     table.browseScreen tr.briefcit-item {
       flex-basis: 32%;
