@@ -4734,6 +4734,9 @@ table.browseScreen tbody.briefcit-list {
   flex-direction: row;
   flex-wrap: wrap; }
 
+table.browseScreen tr.browseSuperEntry {
+  flex: 0 0 100%; }
+
 table.browseScreen tr.briefcit-item {
   display: flex;
   flex-direction: column;

@@ -13,6 +13,10 @@ table.browseScreen tbody.briefcit-list {
   flex-wrap: wrap;
 }
 
+table.browseScreen tr.browseSuperEntry {
+  flex: 0 0 100%;
+}
+
 table.browseScreen tr.briefcit-item {
   display: flex;
   flex-direction: column;
@@ -29,6 +33,8 @@ table.browseScreen tr.briefcit-item {
     margin-right: 1.2%;
   }
 }
+
+
 
 .briefcitDetail {
   display: flex;
