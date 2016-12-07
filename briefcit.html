@@ -1,4 +1,7 @@
-  <!-- Book covers not included on brief citation display without a reliable cover service -->
+  <!--
+  Book covers not included on brief citation display without a reliable cover service
+  If using book covers will need toadjust flex basis of .briefcit-data in _briefcit.scss
+  -->
   <!--{ifhasbookjacket}-->
   <!--{bookjacket}-->
   <!--{xif}-->
@@ -18,39 +21,42 @@
 <!--{linkfieldspec:Vbt245abnh}-->
         </h3>
       </div>
-      <div class="panel-body briefcitDetail"><!-- /result-detail -->
-        <div class="briefcit-data">
-          <p class="author">
+      <div class="panel-body"><!-- /result-detail -->
+        <div class="briefcitDetail">
+          <div class="briefcit-data">
+            <p class="author">
 <!--{fieldspec:Vba}-->
-          </p>
-          <p class="mattype">
+            </p>
+            <p class="mattype">
 <!--{media}-->
-            <br>
+              <br>
 <!--{year}-->
-            <br>
+            </p>
+          </div>
+
+          <div class="briefcit-actions">
+            <p class="briefcitRequest">
+  <!--{request}-->
+            </p>
+          </div>
+          <!-- /briefcit-actions -->
+        </div>
+        <!-- /briefcit-detail -->
+
+        <div class="briefcit-status">
 <!--{holdingsmsg}-->
 .&nbsp;
 <!--{holds}-->
-          </p>
         </div>
-
-        <div class="briefcit-actions">
-          <p class="briefcitRequest">
-<!--{request}-->
-          </p>
-          <!-- briefcitRequest -->
-          <p class="briefcitMark">
-<!--{mark}-->
-          </p>
-          <!-- /briefcitMark -->
-        </div>
-        <!-- /briefcit-actions -->
+        <!-- /briefcit-status -->
       </div>
       <!-- /panel-body -->
 
-      <div class="briefcit-status">
+
+      <div class="briefcit-copies">
 <!--{items}-->
       </div>
+      <!-- /briefcit-copies -->
     </div>
     <!-- /briefcitResult -->
 
@@ -61,23 +67,24 @@
   <!-- start 856link token -->
   <!--{856link}-->
   <!-- end 856link token -->
+
   <!--{ifmulti856}-->
   &nbsp;
   <!-- start more856 token -->
   <!--{more856}-->
   <!-- end more856 token -->
   <!--{xif}-->
+
   <!-- start 962link token -->
   <!--{962link}-->
   <!-- end 962link token -->
+
   <!--{ifmulti962}-->
   &nbsp;
   <!-- start more962 token -->
   <!--{more962}-->
   <!-- end more962 token -->
   <!--{xif}-->
-
-
 
 </td>
 </tr>
