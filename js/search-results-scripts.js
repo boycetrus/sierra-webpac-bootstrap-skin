@@ -11,12 +11,9 @@ $(function() {
   $('table.briefcit tr.browseSuperEntry').addClass('page-header');
 
   //hide the copies table in each .briefcit-item and setup toggle to show/hide when table exists
-  $('.briefcit-item').each(function(i) {
-    var copyTableExists = $(this).find('.bibItems');
-    if (copyTableExists) {
-      console.log(i + ': has copies table');
-    } else {
-      console.log(i + ': no copy table');
-    }
+  $('table.bibItems').parents('.briefcit-item').addClass('has-copy-table');
+  $('<a>Show Details</a>').appendTo('.briefcit-item .copy-status');
+  $('.copy-status a').on('click', function() {
+    $(this).parents('.panel-body').next('.briefcit-copies').toggleClass('sr-only');
   });
 });
