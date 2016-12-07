@@ -9,4 +9,14 @@ $(function() {
   $('table.briefcit > tbody > tr:first-child').insertBefore(topPagination);
   $('table.briefcit > tbody').addClass('briefcit-list');
   $('table.briefcit tr.browseSuperEntry').addClass('page-header');
+
+  //hide the copies table in each .briefcit-item and setup toggle to show/hide when table exists
+  $('.briefcit-item').each(function(i) {
+    var copyTableExists = $(this).find('.bibItems');
+    if (copyTableExists) {
+      console.log(i + ': has copies table');
+    } else {
+      console.log(i + ': no copy table');
+    }
+  });
 });
