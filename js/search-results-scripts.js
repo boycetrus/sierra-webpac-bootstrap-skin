@@ -21,4 +21,10 @@ $(function() {
 
   // grab the tr that contains .breifcitAddlCopies and append it to the .bibItems table
   // then remove the unnecessary table
+  $('.briefcit-copies').each(function() {
+    var isAddlCopies = $(this).children('table').length;
+    if (isAddlCopies > 1) {
+      console.log($(this));
+    }
+  });
 });
