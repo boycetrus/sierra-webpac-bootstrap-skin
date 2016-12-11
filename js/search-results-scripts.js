@@ -22,13 +22,15 @@ $(function() {
 
   // grab the tr that contains .breifcitAddlCopies and append it to the .bibItems table
   // then remove the unnecessary table
-  $('.briefcit-copies').each(function(i) {
+  $('.briefcit-copies').each(function() {
     var $hasAddlCopies = $(this).children('table');
     if ($hasAddlCopies.length > 1) {
       var $bibItems = $(this).find('.bibItems > tbody');
       var $addlCopies = $(this).find('.briefcitAddlCopies').text();
-      $($bibItems).append('<tr colspan="3"><td class="extra-copies"></td></tr>');
-      $($addlCopies).appendTo('.extra-copies');
+      $($bibItems).append('<tr><td colspan="3" class="extra-copies"></td></tr>');
+      $('.extra-copies').text($addlCopies);
+      //remove the now surplus table el
+      $($hasAddlCopies[1]).remove();
     }
   });
 });
