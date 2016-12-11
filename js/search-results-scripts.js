@@ -11,6 +11,7 @@ $(function() {
   $('table.briefcit tr.browseSuperEntry').addClass('page-header');
   $('tr.bibItemsHeader th').removeAttr('width');
   $('tr.bibItemsEntry td').removeAttr('width');
+  $('td.browseSaveJump').parent('tr').addClass('browse-jump');
 
   //hide the copies table in each .briefcit-item and setup toggle to show/hide when table exists
   $('table.bibItems').parents('.briefcit-item').addClass('has-copy-table');
@@ -21,10 +22,13 @@ $(function() {
 
   // grab the tr that contains .breifcitAddlCopies and append it to the .bibItems table
   // then remove the unnecessary table
-  $('.briefcit-copies').each(function() {
-    var isAddlCopies = $(this).children('table').length;
-    if (isAddlCopies > 1) {
-      console.log($(this));
+  $('.briefcit-copies').each(function(i) {
+    var $hasAddlCopies = $(this).children('table');
+    if ($hasAddlCopies.length > 1) {
+      var $bibItems = $(this).find('.bibItems > tbody');
+      var $addlCopies = $(this).find('.briefcitAddlCopies').text();
+      $($bibItems).append('<tr colspan="3"><td class="extra-copies"></td></tr>');
+      $($addlCopies).appendTo('.extra-copies');
     }
   });
 });

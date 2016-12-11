@@ -13,7 +13,8 @@ table.browseScreen tbody.briefcit-list {
   flex-wrap: wrap;
 }
 
-table.browseScreen tr.browseSuperEntry {
+table.browseScreen tr.browseSuperEntry,
+table.browseScreen tr.browse-jump {
   flex: 0 0 100%;
 }
 
