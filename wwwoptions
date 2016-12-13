@@ -126,12 +126,12 @@ ICON_BUT_UNLIMAVAIL=<div class="buttonFull" id="ICON_BUT_UNLIMAVAIL">Show All</d
 DISPLAY_245=atd
 EXTENDED=CT
 HEADING_LENGTH=100
-ICON_856LINK=<span data-option="ICON_856LINK"><img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Website</span>
-ICON_962LINK=<span data-option="ICON_962LINK"><img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Digital Image</span>
+ICON_856LINK=<span data-option="ICON_856LINK">View Online</span>
+ICON_962LINK=<span data-option="ICON_962LINK">Digital Image</span>
 ICON_BOOKCART=<span data-icon="ICON_BOOKCART">Add to Basket</span>
 ICON_BOOKCART_SAVED=<span data-icon="ICON_BOOKCART_SAVED">Remove From Basket</span>
-ICON_FULLRECORD=<span data-option="ICON_FULLRECORD">See Full Record</span>
-ICON_LOCATEINRESULTS=<div style="buttonFull" id="ICON_LOCATEINRESULTS">Locate in results</div>
+ICON_FULLRECORD=<span class="to-full-record" data-option="ICON_FULLRECORD">Show Full Record</span>
+ICON_LOCATEINRESULTS=<span class="jump-to" data-icon="ICON_LOCATEINRESULTS">Locate in results</span>
 ICON_PAGING_CAPTION=<span data-option="ICON_PAGING_CAPTION">Result Page</span>
 ICON_PAGING_NEXT=<span data-option="ICON_PAGING_NEXT">Next</span>
 ICON_PAGING_PREV=<span data-option="ICON_PAGING_PREV">Prev</span>

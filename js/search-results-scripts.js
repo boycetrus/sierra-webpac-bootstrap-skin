@@ -15,22 +15,27 @@ $(function() {
 
   //hide the copies table in each .briefcit-item and setup toggle to show/hide when table exists
   $('table.bibItems').parents('.briefcit-item').addClass('has-copy-table');
-  $('<a>Show Details</a>').appendTo('.briefcit-item.has-copy-table .briefcit-status');
+  $('<a>Show Copies</a>').appendTo('.briefcit-item.has-copy-table .briefcit-status');
   $('.briefcit-status a').on('click', function() {
     $(this).parents('.panel-body').next('.briefcit-copies').toggleClass('sr-only');
   });
 
-  // grab the tr that contains .breifcitAddlCopies and append it to the .bibItems table
-  // then remove the unnecessary table
+  // grab .breifcitAddlCopies and append it to a new row in .bibItems table, then remove the extra table
   $('.briefcit-copies').each(function() {
     var $hasAddlCopies = $(this).children('table');
+    var $bibItems = $(this).find('.bibItems > tbody');
+    var $addlCopies = $(this).find('.briefcitAddlCopies').text();
+    var $toFullRecord = $(this).find('.to-full-record').parent('a');
+    $($bibItems).append('<tr><td colspan="3" class="extra-copies"></td></tr>');
     if ($hasAddlCopies.length > 1) {
-      var $bibItems = $(this).find('.bibItems > tbody');
-      var $addlCopies = $(this).find('.briefcitAddlCopies').text();
-      $($bibItems).append('<tr><td colspan="3" class="extra-copies"></td></tr>');
+      //concatenate the $addlCopies text and tofullrecord link and add to td.extra-copies
       $('.extra-copies').text($addlCopies);
-      //remove the now surplus table el
+      $('.extra-copies').append($toFullRecord);
+      //remove the now surplus table element
       $($hasAddlCopies[1]).remove();
+    } else {
+      //append the tofullrecord link to td.extra-copies
+      $('.extra-copies').html($toFullRecord);
     }
   });
 });
