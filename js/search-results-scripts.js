@@ -25,21 +25,19 @@ $(function() {
   $('.to-full-record').parent('a').addClass('record-link');
   $('.bibItems > tbody').append('<tr><td colspan="3" class="extra-copies"></td></tr>');
 
-  $('.briefcit-copies').each(function(i) {
+  $('.briefcit-copies').each(function() {
     var $hasAddlCopies = $(this).children('table');
     var $recordLink = $(this).find('a.record-link');
     if ($hasAddlCopies.length > 1) {
       //concatenate the $addlCopies text and tofullrecord link and add to td.extra-copies
       var $addlCopies = $(this).find('.briefcitAddlCopies');
-      console.log(i + ': ' + $addlCopies + ", " + $recordLink);
-      //var $extraCopies = $addlCopies + '&nbsp; ' + $toFullRecord;
-      //$('.extra-copies').append($extraCopies);
+      var $extraCopies = $addlCopies + '&nbsp; ' + $recordLink;
+      $('.extra-copies').append($extraCopies);
       //remove the now surplus table element
-      //$($hasAddlCopies[1]).remove();
+      $($hasAddlCopies[1]).remove();
     } else {
       //append the tofullrecord link to td.extra-copies
-      console.log(i + ': ' + $recordLink);
-      //$('.extra-copies').append($toFullRecord);
+      $('.extra-copies').append($recordLink);
     }
   });
 });
