@@ -29,13 +29,13 @@ $(function() {
     $($bibItems).append('<tr><td colspan="3" class="extra-copies"></td></tr>');
     if ($hasAddlCopies.length > 1) {
       //concatenate the $addlCopies text and tofullrecord link and add to td.extra-copies
-      $('.extra-copies').text($addlCopies);
-      $('.extra-copies').append($toFullRecord);
+      var $extraCopies = $addlCopies + '&nbsp; ' + $toFullRecord;
+      $('.extra-copies').append($extraCopies);
       //remove the now surplus table element
       $($hasAddlCopies[1]).remove();
     } else {
       //append the tofullrecord link to td.extra-copies
-      $('.extra-copies').html($toFullRecord);
+      $('.extra-copies').append($toFullRecord);
     }
   });
 });
