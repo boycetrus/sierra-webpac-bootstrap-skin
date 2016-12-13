@@ -19,23 +19,26 @@ $(function() {
   $('.briefcit-status a').on('click', function() {
     $(this).parents('.panel-body').next('.briefcit-copies').toggleClass('sr-only');
   });
+  $('.to-full-record').parent('a').addClass('record-link');
 
   // grab .breifcitAddlCopies and append it to a new row in .bibItems table, then remove the extra table
-  $('.briefcit-copies').each(function() {
+  $('.briefcit-copies').each(function(i) {
     var $hasAddlCopies = $(this).children('table');
     var $bibItems = $(this).find('.bibItems > tbody');
     var $addlCopies = $(this).find('.briefcitAddlCopies').text();
-    var $toFullRecord = $(this).find('.to-full-record').parent('a');
+    var $recordLink = $(this).find('.record-link');
     $($bibItems).append('<tr><td colspan="3" class="extra-copies"></td></tr>');
     if ($hasAddlCopies.length > 1) {
       //concatenate the $addlCopies text and tofullrecord link and add to td.extra-copies
-      var $extraCopies = $addlCopies + '&nbsp; ' + $toFullRecord;
-      $('.extra-copies').append($extraCopies);
+      console.log(i + ': ' + $addlCopies + ", " + $recordLink);
+      //var $extraCopies = $addlCopies + '&nbsp; ' + $toFullRecord;
+      //$('.extra-copies').append($extraCopies);
       //remove the now surplus table element
-      $($hasAddlCopies[1]).remove();
+      //$($hasAddlCopies[1]).remove();
     } else {
       //append the tofullrecord link to td.extra-copies
-      $('.extra-copies').append($toFullRecord);
+      console.log(i + ': ' + $recordLink;
+      //$('.extra-copies').append($toFullRecord);
     }
   });
 });
