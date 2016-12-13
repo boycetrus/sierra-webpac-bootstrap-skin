@@ -37,7 +37,7 @@ $(function() {
       //$($hasAddlCopies[1]).remove();
     } else {
       //append the tofullrecord link to td.extra-copies
-      console.log(i + ': ' + $recordLink;
+      console.log(i + ': ' + $recordLink);
       //$('.extra-copies').append($toFullRecord);
     }
   });
