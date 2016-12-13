@@ -27,17 +27,19 @@ $(function() {
 
   $('.briefcit-copies').each(function() {
     var $hasAddlCopies = $(this).children('table');
-    var $recordLink = $(this).find('a.record-link');
+    //var $recordLink;
     if ($hasAddlCopies.length > 1) {
       //concatenate the $addlCopies text and tofullrecord link and add to td.extra-copies
       var $addlCopies = $(this).find('.briefcitAddlCopies');
-      var $extraCopies = $addlCopies + '&nbsp; ' + $recordLink;
-      $('.extra-copies').append($extraCopies);
+      //$recordLink = $(this).find('a.record-link');
+      //var $extraCopies = $addlCopies + '&nbsp; ' + $recordLink;
+      $('.extra-copies').append($addlCopies);
       //remove the now surplus table element
       $($hasAddlCopies[1]).remove();
-    } else {
-      //append the tofullrecord link to td.extra-copies
-      $('.extra-copies').append($recordLink);
+    // } else {
+    //   //append the tofullrecord link to td.extra-copies
+    //   $recordLink = $(this).find('a.record-link');
+    //   $('.extra-copies').append($recordLink);
     }
   });
 });
