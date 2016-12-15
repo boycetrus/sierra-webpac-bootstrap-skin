@@ -25,18 +25,22 @@ $(function() {
   $('.to-full-record').parent('a').addClass('record-link');
   $('.bibItems > tbody').append('<tr><td colspan="3" class="extra-copies"></td></tr>');
 
-  $('.briefcit-copies').each(function() {
+  $('.briefcit-copies').each(function(i) {
     var $hasAddlCopies = $(this).children('table');
-    //var $recordLink;
+    var $recordLink;
+    var $addlCopies;
+    var j=i+1;
     if ($hasAddlCopies.length > 1) {
+      console.log(j + ': has addidtional copies');
       //concatenate the $addlCopies text and tofullrecord link and add to td.extra-copies
-      var $addlCopies = $(this).find('.briefcitAddlCopies');
+      //$addlCopies = $('.briefcit-copies')[i].find('.briefcitAddlCopies');
       //$recordLink = $(this).find('a.record-link');
       //var $extraCopies = $addlCopies + '&nbsp; ' + $recordLink;
-      $('.extra-copies').append($addlCopies);
+      //$('.extra-copies').append($addlCopies);
       //remove the now surplus table element
-      $($hasAddlCopies[1]).remove();
-    // } else {
+      //$($hasAddlCopies[1]).remove();
+     } else {
+      console.log(j + ': no additional copies');
     //   //append the tofullrecord link to td.extra-copies
     //   $recordLink = $(this).find('a.record-link');
     //   $('.extra-copies').append($recordLink);
