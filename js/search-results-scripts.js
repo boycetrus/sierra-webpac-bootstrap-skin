@@ -35,9 +35,8 @@ $(function() {
     $(this).find('.extra-copies').append($recordLink);
 
     if ($hasAddlCopies.length > 1) {
-      console.log(j + ': has additional copies');
-      $addlCopies = $(this).find('.briefcitAddlCopies');
-      $(this).find('.extra-copies').before($addlCopies);
+      $addlCopies = $(this).find('.briefcitAddlCopies').text();
+      console.log(j + ': ' + $addlcopies);
       //concatenate the $addlCopies text and tofullrecord link and add to td.extra-copies
       //$addlCopies = $('.briefcit-copies')[i].find('.briefcitAddlCopies');
       //$recordLink = $(this).find('a.record-link');
