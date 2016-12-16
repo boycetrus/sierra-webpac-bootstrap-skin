@@ -30,10 +30,12 @@ $(function() {
     var $recordLink;
     var $addlCopies;
     var j=i+1;
+
+    $recordLink = $(this).find('.record-link');
+    $(this).find('.extra-copies').append($recordLink);
+
     if ($hasAddlCopies.length > 1) {
       console.log(j + ': has addidtional copies');
-      $recordLink = $(this).find('.record-link');
-      $(this).find('.extra-copies').append($recordLink);
       //concatenate the $addlCopies text and tofullrecord link and add to td.extra-copies
       //$addlCopies = $('.briefcit-copies')[i].find('.briefcitAddlCopies');
       //$recordLink = $(this).find('a.record-link');
@@ -43,8 +45,6 @@ $(function() {
       //$($hasAddlCopies[1]).remove();
      } else {
       console.log(j + ': no additional copies');
-      $recordLink = $(this).find('.record-link');
-      $(this).find('.extra-copies').append($recordLink);
     //   //append the tofullrecord link to td.extra-copies
     //   $recordLink = $(this).find('a.record-link');
     //   $('.extra-copies').append($recordLink);
