@@ -15,7 +15,7 @@ $(function() {
 
   //hide the copies table in each .briefcit-item and setup toggle to show/hide when table exists
   $('table.bibItems').parents('.briefcit-item').addClass('has-copy-table');
-  $('<a>Show Copies</a>').appendTo('.briefcit-item.has-copy-table .briefcit-status');
+  $('&nbsp;<a>Show Copies</a>').appendTo('.briefcit-item.has-copy-table .briefcit-status');
   $('.briefcit-status a').on('click', function() {
     $(this).parents('.panel-body').next('.briefcit-copies').toggleClass('sr-only');
   });
@@ -35,7 +35,9 @@ $(function() {
     $(this).find('.extra-copies').append($recordLink);
 
     if ($hasAddlCopies.length > 1) {
-      console.log(j + ': has addidtional copies');
+      console.log(j + ': has additional copies');
+      $addlCopies = $(this).find('.briefcitAddlCopies');
+      $(this).find('.extra-copies').before($addlCopies);
       //concatenate the $addlCopies text and tofullrecord link and add to td.extra-copies
       //$addlCopies = $('.briefcit-copies')[i].find('.briefcitAddlCopies');
       //$recordLink = $(this).find('a.record-link');
