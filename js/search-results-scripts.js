@@ -25,31 +25,23 @@ $(function() {
   $('.to-full-record').parent('a').addClass('record-link');
   $('.bibItems > tbody').append('<tr><td colspan="3" class="extra-copies"></td></tr>');
 
-  $('.briefcit-copies').each(function(i) {
+  $('.briefcit-copies').each(function() {
     var $hasAddlCopies = $(this).children('table');
     var $recordLink;
-    var j=i+1;
 
+    //find the .to-full-record link and move it to td.extra-copies
     $recordLink = $(this).find('.record-link');
     $(this).find('.extra-copies').append($recordLink);
 
+    //if there are more than three copies webpac inserts an extra table el with a note about extra copies
+    //move the extra copies text into td.extra-copies
     if ($hasAddlCopies.length > 1) {
+      //grab the additional copies text and insert it into td.extra-copies before the .to-full-record link
       var $addlCopiesText = $(this).find('.briefcitAddlCopies').text();
       var $addlCopies = ". " + $addlCopiesText;
       $(this).find('.extra-copies').prepend($addlCopies);
-      console.log(j + ': ' + $addlCopies);
-      //concatenate the $addlCopies text and tofullrecord link and add to td.extra-copies
-      //$addlCopies = $('.briefcit-copies')[i].find('.briefcitAddlCopies');
-      //$recordLink = $(this).find('a.record-link');
-      //var $extraCopies = $addlCopies + '&nbsp; ' + $recordLink;
-      //$('.extra-copies').append($addlCopies);
       //remove the now surplus table element
-      //$($hasAddlCopies[1]).remove();
-     } else {
-      console.log(j + ': no additional copies');
-    //   //append the tofullrecord link to td.extra-copies
-    //   $recordLink = $(this).find('a.record-link');
-    //   $('.extra-copies').append($recordLink);
-    }
+      $($hasAddlCopies[1]).remove();
+     }
   });
 });
