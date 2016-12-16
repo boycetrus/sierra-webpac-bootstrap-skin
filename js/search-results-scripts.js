@@ -38,7 +38,7 @@ $(function() {
     if ($hasAddlCopies.length > 1) {
       //grab the additional copies text and insert it into td.extra-copies before the .to-full-record link
       var $addlCopiesText = $(this).find('.briefcitAddlCopies').text();
-      var $addlCopies = ". " + $addlCopiesText;
+      var $addlCopies = $addlCopiesText + ". ";
       $(this).find('.extra-copies').prepend($addlCopies);
       //remove the now surplus table element
       $($hasAddlCopies[1]).remove();
