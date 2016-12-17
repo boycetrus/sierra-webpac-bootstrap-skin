@@ -1,3 +1,4 @@
+
 #<!-- Sierra Example Set -->*/
 #<!-- This File Last Changed: 17 Dec 2015 -->*/
 
@@ -94,16 +95,16 @@ AVS_MODIFY_TAG=X
 AVS_TAG=XYZ
 ICON_BUT_MODIFY=<div class="buttonFull" id="ICON_BUT_MODIFY">Modify Search</div>
 ICON_BUT_SHOWSIM=<div class="buttonFull" id="ICON_BUT_SHOWSIM">More Like This</div>
-ICON_REL_GROUP_1=<span data-option="ICON_REL_GROUP_1"><img src="/screens/relevance5.gif" alt="Most relevant">&nbsp;<h1 class="browseSuperEntryTitle">Most relevant titles</h1>&nbsp;</span>
-ICON_REL_GROUP_2=<span data-option="ICON_REL_GROUP_2"><img src="/screens/relevance4.gif" alt="Highly relevant">&nbsp;<h1 class="browseSuperEntryTitle">Highly relevant titles</h1>&nbsp;a</span>
-ICON_REL_GROUP_3=<span data-option="ICON_REL_GROUP_3"><img src="/screens/relevance3.gif" alt="Very relevant">&nbsp;<h1 class="browseSuperEntryTitle">Very relevant titles</h1>&nbsp;</span>
-ICON_REL_GROUP_4=<span data-option="ICON_REL_GROUP_4"><img src="/screens/relevance2.gif" alt="Relevant">&nbsp;<h1 class="browseSuperEntryTitle">Relevant titles</h1>&nbsp;></span>
-ICON_REL_GROUP_5=<span data-option="ICON_REL_GROUP_5"><img src="/screens/relevance1.gif" alt="Other relevant">&nbsp;<h1 class="browseSuperEntryTitle">Other relevant titles</h1>&nbsp;</span>
-IMAGE_AVS1=/screens/relevance1.gif
-IMAGE_AVS2=/screens/relevance2.gif
-IMAGE_AVS3=/screens/relevance3.gif
-IMAGE_AVS4=/screens/relevance4.gif
-IMAGE_AVS5=/screens/relevance5.gif
+ICON_REL_GROUP_1=<h2 data-option="ICON_REL_GROUP_1" class="browseSuperEntryTitle">Most Relevant Titles</h2>
+ICON_REL_GROUP_2=<h2 data-option="ICON_REL_GROUP_2" class="browseSuperEntryTitle">Highly Relevant Titles</h2>
+ICON_REL_GROUP_3=<h2 data-option="ICON_REL_GROUP_3" class="browseSuperEntryTitle">Very Relevant Titles</h2>
+ICON_REL_GROUP_4=<h2 data-option="ICON_REL_GROUP_4" class="browseSuperEntryTitle">Relevant titles</h2>
+ICON_REL_GROUP_5=<h2 data-option="ICON_REL_GROUP_5" class="browseSuperEntryTitle">Other Relevant Titles</h2>
+# IMAGE_AVS1=/screens/relevance1.gif
+# IMAGE_AVS2=/screens/relevance2.gif
+# IMAGE_AVS3=/screens/relevance3.gif
+# IMAGE_AVS4=/screens/relevance4.gif
+# IMAGE_AVS5=/screens/relevance5.gif
 # ICON_AWS_BYRELEVANCE_LINK=
 # ICON_AWS_BYDATE_LINK=
 # ICON_AWS_BYTITLE_LINK=
@@ -125,12 +126,12 @@ ICON_BUT_UNLIMAVAIL=<div class="buttonFull" id="ICON_BUT_UNLIMAVAIL">Show All</d
 DISPLAY_245=atd
 EXTENDED=CT
 HEADING_LENGTH=100
-ICON_856LINK=<span data-option="ICON_856LINK"><img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Website</span>
-ICON_962LINK=<span data-option="ICON_962LINK"><img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Digital Image</span>
+ICON_856LINK=<span data-option="ICON_856LINK">View Online</span>
+ICON_962LINK=<span data-option="ICON_962LINK">Digital Image</span>
 ICON_BOOKCART=<span data-icon="ICON_BOOKCART">Add to Basket</span>
 ICON_BOOKCART_SAVED=<span data-icon="ICON_BOOKCART_SAVED">Remove From Basket</span>
-ICON_FULLRECORD=<span data-option="ICON_FULLRECORD">See Full Record</span>
-ICON_LOCATEINRESULTS=<div style="buttonFull" id="ICON_LOCATEINRESULTS">Locate in results</div>
+ICON_FULLRECORD=<span class="to-full-record" data-option="ICON_FULLRECORD">Show Full Record</span>
+ICON_LOCATEINRESULTS=<span class="jump-to" data-icon="ICON_LOCATEINRESULTS">Locate in results</span>
 ICON_PAGING_CAPTION=<span data-option="ICON_PAGING_CAPTION">Result Page</span>
 ICON_PAGING_NEXT=<span data-option="ICON_PAGING_NEXT">Next</span>
 ICON_PAGING_PREV=<span data-option="ICON_PAGING_PREV">Prev</span>
@@ -169,7 +170,7 @@ NO_COPIES=Currently no copies available
 SORT_BROWSE=t:Title|a:Author|c:Year|r:Reverse Year|n:Call Number|m:Material Type
 SORT_MEDIA=amcdji
 SUPPRESS_YEAR=False
-TABLEPARAM_BRIEFCIT=true|border="0" cellpadding="0" width="100%" name="tableparam_briefcit"
+TABLEPARAM_BRIEFCIT=true|class="briefcit" data-option="tableparam_briefcit"
 TABLEPARAM_BROWSE=width="100%" cellpadding="0" cellspacing="0" border="0" name="tableparam_browse"|align="center" cellpadding="0" cellspacing="0" border="0" name="tableparam_browse"|width="100%" cellpadding="0" cellspacing="0" border="0" name="tableparam_browse"|cellpadding="0" cellspacing="0" border="0" name="tableparam_browse"
 # Record Displays
 BIB_TOC_HEADER=<strong>Table of Contents</strong>
@@ -265,7 +266,7 @@ ICON_BUT_REQUEST_ALL=<div class="buttonFullBold" id="ICON_BUT_REQUEST_ALL">Reque
 ICON_BUT_REQUEST_MULTI=<div class="buttonFullBold" id="ICON_BUT_REQUEST_MULTI">Request Saved</div>
 ICON_BUT_REQUEST_RESET=<div class="buttonFullBold" id="ICON_BUT_REQUEST_RESET">Reset Form</div>
 ICON_BUT_REQUEST_SELECTED=<div class="buttonFullBold" id="ICON_BUT_REQUEST_SELECTED">Request Selected</div>
-ICON_REQUEST=<div class="buttonFullBold" id="ICON_REQUEST">Request</div>
+ICON_REQUEST=<span data-icon="ICON_REQUEST">Place Hold</span>
 # REQFILLTIME=14|<br>Request available in approximately %d days|<br>Current estimated availability: approximately %d days|<br>This material may be immediately available
 REQUEST=Hold this item|bib|ask|Y
 REQUEST_ARTICLE_IFCHKIN=Y

@@ -1,72 +1,72 @@
-  <!-- Book covers not included on brief citation display without a reliable cover service -->
+  <!--
+  Book covers not included on brief citation display without a reliable cover service
+  If using book covers will need toadjust flex basis of .briefcit-data in _briefcit.scss
+  -->
   <!--{ifhasbookjacket}-->
   <!--{bookjacket}-->
   <!--{xif}-->
 
-<tr>
-<td class="briefcitCell row">
+<tr class="briefcit-item"><!-- result-item -->
+<td>
 
 <!-- start nohitmsg token -->
 <!--{nohitmsg}-->
 
 
-  <div class="briefcitDetail col-xs-12">
-    <h2 class="h3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+<!--{entrynum}-->
+.&nbsp;
 <!--{linkfieldspec:Vbt245abnh}-->
-    </h2>
-
-    <p class="author">
-<!--{fieldspec:Vba}-->
-    </p>
-
-    <p class="mattype">
-<!--{media}-->
-    </p>
-
-    <div class="panel panel-default copy-status">
-      <div class="panel-heading">Availability</div>
-      <div class="panel-body">
-        <p>
-<!--{holdingsmsg}-->
-. &nbsp;
-<!--{holds}-->
-          <button class="btn btn-default btn-xs" type="button" data-toggle="collapse" data-target="#" aria-expanded="false" aria-controls="collapseExample">Show Copies</button>
-        </p>
+        </h3>
       </div>
-<!--{items}-->
-    </div>
+      <div class="panel-body"><!-- /result-detail -->
+        <div class="briefcitDetail">
+          <div class="briefcit-data">
+            <p class="author">
+<!--{fieldspec:Vba}-->
+            </p>
+            <p class="mattype">
+<!--{media}-->
+              <br>
+<!--{year}-->
+            </p>
+          </div>
 
-    <div class="briefcitRequest">
+          <div class="briefcit-actions">
+            <p class="briefcitRequest">
 <!--{request}-->
+            </p>
+            <p class="briefcitMark">
 <!--{mark}-->
-    </div> <!-- briefcitRequest -->
-
-  </div>
-  <!-- /briefcitDetail -->
-
-
-<div class="briefcitActions">
-
-<!-- start 856link token -->
+            </p>
+            <p>
 <!--{856link}-->
-<!-- end 856link token -->
-<!--{ifmulti856}-->
-&nbsp;
-<!-- start more856 token -->
-<!--{more856}-->
-<!-- end more856 token -->
-<!--{xif}-->
-<!-- start 962link token -->
-<!--{962link}-->
-<!-- end 962link token -->
-<!--{ifmulti962}-->
-&nbsp;
-<!-- start more962 token -->
-<!--{more962}-->
-<!-- end more962 token -->
-<!--{xif}-->
-</div> <!-- briefcitActions -->
+            </p>
+          </div>
+          <!-- /briefcit-actions -->
+        </div>
+        <!-- /briefcit-detail -->
 
+        <div class="briefcit-status">
+<!--{holdingsmsg}-->
+.&nbsp;
+<!--{holds}-->
+&nbsp;
+        </div>
+        <!-- /briefcit-status -->
+      </div>
+      <!-- /panel-body -->
+
+
+      <div class="briefcit-copies sr-only">
+<!--{items}-->
+<!--{tofullrecord}-->
+      </div>
+      <!-- /briefcit-copies -->
+    </div>
+    <!-- /panel -->
 
 </td>
 </tr>
