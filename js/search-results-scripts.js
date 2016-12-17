@@ -20,6 +20,8 @@ $(function() {
     $(this).parents('.panel-body').next('.briefcit-copies').toggleClass('sr-only');
   });
 
+  //remove the copy status text for ebooks and eAudio
+  $('.briefcit-item').not('.has-copy-table').find('.briefcit-status').remove();
 
   // grab .breifcitAddlCopies and append it to a new row in .bibItems table, then remove the extra table
   $('.to-full-record').parent('a').addClass('record-link');
