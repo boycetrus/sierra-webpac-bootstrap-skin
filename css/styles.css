@@ -4736,14 +4736,14 @@ table.browseScreen td {
 
 .briefcit-item .panel-body {
   display: flex;
-  padding: 1px 5px;
+  padding: 5px;
   position: relative; }
 
 .briefcit-num {
   position: absolute;
   top: 8px;
   left: 8px;
-  padding: 1px 5px;
+  padding: 1px;
   border-radius: 3px;
   background-color: #fff;
   opacity: 0.75;
@@ -4778,7 +4778,7 @@ table.browseScreen td {
   @media (min-width: 480px) {
     .briefcit-item .panel-footer {
       flex-flow: row nowrap;
-      padding: 1px 5px; } }
+      padding: 5px; } }
   @media (min-width: 768px) {
     .briefcit-item .panel-footer {
       justify-content: flex-end; } }

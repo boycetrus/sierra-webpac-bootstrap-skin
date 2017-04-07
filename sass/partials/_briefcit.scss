@@ -20,7 +20,7 @@ table.browseScreen td {
 
 .briefcit-item .panel-body {
   display: flex;
-  padding: $padding-xs-vertical $padding-xs-horizontal;
+  padding: $padding-xs-horizontal;
   position: relative;
 }
 
@@ -28,7 +28,7 @@ table.browseScreen td {
   position: absolute;
   top: 8px;
   left: 8px;
-  padding: $padding-xs-vertical $padding-xs-horizontal;
+  padding: $padding-xs-vertical;
   border-radius: $border-radius-small;
   background-color: #fff;
   opacity: 0.75;
@@ -68,7 +68,7 @@ table.browseScreen td {
   }
   @media (min-width: $screen-xs-min) {
     flex-flow: row nowrap;
-    padding: $padding-xs-vertical $padding-xs-horizontal;
+    padding: $padding-xs-horizontal;
   }
   @media (min-width: $screen-sm-min) {
     justify-content: flex-end;
