@@ -4736,7 +4736,7 @@ table.browseScreen td {
 
 .briefcit-item .panel-body {
   display: flex;
-  padding: 4px;
+  padding: 1px 5px;
   position: relative; }
 
 .briefcit-num {
@@ -4744,7 +4744,7 @@ table.browseScreen td {
   top: 8px;
   left: 8px;
   padding: 1px 5px;
-  border-radius: 2px;
+  border-radius: 3px;
   background-color: #fff;
   opacity: 0.75;
   font-size: 0.75em; }
@@ -4756,7 +4756,7 @@ table.browseScreen td {
     font-weight: 600; }
 
 .briefcit-jacket {
-  margin-right: 8px;
+  margin-right: 10px;
   width: 70px;
   min-height: 100px;
   order: 1; }
@@ -4769,7 +4769,7 @@ table.browseScreen td {
 
 .briefcit-item .panel-footer {
   padding: 0;
-  background-color: #D9EDF7;
+  background-color: #eeeeee;
   display: flex;
   justify-content: space-between;
   flex-flow: column nowrap; }
@@ -4778,7 +4778,7 @@ table.browseScreen td {
   @media (min-width: 480px) {
     .briefcit-item .panel-footer {
       flex-flow: row nowrap;
-      padding: 4px; } }
+      padding: 1px 5px; } }
   @media (min-width: 768px) {
     .briefcit-item .panel-footer {
       justify-content: flex-end; } }

@@ -126,8 +126,8 @@ ICON_BUT_UNLIMAVAIL=<div class="buttonFull" id="ICON_BUT_UNLIMAVAIL">Show All</d
 DISPLAY_245=atd
 EXTENDED=CT
 HEADING_LENGTH=100
-ICON_856LINK=<span class="btn btn-success" data-option="ICON_856LINK">View Online</span>
-ICON_962LINK=<span data-option="ICON_962LINK">Digital Image</span>
+ICON_856LINK=<span data-option="ICON_856LINK">View Online</span>
+ICON_962LINK=<span data-option="ICON_962LINK">View Online</span>
 ICON_BOOKCART=<span data-icon="ICON_BOOKCART">Add to Basket</span>
 ICON_BOOKCART_SAVED=<span data-icon="ICON_BOOKCART_SAVED">Remove From Basket</span>
 ICON_FULLRECORD=<span class="to-full-record" data-option="ICON_FULLRECORD">Show Full Record</span>

@@ -20,7 +20,7 @@ table.browseScreen td {
 
 .briefcit-item .panel-body {
   display: flex;
-  padding: 4px;
+  padding: $padding-xs-vertical $padding-xs-horizontal;
   position: relative;
 }
 
@@ -28,8 +28,8 @@ table.browseScreen td {
   position: absolute;
   top: 8px;
   left: 8px;
-  padding: 1px 5px;
-  border-radius: 2px;
+  padding: $padding-xs-vertical $padding-xs-horizontal;
+  border-radius: $border-radius-small;
   background-color: #fff;
   opacity: 0.75;
   font-size: 0.75em;
@@ -39,19 +39,19 @@ table.browseScreen td {
   flex: 1;
   order: 2;
   .panel-title {
-    font-weight: 600;
+    font-weight: $bold;
   }
 }
 
 .briefcit-jacket {
-  margin-right: 8px;
+  margin-right: $padding-small-horizontal;
   width: 70px;
   min-height: 100px;
   order: 1;
   img {
     max-width: 100%;
   }
-  @media (min-width: 768px) {
+  @media (min-width: $screen-sm-min) {
     width: 120px;
     min-height: 170px;
   }
@@ -59,25 +59,25 @@ table.browseScreen td {
 
 .briefcit-item .panel-footer {
   padding: 0;
-  background-color: #D9EDF7;
+  background-color: $gray-faint;
   display: flex;
   justify-content: space-between;
   flex-flow: column nowrap;
   a {
     width: 100%;
   }
-  @media (min-width: 480px) {
+  @media (min-width: $screen-xs-min) {
     flex-flow: row nowrap;
-    padding: 4px;
+    padding: $padding-xs-vertical $padding-xs-horizontal;
   }
-  @media (min-width: 768px) {
+  @media (min-width: $screen-sm-min) {
     justify-content: flex-end;
   }
 }
 
 .secondary-actions {
   display: none;
-  @media (min-width: 480px) {
+  @media (min-width: $screen-xs-min) {
     display: flex;
     a {
       margin-left: 6px;
