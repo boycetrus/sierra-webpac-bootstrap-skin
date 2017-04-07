@@ -1,19 +1,18 @@
 //reset table layout
 
 table.browseScreen,
-table.browsescreen table,
+table.browseScreen table,
 table.browseScreen tbody,
 table.browseScreen tr,
 table.browseScreen td {
     display: block;
 }
-//
-// table.browseScreen tbody.briefcit-list {
-//   display: flex;
-//   flex-direction: row;
-//   flex-wrap: wrap;
-// }
-//
+
+.briefcit-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 // table.browseScreen tr.browseSuperEntry,
 // table.browseScreen tr.browse-jump {
 //   flex: 0 0 100%;
@@ -58,7 +57,7 @@ table.browseScreen td {
   }
 }
 
-.breifcit-item .panel-footer {
+.briefcit-item .panel-footer {
   padding: 0;
   background-color: #D9EDF7;
   display: flex;

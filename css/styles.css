@@ -4724,11 +4724,15 @@ td {
   font-weight: 600; }
 
 table.browseScreen,
-table.browsescreen table,
+table.browseScreen table,
 table.browseScreen tbody,
 table.browseScreen tr,
 table.browseScreen td {
   display: block; }
+
+.briefcit-list {
+  max-width: 800px;
+  margin: 0 auto; }
 
 .briefcit-item .panel-body {
   display: flex;
@@ -4763,20 +4767,20 @@ table.browseScreen td {
       width: 120px;
       min-height: 170px; } }
 
-.breifcit-item .panel-footer {
+.briefcit-item .panel-footer {
   padding: 0;
   background-color: #D9EDF7;
   display: flex;
   justify-content: space-between;
   flex-flow: column nowrap; }
-  .breifcit-item .panel-footer a {
+  .briefcit-item .panel-footer a {
     width: 100%; }
   @media (min-width: 480px) {
-    .breifcit-item .panel-footer {
+    .briefcit-item .panel-footer {
       flex-flow: row nowrap;
       padding: 4px; } }
   @media (min-width: 768px) {
-    .breifcit-item .panel-footer {
+    .briefcit-item .panel-footer {
       justify-content: flex-end; } }
 
 .secondary-actions {
