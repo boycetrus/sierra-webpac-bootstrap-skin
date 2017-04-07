@@ -13,5 +13,6 @@ $(function() {
   $('tr.bibItemsEntry td').removeAttr('width');
   $('td.browseSaveJump').parent('tr').addClass('browse-jump');
 
+  $('.primary-actions > a').addClass('btn btn-primary btn-sm').text('Check Availability');
   $('.secondary-actions > a').addClass('btn btn-default btn-sm');
 });
