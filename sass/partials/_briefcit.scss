@@ -1,6 +1,7 @@
 //reset table layout
 
 table.browseScreen,
+table.browsescreen table,
 table.browseScreen tbody,
 table.browseScreen tr,
 table.browseScreen td {
@@ -17,58 +18,70 @@ table.browseScreen td {
 // table.browseScreen tr.browse-jump {
 //   flex: 0 0 100%;
 // }
-//
-// table.browseScreen tr.briefcit-item {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: stretch;
-//   flex-basis: 100%;
-//   @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-//     flex-basis: 48%;
-//     margin-right: 2%;
-//   }
-//   @media (min-width: $screen-md-min) {
-//     flex-basis: 32%;
-//     margin-right: 1.2%;
-//   }
-// }
-//
-// table.browseScreen .page-header {
-//   margin-top: 0;
-// }
-//
-// .briefcitDetail {
-//   display: flex;
-//   flex-flow: column nowrap;
-//   align-items: flex-start;
-//   @media (min-width: $screen-xs-min) {
-//     flex-flow: row nowrap;
-//     align-items: stretch;
-//   }
-// }
-//
-// .briefcit-data {
-//   flex-grow: 1;
-// }
-// .briefcit-actions {
-//   flex-grow: 0;
-// }
-//
-// table.bibItems {
-//   display: table;
-//   border-width: 0;
-//   tbody {
-//     display: table-row-group;
-//   }
-//   tr {
-//     display: table-row;
-//   }
-//   td {
-//     display: table-cell;
-//   }
-// }
-//
-// .bibItemsHeader {
-//   font-weight: $bold;
-//   text-align: left;
-// }
+
+.briefcit-item .panel-body {
+  display: flex;
+  padding: 4px;
+  position: relative;
+}
+
+.briefcit-num {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  padding: 1px 5px;
+  border-radius: 2px;
+  background-color: #fff;
+  opacity: 0.75;
+  font-size: 0.75em;
+}
+
+.briefcit-detail {
+  flex: 1;
+  order: 2;
+  .panel-title {
+    font-weight: 600;
+  }
+}
+
+.briefcit-jacket {
+  margin-right: 8px;
+  width: 70px;
+  min-height: 100px;
+  order: 1;
+  img {
+    max-width: 100%;
+  }
+  @media (min-width: 768px) {
+    width: 120px;
+    min-height: 170px;
+  }
+}
+
+.breifcit-item .panel-footer {
+  padding: 0;
+  background-color: #D9EDF7;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column nowrap;
+  a {
+    width: 100%;
+  }
+  @media (min-width: 480px) {
+    flex-flow: row nowrap;
+    padding: 4px;
+  }
+  @media (min-width: 768px) {
+    justify-content: flex-end;
+  }
+}
+
+.secondary-actions {
+  display: none;
+  @media (min-width: 480px) {
+    display: flex;
+    a {
+      margin-left: 6px;
+    }
+  }
+}
