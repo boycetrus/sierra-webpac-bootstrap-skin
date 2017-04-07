@@ -1,7 +1,5 @@
-  <!--
-  Book covers not included on brief citation display without a reliable cover service
-  If using book covers will need toadjust flex basis of .briefcit-data in _briefcit.scss
--->
+  <!--{year}-->
+  <!--{856link}-->
 
 <tr class="briefcit-item"><!-- result-item -->
 <td>
@@ -9,92 +7,47 @@
 <!-- start nohitmsg token -->
 <!--{nohitmsg}-->
 
-
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title">
+ <div class="panel panel-default">
+   <div class="panel-body">
+     <div class="briefcit-num">
 <!--{entrynum}-->
-.&nbsp;
-<!--{linkfieldspec:Vbt245ab}-->
-        </h3>
-      </div>
-      <div class="panel-body"><!-- /result-detail -->
-        <div class="briefcitDetail">
-          <div class="briefcit-jacket">
+     </div>
+     <div class="briefcit-detail">
+       <h3 class="panel-title">
+<!--{linkfieldspec:Vbt245abnh}-->
+       </h3>
+       <p>
+<!--{fieldspec:Vba}-->
+       </p>
+       <p>
+<!--{media}-->
+       </p>
+       <p class="hidden-xs">
+<!--{holdingsmsg}-->
+         .&nbsp;
+<!--{holds}-->
+         &nbsp;
+       </p>
+       <p class="hidden-xs">
+<!--{tofullrecord}-->
+       </p>
+     </div>
+     <div class="briefcit-jacket">
 <!--{ifhasbookjacket}-->
 <!--{bookjacket}-->
 <!--{xif}-->
-            <p class="mattype">
-<!--{media}-->
-              <br>
-<!--{year}-->
-            </p>
-          </div>
-          <div class="briefcit-data">
-            <p class="author">
-<!--{fieldspec:Vbt245c}-->
-            </p>
-          </div>
-
-          <div class="briefcit-actions">
-            <p class="briefcitRequest">
-<!--{request}-->
-            </p>
-            <p>
-<!--{856link}-->
-            </p>
-            <p class="briefcitMark">
+     </div>
+   </div>
+   <div class="panel-footer">
+     <div class="primary-actions visible-xs"><a href="#" class="btn btn-primary btn-sm">Check Availability</a></div>
+     <div class="secondary-actions">
 <!--{mark}-->
-            </p>
-          </div>
-          <!-- /briefcit-actions -->
-        </div>
-        <!-- /briefcit-detail -->
-
-        <div class="briefcit-status">
-<!--{holdingsmsg}-->
-.&nbsp;
-<!--{holds}-->
-&nbsp;
-        </div>
-        <!-- /briefcit-status -->
-      </div>
-      <!-- /panel-body -->
-
-
-      <div class="briefcit-copies sr-only">
-<!--{items}-->
-<!--{tofullrecord}-->
-      </div>
-      <!-- /briefcit-copies -->
-    </div>
-    <!-- /briefcitResult -->
-
-
-
-
-
-  <!-- start 856link token -->
-  <!--{856link}-->
-  <!-- end 856link token -->
-
-  <!--{ifmulti856}-->
-  &nbsp;
-  <!-- start more856 token -->
-  <!--{more856}-->
-  <!-- end more856 token -->
-  <!--{xif}-->
-
-  <!-- start 962link token -->
-  <!--{962link}-->
-  <!-- end 962link token -->
-
-  <!--{ifmulti962}-->
-  &nbsp;
-  <!-- start more962 token -->
-  <!--{more962}-->
-  <!-- end more962 token -->
-  <!--{xif}-->
+<!--{request}-->
+       <a class="btn btn-default btn-sm" href="#">Add to basket</a> <a  class="btn btn-default btn-sm" href="#">Place hold</a>
+     </div>
+   </div>
+ </div>
+ <!-- /panel -->
 
 </td>
 </tr>
