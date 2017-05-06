@@ -4743,7 +4743,7 @@ table.browseScreen td {
   position: absolute;
   top: 8px;
   left: 8px;
-  padding: 1px;
+  padding: 1px 5px;
   border-radius: 3px;
   background-color: #fff;
   opacity: 0.75;

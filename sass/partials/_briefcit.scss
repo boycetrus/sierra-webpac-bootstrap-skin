@@ -28,7 +28,7 @@ table.browseScreen td {
   position: absolute;
   top: 8px;
   left: 8px;
-  padding: $padding-xs-vertical;
+  padding: $padding-xs-vertical $padding-xs-horizontal;
   border-radius: $border-radius-small;
   background-color: #fff;
   opacity: 0.75;

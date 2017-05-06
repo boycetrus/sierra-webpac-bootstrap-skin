@@ -45,9 +45,15 @@ $(function() {
     $('#ret2prec a').text(acctMenuText);
   }
 
-  // forms
+// forms
+  $('form[name="searchtool"]').attr('id','search');
   $('form#search select').addClass('form-control');
+  $('form#search input').addClass('form-control');
   $('form#pinreset input').addClass('form-control');
+
+// searchtool form
+  $('.browseSearchtool').addClass('webpac-form-container well well-lg');
+  $('form#search label').removeAttr('style').addClass('sr-only');
 
 //patronview_web.html
   $('#LOGGEDIN_MSG').nextAll('br').remove();
@@ -55,7 +61,7 @@ $(function() {
   $('#expirationMsg').addClass('alert alert-danger');
   $('.modify-patron-info a').addClass('btn btn-primary');
 
-  //loop through the patActions and remove the empty ones
+//loop through the patActions and remove the empty ones
   $('#patActions > li').each( function() {
     var patActionName = $(this).text();
     if (patActionName.length < 4) {
