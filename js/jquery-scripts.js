@@ -56,6 +56,7 @@ $(function() {
   $('.browseSearchtool').addClass('webpac-form-container well well-lg');
   $('form#search').addClass('webpac-form search form-inline');
   $('form#search label').removeAttr('style').addClass('sr-only');
+  $('form#search input[type="checkbox"]').closest('div').wrapInner('<label></label>');
 
 //patronview_web.html
   $('#LOGGEDIN_MSG').nextAll('br').remove();
