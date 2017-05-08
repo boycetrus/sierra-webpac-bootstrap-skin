@@ -47,15 +47,15 @@ $(function() {
 
 // forms
   $('form[name="searchtool"]').attr('id','search');
-  $('form#search select').addClass('form-control');
-  $('form#search input').addClass('form-control');
-  $('form#pinreset input').addClass('form-control');
+  $('form select').addClass('form-control');
+  $('form input[type="text"]').addClass('form-control');
+  $('form input[type="textarea"]').addClass('form-control');
+  $('form input[type="submit"]').addClass('btn btn-primary');
 
 // searchtool form
   $('.browseSearchtool').addClass('webpac-form-container well well-lg');
-  $('form#search label').addClass('webpac-form search form-inline');
+  $('form#search').addClass('webpac-form search form-inline');
   $('form#search label').removeAttr('style').addClass('sr-only');
-  $('form#seach input[type="submit"]').addClass('btn btn-primary').removeClass('form-control');
 
 //patronview_web.html
   $('#LOGGEDIN_MSG').nextAll('br').remove();
