@@ -62,9 +62,9 @@ $(function() {
     $(this).next().andSelf().wrapAll('<div class="form-group"/>');
   });
   $('.browseSearchtoolMessage').insertAfter('.browseSearchtool');
-  $(".webpac-form.search").each(function() {
-    $(this).html($(this).html().replace(/&nbsp;/g, ''));
-  });
+  //$('.webpac-form.search').each(function() {
+  //  $(this).html($(this).html().replace(/&nbsp;/g, ''));
+  //});
 
 //patronview_web.html
   $('#LOGGEDIN_MSG').nextAll('br').remove();
@@ -183,7 +183,7 @@ $(function() {
   $('form[name="PSEARCHFORM"] input[type="checkbox"]').on('change', applyChangeReminder);
 
 
-  //DOM manipulation for briefcit table - keyword search results list
+//DOM manipulation for briefcit table - keyword search results list
   $('table.bibItems').addClass('table');
   $('.briefcitRequest > a').addClass('btn btn-success');
 
