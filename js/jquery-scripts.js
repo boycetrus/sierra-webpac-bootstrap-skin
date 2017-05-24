@@ -53,6 +53,8 @@ $(function() {
   $('form input[type="submit"]').addClass('btn btn-primary');
 
 // searchtool form
+  var removeNbsp = $('form#search').html().split('&nbsp;').join('');
+  $('form#search').html(removeNbsp);
   $('.browseSearchtool').addClass('webpac-form-container well well-lg');
   $('form#search').addClass('webpac-form search form-inline');
   $('form#search label').removeAttr('style').addClass('sr-only');
