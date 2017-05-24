@@ -15,4 +15,7 @@ $(function() {
 
   $('.primary-actions > a').addClass('btn btn-primary btn-sm').text('Check Availability');
   $('.secondary-actions > a').addClass('btn btn-default btn-sm');
+
+  $('.navigationRow')[0].remove();
+  $('.browse-jump')[0].remove();
 });

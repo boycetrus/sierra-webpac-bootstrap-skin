@@ -489,10 +489,10 @@ MFFAVS_ALL=TRUE
 
 # WebPAC Pro
 BROWSE50=true
-ICON_SPELLCHECK_MORE=<span class="spellcheckToolMore" id="ICON_SPELLCHECK_MORE">more&nbsp;&raquo;</span>
-ICON_SPELLCHECK_SEARCH=Search
+# ICON_SPELLCHECK_MORE=<span class="spellcheckToolMore" id="ICON_SPELLCHECK_MORE">more&nbsp;&raquo;</span>
+# ICON_SPELLCHECK_SEARCH=Search
 INNOVATIVE_FOOTER=center|a
-SPELLCHECK=<span class="spellcheckTool">Did you mean %a? %s </span>
+# SPELLCHECK=<span class="spellcheckTool">Did you mean %a? %s </span>
 
 # Research Pro
 # MF_BIBIMAGE=http://syndetics.com/index.aspx/?isbn=%s/SC.gif&amp;client=PUTACCOUNTHERE&amp;type=hw7|i|http://syndetics.com/index.aspx/?isbn=%s/SC.gif&amp;client=PUTACCOUNTHERE&amp;type=hw7
