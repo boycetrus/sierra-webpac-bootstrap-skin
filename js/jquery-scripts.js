@@ -53,8 +53,6 @@ $(function() {
   $('form input[type="submit"]').addClass('btn btn-primary');
 
 // searchtool form
-  var removeNbsp = $('form#search').html().split('&nbsp;').join('');
-  $('form#search').html(removeNbsp);
   $('.browseSearchtool').addClass('webpac-form-container well well-lg');
   $('form#search').addClass('webpac-form search form-inline');
   $('form#search label').removeAttr('style').addClass('sr-only');
@@ -64,9 +62,10 @@ $(function() {
     $(this).next().andSelf().wrapAll('<div class="form-group"/>');
   });
   $('.browseSearchtoolMessage').insertAfter('.browseSearchtool');
-  //$('.webpac-form.search').each(function() {
-  //  $(this).html($(this).html().replace(/&nbsp;/g, ''));
-  //});
+  $('form#search').each(function() {
+    var removeNbsp = $(this).html().split('&nbsp;').join('');
+    $(this).html(removeNbsp);
+  });
 
 //patronview_web.html
   $('#LOGGEDIN_MSG').nextAll('br').remove();
