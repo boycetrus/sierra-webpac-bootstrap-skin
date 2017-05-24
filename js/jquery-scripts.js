@@ -182,4 +182,24 @@ $(function() {
   $('form[name="PSEARCHFORM"] .patFuncPSrchBtn a').addClass('btn btn-primary btn-xs');
   $('form[name="PSEARCHFORM"] input[type="checkbox"]').on('change', applyChangeReminder);
 
+
+  //DOM manipulation for briefcit table - keyword search results list
+  $('table.bibItems').addClass('table');
+  $('.briefcitRequest > a').addClass('btn btn-success');
+
+  var topPagination = $('table.browseScreen tr.browsePager')[0];
+  $('table.briefcit tr.browseHeader').remove();
+  $('table.briefcit > tbody > tr:first-child').insertBefore(topPagination);
+  $('table.briefcit > tbody').addClass('briefcit-list');
+  $('table.briefcit tr.browseSuperEntry').addClass('page-header');
+  $('tr.bibItemsHeader th').removeAttr('width');
+  $('tr.bibItemsEntry td').removeAttr('width');
+  $('td.browseSaveJump').parent('tr').addClass('browse-jump');
+
+  $('.primary-actions > a').addClass('btn btn-primary btn-sm').text('Check Availability');
+  $('.secondary-actions > a').addClass('btn btn-default btn-sm');
+
+  $('.navigationRow')[0].remove();
+  $('.browse-jump')[0].remove();
+
 });
