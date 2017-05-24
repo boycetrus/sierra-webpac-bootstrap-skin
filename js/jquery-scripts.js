@@ -62,10 +62,10 @@ $(function() {
     $(this).next().andSelf().wrapAll('<div class="form-group"/>');
   });
   $('.browseSearchtoolMessage').insertAfter('.browseSearchtool');
-  $('form#search').each(function() {
-    var removeNbsp = $(this).html().split('&nbsp;').join('');
-    $(this).html(removeNbsp);
-  });
+  // $('form#search').each(function() {
+  //   var removeNbsp = $(this).html().split('&nbsp;').join('');
+  //   $(this).html(removeNbsp);
+  // });
 
 //patronview_web.html
   $('#LOGGEDIN_MSG').nextAll('br').remove();
