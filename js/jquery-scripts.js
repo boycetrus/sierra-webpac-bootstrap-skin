@@ -48,7 +48,7 @@ $(function() {
 // forms
   $('form[name="searchtool"]').attr('id','search');
   $('form select').addClass('form-control');
-  $('form input[type="text"]').addClass('form-control');
+  $('form input[type="text"]').addClass('form-control').removeAttr('size');
   $('form input[type="textarea"]').addClass('form-control');
   $('form input[type="submit"]').addClass('btn btn-primary');
 
@@ -191,16 +191,16 @@ $(function() {
   var topPagination = $('table.browseScreen tr.browsePager')[0];
   $('table.briefcit tr.browseHeader').remove();
   $('table.briefcit > tbody > tr:first-child').insertBefore(topPagination);
+  $('.browseEntryRelGroup1').insertAfter(topPagination);
   $('table.briefcit > tbody').addClass('briefcit-list');
   $('table.briefcit tr.browseSuperEntry').addClass('page-header');
   $('tr.bibItemsHeader th').removeAttr('width');
   $('tr.bibItemsEntry td').removeAttr('width');
-  $('td.browseSaveJump').parent('tr').addClass('browse-jump');
+  $('td.browseSaveJump').parent('tr').remove();
 
   $('.primary-actions > a').addClass('btn btn-primary btn-sm').text('Check Availability');
   $('.secondary-actions > a').addClass('btn btn-default btn-sm');
 
   $('.navigationRow')[0].remove();
-  $('.browse-jump')[0].remove();
 
 });
