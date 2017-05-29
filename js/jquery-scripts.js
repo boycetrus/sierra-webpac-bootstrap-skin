@@ -61,6 +61,7 @@ $(function() {
   $('form#search > label').each(function(){
     $(this).next().andSelf().wrapAll('<div class="form-group"/>');
   });
+  $('form#search input[name="SUBPREF"]').attr('value','Save Search');
   $('.browseSearchtoolMessage').insertAfter('.browseSearchtool');
   // $('form#search').each(function() {
   //   var removeNbsp = $(this).html().split('&nbsp;').join('');
@@ -190,7 +191,7 @@ $(function() {
 
   var topPagination = $('table.browseScreen tr.browsePager')[0];
   $('table.briefcit tr.browseHeader').remove();
-  $('table.briefcit > tbody > tr:first-child').insertBefore(topPagination);
+  //$('table.briefcit > tbody > tr:first-child').insertBefore(topPagination);
   $('.browseEntryRelGroup1').insertAfter(topPagination);
   $('table.briefcit > tbody').addClass('briefcit-list');
   $('table.briefcit tr.browseSuperEntry').addClass('page-header');
