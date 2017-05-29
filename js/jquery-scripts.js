@@ -203,5 +203,4 @@ $(function() {
   $('.secondary-actions > a').addClass('btn btn-default btn-sm');
 
   $('.navigationRow')[0].remove();
-
 });

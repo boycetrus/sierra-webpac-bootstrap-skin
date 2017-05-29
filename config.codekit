@@ -596,7 +596,7 @@
 		},
 	"\/js\/search-results-scripts.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/search-results-scripts.js",
 		"outputAbbreviatedPath": "\/js\/min\/search-results-scripts-min.js",
