@@ -64,10 +64,10 @@ $(function() {
   $('form#search input[name="SUBPREF"]').attr('value','Save Search');
   $('form#search > input[type="submit"]').wrapAll('<div class="form-group search-submit"/>');
   $('.browseSearchtoolMessage').insertAfter('.browseSearchtool');
-  // $('form#search').each(function() {
-  //   var removeNbsp = $(this).html().split('&nbsp;').join('');
-  //   $(this).html(removeNbsp);
-  // });
+  $('form#search').each(function() {
+    var removeNbsp = $(this).html().split('&nbsp;').join('');
+    $(this).html(removeNbsp);
+  });
 
 //patronview_web.html
   $('#LOGGEDIN_MSG').nextAll('br').remove();
