@@ -192,8 +192,6 @@ $(function() {
 
   var topPagination = $('table.browseScreen tr.browsePager')[0];
   $('table.briefcit tr.browseHeader').remove();
-  //$('table.briefcit > tbody > tr:first-child').insertBefore(topPagination);
-  //$('.browseEntryRelGroup1').insertAfter(topPagination);
   $('table.briefcit > tbody').addClass('briefcit-list');
   $('tr.browseSuperEntry').addClass('page-header');
   $('tr.bibItemsHeader th').removeAttr('width');
@@ -204,4 +202,10 @@ $(function() {
   $('.secondary-actions > a').addClass('btn btn-default btn-sm');
 
   $('.navigationRow')[0].remove();
+
+  // pagination
+  $('td.browsePager').attr('aria-label','page navigation').removeAttr('colspan').wrapInner('<ul class="pagination"/>');
+  $('td.browsePager').next('td').remove();
+  $('td.browsePager .pagination strong').wrap('<li class="active"><span></span></li>');
+  $('td.browsePager .pagination > a').wrap('<li/>');
 });

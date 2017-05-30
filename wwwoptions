@@ -132,7 +132,7 @@ ICON_BOOKCART=<span data-icon="ICON_BOOKCART">Add to Basket</span>
 ICON_BOOKCART_SAVED=<span data-icon="ICON_BOOKCART_SAVED">Remove From Basket</span>
 ICON_FULLRECORD=<span class="to-full-record" data-option="ICON_FULLRECORD">Show Full Record</span>
 ICON_LOCATEINRESULTS=<span class="jump-to" data-icon="ICON_LOCATEINRESULTS">Locate in results</span>
-ICON_PAGING_CAPTION=<span data-option="ICON_PAGING_CAPTION">Result Page</span>
+ICON_PAGING_CAPTION=<span data-option="ICON_PAGING_CAPTION" class="sr-only">Page number</span>
 ICON_PAGING_NEXT=<span data-option="ICON_PAGING_NEXT">Next</span>
 ICON_PAGING_PREV=<span data-option="ICON_PAGING_PREV">Prev</span>
 ICON_PROGRAM=<span data-option="ICON_PROGRAM"><img src="/screens/media_program.gif" border="0" alt="Library Event"></span>
