@@ -197,10 +197,8 @@ $(function() {
   $('tr.bibItemsHeader th').removeAttr('width');
   $('tr.bibItemsEntry td').removeAttr('width');
   $('td.browseSaveJump').parent('tr').remove();
-
   $('.primary-actions > a').addClass('btn btn-primary btn-sm').text('Check Availability');
   $('.secondary-actions > a').addClass('btn btn-default btn-sm');
-
   $('.navigationRow')[0].remove();
 
   // pagination
@@ -208,4 +206,5 @@ $(function() {
   $('td.browsePager').next('td').remove();
   $('td.browsePager .pagination strong').wrap('<li class="active"><span></span></li>');
   $('td.browsePager .pagination > a').wrap('<li/>');
+  $('td.browsePager .pagination > span.sr-only').remove();
 });
