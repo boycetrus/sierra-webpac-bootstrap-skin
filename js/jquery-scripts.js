@@ -64,10 +64,10 @@ $(function() {
   $('form#search input[name="SUBPREF"]').attr('value','Save Search');
   $('form#search > input[type="submit"]').wrapAll('<div class="form-group search-submit"/>');
   $('.browseSearchtoolMessage').insertAfter('.browseSearchtool');
-  $('form#search').each(function() {
-    var removeNbsp = $(this).html().split('&nbsp;').join('');
-    $(this).html(removeNbsp);
-  });
+  // $('form#search').each(function() {
+  //   var removeNbsp = $(this).html().split('&nbsp;').join('');
+  //   $(this).html(removeNbsp);
+  // });
 
 //patronview_web.html
   $('#LOGGEDIN_MSG').nextAll('br').remove();
@@ -193,9 +193,9 @@ $(function() {
   var topPagination = $('table.browseScreen tr.browsePager')[0];
   $('table.briefcit tr.browseHeader').remove();
   //$('table.briefcit > tbody > tr:first-child').insertBefore(topPagination);
-  $('.browseEntryRelGroup1').insertAfter(topPagination);
+  //$('.browseEntryRelGroup1').insertAfter(topPagination);
   $('table.briefcit > tbody').addClass('briefcit-list');
-  $('table.briefcit tr.browseSuperEntry').addClass('page-header');
+  $('tr.browseSuperEntry').addClass('page-header');
   $('tr.bibItemsHeader th').removeAttr('width');
   $('tr.bibItemsEntry td').removeAttr('width');
   $('td.browseSaveJump').parent('tr').remove();
