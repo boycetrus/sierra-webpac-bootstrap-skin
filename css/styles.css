@@ -4667,6 +4667,9 @@ main {
     .webpac-form {
       text-align: right; } }
 
+.search-submit input + input {
+  margin-left: 5px; }
+
 .patron-actions,
 .patron-profile {
   margin-top: 1em; }

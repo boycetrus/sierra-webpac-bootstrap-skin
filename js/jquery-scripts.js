@@ -62,6 +62,7 @@ $(function() {
     $(this).next().andSelf().wrapAll('<div class="form-group"/>');
   });
   $('form#search input[name="SUBPREF"]').attr('value','Save Search');
+  $('form#search > input[type="submit"]').wrapAll('<div class="form-group search-submit"/>');
   $('.browseSearchtoolMessage').insertAfter('.browseSearchtool');
   // $('form#search').each(function() {
   //   var removeNbsp = $(this).html().split('&nbsp;').join('');
