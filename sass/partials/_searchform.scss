@@ -25,3 +25,12 @@ main {
 .search-submit input+input {
     margin-left: $padding-xs-horizontal;
 }
+
+@media (min-width: $screen-sm-min) {
+  .navigationRow .webpac-form {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}

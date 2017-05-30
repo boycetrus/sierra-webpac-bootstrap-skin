@@ -93,7 +93,7 @@ OFFER_HISTORY=true
 # Advanced Searching
 AVS_MODIFY_TAG=X
 AVS_TAG=XYZ
-ICON_BUT_MODIFY=<div class="buttonFull" id="ICON_BUT_MODIFY">Modify Search</div>
+ICON_BUT_MODIFY=<p data-option="ICON_BUT_MODIFY">Modify Search</div>
 ICON_BUT_SHOWSIM=<div class="buttonFull" id="ICON_BUT_SHOWSIM">More Like This</div>
 ICON_REL_GROUP_1=<h2 data-option="ICON_REL_GROUP_1" class="browseSuperEntryTitle">Most Relevant Titles</h2>
 ICON_REL_GROUP_2=<h2 data-option="ICON_REL_GROUP_2" class="browseSuperEntryTitle">Highly Relevant Titles</h2>

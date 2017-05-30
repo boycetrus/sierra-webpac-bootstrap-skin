@@ -207,4 +207,8 @@ $(function() {
   $('td.browsePager .pagination strong').wrap('<li class="active"><span></span></li>');
   $('td.browsePager .pagination > a').wrap('<li/>');
   $('td.browsePager .pagination > span.sr-only').remove();
+
+  // navigationRow
+  $('.navigationRow').addClass('well').removeAttr('align');
+  $('.navigationRow > form').addClass('webpac-form form-inline');
 });

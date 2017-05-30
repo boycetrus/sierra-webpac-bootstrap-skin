@@ -4670,6 +4670,12 @@ main {
 .search-submit input + input {
   margin-left: 5px; }
 
+@media (min-width: 768px) {
+  .navigationRow .webpac-form {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: baseline; } }
 .patron-actions,
 .patron-profile {
   margin-top: 1em; }
