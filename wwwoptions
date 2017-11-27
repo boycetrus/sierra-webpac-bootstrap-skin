@@ -182,9 +182,9 @@ HOLDINGS_POS=atpR
 # HOTLINK=i^020,c^09,n^505
 ICON_BIB_HOLDINGS_ITEMS=<span data-option="ICON_BIB_HOLDINGS_ITEMS">View Copies</span>
 # ICON_NEARBY=<span data-option="ICON_NEARBY"><img src="/screens/bullet.gif" alt="Nearby on shelf" border="0"></span>
-ICON_BIB_PAGING_CAPTION=<span data-option="ICON_BIB_PAGING_CAPTION" class="sr-only">navigate results</span>
-ICON_BIB_PAGING_NEXT=<div class="btn btn-default btn-sm" data-option="ICON_BIB_PAGING_NEXT">Next Record</div>
-ICON_BIB_PAGING_PREV=<div class="btn btn-default btn-sm" data-option="ICON_BIB_PAGING_PREV">Previous Record</div>
+ICON_BIB_PAGING_CAPTION=<span data-option="ICON_BIB_PAGING_CAPTION" class="sr-only">navigate search results</span>
+ICON_BIB_PAGING_NEXT=<div class="btn btn-default btn-sm" data-option="ICON_BIB_PAGING_NEXT">Next <span class="hidden-xs">Result</span></div>
+ICON_BIB_PAGING_PREV=<div class="btn btn-default btn-sm" data-option="ICON_BIB_PAGING_PREV">Previous <span class="hidden-xs">Result</span></div>
 ICON_RECORDLINK=<div id="ICON_RECORDLINK"><a href="%s">%s</a></div>
 LINK856TEXT=Connect to
 MARC=yes

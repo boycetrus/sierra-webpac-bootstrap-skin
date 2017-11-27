@@ -23,4 +23,6 @@ $(function() {
   $('.browse-jump')[0].remove();
 
   //DOM manipulation for bibdisplay.html
+  $('.bibSearchtoolMessage > i').insertAfter('.bibPager > a:first');
+  $('.bibSearchtoolMessage').remove();
 });
