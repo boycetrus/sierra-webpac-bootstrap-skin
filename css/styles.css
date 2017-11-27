@@ -4667,6 +4667,15 @@ main {
     .webpac-form {
       text-align: right; } }
 
+.search-submit input + input {
+  margin-left: 5px; }
+
+@media (min-width: 768px) {
+  .navigationRow .webpac-form {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: baseline; } }
 .patron-actions,
 .patron-profile {
   margin-top: 1em; }
@@ -4724,11 +4733,16 @@ td {
   font-weight: 600; }
 
 table.browseScreen,
+<<<<<<< HEAD
+=======
+table.browseScreen table,
+>>>>>>> bibliographic-display
 table.browseScreen tbody,
 table.browseScreen tr,
 table.browseScreen td {
   display: block; }
 
+<<<<<<< HEAD
 table.browseScreen tbody.briefcit-list {
   display: flex;
   flex-direction: row;
@@ -4783,6 +4797,68 @@ table.bibItems {
 .bibItemsHeader {
   font-weight: 600;
   text-align: left; }
+=======
+.briefcit-list {
+  max-width: 800px;
+  margin: 0 auto; }
+
+.briefcit-item .panel-body {
+  display: flex;
+  padding: 5px;
+  position: relative; }
+
+.briefcit-num {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  padding: 1px 5px;
+  border-radius: 3px;
+  background-color: #fff;
+  opacity: 0.75;
+  font-size: 0.75em; }
+
+.briefcit-detail {
+  flex: 1;
+  order: 2; }
+  .briefcit-detail .panel-title {
+    font-weight: 600; }
+
+.briefcit-jacket {
+  margin-right: 10px;
+  width: 70px;
+  min-height: 100px;
+  order: 1; }
+  .briefcit-jacket img {
+    max-width: 100%; }
+  @media (min-width: 768px) {
+    .briefcit-jacket {
+      width: 120px;
+      min-height: 170px; } }
+
+.briefcit-item .panel-footer {
+  padding: 0;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column nowrap; }
+  .briefcit-item .panel-footer a {
+    width: 100%; }
+  @media (min-width: 480px) {
+    .briefcit-item .panel-footer {
+      flex-flow: row nowrap;
+      padding: 5px; } }
+  @media (min-width: 768px) {
+    .briefcit-item .panel-footer {
+      justify-content: flex-end; } }
+
+.secondary-actions {
+  display: none; }
+  @media (min-width: 480px) {
+    .secondary-actions {
+      display: flex; }
+      .secondary-actions a {
+        margin-left: 6px; } }
+>>>>>>> bibliographic-display
 
 .social {
   background-color: #E9F2F7;

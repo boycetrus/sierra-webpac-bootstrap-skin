@@ -13,6 +13,7 @@ $(function() {
   $('tr.bibItemsEntry td').removeAttr('width');
   $('td.browseSaveJump').parent('tr').addClass('browse-jump');
 
+<<<<<<< HEAD
   //hide the copies table in each .briefcit-item and setup toggle to show/hide when table exists
   $('table.bibItems').parents('.briefcit-item').addClass('has-copy-table');
   $('<a>Show Copies</a>').appendTo('.briefcit-item.has-copy-table .briefcit-status');
@@ -44,4 +45,11 @@ $(function() {
       $($hasAddlCopies[1]).remove();
      }
   });
+=======
+  $('.primary-actions > a').addClass('btn btn-primary btn-sm').text('Check Availability');
+  $('.secondary-actions > a').addClass('btn btn-default btn-sm');
+
+  $('.navigationRow')[0].remove();
+  $('.browse-jump')[0].remove();
+>>>>>>> bibliographic-display
 });

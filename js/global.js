@@ -5,5 +5,6 @@
 
 
 ////@codekit-prepend "owl.carousel.js";
+//@codekit-prepend "stacktable.js";
 //@codekit-prepend "jquery-scripts.js";
 //@codekit-prepend "search-results-scripts.js";

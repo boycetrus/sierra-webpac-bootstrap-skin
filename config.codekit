@@ -478,9 +478,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/global.js",
-		"outputAbbreviatedPath": "\/js\/production\/global-min.js",
+		"outputAbbreviatedPath": "\/js\/min\/global-min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
+		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
@@ -552,7 +552,7 @@
 		},
 	"\/js\/production\/global-min.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/production\/global-min.js",
 		"outputAbbreviatedPath": "\/js\/production\/min\/global-min-min.js",
@@ -635,6 +635,17 @@
 		"outputAbbreviatedPath": "\/js\/production\/selfreg-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/stacktable.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/stacktable.js",
+		"outputAbbreviatedPath": "\/js\/min\/stacktable-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
@@ -3391,7 +3402,7 @@
 	"typescriptJSXMode": 0,
 	"typescriptMinifyOutput": 0,
 	"typescriptModuleResolutionType": 0,
-	"typescriptModuleType": 0,
+	"typescriptModuleType": 2,
 	"typescriptNoImplicitAny": 0,
 	"typescriptPreserveConstEnums": 0,
 	"typescriptRemoveComments": 0,

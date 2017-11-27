@@ -45,9 +45,29 @@ $(function() {
     $('#ret2prec a').text(acctMenuText);
   }
 
-  // forms
-  $('form#search select').addClass('form-control');
-  $('form#pinreset input').addClass('form-control');
+// forms
+  $('form[name="searchtool"]').attr('id','search');
+  $('form select').addClass('form-control');
+  $('form input[type="text"]').addClass('form-control').removeAttr('size');
+  $('form input[type="textarea"]').addClass('form-control');
+  $('form input[type="submit"]').addClass('btn btn-primary');
+
+// searchtool form
+  $('.browseSearchtool').addClass('webpac-form-container well well-lg');
+  $('form#search').addClass('webpac-form search form-inline');
+  $('form#search label').removeAttr('style').addClass('sr-only');
+  $('form#search input[type="checkbox"]').closest('div').wrapInner('<label></label>');
+  $('#sortdropdown').before('<label for="sortdropdown" class="sr-only">Sort</label>').unwrap('span');
+  $('form#search > label').each(function(){
+    $(this).next().andSelf().wrapAll('<div class="form-group"/>');
+  });
+  $('form#search input[name="SUBPREF"]').attr('value','Save Search');
+  $('form#search > input[type="submit"]').wrapAll('<div class="form-group search-submit"/>');
+  $('.browseSearchtoolMessage').insertAfter('.browseSearchtool');
+  // $('form#search').each(function() {
+  //   var removeNbsp = $(this).html().split('&nbsp;').join('');
+  //   $(this).html(removeNbsp);
+  // });
 
 //patronview_web.html
   $('#LOGGEDIN_MSG').nextAll('br').remove();
@@ -55,7 +75,7 @@ $(function() {
   $('#expirationMsg').addClass('alert alert-danger');
   $('.modify-patron-info a').addClass('btn btn-primary');
 
-  //loop through the patActions and remove the empty ones
+//loop through the patActions and remove the empty ones
   $('#patActions > li').each( function() {
     var patActionName = $(this).text();
     if (patActionName.length < 4) {
@@ -165,4 +185,30 @@ $(function() {
   $('form[name="PSEARCHFORM"] .patFuncPSrchBtn a').addClass('btn btn-primary btn-xs');
   $('form[name="PSEARCHFORM"] input[type="checkbox"]').on('change', applyChangeReminder);
 
+
+//DOM manipulation for briefcit table - keyword search results list
+  $('table.bibItems').addClass('table');
+  $('.briefcitRequest > a').addClass('btn btn-success');
+
+  var topPagination = $('table.browseScreen tr.browsePager')[0];
+  $('table.briefcit tr.browseHeader').remove();
+  $('table.briefcit > tbody').addClass('briefcit-list');
+  $('tr.browseSuperEntry').addClass('page-header');
+  $('tr.bibItemsHeader th').removeAttr('width');
+  $('tr.bibItemsEntry td').removeAttr('width');
+  $('td.browseSaveJump').parent('tr').remove();
+  $('.primary-actions > a').addClass('btn btn-primary btn-sm').text('Check Availability');
+  $('.secondary-actions > a').addClass('btn btn-default btn-sm');
+  $('.navigationRow')[0].remove();
+
+  // pagination
+  $('td.browsePager').attr('aria-label','page navigation').removeAttr('colspan').wrapInner('<ul class="pagination"/>');
+  $('td.browsePager').next('td').remove();
+  $('td.browsePager .pagination strong').wrap('<li class="active"><span></span></li>');
+  $('td.browsePager .pagination > a').wrap('<li/>');
+  $('td.browsePager .pagination > span.sr-only').remove();
+
+  // navigationRow
+  $('.navigationRow').addClass('well').removeAttr('align');
+  $('.navigationRow > form').addClass('webpac-form form-inline');
 });

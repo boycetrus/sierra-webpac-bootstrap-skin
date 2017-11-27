@@ -93,7 +93,7 @@ OFFER_HISTORY=true
 # Advanced Searching
 AVS_MODIFY_TAG=X
 AVS_TAG=XYZ
-ICON_BUT_MODIFY=<div class="buttonFull" id="ICON_BUT_MODIFY">Modify Search</div>
+ICON_BUT_MODIFY=<p data-option="ICON_BUT_MODIFY">Modify Search</div>
 ICON_BUT_SHOWSIM=<div class="buttonFull" id="ICON_BUT_SHOWSIM">More Like This</div>
 ICON_REL_GROUP_1=<h2 data-option="ICON_REL_GROUP_1" class="browseSuperEntryTitle">Most Relevant Titles</h2>
 ICON_REL_GROUP_2=<h2 data-option="ICON_REL_GROUP_2" class="browseSuperEntryTitle">Highly Relevant Titles</h2>
@@ -127,12 +127,20 @@ DISPLAY_245=atd
 EXTENDED=CT
 HEADING_LENGTH=100
 ICON_856LINK=<span data-option="ICON_856LINK">View Online</span>
+<<<<<<< HEAD
 ICON_962LINK=<span data-option="ICON_962LINK">Digital Image</span>
+=======
+ICON_962LINK=<span data-option="ICON_962LINK">View Online</span>
+>>>>>>> bibliographic-display
 ICON_BOOKCART=<span data-icon="ICON_BOOKCART">Add to Basket</span>
 ICON_BOOKCART_SAVED=<span data-icon="ICON_BOOKCART_SAVED">Remove From Basket</span>
 ICON_FULLRECORD=<span class="to-full-record" data-option="ICON_FULLRECORD">Show Full Record</span>
 ICON_LOCATEINRESULTS=<span class="jump-to" data-icon="ICON_LOCATEINRESULTS">Locate in results</span>
+<<<<<<< HEAD
 ICON_PAGING_CAPTION=<span data-option="ICON_PAGING_CAPTION">Result Page</span>
+=======
+ICON_PAGING_CAPTION=<span data-option="ICON_PAGING_CAPTION" class="sr-only">Page number</span>
+>>>>>>> bibliographic-display
 ICON_PAGING_NEXT=<span data-option="ICON_PAGING_NEXT">Next</span>
 ICON_PAGING_PREV=<span data-option="ICON_PAGING_PREV">Prev</span>
 ICON_PROGRAM=<span data-option="ICON_PROGRAM"><img src="/screens/media_program.gif" border="0" alt="Library Event"></span>
@@ -489,10 +497,10 @@ MFFAVS_ALL=TRUE
 
 # WebPAC Pro
 BROWSE50=true
-ICON_SPELLCHECK_MORE=<span class="spellcheckToolMore" id="ICON_SPELLCHECK_MORE">more&nbsp;&raquo;</span>
-ICON_SPELLCHECK_SEARCH=Search
+# ICON_SPELLCHECK_MORE=<span class="spellcheckToolMore" id="ICON_SPELLCHECK_MORE">more&nbsp;&raquo;</span>
+# ICON_SPELLCHECK_SEARCH=Search
 INNOVATIVE_FOOTER=center|a
-SPELLCHECK=<span class="spellcheckTool">Did you mean %a? %s </span>
+# SPELLCHECK=<span class="spellcheckTool">Did you mean %a? %s </span>
 
 # Research Pro
 # MF_BIBIMAGE=http://syndetics.com/index.aspx/?isbn=%s/SC.gif&amp;client=PUTACCOUNTHERE&amp;type=hw7|i|http://syndetics.com/index.aspx/?isbn=%s/SC.gif&amp;client=PUTACCOUNTHERE&amp;type=hw7
