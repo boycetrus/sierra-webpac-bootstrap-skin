@@ -1,14 +1,4 @@
-<<<<<<< HEAD
-  <!--
-  Book covers not included on brief citation display without a reliable cover service
-  If using book covers will need toadjust flex basis of .briefcit-data in _briefcit.scss
-  -->
-  <!--{ifhasbookjacket}-->
-  <!--{bookjacket}-->
-  <!--{xif}-->
-=======
   <!--{year}-->
->>>>>>> bibliographic-display
 
 <tr class="briefcit-item"><!-- result-item -->
 <td>
@@ -16,63 +6,54 @@
 <!-- start nohitmsg token -->
 <!--{nohitmsg}-->
 
-<<<<<<< HEAD
-
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title">
+ <div class="panel panel-default">
+   <div class="panel-body">
+     <div class="briefcit-num">
 <!--{entrynum}-->
-.&nbsp;
+     </div>
+     <div class="briefcit-detail">
+       <h3 class="panel-title">
 <!--{linkfieldspec:Vbt245abnh}-->
-        </h3>
-      </div>
-      <div class="panel-body"><!-- /result-detail -->
-        <div class="briefcitDetail">
-          <div class="briefcit-data">
-            <p class="author">
+       </h3>
+       <p>
 <!--{fieldspec:Vba}-->
-            </p>
-            <p class="mattype">
+       </p>
+       <p>
 <!--{media}-->
-              <br>
-<!--{year}-->
-            </p>
-          </div>
-
-          <div class="briefcit-actions">
-            <p class="briefcitRequest">
-<!--{request}-->
-            </p>
-            <p class="briefcitMark">
-<!--{mark}-->
-            </p>
-            <p>
-<!--{856link}-->
-            </p>
-          </div>
-          <!-- /briefcit-actions -->
-        </div>
-        <!-- /briefcit-detail -->
-
-        <div class="briefcit-status">
+       </p>
+       <p class="hidden-xs">
 <!--{holdingsmsg}-->
-.&nbsp;
+         .&nbsp;
 <!--{holds}-->
-&nbsp;
-        </div>
-        <!-- /briefcit-status -->
-      </div>
-      <!-- /panel-body -->
-
-
-      <div class="briefcit-copies sr-only">
-<!--{items}-->
+         &nbsp;
+       </p>
+       <p class="hidden-xs">
 <!--{tofullrecord}-->
-      </div>
-      <!-- /briefcit-copies -->
-    </div>
-    <!-- /panel -->
+       </p>
+     </div>
+     <div class="briefcit-jacket">
+<!--{ifhasbookjacket}-->
+<!--{bookjacket}-->
+<!--{xif}-->
+     </div>
+   </div>
+   <div class="panel-footer">
+     <div class="primary-actions visible-xs">
+<!--{tofullrecord}-->
+     </div>
+     <div class="secondary-actions">
+<!--{mark}-->
+<!--{request}-->
+<!--{856link}-->
 =======
+  <!--{year}-->
+
+<tr class="briefcit-item"><!-- result-item -->
+<td>
+
+<!-- start nohitmsg token -->
+<!--{nohitmsg}-->
+
  <div class="panel panel-default">
    <div class="panel-body">
      <div class="briefcit-num">
@@ -116,7 +97,6 @@
    </div>
  </div>
  <!-- /panel -->
->>>>>>> bibliographic-display
 
 </td>
 </tr>

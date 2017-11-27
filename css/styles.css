@@ -4733,71 +4733,12 @@ td {
   font-weight: 600; }
 
 table.browseScreen,
-<<<<<<< HEAD
-=======
 table.browseScreen table,
->>>>>>> bibliographic-display
 table.browseScreen tbody,
 table.browseScreen tr,
 table.browseScreen td {
   display: block; }
 
-<<<<<<< HEAD
-table.browseScreen tbody.briefcit-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; }
-
-table.browseScreen tr.browseSuperEntry,
-table.browseScreen tr.browse-jump {
-  flex: 0 0 100%; }
-
-table.browseScreen tr.briefcit-item {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  flex-basis: 100%; }
-  @media (min-width: 768px) and (max-width: 991px) {
-    table.browseScreen tr.briefcit-item {
-      flex-basis: 48%;
-      margin-right: 2%; } }
-  @media (min-width: 992px) {
-    table.browseScreen tr.briefcit-item {
-      flex-basis: 32%;
-      margin-right: 1.2%; } }
-
-table.browseScreen .page-header {
-  margin-top: 0; }
-
-.briefcitDetail {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: flex-start; }
-  @media (min-width: 480px) {
-    .briefcitDetail {
-      flex-flow: row nowrap;
-      align-items: stretch; } }
-
-.briefcit-data {
-  flex-grow: 1; }
-
-.briefcit-actions {
-  flex-grow: 0; }
-
-table.bibItems {
-  display: table;
-  border-width: 0; }
-  table.bibItems tbody {
-    display: table-row-group; }
-  table.bibItems tr {
-    display: table-row; }
-  table.bibItems td {
-    display: table-cell; }
-
-.bibItemsHeader {
-  font-weight: 600;
-  text-align: left; }
-=======
 .briefcit-list {
   max-width: 800px;
   margin: 0 auto; }
@@ -4858,7 +4799,6 @@ table.bibItems {
       display: flex; }
       .secondary-actions a {
         margin-left: 6px; } }
->>>>>>> bibliographic-display
 
 .social {
   background-color: #E9F2F7;
