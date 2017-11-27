@@ -1,5 +1,4 @@
 $(function() {
-
   $('table.bibItems').addClass('table');
   $('.briefcitRequest > a').addClass('btn btn-success');
 
@@ -11,11 +10,17 @@ $(function() {
   $('table.briefcit tr.browseSuperEntry').addClass('page-header');
   $('tr.bibItemsHeader th').removeAttr('width');
   $('tr.bibItemsEntry td').removeAttr('width');
-  $('td.browseSaveJump').parent('tr').addClass('browse-jump');
+  $('td.browseSaveJump')
+    .parent('tr')
+    .addClass('browse-jump');
 
-  $('.primary-actions > a').addClass('btn btn-primary btn-sm').text('Check Availability');
+  $('.primary-actions > a')
+    .addClass('btn btn-primary btn-sm')
+    .text('Check Availability');
   $('.secondary-actions > a').addClass('btn btn-default btn-sm');
 
   $('.navigationRow')[0].remove();
   $('.browse-jump')[0].remove();
+
+  //DOM manipulation for bibdisplay.html
 });

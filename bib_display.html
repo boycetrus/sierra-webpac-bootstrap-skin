@@ -1,58 +1,24 @@
 <!--{toplogo}-->
-<!-- start ifbibdisplay token -->
-<!--{ifbibdisplay}-->
-<!--{xif}-->
-<!-- end ifbibdisplay token -->
-<!-- start catedit token -->
-<!--{catedit}-->
-<!-- end catedit token -->
+  <!-- start ifbibdisplay token -->
+  <!--{ifbibdisplay}-->
+  <!--{xif}-->
+  <!-- end ifbibdisplay token -->
 
 <div id="bibDisplayBody">
 
+<div class="browseSearchtool webpac-form-container well well-lg">
+<!--{searchtool}-->
+</div> <!-- browseSearchtool -->
+
 <div class="navigationRowRecord">
-<!-- start navrow token -->
 <!--{navrow}-->
-<!-- end navrow token -->
 </div> <!-- navigationRowRecord -->
 
-<div id="bibDisplayContent">
-
-<div class="bibSearch">
-<!-- start searchtool token -->
-<!--{searchtool}-->
-<!-- end searchtool token -->
-<div class="bibSearchHistory">
-<form>
-<!-- start searchhistory token -->
-<!--{searchhistory}-->
-<!-- end searchhistory token -->
-</form>
-</div> <!-- bibSearchHistory --> 
-</div> <!-- bibSearch -->
-
-<div class="bibPager">
-<!-- start pager token -->
-<!--{pager}-->
-<!-- end pager token -->
-</div> <!-- bibPager -->
+  <div class="bibPager">
+  <!--{pager}-->
+  </div> <!-- bibPager -->
 
 <div class="bibClear"></div>
-
-<div class="bibResourceSidebar">
-<!-- start resourcetable token -->
-<!--{ifhasresourcetable}-->
-<!--{resourcetable}-->
-<!--{xif}-->
-<!-- end resourcetable token -->
-
-<!--Optional INNReach resources.-->
-<!-- start innreach token -->
-<!--{innreach}-->
-<!-- end innreach token -->
-<!-- start relsearch token -->
-<!--{relsearch}-->
-<!-- end relsearch token -->
-</div> <!-- bibResourceSidebar -->
 
 <div class="bibDisplayJacket">
 <!-- start bibimage token -->
@@ -180,7 +146,6 @@
 
 </div> <!-- bibDisplayContentMain -->
 
-<div class="bibClear"></div>
 
 <div class="bibPager">
 <!-- start pager token -->
@@ -188,12 +153,26 @@
 <!-- end pager token -->
 </div> <!-- bibPager -->
 
-<div class="bibClear"></div>
-
-</div><!-- bibDisplayContent -->
-<div class="clear"></div>
 </div><!-- bibDisplayBody -->
+
+<div class="bibSearchHistory">
+<form>
+<!--{searchhistory}-->
+</form>
+</div> <!-- bibSearchHistory -->
+
+<div class="bibResourceSidebar">
+<!-- start resourcetable token -->
+<!--{ifhasresourcetable}-->
+<!--{resourcetable}-->
+<!--{xif}-->
+<!-- end resourcetable token -->
+
+<!-- start relsearch token -->
+<!--{relsearch}-->
+<!-- end relsearch token -->
+</div> <!-- bibResourceSidebar -->
+
 <!-- start botlogo token -->
 <!--{botlogo}-->
 <!-- end botlogo token -->
-
