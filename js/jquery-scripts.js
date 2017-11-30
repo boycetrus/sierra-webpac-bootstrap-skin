@@ -304,8 +304,19 @@ $(function() {
   $('td.browsePager .pagination > span.sr-only').remove();
 
   // pagination for bibdisplay.html
-  $('.bibSearchtoolMessage > i').insertAfter('.bibPager > a:first');
+  $('.bibSearchtoolMessage > i').prependTo('.bibPager');
   $('.bibSearchtoolMessage').remove();
+  $('#rtrntb')
+    .parent()
+    .appendTo('.bibPager .btn-group');
+  $('.btn-bib-paging')
+    .parent()
+    .addClass('btn btn-xs btn-default');
+  $('.bibPager h2').each(function() {
+    $(this)
+      .closest('.bibPager')
+      .prepend($(this));
+  });
 
   // navigationRow
   $('.navigationRow')
