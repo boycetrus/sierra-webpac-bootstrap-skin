@@ -285,7 +285,9 @@ $(function() {
     .addClass('btn btn-primary btn-sm')
     .text('Check Availability');
   $('.secondary-actions > a').addClass('btn btn-default btn-sm');
-  $('.navigationRow')[0].remove();
+  $('.navigationRow')
+    .eq(0)
+    .remove();
 
   // pagination
   $('td.browsePager')
@@ -300,7 +302,8 @@ $(function() {
   );
   $('td.browsePager .pagination > a').wrap('<li/>');
   $('td.browsePager .pagination > span.sr-only').remove();
-  //DOM manipulation for bibdisplay.html
+
+  // pagination for bibdisplay.html
   $('.bibSearchtoolMessage > i').insertAfter('.bibPager > a:first');
   $('.bibSearchtoolMessage').remove();
 

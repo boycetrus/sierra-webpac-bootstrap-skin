@@ -176,15 +176,15 @@ TABLEPARAM_BROWSE=width="100%" cellpadding="0" cellspacing="0" border="0" name="
 BIB_TOC_HEADER=<strong>Table of Contents</strong>
 ICON_BUT_MARC_DISPLAY=<div class="buttonFull" id="ICON_BUT_MARC_DISPLAY">MARC Display</div>
 ICON_BUT_REGULAR_DISPLAY=<div class="buttonFull" id="ICON_BUT_REGULAR_DISPLAY">Regular Display</div>
-ICON_BUT_RTRNTB=<div class="buttonFull" id="ICON_BUT_RTRNTB">Return to Browse</div>
+ICON_BUT_RTRNTB=<span class="btn-bib-paging" data-option="ICON_BUT_RTRNTB">Return to List</span>
 DISPLAY_856=z|true
 HOLDINGS_POS=atpR
 # HOTLINK=i^020,c^09,n^505
 ICON_BIB_HOLDINGS_ITEMS=<span data-option="ICON_BIB_HOLDINGS_ITEMS">View Copies</span>
 # ICON_NEARBY=<span data-option="ICON_NEARBY"><img src="/screens/bullet.gif" alt="Nearby on shelf" border="0"></span>
-ICON_BIB_PAGING_CAPTION=<span data-option="ICON_BIB_PAGING_CAPTION" class="sr-only">navigate search results</span>
-ICON_BIB_PAGING_NEXT=<div class="btn btn-default btn-sm" data-option="ICON_BIB_PAGING_NEXT">Next <span class="hidden-xs">Result</span></div>
-ICON_BIB_PAGING_PREV=<div class="btn btn-default btn-sm" data-option="ICON_BIB_PAGING_PREV">Previous <span class="hidden-xs">Result</span></div>
+ICON_BIB_PAGING_CAPTION=<h2 data-option="ICON_BIB_PAGING_CAPTION" class="sr-only">navigate search results</h2>
+ICON_BIB_PAGING_NEXT=<span class="btn-bib-paging" data-option="ICON_BIB_PAGING_NEXT">Next <span class="hidden-xs">Result</span></span>
+ICON_BIB_PAGING_PREV=<span class="btn-bib-paging" data-option="ICON_BIB_PAGING_PREV">Previous <span class="hidden-xs">Result</span></span>
 ICON_RECORDLINK=<div id="ICON_RECORDLINK"><a href="%s">%s</a></div>
 LINK856TEXT=Connect to
 MARC=yes

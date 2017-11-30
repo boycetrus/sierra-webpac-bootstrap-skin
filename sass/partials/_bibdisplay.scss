@@ -1,5 +1,9 @@
 .bibPager {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   margin-bottom: 1em;
+  @media (min-width: $screen-xs-min) {
+    flex-direction: row;
+  }
 }
