@@ -16,34 +16,46 @@
   </div>
 </div> <!-- bibPager -->
 
-<div class="navigationRowRecord">
-<!--{navrow}-->
-</div> <!-- navigationRowRecord -->
-
-<div class="bibDisplayJacket">
-<!-- start bibimage token -->
+<div class="bib-display-main">
+  <div class="bibDisplayJacket">
+  <!-- start bibimage token -->
 <!--{bibimage}-->
-<!-- end bibimage token -->
-<div class="bibMedia">
-<!-- start media token -->
+  <!-- end bibimage token -->
+  </div> <!-- bibDisplayJacket -->
+
+  <div class="bibDisplayInfo">
+    <div class="bibDisplayTitle">
+    <!-- start recordinfo:t token -->
+<!--{recordinfo:t}-->
+    <!-- end recordinfo:t token -->
+    </div>
+    <div class="bibDisplayAuthor">
+    <!-- start recordinfo:a token -->
+<!--{recordinfo:a}-->
+    <!-- end recordinfo:a token -->
+    </div>
+    <div class="bibMedia">
+    <!-- start media token -->
 <!--{media}-->
-<!-- end media token -->
-</div> <!-- bibMedia -->
-</div> <!-- bibDisplayJacket -->
+    <!-- end media token -->
+    </div> <!-- bibMedia -->
+    <div class="bibSummary">
+    <!-- start recordinfo:n token -->
+<!--{recordinfo:n}-->
+    <!-- end recordinfo:n token -->
+  </div> <!-- bibSummary -->
+  </div>
+
+  <div class="navigationRowRecord">
+<!--{navrow}-->
+  </div> <!-- navigationRowRecord -->
+</div> <!-- /bib-display-main -->
+
+<!-- #########         UP TO HERE SO FAR           #######  -->
+
 
 <div class="bibDisplayContentMain">
 
-
-<div class="bibDisplayTitle">
-<!-- start recordinfo:t token -->
-<!--{recordinfo:t}-->
-<!-- end recordinfo:t token -->
-</div>
-<div class="bibDisplayAuthor">
-<!-- start recordinfo:a token -->
-<!--{recordinfo:a}-->
-<!-- end recordinfo:a token -->
-</div>
 <div class="bibDisplayPublisher">
 <!-- start recordinfo:pR token -->
 <!--{recordinfo:pR}-->
@@ -62,6 +74,7 @@
 <br />
 <!--{booking}-->
 <!-- end booking token -->
+
 <!-- start holdingslink token -->
 <!--{holdingslink}-->
 <!-- end holdingslink token -->

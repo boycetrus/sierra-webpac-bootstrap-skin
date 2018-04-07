@@ -4834,6 +4834,10 @@ table.browseScreen td {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 1em; }
   @media (min-width: 480px) {
     .bibPager {
@@ -4842,6 +4846,8 @@ table.browseScreen td {
       -webkit-flex-direction: row;
           -ms-flex-direction: row;
               flex-direction: row; } }
+  .bibPager > i {
+    margin-right: 1em; }
 
 .social {
   background-color: #E9F2F7;
