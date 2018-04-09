@@ -4861,14 +4861,18 @@ table.browseScreen td {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column; }
-  @media (min-width: 480px) {
+  @media (min-width: 768px) {
     .bib-display-main {
       -webkit-flex-flow: row nowrap;
           -ms-flex-flow: row nowrap;
               flex-flow: row nowrap; } }
-  .bib-display-main > * {
-    text-align: center;
-    max-resolution: 1em; }
+
+.bib-display-main > * {
+  text-align: center;
+  margin-bottom: 1em; }
+  @media (min-width: 768px) {
+    .bib-display-main > * {
+      text-align: left; } }
 
 .social {
   background-color: #E9F2F7;

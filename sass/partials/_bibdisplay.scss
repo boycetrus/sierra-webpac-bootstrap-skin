@@ -19,11 +19,15 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  @media (min-width: $screen-xs-min) {
+  @media (min-width: $screen-sm-min) {
     flex-flow: row nowrap;
   }
-  > * {
-    text-align: center;
-    max-resolution: 1em;
+}
+
+.bib-display-main > * {
+  text-align: center;
+  margin-bottom: 1em;
+  @media (min-width: $screen-sm-min) {
+    text-align: left;
   }
 }
