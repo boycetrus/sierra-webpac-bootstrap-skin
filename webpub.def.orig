@@ -7,40 +7,32 @@
 # converted by cvpubdef from HOLDINGS_POS: atpeR
 #
 #
-#
-# TITLE converted from HOLDINGS_POS field tag: 't'
-#
-b|t|240|-6|||b|
-b|t||-6|||b|
-#
-# Publication Year
-b|D||||b
-#
-# EDITION converted from HOLDINGS_POS field tag: 'e'
-b|e||&|||b|
-#end HOLDINGS_POS
-#
-# SUMMARY
-b|n|520|&|||b|
-#
-#
-# next line added by cvpubdef
-b|H|||||
-#
-#
-#
 # converted from HOLDINGS_POS field tag: 'a'
 #
 b|a|110|&|Corp Author||b|
 b|a|111|&|Conference||b|
 b|a||&|Author||b|
 #
+# converted from HOLDINGS_POS field tag: 't'
+#
+b|t|240|-6|Unif Title||b|
+b|t||-6|Title||b|
+#
 # converted from HOLDINGS_POS field tag: 'p'
 #
 b|p|270|&|Address||b|
 b|p||-6|Imprint||b|
 #
-##
+# converted from HOLDINGS_POS field tag: 'e'
+#
+b|e||&|Edition||b|
+#
+# end HOLDINGS_POS
+#
+#
+# next line added by cvpubdef
+b|H|||||
+#
 b|c||-z|Call #||b|
 b|r|306|&|Time||b|
 b|r|307|&|Hours||b|
@@ -64,6 +56,7 @@ b|n|510|&|Indexed In:||b|
 b|n|511[^1]|&|Performer||b|
 b|n|5111|&|Cast||b|
 b|n|516|&|File Type||b|
+b|n|520|&|Summary||b|
 b|n|521|&|Audience||b|
 b|n|524|&|Cite As:||b|
 b|n|533|&|Reproduction||b|
