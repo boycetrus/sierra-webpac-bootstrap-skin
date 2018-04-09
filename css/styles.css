@@ -4865,7 +4865,9 @@ table.browseScreen td {
     .bib-display-main {
       -webkit-flex-flow: row nowrap;
           -ms-flex-flow: row nowrap;
-              flex-flow: row nowrap; } }
+              flex-flow: row nowrap; }
+      .bib-display-main .bibDisplayInfo {
+        padding: 0 1em; } }
 
 .bib-display-main > * {
   text-align: center;
