@@ -8,26 +8,26 @@
 #
 #
 #
-# TITLE converted from HOLDINGS_POS field tag: 't'
-#
-b|t|240|-6|||b|
-b|t||-6|||b|
-#
+
 # Publication Year
-b|D||||b
+b|D||Date of Publication||b|
 #
 # EDITION converted from HOLDINGS_POS field tag: 'e'
-b|e||&|||b|
+b|e||&|Edition||b|
 #end HOLDINGS_POS
 #
 # SUMMARY
-b|n|520|&|||b|
+b|n|520|&|Summary||b|
 #
 #
 # next line added by cvpubdef
 b|H|||||
 #
 #
+#
+# TITLE converted from HOLDINGS_POS field tag: 't'
+b|t|240|-6|Uniform Title||b|
+b|t||-6|Title||b|
 #
 # converted from HOLDINGS_POS field tag: 'a'
 #
