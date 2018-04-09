@@ -4865,9 +4865,14 @@ table.browseScreen td {
     .bib-display-main {
       -webkit-flex-flow: row nowrap;
           -ms-flex-flow: row nowrap;
-              flex-flow: row nowrap; }
+              flex-flow: row nowrap;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around; }
       .bib-display-main .bibDisplayInfo {
-        padding: 0 1em; } }
+        -webkit-flex-basis: 60%;
+            -ms-flex-preferred-size: 60%;
+                flex-basis: 60%; } }
 
 .bib-display-main > * {
   text-align: center;

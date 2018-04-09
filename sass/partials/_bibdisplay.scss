@@ -21,8 +21,9 @@
   flex-direction: column;
   @media (min-width: $screen-sm-min) {
     flex-flow: row nowrap;
+    justify-content: space-around;
     .bibDisplayInfo {
-      padding: 0 1em;
+      flex-basis: 60%;
     }
   }
 }
