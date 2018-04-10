@@ -1,27 +1,15 @@
-#<!-- Sierra 23 Oct, 2015 -->
-# -----------------------------------------------------
-# Converted by cvpubdef from pubdef
-# -----------------------------------------------------
-#
-#
-# converted by cvpubdef from HOLDINGS_POS: atpeR
+#<!-- April 2018 - Martin Boyce, Sutherland Shire Libraries -->
 #
 #
 #
-
 # Publication Year
 b|D||Date of Publication||b|
 #
-# EDITION converted from HOLDINGS_POS field tag: 'e'
-b|e||&|Edition||b|
-#end HOLDINGS_POS
-#
-# SUMMARY
-b|n|520|&|Summary||b|
-#
+# EDITION
+b|e|250|&|Edition||b|
 #
 # next line added by cvpubdef
-b|H|||||
+b|H|||||b
 #
 #
 #
@@ -29,13 +17,13 @@ b|H|||||
 b|t|240|-6|Uniform Title||b|
 b|t||-6|Title||b|
 #
-# converted from HOLDINGS_POS field tag: 'a'
+# AUTHOR converted from HOLDINGS_POS field tag: 'a'
 #
 b|a|110|&|Corp Author||b|
 b|a|111|&|Conference||b|
 b|a||&|Author||b|
 #
-# converted from HOLDINGS_POS field tag: 'p'
+# PUBLISHER converted from HOLDINGS_POS field tag: 'p'
 #
 b|p|270|&|Address||b|
 b|p||-6|Imprint||b|
@@ -64,6 +52,7 @@ b|n|510|&|Indexed In:||b|
 b|n|511[^1]|&|Performer||b|
 b|n|5111|&|Cast||b|
 b|n|516|&|File Type||b|
+b|n|520|&|Summary||b|
 b|n|521|&|Audience||b|
 b|n|524|&|Cite As:||b|
 b|n|533|&|Reproduction||b|
