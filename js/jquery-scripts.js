@@ -323,4 +323,15 @@ $(function() {
     .addClass('well')
     .removeAttr('align');
   $('.navigationRow > form').addClass('webpac-form form-inline');
+
+  // DOM manipulation for bib_display.html layout
+  $('.bibDisplayContentMore .bibInfoLabel:contains("Summary")')
+    .parent('tr')
+    .appendTo('.bibSummary > table > tbody');
+  $(
+    '.bib-display-main .bibInfoEntry table > tbody > tr > td:first-child'
+  ).remove();
+  $('.bib-display-main .bibTitle .bibInfoData:first-child').wrapInner(
+    '<h1></h1>'
+  );
 });

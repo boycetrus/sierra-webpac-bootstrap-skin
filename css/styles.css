@@ -4881,6 +4881,9 @@ table.browseScreen td {
     .bib-display-main > * {
       text-align: left; } }
 
+.bibSummary {
+  text-align: justify; }
+
 .social {
   background-color: #E9F2F7;
   padding: 12px 0; }
