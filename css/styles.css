@@ -4884,6 +4884,17 @@ table.browseScreen td {
 .bibSummary {
   text-align: justify; }
 
+.bibHolds {
+  background-color: #c9eaff;
+  border-color: #8cd2ff;
+  color: #004c7d;
+  display: block;
+  border: none; }
+  .bibHolds hr {
+    border-top-color: #72c8ff; }
+  .bibHolds .alert-link {
+    color: #002d4a; }
+
 .social {
   background-color: #E9F2F7;
   padding: 12px 0; }

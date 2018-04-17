@@ -39,3 +39,9 @@
 .bibSummary {
   text-align: justify;
 }
+
+.bibHolds {
+  @include alert-variant($alert-info-bg, $alert-info-border, $alert-info-text);
+  display: block;
+  border: none;
+}

@@ -328,7 +328,7 @@ $(function() {
   $('.bibDisplayContentMore .bibInfoLabel:contains("Uniform Title")')
     .parent('tr')
     .remove();
-  $itemTitle = $('.bibDisplayContentMore .bibInfoLabel:contains("Title")')
+  $itemTitle = $('.bibDisplayContentMore .bibInfoLabel:contains("Title").eq(0)')
     .next('td')
     .text();
   $('.bibTitle > h1').text($itemTitle);
