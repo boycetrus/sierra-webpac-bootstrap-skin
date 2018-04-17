@@ -1,4 +1,4 @@
-var $patronFirstName;
+var $patronFirstName, $itemTitle;
 
 function applyChangeReminder() {
   $('a:contains("Apply Changes")')
@@ -325,6 +325,13 @@ $(function() {
   $('.navigationRow > form').addClass('webpac-form form-inline');
 
   // DOM manipulation for bib_display.html layout
+  $('.bibDisplayContentMore .bibInfoLabel:contains("Uniform Title")')
+    .parent('tr')
+    .remove();
+  $itemTitle = $('.bibDisplayContentMore .bibInfoLabel:contains("Title")')
+    .next('td')
+    .text();
+  $('.bibTitle > h1').text($itemTitle);
   $('.bibDisplayContentMore .bibInfoLabel:contains("Summary")')
     .parent('tr')
     .appendTo('.bibSummary > table > tbody');
