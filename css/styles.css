@@ -4889,7 +4889,9 @@ table.browseScreen td {
   border-color: #8cd2ff;
   color: #004c7d;
   display: block;
-  border: none; }
+  margin: 11px;
+  padding: 7.5px;
+  border-radius: 4px; }
   .bibHolds hr {
     border-top-color: #72c8ff; }
   .bibHolds .alert-link {

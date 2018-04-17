@@ -43,5 +43,7 @@
 .bibHolds {
   @include alert-variant($alert-info-bg, $alert-info-border, $alert-info-text);
   display: block;
-  border: none;
+  margin: ($line-height-computed / 2);
+  padding: ($alert-padding / 2);
+  border-radius: $alert-border-radius;
 }
