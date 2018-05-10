@@ -255,17 +255,17 @@ ICON_BUT_CLEAR_MARKED=<div class="buttonFullBold" id="ICON_BUT_CLEAR_MARKED">Emp
 ICON_BUT_EXPORT_MULTI=<div class="buttonFullBold" id="ICON_BUT_EXPORT_MULTI">Export Saved</div>
 ICON_BUT_EXPORT_VIEW_SAVES=<span data-option="ICON_BUT_EXPORT_VIEW_SAVES">View Bag</span>
 ICON_BUT_VIEW_SAVES=<div class="buttonFullBold" id="ICON_BUT_VIEW_SAVES">View Bag</div>
-EMAILOP=From the library catalog|staff@library.org|
+EMAILOP=From the library catalog|library-no-reply@bulk.ssc.nsw.gov.au
 EXPORT_SELECT_TABLE=Sendto:browser,email,local|Format:full,brief,marc,procite,endnote
 XRECTYPE=boi
 
 #Requesting
 BIBREQUEST=true
-ICON_BUT_REQUEST=<div class="buttonFullBold" id="ICON_BUT_REQUEST">Request</div>
-ICON_BUT_REQUEST_ALL=<div class="buttonFullBold" id="ICON_BUT_REQUEST_ALL">Request Available</div>
-ICON_BUT_REQUEST_MULTI=<div class="buttonFullBold" id="ICON_BUT_REQUEST_MULTI">Request Saved</div>
-ICON_BUT_REQUEST_RESET=<div class="buttonFullBold" id="ICON_BUT_REQUEST_RESET">Reset Form</div>
-ICON_BUT_REQUEST_SELECTED=<div class="buttonFullBold" id="ICON_BUT_REQUEST_SELECTED">Request Selected</div>
+ICON_BUT_REQUEST=<span class="btn btn-success btn-xs" id="ICON_BUT_REQUEST">Request</span>
+ICON_BUT_REQUEST_ALL=<span class="btn btn-default btn-xs" id="ICON_BUT_REQUEST_ALL">Request Available</span>
+ICON_BUT_REQUEST_MULTI=<span class="btn btn-default btn-xs" id="ICON_BUT_REQUEST_MULTI">Request Saved</span>
+ICON_BUT_REQUEST_RESET=<span class="btn btn-default btn-xs" id="ICON_BUT_REQUEST_RESET">Reset Form</span>
+ICON_BUT_REQUEST_SELECTED=<span class="btn btn-default btn-xs" id="ICON_BUT_REQUEST_SELECTED">Request Selected</span>
 ICON_REQUEST=<span data-icon="ICON_REQUEST">Place Hold</span>
 # REQFILLTIME=14|<br>Request available in approximately %d days|<br>Current estimated availability: approximately %d days|<br>This material may be immediately available
 REQUEST=Hold this item|bib|ask|Y
@@ -364,7 +364,7 @@ PATREVIEW_ABUSE_NOTIFY=Review abuse reported|Example Library|web@example.org
 # These options are set for Linked Ecommerce
 CC_APPROVED=Success! Your payment has been approved. Save or Print this page as a receipt of your payment.
 CC_DECLINED=Your payment could not be completed. Please confirm your information is entered correctly or pay at the library.
-CC_EMAIL_RECEIPT=Receipt for your payment to Sutherland Shire Libraries|library-no-reply@ssc.ns.gov.au|library@ssc.nsw.gov.au
+CC_EMAIL_RECEIPT=Receipt for your payment to Sutherland Shire Libraries|library-no-reply@bulk.ssc.ns.gov.au|library@ssc.nsw.gov.au
 # DONATE_NOTIFY=A new donation has been received|library-no-reply@ssc.nsw.gov.au|mboyce@ssc.nsw.gov.au
 ECOM_LINK_FINES_DESCRIPTION=Library Fees
 ECOM_LINK_SEND_PERSONAL=z
@@ -396,6 +396,7 @@ ICON_BUT_ILL_FORM=<span data-option="ICON_BUT_ILL_FORM=">Interlibrary Loan Form<
 ICON_BUT_ILL_HOME=<span data-option="ICON_BUT_ILL_HOME">New Request</span>
 ICON_BUT_PAT_ILL_FORM=<span data-option="ICON_BUT_PAT_ILL_FORM">Interlibrary Loan Form</span>
 ICON_BUT_PAT_ILL=<span data-option="ICON_BUT_PAT_ILL">Interlibrary Loan</span>
+ILL_CONF_EMAIL=library-no-reply@bulk.ssc.nsw.gov.au|library@ssc.nsw.gov.au
 ILL_CONF_EMAIL_SUBJECT=Library notification of Inter-library Loan request
 ILL_HOME=/screens/ill.html
 
@@ -471,8 +472,8 @@ ICON_BUT_RETHOME=Home
 AIRPAC_PORT=6060
 
 # Patron Registration
-# SELFREG_ERROR_EMAIL=library@ssc.nsw.gov.au|library@ssc.nsw.gov.au|Online Patron Registration Error|mboyce@ssc.nsw.gov.au
-SELFREG_INFO_EMAIL=library@ssc.nsw.gov.au|library@ssc.nsw.gov.au|New Online Patron Registration|jcraine@ssc.nsw.gov.au|selfregEmail.html
+# SELFREG_ERROR_EMAIL=library-no-reply@bulk.ssc.nsw.gov.au|library@ssc.nsw.gov.au|Online Patron Registration Error|library-no-reply@ssc.nsw.gov.au
+SELFREG_INFO_EMAIL=library-no-reply@bulk.ssc.nsw.gov.au||New Online Patron Registration|library-no-reply@ssc.nsw.gov.au|selfregEmail.html
 SELFREG_NAME_ORDER=1|2|3|,
 SELFREG_TEMPLATE=selfreg
 TIMEOUT_SELFREG=20000
