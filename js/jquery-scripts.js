@@ -318,21 +318,32 @@ $(function() {
       .prepend($(this));
   });
 
-  // navigationRow
+  // navigationRow and navigationRowRecord
   $('.navigationRow')
     .addClass('well')
     .removeAttr('align');
   $('.navigationRow > form').addClass('webpac-form form-inline');
+  $('[data-option="ICON_BUT_MODIFY"]')
+    .parent('a')
+    .appendTo('#search');
+  $('[data-option="ICON_BUT_MARC_DISPLAY"]')
+    .parent('a')
+    .appendTo('.bib-display-content')
+    .wrap('<p></p>');
+  $('.bib-display-main .navigationRowRecord a').addClass('list-group-item');
+  $('[data-option="ICON_BUT_REQUEST"]')
+    .parent('a')
+    .addClass('active');
 
   // DOM manipulation for bib_display.html layout
-  $('.bibDisplayContentMore .bibInfoLabel:contains("Uniform Title")')
+  $('.bib-display-content .bibInfoLabel:contains("Uniform Title")')
     .parent('tr')
     .remove();
-  $itemTitle = $('.bibDisplayContentMore .bibInfoLabel:contains("Title").eq(0)')
+  $itemTitle = $('.bib-display-content .bibInfoLabel:contains("Title").eq(0)')
     .next('td')
     .text();
   $('.bibTitle > h1').text($itemTitle);
-  $('.bibDisplayContentMore .bibInfoLabel:contains("Summary")')
+  $('.bib-display-content .bibInfoLabel:contains("Summary")')
     .parent('tr')
     .appendTo('.bibSummary > table > tbody');
   $(

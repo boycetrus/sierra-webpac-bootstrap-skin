@@ -13,7 +13,7 @@ main {
   > p {
     margin-top: $line-height-computed / 2;
   }
-  .lead{
+  .lead {
     text-align: left;
     margin: 0 0 $line-height-computed / 2;
   }
@@ -22,8 +22,12 @@ main {
   }
 }
 
-.search-submit input+input {
-    margin-left: $padding-xs-horizontal;
+.search-submit input + input {
+  margin-left: $padding-xs-horizontal;
+}
+
+.availLimMessage {
+  font: normal;
 }
 
 @media (min-width: $screen-sm-min) {

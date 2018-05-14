@@ -4638,6 +4638,9 @@ main {
 .search-submit input + input {
   margin-left: 5px; }
 
+.availLimMessage {
+  font: normal; }
+
 @media (min-width: 768px) {
   .navigationRow .webpac-form {
     display: -webkit-box;

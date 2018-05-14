@@ -93,7 +93,7 @@ OFFER_HISTORY=true
 # Advanced Searching
 AVS_MODIFY_TAG=X
 AVS_TAG=XYZ
-ICON_BUT_MODIFY=<p data-option="ICON_BUT_MODIFY">Modify Search</div>
+ICON_BUT_MODIFY=<span data-option="ICON_BUT_MODIFY">Modify Search</span>
 ICON_BUT_SHOWSIM=<div class="buttonFull" id="ICON_BUT_SHOWSIM">More Like This</div>
 ICON_REL_GROUP_1=<h2 data-option="ICON_REL_GROUP_1" class="browseSuperEntryTitle">Most Relevant Titles</h2>
 ICON_REL_GROUP_2=<h2 data-option="ICON_REL_GROUP_2" class="browseSuperEntryTitle">Highly Relevant Titles</h2>
@@ -174,7 +174,7 @@ TABLEPARAM_BRIEFCIT=true|class="briefcit" data-option="tableparam_briefcit"
 TABLEPARAM_BROWSE=width="100%" cellpadding="0" cellspacing="0" border="0" name="tableparam_browse"|align="center" cellpadding="0" cellspacing="0" border="0" name="tableparam_browse"|width="100%" cellpadding="0" cellspacing="0" border="0" name="tableparam_browse"|cellpadding="0" cellspacing="0" border="0" name="tableparam_browse"
 # Record Displays
 BIB_TOC_HEADER=<strong>Table of Contents</strong>
-ICON_BUT_MARC_DISPLAY=<div class="buttonFull" id="ICON_BUT_MARC_DISPLAY">MARC Display</div>
+ICON_BUT_MARC_DISPLAY=<span class="btn btn-default btn-xs" data-option="ICON_BUT_MARC_DISPLAY">View MARC Record</span>
 ICON_BUT_REGULAR_DISPLAY=<div class="buttonFull" id="ICON_BUT_REGULAR_DISPLAY">Regular Display</div>
 ICON_BUT_RTRNTB=<span class="btn-bib-paging" data-option="ICON_BUT_RTRNTB">Return to List</span>
 DISPLAY_856=z|true
@@ -261,11 +261,11 @@ XRECTYPE=boi
 
 #Requesting
 BIBREQUEST=true
-ICON_BUT_REQUEST=<span class="btn btn-success btn-xs" id="ICON_BUT_REQUEST">Request</span>
-ICON_BUT_REQUEST_ALL=<span class="btn btn-default btn-xs" id="ICON_BUT_REQUEST_ALL">Request Available</span>
-ICON_BUT_REQUEST_MULTI=<span class="btn btn-default btn-xs" id="ICON_BUT_REQUEST_MULTI">Request Saved</span>
-ICON_BUT_REQUEST_RESET=<span class="btn btn-default btn-xs" id="ICON_BUT_REQUEST_RESET">Reset Form</span>
-ICON_BUT_REQUEST_SELECTED=<span class="btn btn-default btn-xs" id="ICON_BUT_REQUEST_SELECTED">Request Selected</span>
+ICON_BUT_REQUEST=<span data-option="ICON_BUT_REQUEST">Place Hold</span>
+ICON_BUT_REQUEST_ALL=<span data-option="ICON_BUT_REQUEST_ALL">Request All</span>
+ICON_BUT_REQUEST_MULTI=<span data-option="ICON_BUT_REQUEST_MULTI">Request Saved</span>
+ICON_BUT_REQUEST_RESET=<span data-option="ICON_BUT_REQUEST_RESET">Reset Form</span>
+ICON_BUT_REQUEST_SELECTED=<span data-option="ICON_BUT_REQUEST_SELECTED">Request Selected</span>
 ICON_REQUEST=<span data-icon="ICON_REQUEST">Place Hold</span>
 # REQFILLTIME=14|<br>Request available in approximately %d days|<br>Current estimated availability: approximately %d days|<br>This material may be immediately available
 REQUEST=Hold this item|bib|ask|Y
