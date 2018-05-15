@@ -330,10 +330,11 @@ $(function() {
     .parent('a')
     .appendTo('.bib-display-content')
     .wrap('<p></p>');
-  $('.bib-display-main .navigationRowRecord a').addClass('list-group-item');
+  $('.bib-display-main .navigationRowRecord a').addClass('btn btn-default');
   $('[data-option="ICON_BUT_REQUEST"]')
     .parent('a')
-    .addClass('active');
+    .removeClass('btn-default')
+    .addClass('btn-success');
 
   // DOM manipulation for bib_display.html layout
   $('.bib-display-content .bibInfoLabel:contains("Uniform Title")').parent('tr').remove();
