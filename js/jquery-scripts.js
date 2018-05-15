@@ -341,4 +341,5 @@ $(function() {
   $('.bibTitle > h1').text($itemTitle);
   $('.bib-display-content .bibInfoLabel:contains("Summary")').parent('tr').appendTo('.bibSummary > table > tbody');
   $('.bib-display-main .bibInfoLabel:contains("Publication Date")').remove();
+  $('.bib-display-main .bibInfoEntry table > tbody > tr > td:first-child').remove();
 });
