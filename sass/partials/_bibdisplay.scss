@@ -23,7 +23,7 @@
     flex-flow: row wrap;
     justify-content: space-around;
     .bibDisplayJacket {
-      flex: 0 1 170px;
+      flex: 0 1 160px;
     }
     .bibDisplayInfo {
       flex-basis: 60%;
@@ -44,6 +44,12 @@
   margin-bottom: 1em;
   @media (min-width: $screen-sm-min) {
     text-align: left;
+  }
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+  .bibDisplayInfo {
+    padding: 0 1em;
   }
 }
 

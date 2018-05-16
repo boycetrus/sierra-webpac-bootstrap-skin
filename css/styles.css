@@ -4875,9 +4875,9 @@ table.browseScreen td {
               justify-content: space-around; }
       .bib-display-main .bibDisplayJacket {
         -webkit-box-flex: 0;
-        -webkit-flex: 0 1 170px;
-            -ms-flex: 0 1 170px;
-                flex: 0 1 170px; }
+        -webkit-flex: 0 1 160px;
+            -ms-flex: 0 1 160px;
+                flex: 0 1 160px; }
       .bib-display-main .bibDisplayInfo {
         -webkit-flex-basis: 60%;
             -ms-flex-preferred-size: 60%;
@@ -4908,6 +4908,9 @@ table.browseScreen td {
     .bib-display-main > * {
       text-align: left; } }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .bibDisplayInfo {
+    padding: 0 1em; } }
 .bibSummary {
   text-align: justify; }
 
