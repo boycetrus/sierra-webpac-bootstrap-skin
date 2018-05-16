@@ -288,7 +288,8 @@ figure {
   margin: 0; }
 
 img {
-  vertical-align: middle; }
+  vertical-align: middle;
+  max-width: 100%; }
 
 .img-responsive {
   display: block;

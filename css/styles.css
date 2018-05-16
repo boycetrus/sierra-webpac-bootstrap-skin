@@ -289,7 +289,8 @@ figure {
   margin: 0; }
 
 img {
-  vertical-align: middle; }
+  vertical-align: middle;
+  max-width: 100%; }
 
 .img-responsive {
   display: block;
@@ -4872,6 +4873,11 @@ table.browseScreen td {
       -webkit-justify-content: space-around;
           -ms-flex-pack: distribute;
               justify-content: space-around; }
+      .bib-display-main .bibDisplayJacket {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 1 170px;
+            -ms-flex: 0 1 170px;
+                flex: 0 1 170px; }
       .bib-display-main .bibDisplayInfo {
         -webkit-flex-basis: 60%;
             -ms-flex-preferred-size: 60%;
@@ -4897,7 +4903,6 @@ table.browseScreen td {
 
 .bib-display-main > * {
   text-align: center;
-  margin-top: 22px;
   margin-bottom: 1em; }
   @media (min-width: 768px) {
     .bib-display-main > * {
