@@ -94,7 +94,7 @@ OFFER_HISTORY=true
 AVS_MODIFY_TAG=X
 AVS_TAG=XYZ
 ICON_BUT_MODIFY=<span data-option="ICON_BUT_MODIFY">Modify Search</span>
-ICON_BUT_SHOWSIM=<div class="buttonFull" id="ICON_BUT_SHOWSIM">More Like This</div>
+ICON_BUT_SHOWSIM=<span data-option="ICON_BUT_SHOWSIM">More Like This</span>
 ICON_REL_GROUP_1=<h2 data-option="ICON_REL_GROUP_1" class="browseSuperEntryTitle">Most Relevant Titles</h2>
 ICON_REL_GROUP_2=<h2 data-option="ICON_REL_GROUP_2" class="browseSuperEntryTitle">Highly Relevant Titles</h2>
 ICON_REL_GROUP_3=<h2 data-option="ICON_REL_GROUP_3" class="browseSuperEntryTitle">Very Relevant Titles</h2>
@@ -194,7 +194,7 @@ TABLEPARAM_BIB_DETAIL=width="100%" border="0" cellspacing="0" cellpadding="0" na
 TABLEPARAM_BIB_HOLDINGS=width="100%" cellspacing="0" cellpadding="0" border="1" name="tableparam_bib_holdings"
 TABLEPARAM_BIB_HOLDS=width="100%" cellspacing="0" cellpadding="0" border="1" name="tableparam_bib_holds"
 TABLEPARAM_BIB_INFO=width="100%" border="1" cellspacing="0" cellpadding="0" name="tableparam_bib_info"
-TABLEPARAM_BIB_ITEMS=width="100%" border="0" cellspacing="0" cellpadding="0" name="tableparam_bib_items"
+TABLEPARAM_BIB_ITEMS=id="bibItems" class="table table-bordered table-condensed table-hover" data-option="tableparam_bib_items"
 TABLEPARAM_BIB_LINKS=width="100%" border="0" cellspacing="0" cellpadding="0" name="tableparam_bib_links"
 TABLEPARAM_BIB_ORDER=width="100%" border="0" cellspacing="0" cellpadding="0" name="tableparam_bib_order"
 TABLEPARAM_BIB_PAGER=border="0" name="tableparam_bib_pager"
@@ -242,15 +242,15 @@ ICON_MYLISTS_MOVE=<span data-option="ICON_MYLISTS_MOVE">Move Selected</span>
 ICON_MYLISTS_REQUEST=<span data-option="ICON_MYLISTS_REQUEST">Request</span>
 ICON_MYLISTS_REMOVE_DUPLICATES=<span data-option="ICON_MYLISTS_REMOVE_DUPLICATES">Remove Duplicates</span>
 ICON_MYLISTS_RENAME=<span data-option="ICON_MYLISTS_RENAME">Change Name/Description</span>
-ICON_MYLISTS_SAVE=<div class="buttonFullBold" id="ICON_MYLISTS_SAVE">Add to My Lists</div>
-ICON_MYLISTS_SAVE_TO_LIST=<div class="buttonFullBold" id="ICON_MYLISTS_SAVE_TO_LIST">Add Selected to My Lists</div>
-ICON_MYLISTS_BRIEF=<div class="buttonFullBold" id="ICON_MYLISTS_BRIEF">Add to My Lists</div>
+ICON_MYLISTS_SAVE=<span data-option=="ICON_MYLISTS_SAVE">Add to My Lists</span>
+ICON_MYLISTS_SAVE_TO_LIST=<span data-option="ICON_MYLISTS_SAVE_TO_LIST">Add Selected to My Lists</div>
+ICON_MYLISTS_BRIEF=<div class="buttonFullBold" id="ICON_MYLISTS_BRIEF">Add to My Lists</span>
 ICON_BACK_TO_MYLISTS=<span data-option="ICON_BACK_TO_MYLISTS">Back to My Lists</span>
-ICON_MYLISTS_RECORD=<div class="buttonFullBold" id="ICON_MYLISTS_RECORD">Add to My Lists</div>
+ICON_MYLISTS_RECORD=<span data-option=="ICON_MYLISTS_RECORD">Add to My Lists</span>
 
 # Saving and Exporting
 # BRIEF_EXPORT=c|a|t|p
-ICON_BUT_BIBEXPORT=<div class="buttonFull" id="ICON_BUT_BIBEXPORT">Add to Bag</div>
+ICON_BUT_BIBEXPORT=<span data-option=="ICON_BUT_BIBEXPORT">Add to Bag</span>
 ICON_BUT_CLEAR_MARKED=<div class="buttonFullBold" id="ICON_BUT_CLEAR_MARKED">Empty Bag</div>
 ICON_BUT_EXPORT_MULTI=<div class="buttonFullBold" id="ICON_BUT_EXPORT_MULTI">Export Saved</div>
 ICON_BUT_EXPORT_VIEW_SAVES=<span data-option="ICON_BUT_EXPORT_VIEW_SAVES">View Bag</span>

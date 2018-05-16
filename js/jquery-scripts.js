@@ -343,4 +343,9 @@ $(function() {
   $('.bib-display-content .bibInfoLabel:contains("Summary")').parent('tr').appendTo('.bibSummary > table > tbody');
   $('.bib-display-main .bibInfoLabel:contains("Publication Date")').remove();
   $('.bib-display-main .bibInfoEntry table > tbody > tr > td:first-child').remove();
+
+  //remove Notes column from bibItems table
+  $('#bibItems .bibItemsHeader > th:nth-child(3)');
+  $('#bibItems .bibItemsEntry > td:nth-child(3)');
+  
 });

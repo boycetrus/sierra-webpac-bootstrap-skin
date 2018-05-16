@@ -4866,19 +4866,38 @@ table.browseScreen td {
           flex-direction: column; }
   @media (min-width: 768px) {
     .bib-display-main {
-      -webkit-flex-flow: row nowrap;
-          -ms-flex-flow: row nowrap;
-              flex-flow: row nowrap;
+      -webkit-flex-flow: row wrap;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
       -webkit-justify-content: space-around;
           -ms-flex-pack: distribute;
               justify-content: space-around; }
       .bib-display-main .bibDisplayInfo {
         -webkit-flex-basis: 60%;
             -ms-flex-preferred-size: 60%;
-                flex-basis: 60%; } }
+                flex-basis: 60%; }
+      .bib-display-main .bib-display-urls {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 100%;
+            -ms-flex: 1 1 100%;
+                flex: 1 1 100%;
+        -webkit-box-ordinal-group: 5;
+        -webkit-order: 4;
+            -ms-flex-order: 4;
+                order: 4; }
+      .bib-display-main .bib-display-items {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 100%;
+            -ms-flex: 1 1 100%;
+                flex: 1 1 100%;
+        -webkit-box-ordinal-group: 6;
+        -webkit-order: 5;
+            -ms-flex-order: 5;
+                order: 5; } }
 
 .bib-display-main > * {
   text-align: center;
+  margin-top: 22px;
   margin-bottom: 1em; }
   @media (min-width: 768px) {
     .bib-display-main > * {
