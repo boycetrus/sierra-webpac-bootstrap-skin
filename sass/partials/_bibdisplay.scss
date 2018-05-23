@@ -24,6 +24,7 @@
     justify-content: space-around;
     .bibDisplayJacket {
       flex: 0 1 160px;
+      margin-top: $line-height-computed * 2;
     }
     .bibDisplayInfo {
       flex-basis: 60%;
@@ -35,6 +36,9 @@
     .bib-display-items {
       flex: 1 1 100%;
       order: 5;
+    }
+    .navigationRowRecord {
+      margin-top: $line-height-computed * 2;
     }
   }
 }

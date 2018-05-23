@@ -8,16 +8,15 @@ $bootstrap-sass-asset-helper: false !default;
 //
 //## Corporate Colours
 
-$teal: #0083a9;
-$powderblue: #E9F2F7;
-$tomato: #E00034;
-$grass: #3C8A2E;
+$lightblue: #00bfdf;
+$darkblue: #093569;
+$purple: #74489c;
+$red: #E00034;
 $spring: #34B233;
-$lime: #BCC330;
-$orange: #E39800;
-$sky: #007AC9;
-$lightblue: #6aade4;
-$navy: #03508f;
+$green: #008282;
+$orange: #f68b32;
+$pink: #e44d6e;
+$greyblue: #d2d8e3;
 
 //## Gray and brand colors for use across Bootstrap.
 
@@ -29,11 +28,11 @@ $gray-light:             lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:           lighten($gray-base, 87%) !default;   // #ccc
 $gray-faint:             lighten($gray-base, 93.5%) !default; // #eee
 
-$brand-primary:         $teal !default; // original darken(#428bca, 6.5%) #337ab7
-$brand-success:         $spring !default; // original #5cb85c
-$brand-info:            $sky !default; // original #5bc0de
+$brand-primary:         $darkblue !default; // original darken(#428bca, 6.5%) #337ab7
+$brand-success:         $green !default; // original #5cb85c
+$brand-info:            $lightblue !default; // original #5bc0de
 $brand-warning:         $orange !default; // original #f0ad4e
-$brand-danger:          $tomato !default; // original #d9534f
+$brand-danger:          $red !default; // original #d9534f
 
 //## Social media colours
 
