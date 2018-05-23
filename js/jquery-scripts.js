@@ -328,8 +328,7 @@ $(function() {
     .appendTo('#search');
   $('[data-option="ICON_BUT_MARC_DISPLAY"]')
     .parent('a')
-    .appendTo('.bib-display-content')
-    .wrap('<p></p>');
+    .appendTo('.bib-display-content .panel-footer');
   $('.bib-display-main .navigationRowRecord a').addClass('btn btn-default');
   $('[data-option="ICON_BUT_REQUEST"]')
     .parent('a')

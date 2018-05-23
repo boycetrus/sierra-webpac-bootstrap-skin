@@ -4930,6 +4930,10 @@ table.browseScreen td {
   .bibHolds .alert-link {
     color: #005260; }
 
+.bib-display-content {
+  max-width: 75em;
+  margin: 0 auto; }
+
 .social {
   background-color: #d2d8e3;
   padding: 12px 0; }
