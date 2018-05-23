@@ -73,3 +73,14 @@
   max-width: 75em;
   margin: 0 auto;
 }
+
+.bibDetail .bibInfoEntry {
+  @media (max-width: $screen-xs-min) {
+    td {
+      display: block;
+    }
+    td.bibInfoLabel {
+      padding-top: 0.5em;
+    }
+  }
+}

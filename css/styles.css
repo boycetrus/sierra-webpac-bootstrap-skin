@@ -4934,6 +4934,12 @@ table.browseScreen td {
   max-width: 75em;
   margin: 0 auto; }
 
+@media (max-width: 480px) {
+  .bibDetail .bibInfoEntry td {
+    display: block; }
+  .bibDetail .bibInfoEntry td.bibInfoLabel {
+    padding-top: 0.5em; } }
+
 .social {
   background-color: #d2d8e3;
   padding: 12px 0; }

@@ -171,10 +171,10 @@ SORT_BROWSE=t:Title|a:Author|c:Year|r:Reverse Year|n:Call Number|m:Material Type
 SORT_MEDIA=amcdji
 SUPPRESS_YEAR=False
 TABLEPARAM_BRIEFCIT=true|class="briefcit" data-option="tableparam_briefcit"
-TABLEPARAM_BROWSE=width="100%" cellpadding="0" cellspacing="0" border="0" name="tableparam_browse"|align="center" cellpadding="0" cellspacing="0" border="0" name="tableparam_browse"|width="100%" cellpadding="0" cellspacing="0" border="0" name="tableparam_browse"|cellpadding="0" cellspacing="0" border="0" name="tableparam_browse"
+TABLEPARAM_BROWSE=data-option="tableparam_browse"|data-option="tableparam_browse"|data-option="tableparam_browse"|data-option="tableparam_browse"
 # Record Displays
 BIB_TOC_HEADER=<strong>Table of Contents</strong>
-ICON_BUT_MARC_DISPLAY=<span class="btn btn-default btn-xs" data-option="ICON_BUT_MARC_DISPLAY">View MARC Record</span>
+ICON_BUT_MARC_DISPLAY=<span data-option="ICON_BUT_MARC_DISPLAY">View MARC Record</span>
 ICON_BUT_REGULAR_DISPLAY=<div class="buttonFull" id="ICON_BUT_REGULAR_DISPLAY">Regular Display</div>
 ICON_BUT_RTRNTB=<span class="btn-bib-paging" data-option="ICON_BUT_RTRNTB">Return to List</span>
 DISPLAY_856=z|true
@@ -189,17 +189,17 @@ ICON_RECORDLINK=<div id="ICON_RECORDLINK"><a href="%s">%s</a></div>
 LINK856TEXT=Connect to
 MARC=yes
 SHOWOREC=no_cdate
-TABLEPARAM_BIB=width="100%" cellpadding="0" cellspacing="0" border="0" name="tableparam_bib"|cellpadding="0" cellspacing="0" border="0" align="center" name="tableparam_bib"
-TABLEPARAM_BIB_DETAIL=width="100%" border="0" cellspacing="0" cellpadding="0" name="tableparam_bib_detail"
-TABLEPARAM_BIB_HOLDINGS=width="100%" cellspacing="0" cellpadding="0" border="1" name="tableparam_bib_holdings"
-TABLEPARAM_BIB_HOLDS=width="100%" cellspacing="0" cellpadding="0" border="1" name="tableparam_bib_holds"
-TABLEPARAM_BIB_INFO=width="100%" border="1" cellspacing="0" cellpadding="0" name="tableparam_bib_info"
+TABLEPARAM_BIB=data-option="tableparam_bib"|data-option="tableparam_bib"
+TABLEPARAM_BIB_DETAIL=data-option="tableparam_bib_detail"
+TABLEPARAM_BIB_HOLDINGS=data-option="tableparam_bib_holdings"
+TABLEPARAM_BIB_HOLDS=data-option="tableparam_bib_holds"
+TABLEPARAM_BIB_INFO=data-option="tableparam_bib_info"
 TABLEPARAM_BIB_ITEMS=id="bibItems" class="table table-bordered table-condensed table-hover" data-option="tableparam_bib_items"
-TABLEPARAM_BIB_LINKS=width="100%" border="0" cellspacing="0" cellpadding="0" name="tableparam_bib_links"
-TABLEPARAM_BIB_ORDER=width="100%" border="0" cellspacing="0" cellpadding="0" name="tableparam_bib_order"
-TABLEPARAM_BIB_PAGER=border="0" name="tableparam_bib_pager"
-TABLEPARAM_BIB_THUMBNAILS=align="center" cellspacing="0" cellpadding="0" name="tableparam_bib_thumbnails"
-TABLEPARAM_BIB_TOC=border="0" cellspacing="0" name="tableparam_bib_toc"
+TABLEPARAM_BIB_LINKS=data-option="tableparam_bib_links"
+TABLEPARAM_BIB_ORDER=id="bibOrders" data-option="tableparam_bib_order"
+TABLEPARAM_BIB_PAGER=data-option="tableparam_bib_pager"
+TABLEPARAM_BIB_THUMBNAILS=data-option="tableparam_bib_thumbnails"
+TABLEPARAM_BIB_TOC=data-option="tableparam_bib_toc"
 WEBPUBDEF=true
 
 # Electronic Resource Management
@@ -215,13 +215,13 @@ RESOURCE_ADVISORY=k
 RESOURCE_HOLDINGS_FIELDS=Title:VbT|Coverage:Vch|Full Text:VcY
 RESOURCE_HOLDINGS_MAX=12
 RESOURCE_LICENSE_FIELDS=Permitted:Vlw|Restricted:Vlx|Available to:Vlf|Access notes:Vla
-TABLEPARAM_BIB_HOLDINGS=width="100%" border="0" cellpadding="10" name="tableparam_bib_holdings"
-TABLEPARAM_BIB_LICENSE=width="100%" border="1" cellpadding="0" name="tableparam_bib_license"
-TABLEPARAM_BIB_RESOURCE=width="100%" border="0" cellspacing="0" cellpadding="10" name="tableparam_bib_resource"
-TABLEPARAM_BIB_RESOURCE_BRIEF=width="100%" border="1" cellspacing="0" cellpadding="0" name="tableparam_bib_resource_brief"
-TABLEPARAM_RESOURCE_BIB=width="100%" border="1" cellpadding="0" name="tableparam_resource_bib"
-TABLEPARAM_RESOURCE_LICENSE=width="100%" border="1" cellpadding="0" name="tableparam_resource_license"
-TABLEPARAM_RESOURCE_RESOURCE=width="100%" border="1" cellspacing="0" cellpadding="0" name="tableparam_resource_resource"
+TABLEPARAM_BIB_HOLDINGS=data-option="tableparam_bib_holdings"
+TABLEPARAM_BIB_LICENSE=data-option="tableparam_bib_license"
+TABLEPARAM_BIB_RESOURCE=data-option="tableparam_bib_resource"
+TABLEPARAM_BIB_RESOURCE_BRIEF=data-option="tableparam_bib_resource_brief"
+TABLEPARAM_RESOURCE_BIB=data-option="tableparam_resource_bib"
+TABLEPARAM_RESOURCE_LICENSE=data-option="tableparam_resource_license"
+TABLEPARAM_RESOURCE_RESOURCE=data-option="tableparam_resource_resource"
 
 # Holdings
 ICON_BUT_CARDFORM_BOX=<div class="buttonFull" id="ICON_BUT_CARDFORM_BOX">Show Cards in Box Format</div>
@@ -315,7 +315,7 @@ PIN_RESET=true
 PIN_RESET_EMAIL=Request to reset your library PIN|library@ssc.nsw.gov.au|library@ssc.nsw.gov.au
 PSTARTOVER=/search
 SEEPUDATE=true
-TABLEPARAM_PATDISP=border="0" name="tableparam_patdisp"|border="0" name="tableparam_patdisp"|border="0" name="tableparam_patdisp"
+TABLEPARAM_PATDISP=data-option="tableparam_patdisp"|data-option="tableparam_patdisp"|data-option="tableparam_patdisp"
 TABLEPARAM_PATFUNC=id="patFunc" class="table table-bordered"|id="patFunc" class="table table-bordered"|id="patFunc" class="table table-bordered"
 TIMEOUT_POPUP=600
 EXP_MSG=3000|WARNING: Your account expires in %n day(s) on %d. We use expiry dates to ensure our records are correct. Please ask staff to confirm your details on your next visit. If you don't visit the library before the expiry date you will not be able to access your account online.
@@ -413,7 +413,7 @@ ERESERVE=[0123456789]
 RSRV_FORMAT=true
 # RSRV_HEADER=Materials for this Course
 # RSRV_HEADER=Featured Titles This Month
-TABLEPARAM_RSRV_BIBS=width="100%" border="0" cellpadding="0" cellspacing="0" name="tableparam_rsrv_bibs"
+TABLEPARAM_RSRV_BIBS=data-option="tableparam_rsrv_bibs"
 
 # Featured Lists
 ICON_BUT_PREVSCRN=<div class="buttonFullBold" id="ICON_BUT_PREVSCRN">Back</div>
@@ -540,6 +540,6 @@ ICON_ADD_TO_WAITLIST=<span data-option="ICON_ADD_TO_WAITLIST">Add to Waitlist</s
 ICON_VIEW_ADDITIONAL_SESSIONS=<span data-option="ICON_VIEW_ADDITIONAL_SESSTIONS>View Additional Sessions</span>
 ICON_HIDE_ADDITIONAL_SESSIONS=<span data-option="ICON_HIDE_ADDITIONAL_SESSIONS">Hide Additional Sessions</span>
 ICON_PROGRAM_CAL=<span data-option="ICON_PROGRAM_CAL">Events Calendar</span>
-TABLEPARAM_PROG_SECTIONS=width="100%" border="1" cellspacing="0" align="center" name="tableparam_prog_sections"
+TABLEPARAM_PROG_SECTIONS=data-option="tableparam_prog_sections"
 BOTLOGO_ENCORE=@screens/botlogo_encore.html
 WEBLINKS_ENCORE=0
