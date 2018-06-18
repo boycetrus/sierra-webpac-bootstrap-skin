@@ -344,10 +344,9 @@ $(function() {
   $('.bib-display-main .bibInfoEntry table > tbody > tr > td:first-child').remove();
 
   // Process urls from 856 tags into button in navigationRowRecord
-  if ($('.bib-display-urls a')) { // check if urls exist first
+  var eresource = $('.bib-display-urls a').length;
+  if (eresource !== 0) {
     var $href = $('.bib-display-urls a:first-child').attr('href');
-    console.log($href);
-
     var $link = $('<a href="' + $href + '" class="btn btn-success e-resource" target="_blank">View Online</a>');
     $link.prependTo('.navigationRowRecord.btn-group-vertical');
   }
