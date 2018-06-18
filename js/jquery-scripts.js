@@ -343,6 +343,15 @@ $(function() {
   $('.bib-display-main .bibInfoLabel:contains("Publication Date")').remove();
   $('.bib-display-main .bibInfoEntry table > tbody > tr > td:first-child').remove();
 
+  // Process urls from 856 tags into button in navigationRowRecord
+  if ($('.bib-display-urls a')) { // check if urls exist first
+    var $href = $('.bib-display-urls a:first-child').attr('href');
+    console.log($href);
+
+    var $link = $('<a href="' + $href + '" class="btn btn-success e-resource" target="_blank">View Online</a>');
+    $link.prependTo('.navigationRowRecord.btn-group-vertical');
+  }
+
   //remove Notes column from bibItems table
   $('#bibItems .bibItemsHeader > th:nth-child(3)').remove();
   $('#bibItems .bibItemsEntry > td:nth-child(3)').remove();

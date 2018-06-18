@@ -255,7 +255,7 @@ ICON_BUT_CLEAR_MARKED=<div class="buttonFullBold" id="ICON_BUT_CLEAR_MARKED">Emp
 ICON_BUT_EXPORT_MULTI=<div class="buttonFullBold" id="ICON_BUT_EXPORT_MULTI">Export Saved</div>
 ICON_BUT_EXPORT_VIEW_SAVES=<span data-option="ICON_BUT_EXPORT_VIEW_SAVES">View Bag</span>
 ICON_BUT_VIEW_SAVES=<div class="buttonFullBold" id="ICON_BUT_VIEW_SAVES">View Bag</div>
-EMAILOP=From the library catalog|library-no-reply@bulk.ssc.nsw.gov.au
+EMAILOP=From the library catalog|library-no-reply@library.ssc.nsw.gov.au
 EXPORT_SELECT_TABLE=Sendto:browser,email,local|Format:full,brief,marc,procite,endnote
 XRECTYPE=boi
 
@@ -364,7 +364,7 @@ PATREVIEW_ABUSE_NOTIFY=Review abuse reported|Example Library|web@example.org
 # These options are set for Linked Ecommerce
 CC_APPROVED=Success! Your payment has been approved. Save or Print this page as a receipt of your payment.
 CC_DECLINED=Your payment could not be completed. Please confirm your information is entered correctly or pay at the library.
-CC_EMAIL_RECEIPT=Receipt for your payment to Sutherland Shire Libraries|library-no-reply@bulk.ssc.ns.gov.au|library@ssc.nsw.gov.au
+CC_EMAIL_RECEIPT=Receipt for your payment to Sutherland Shire Libraries|library-no-reply@library.ssc.nsw.gov.au|library@ssc.nsw.gov.au
 # DONATE_NOTIFY=A new donation has been received|library-no-reply@ssc.nsw.gov.au|mboyce@ssc.nsw.gov.au
 ECOM_LINK_FINES_DESCRIPTION=Library Fees
 ECOM_LINK_SEND_PERSONAL=z
@@ -396,7 +396,7 @@ ICON_BUT_ILL_FORM=<span data-option="ICON_BUT_ILL_FORM=">Interlibrary Loan Form<
 ICON_BUT_ILL_HOME=<span data-option="ICON_BUT_ILL_HOME">New Request</span>
 ICON_BUT_PAT_ILL_FORM=<span data-option="ICON_BUT_PAT_ILL_FORM">Interlibrary Loan Form</span>
 ICON_BUT_PAT_ILL=<span data-option="ICON_BUT_PAT_ILL">Interlibrary Loan</span>
-ILL_CONF_EMAIL=library-no-reply@bulk.ssc.nsw.gov.au|library@ssc.nsw.gov.au
+ILL_CONF_EMAIL=library-no-reply@library.ssc.nsw.gov.au|library@ssc.nsw.gov.au
 ILL_CONF_EMAIL_SUBJECT=Library notification of Inter-library Loan request
 ILL_HOME=/screens/ill.html
 
@@ -472,8 +472,8 @@ ICON_BUT_RETHOME=Home
 AIRPAC_PORT=6060
 
 # Patron Registration
-# SELFREG_ERROR_EMAIL=library-no-reply@bulk.ssc.nsw.gov.au|library@ssc.nsw.gov.au|Online Patron Registration Error|library-no-reply@ssc.nsw.gov.au
-SELFREG_INFO_EMAIL=library-no-reply@bulk.ssc.nsw.gov.au||New Online Patron Registration|library-no-reply@ssc.nsw.gov.au|selfregEmail.html
+# SELFREG_ERROR_EMAIL=library-no-reply@library.ssc.nsw.gov.au|library@ssc.nsw.gov.au|Online Patron Registration Error|library-no-reply@ssc.nsw.gov.au
+SELFREG_INFO_EMAIL=library-no-reply@library.ssc.nsw.gov.au||New Online Patron Registration|library-no-reply@ssc.nsw.gov.au|selfregEmail.html
 SELFREG_NAME_ORDER=1|2|3|,
 SELFREG_TEMPLATE=selfreg
 TIMEOUT_SELFREG=20000
