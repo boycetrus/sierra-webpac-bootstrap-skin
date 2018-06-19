@@ -57,6 +57,11 @@ table.browseScreen td {
   }
 }
 
+.cover-image.no-cover {
+  background: transparent no-repeat url('screens/no-cover.png');
+  background-size: contain;
+}
+
 .briefcit-item .panel-footer {
   padding: 0;
   background-color: $gray-faint;
