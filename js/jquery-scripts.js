@@ -318,6 +318,13 @@ $(function() {
       .prepend($(this));
   });
 
+  // insert background image if no Cover Art Available
+  $('.cover-image img').each(function(i) {
+    if ($(this).width() === 1) {
+      $(this).parents('.cover-image').addClass('no-cover');
+    }
+  });
+
   // navigationRow and navigationRowRecord
   $('.navigationRow')
     .addClass('well')
@@ -333,7 +340,7 @@ $(function() {
   $('[data-option="ICON_BUT_REQUEST"]')
     .parent('a')
     .removeClass('btn-default')
-    .addClass('btn-success');
+    .addClass('btn-primary');
 
   // DOM manipulation for bib_display.html layout
   $('.bib-display-content .bibInfoLabel:contains("Uniform Title")').parent('tr').remove();
@@ -347,7 +354,7 @@ $(function() {
   var eresource = $('.bib-display-urls a').length;
   if (eresource !== 0) {
     var $href = $('.bib-display-urls a:first-child').attr('href');
-    var $link = $('<a href="' + $href + '" class="btn btn-success e-resource" target="_blank">View Online</a>');
+    var $link = $('<a href="' + $href + '" class="btn btn-primary e-resource" target="_blank">View Online</a>');
     $link.prependTo('.navigationRowRecord.btn-group-vertical');
   }
 

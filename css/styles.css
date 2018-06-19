@@ -4785,7 +4785,7 @@ table.browseScreen td {
       min-height: 170px; } }
 
 .cover-image.no-cover {
-  background: transparent no-repeat url("screens/no-cover.png");
+  background: transparent no-repeat url("no-cover.png");
   background-size: contain; }
 
 .briefcit-item .panel-footer {
