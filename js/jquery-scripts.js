@@ -6,6 +6,14 @@ function applyChangeReminder() {
     .addClass('btn-success');
 }
 
+function checkCoverImage () {
+  $('.cover-image img').each(function() {
+    if ($(this).width() === 1) {
+      $(this).parents('.cover-image').addClass('no-cover');
+    }
+  });
+}
+
 $(function() {
   //define global variables
   var $loggedInMsg = $('#LOGGEDIN_MSG')
@@ -319,11 +327,7 @@ $(function() {
   });
 
   // insert background image if no Cover Art Available
-  $('.cover-image img').each(function(i) {
-    if ($(this).width() === 1) {
-      $(this).parents('.cover-image').addClass('no-cover');
-    }
-  });
+  setTimeout(checkCoverImage, 10000);
 
   // navigationRow and navigationRowRecord
   $('.navigationRow')
