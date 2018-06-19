@@ -22,11 +22,11 @@
   @media (min-width: $screen-sm-min) {
     flex-flow: row wrap;
     justify-content: space-around;
-    .bibDisplayJacket {
+    .bib-display-jacket {
       flex: 0 1 160px;
       margin-top: $line-height-computed * 2;
     }
-    .bibDisplayInfo {
+    .bib-display-info {
       flex-basis: 60%;
     }
     .bib-display-urls {
@@ -52,12 +52,12 @@
 }
 
 @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
-  .bibDisplayInfo {
+  .bib-display-info {
     padding: 0 1em;
   }
 }
 
-.bibSummary {
+.bib-summary {
   text-align: justify;
 }
 
@@ -68,6 +68,12 @@
   padding: ($alert-padding / 2);
   border-radius: $alert-border-radius;
 }
+
+.bibItemsHeader,
+.bibItemsEntry {
+  text-align: left;
+}
+
 
 .bib-display-content {
   max-width: 75em;
@@ -81,6 +87,12 @@
     }
     td.bibInfoLabel {
       padding-top: 0.5em;
+    }
+  }
+  @media (min-width: $screen-xs-min) {
+    td.bibInfoLabel {
+      padding-right: 1em;
+      width: auto;
     }
   }
 }

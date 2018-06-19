@@ -4873,13 +4873,13 @@ table.browseScreen td {
       -webkit-justify-content: space-around;
           -ms-flex-pack: distribute;
               justify-content: space-around; }
-      .bib-display-main .bibDisplayJacket {
+      .bib-display-main .bib-display-jacket {
         -webkit-box-flex: 0;
         -webkit-flex: 0 1 160px;
             -ms-flex: 0 1 160px;
                 flex: 0 1 160px;
         margin-top: 44px; }
-      .bib-display-main .bibDisplayInfo {
+      .bib-display-main .bib-display-info {
         -webkit-flex-basis: 60%;
             -ms-flex-preferred-size: 60%;
                 flex-basis: 60%; }
@@ -4912,9 +4912,9 @@ table.browseScreen td {
       text-align: left; } }
 
 @media (min-width: 768px) and (max-width: 992px) {
-  .bibDisplayInfo {
+  .bib-display-info {
     padding: 0 1em; } }
-.bibSummary {
+.bib-summary {
   text-align: justify; }
 
 .bibHolds {
@@ -4930,6 +4930,10 @@ table.browseScreen td {
   .bibHolds .alert-link {
     color: #005260; }
 
+.bibItemsHeader,
+.bibItemsEntry {
+  text-align: left; }
+
 .bib-display-content {
   max-width: 75em;
   margin: 0 auto; }
@@ -4939,6 +4943,10 @@ table.browseScreen td {
     display: block; }
   .bibDetail .bibInfoEntry td.bibInfoLabel {
     padding-top: 0.5em; } }
+@media (min-width: 480px) {
+  .bibDetail .bibInfoEntry td.bibInfoLabel {
+    padding-right: 1em;
+    width: auto; } }
 
 .social {
   background-color: #d2d8e3;

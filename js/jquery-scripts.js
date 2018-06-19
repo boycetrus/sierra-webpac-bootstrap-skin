@@ -338,8 +338,8 @@ $(function() {
   // DOM manipulation for bib_display.html layout
   $('.bib-display-content .bibInfoLabel:contains("Uniform Title")').parent('tr').remove();
   $itemTitle = $('.bib-display-content .bibInfoLabel:contains("Title")').eq(0).next('td').text();
-  $('.bibTitle > h1').text($itemTitle);
-  $('.bib-display-content .bibInfoLabel:contains("Summary")').parent('tr').appendTo('.bibSummary > table > tbody');
+  $('.bib-title > h1').text($itemTitle);
+  $('.bib-display-content .bibInfoLabel:contains("Summary")').parent('tr').appendTo('.bib-summary > table > tbody');
   $('.bib-display-main .bibInfoLabel:contains("Publication Date")').remove();
   $('.bib-display-main .bibInfoEntry table > tbody > tr > td:first-child').remove();
 
