@@ -327,7 +327,7 @@ $(function() {
   });
 
   // insert background image if no Cover Art Available
-  setTimeout(checkCoverImage, 10000);
+  //setTimeout(checkCoverImage, 10000);
 
   // navigationRow and navigationRowRecord
   $('.navigationRow')
@@ -367,3 +367,6 @@ $(function() {
   $('#bibItems .bibItemsEntry > td:nth-child(3)').remove();
 
 });
+
+// insert background image if no Cover Art Available
+$(window).on("load", checkCoverImage);
