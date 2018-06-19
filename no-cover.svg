@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 260">
+  <defs>
+    <style>
+      .cls-1 {fill:gray;}
+      .cls-2,
+      .cls-7 {
+        font-size:24px;
+        font-family:"SourceSansPro-Semibold", "Source Sans Pro", Arial, Sans-Serif;
+        font-weight:600;
+      }
+      .cls-7 {
+        fill:#f2f2f2;
+      }
+    </style>
+  </defs>
+  <title>No Cover Image Available</title>
+
+    <g id="no-cover">
+      <rect class="cls-1" width="170" height="260"/>
+      <text class="cls-7" transform="translate(69 86)">
+        <tspan x="" y="">No</tspan>
+        <tspan x="-41" y="36">Cover Art</tspan>
+        <tspan x="-38" y="72">Available</tspan>
+      </text>
+    </g>
+  </svg>
