@@ -87,10 +87,14 @@ $(function() {
     '<div class="form-group search-submit"/>'
   );
   $('.browseSearchtoolMessage').insertAfter('.browseSearchtool');
-  // $('form#search').each(function() {
-  //   var removeNbsp = $(this).html().split('&nbsp;').join('');
-  //   $(this).html(removeNbsp);
-  // });
+
+  $('form#search > .form-group').each(function(i) {
+    var $node = this.nextSibling;
+    if($node.nodeType === 3) {
+      $node.remove();
+    }
+  });
+
 
   //patronview_web.html
   $('#LOGGEDIN_MSG')
