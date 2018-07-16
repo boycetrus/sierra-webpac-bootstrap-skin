@@ -81,6 +81,9 @@
 }
 
 .bibDetail .bibInfoEntry {
+  .bibInfoLabel {
+    width: auto;
+  }
   @media (max-width: $screen-xs-min) {
     td {
       display: block;
@@ -92,7 +95,6 @@
   @media (min-width: $screen-xs-min) {
     td.bibInfoLabel {
       padding-right: 1em;
-      width: auto;
     }
   }
 }

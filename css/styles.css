@@ -4942,6 +4942,8 @@ table.browseScreen td {
   max-width: 75em;
   margin: 0 auto; }
 
+.bibDetail .bibInfoEntry .bibInfoLabel {
+  width: auto; }
 @media (max-width: 480px) {
   .bibDetail .bibInfoEntry td {
     display: block; }
@@ -4949,8 +4951,7 @@ table.browseScreen td {
     padding-top: 0.5em; } }
 @media (min-width: 480px) {
   .bibDetail .bibInfoEntry td.bibInfoLabel {
-    padding-right: 1em;
-    width: auto; } }
+    padding-right: 1em; } }
 
 .social {
   background-color: #d2d8e3;
