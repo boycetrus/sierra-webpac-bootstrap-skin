@@ -37,7 +37,7 @@ b|r|315|&|Frequency||b|
 b|r|321|&|Frequency||b|
 b|r|350|&|||b|
 b|r|362|&|Pub Date||b|
-b|r||&|Phys. Description||b|
+b|r||-b23678|Phys. Description||b|
 b|h||&|Coverage||b|
 b|s||-6|Series||b|
 b|n|501|&|With:||b|
@@ -64,7 +64,7 @@ b|n|561|&|Provenance||b|
 b|n|586|&|Awards||b|
 b|n|59[0-9]|&|Local Note||b|
 b|n||&|Note||b|
-b|d|655|&|Genre||b|
+b|d|655|-2678|Genre||b|
 b|d|69[0-9]|&|Local Subj||b|
 b|d||&|Subject||b|
 b|v||&|Toc||b|
