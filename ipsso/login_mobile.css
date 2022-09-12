@@ -1,0 +1,196 @@
+@charset "utf-8";
+/* IPSSO Login CSS Mobile */
+
+
+/* my styles */
+.loginPage {
+	background-color: #0083A9;
+	height: 100%;
+}
+
+.banner {
+	background: #0083A9; /* Old browsers */ 
+	background: -moz-linear-gradient(top,  #00afc8 0%, #0080a5 6%, #0083a9 54%, #00a0bc 92%, #00c2d4 95%, #0083a8 97%); /* FF3.6+ */ 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00afc8), color-stop(6%,#0080a5), color-stop(54%,#0083a9), color-stop(92%,#00a0bc), color-stop(95%,#00c2d4), color-stop(97%,#0083a8)); /* Chrome,Safari4+ */ 
+	background: -webkit-linear-gradient(top,  #00afc8 0%,#0080a5 6%,#0083a9 54%,#00a0bc 92%,#00c2d4 95%,#0083a8 97%); /* Chrome10+,Safari5.1+ */ 
+	background: -o-linear-gradient(top,  #00afc8 0%,#0080a5 6%,#0083a9 54%,#00a0bc 92%,#00c2d4 95%,#0083a8 97%); /* Opera 11.10+ */ 
+	background: -ms-linear-gradient(top,  #00afc8 0%,#0080a5 6%,#0083a9 54%,#00a0bc 92%,#00c2d4 95%,#0083a8 97%); /* IE10+ */ 
+	background: linear-gradient(top,  #00afc8 0%,#0080a5 6%,#0083a9 54%,#00a0bc 92%,#00c2d4 95%,#0083a8 97%); /* W3C */ 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00afc8', endColorstr='#0083a8',GradientType=0 ); /* IE6-9 */
+  padding: 0;
+  text-align: center;
+}
+
+.banner h1 {
+	width: 320px;
+	margin: 0 auto;
+	padding: 0.5em;
+	text-align: left;
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: normal;
+}
+
+#login {
+	width: 320px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.loginTopLogo {
+	margin:  0 auto;
+	padding: 1em 0.5em;
+	text-align: left;
+	width: 320px;
+}
+
+.loginArea label {
+    display: inline-block;
+    font-size: 1rem;
+    text-align: right;
+    width: 80px;
+}
+
+#loginContent {
+    background-color: #FFFFFF;
+    margin: 0 auto;
+}
+
+.loginField {
+    border: 1px solid #A2A2A2;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -mozbox-shadow: 1px 1px 2px #d4d4d4 inset;
+    -webkitbox-shadow: 1px 1px 2px d4d4d4 inset;
+    box-shadow: 1px 1px 2px #d4d4d4 inset;
+    font-size: 1.25em;
+    margin: 2px 0 10px;
+    padding: 2px;
+    text-align: left;
+    width: 170px;
+}
+
+.loginField:focus {
+	background-color: #E9F2F7;
+	box-shadow: 0px 0px 3px #0083a9;
+}
+
+.loginFieldBg {
+    display: inline-block;
+}
+
+.loginFieldBg input {
+  width: 170px;
+}
+
+.loginSubmit {
+    display: block;
+    margin-left: 83px;
+}
+
+.pinreset {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 2em;
+    padding-left: 83px;
+}
+
+#loginFooter {
+  background-color: #E9F2F7;
+  /*insert gradient*/
+  -moz-box-shadow: 0 2px 2px #435E65, 0 2px 2px #D2E5EF inset;
+  -webkit-box-shadow: 0 2px 2px #435E65, 0 2px 2px #D2E5EF inset;
+  box-shadow: 0 2px 2px #435E65, 0 2px 2px #D2E5EF inset;
+  font-size: 0.85rem;
+  margin: 0;
+  padding: 1em 0;
+  text-align: center;
+  width: 100%;
+}
+
+.loginActions {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 0.5em; 
+}
+
+.loginActionScreenOnly:after {
+	content: " |";
+}
+
+.errors { 
+	background:#e00034; 
+	border:1px solid #940000; 
+	color:#ffffff; 
+	font-weight:bold; 
+	margin:0 0.8em 1em; 
+	padding:0.5em; 
+}
+
+/* existing styles */
+
+body { background:#f1f1f1; font-family:Arial,Helvetica,sans-serif; font-style:normal; font-weight: normal; color:#2a2a2a; margin:0; }
+
+a:link, a:active, a:visited, a:hover { color:#0083a9; text-decoration: none;}
+a:hover {text-decoration: underline;}
+
+.clearfloats { clear:both; }
+
+
+.loginArea { 
+  background: #FFFFFF;
+  font-size: 0.85rem;
+  margin: 0;
+  padding: 1.5em 0 0;
+  text-align: center;
+  width: 100%;
+}
+
+.loginArea fieldset { 
+  border:none;
+  padding-bottom: 4em; 
+}
+
+/*.loginField { font-size:1.25em; margin:2px 0px 10px 0; padding:2px; text-align:left; width:220px; }*/
+
+fieldset .barcodeAltChoice { margin:1.2em 0; padding:0; }
+
+fieldset .newpin { margin-top:1em; padding:0 }
+
+.formButtons div { display:inline; }
+
+/*.loginActionScreenOnly, .loginActionSeparator, .loginActionText { display:none; }
+
+.loginAction { margin:0 0 10px 0; }
+
+.loginAction a { background:url("arrow.gif") 95% center no-repeat #ececec; border-top:1px solid #ffffff; color:#f7931e; display:block; font-weight:bold; height:25px; padding:10px 0 0 10px; text-decoration:none; }*/
+
+/*.loginArea form { margin:.8em auto 0 auto; text-align:left; }*/
+
+/**.loginArea label { display:block; }*/
+
+.loginArea legend { color:#000000; padding:0; font-size:1.2em; }
+
+.barcodeAltChoice legend, .newpin legend { font-size:1em; margin-bottom:.5em; font-style:normal; }
+
+div #login_ldap { border-bottom:1px solid #686868; margin-bottom:1em; }
+
+/*#login_ldap .loginSubmit { float:right; position:relative; top:-3em; }
+
+#login .loginSubmit { float:right; position:relative; top:-3em; }*/
+
+.loginTop {
+  background-color: #ffffff;
+  text-align:center; 
+}
+
+.loginTopLogo img { border:none; }
+
+
+/* sprite button */
+.formButtons a { display:none; }
+
+/* Overrides to prevent possible conflict with styles.css */
+
+body > div { background:none; padding-bottom:0; padding-top:0; }

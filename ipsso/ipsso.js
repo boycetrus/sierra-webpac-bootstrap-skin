@@ -1,14 +1,3 @@
-//Look for the first field in the external patron part of the form. This field will get cursor focus.
-// var ipssoFirstField;
-// try { ipssoFirstField = document.forms[0].extpatid; }
-// catch(err) {
-// }
-//If we still don't have a field, look for the name field in the library account part.
-// if ( ipssoFirstField===undefined ) { ipssoFirstField = document.forms[0].name; }
-//Set focus. Ignore errors.
-// try { ipssoFirstField.focus(); }
-// catch(err) {}
-
 $(document).ready(function() {
 
 // add the bootstrap alert-danger classes to the error messages
