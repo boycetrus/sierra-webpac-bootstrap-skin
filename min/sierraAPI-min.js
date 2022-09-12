@@ -1,0 +1,1 @@
+$(document).ready(function(){var e="Rnd4UTF5Y09IVEMycEFMVlJ0ejhvRExoN1ZvRDpyUDhxNUNDMjdN";$.ajax({url:"https://webpac.sutherlandshire.nsw.gov.au:443/iii/sierra-api/v6/info/token/",type:"POST",beforeSend:function(o){o.setRequestHeader("Authorization","Basic"+e)},success:function(e){console.log(e)},error:function(e){console.log("Error! ",e)}})});

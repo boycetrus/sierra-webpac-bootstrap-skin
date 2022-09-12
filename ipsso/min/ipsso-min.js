@@ -1,1 +1,0 @@
-$(document).ready(function(){$("#status").addClass("alert alert-danger");var e=$("#ipssonewpin");return e.length>0?void $("#ipssopinentry").hide():!1});
