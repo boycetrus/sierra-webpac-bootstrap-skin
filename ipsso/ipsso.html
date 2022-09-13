@@ -7,12 +7,14 @@
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="/scripts/common.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="/apps/CAS/resources/login_mobile.css"> -->
+
     <link rel="stylesheet" type="text/css" href="/apps/CAS/resources/bootstrap.min.css" />
-    <style type="text/css">
-        @import url("/apps/CAS/resources/login_ldap.css");
-    </style>
-    <script type="text/javascript" src="/screens/iiilangswitch.js"></script>
+    <link rel="stylesheet" type="text/css" href="/apps/CAS/resources/login_ldap.css">
+    <!-- <link rel="stylesheet" type="text/css" href="/apps/CAS/resources/login.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="/apps/CAS/resources/login_html.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="/apps/CAS/resources/login_mobile.css"> -->
+
+    <!-- <script type="text/javascript" src="/screens/iiilangswitch.js"></script> -->
 </head>
 
 <body id="cas">
@@ -22,7 +24,8 @@
             &nbsp;
             <!-- Prevent div collapse -->
             <div class="loginTopLogo">
-                <img src="/screens/logo_sm.gif" alt="Sutherland Shire Libraries" class="login__logo">
+                <img src="/apps/CAS/resources/library-logo-wave.png" alt="Sutherland Shire Libraries"
+                    class="login__logo">
             </div>
         </div>
 
@@ -41,31 +44,31 @@
                     <!--display login form-->
                     <div id="login" class="login_non-ldap">
                         <fieldset class="login__form">
-                            <legend class="h5 login__title">Library Account Login</legend>
+                            <legend class="h5 login__title">LIBRARY ACCOUNT LOGIN</legend>
 
                             <fieldset class="barcodeAltChoice">
-                                <legend class="h6">Enter your barcode and PIN</legend>
+                                <legend class="h6">Enter your Library Card No. and PIN</legend>
                                 <label for="code" class="form-label">Barcode
-                                    <!--                                <i data-bs-toggle="tooltip" title=""-->
-                                    <!--                                   class="form-label__info"-->
-                                    <!--                                   data-bs-original-title="Replace this text with your tooltip text"-->
-                                    <!--                                   aria-label="Tooltip goes here"></i>-->
+                                    <!-- <i data-bs-toggle="tooltip" title=""-->
+                                    <!-- class="form-label__info"-->
+                                    <!-- data-bs-original-title="Replace this text with your tooltip text"-->
+                                    <!-- aria-label="Tooltip goes here"></i>-->
                                 </label>
                                 <div class="loginFieldBg input login__input">
-                                    <input id="code" name="code" type="password" value="" size="20" maxlength="40"
-                                        tabindex="20" class="loginField form-control">
+                                    <input id="code" name="code" type="text" value="" tabindex="20"
+                                        class="loginField form-control">
                                 </div>
 
                                 <div id="ipssopinentry">
                                     <label for="pin" class="form-label">PIN
-                                        <!-- <i data-bs-toggle="tooltip" title=""-->
-                                        <!-- class="form-label__info"-->
-                                        <!-- data-bs-original-title="Usually a 4 digit number"-->
-                                        <!-- aria-label="Usually a 4 digit number"></i>-->
+                                        <i data-bs-toggle="tooltip" title="" class="form-label__info"
+                                            data-bs-original-title="Usually a 4 digit number"
+                                            aria-label="Usually a 4 digit number">
+                                        </i>
                                     </label>
                                     <div class="loginFieldBg input login__input">
-                                        <input id="pin" name="pin" type="password" value="" size="20" maxlength="64"
-                                            tabindex="30" class="loginField form-control">
+                                        <input id="pin" name="pin" type="password" value="" tabindex="30"
+                                            class="loginField form-control">
                                     </div>
                                 </div>
                             </fieldset>
