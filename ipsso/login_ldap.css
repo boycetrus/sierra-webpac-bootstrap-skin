@@ -3,7 +3,7 @@
 /**/
 html,
 body {
-    background-color: #F7F8F9;
+    background-color: #f1f4f6;
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
     font-size: 20px;
     line-height: 1.2;
@@ -12,7 +12,7 @@ body {
 }
 
 body>div {
-    background-color: #F7F8F9;
+    background-color: #f1f4f6;
 }
 
 
@@ -2581,9 +2581,10 @@ select.form-control:focus {
 .fm-v {
     padding: 1.5em;
     border-radius: 6px;
-    border: 1px solid #E8E8E8;
+    border: 1px solid #babec3;
+    border-top: 4px solid #7fd1de;
     background-color: #FFF;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07), 0 4px 10px rgba(0, 0, 0, 0.03);
+    box-shadow: 2px 2px 4px #494e594d;
 }
 
 .login__container {
@@ -2641,7 +2642,7 @@ select.form-control:focus {
 
 .login__forgot {
     margin-top: 15px;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
 }
 
@@ -2661,11 +2662,11 @@ select.form-control:focus {
 
 .login__footnote a {
     text-decoration: none;
-    color: #425b76;
+    color: #00778a;
 }
 
 .loginActionSeparator {
-    border-right: 1px solid #484844;
+    border-right: 1px solid #727272;
     margin: 0 0.5em;
 }
 
