@@ -47,30 +47,26 @@
                         <fieldset class="login__form">
                             <legend class="h5 login__title">LIBRARY ACCOUNT LOGIN</legend>
 
-                            <fieldset class="barcodeAltChoice">
-                                <legend class="h6">Enter your Library Card No. and PIN</legend>
-                                <label for="code" class="form-label">Barcode
+                            <label for="code" class="form-label">Barcode
+                                <i data-bs-toggle="tooltip" title="" class="form-label__info"
+                                    data-bs-original-title="enter 14 digits, no spaces"
+                                    aria-label="enter 14 digits, no spaces"></i>
+                            </label>
+                            <div class="loginFieldBg input login__input">
+                                <input id="code" name="code" tabindex="20" class="loginField form-control">
+                            </div>
+
+                            <div id="ipssopinentry">
+                                <label for="pin" class="form-label">PIN
                                     <i data-bs-toggle="tooltip" title="" class="form-label__info"
-                                        data-bs-original-title="enter 14 digits, no spaces"
-                                        aria-label="enter 14 digits, no spaces"></i>
+                                        data-bs-original-title="Usually a 4 digit number"
+                                        aria-label="Usually a 4 digit number"></i>
                                 </label>
                                 <div class="loginFieldBg input login__input">
-                                    <input id="code" name="code" tabindex="20" class="loginField form-control">
+                                    <input id="pin" name="pin" type="password" tabindex="30"
+                                        class="loginField form-control">
                                 </div>
-
-                                <div id="ipssopinentry">
-                                    <label for="pin" class="form-label">PIN
-                                        <i data-bs-toggle="tooltip" title="" class="form-label__info"
-                                            data-bs-original-title="Usually a 4 digit number"
-                                            aria-label="Usually a 4 digit number"></i>
-                                    </label>
-                                    <div class="loginFieldBg input login__input">
-                                        <input id="pin" name="pin" type="password" tabindex="30"
-                                            class="loginField form-control">
-                                    </div>
-                                </div>
-                            </fieldset>
-
+                            </div>
 
 
                             <!--ifneedspin-->
@@ -102,7 +98,7 @@
                             <!--xif-->
                             <!-- This button is hidden unless using mobile devices. Even if hidden it enables Enter key to submit. -->
                             <button name="extpatsubmit" type="submit"
-                                class="loginSubmit btn btn-lg btn-primary login__button">Log In &nbsp;
+                                class="loginSubmit btn btn-lg btn-primary login__button">Sign In &nbsp;
                                 <svg width="17" height="20" viewBox="0 0 17 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path

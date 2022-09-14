@@ -164,6 +164,12 @@ a:hover {
     transition-duration: 0.125s;
 }
 
+.btn:hover,
+.btn:focus,
+.btn:active {
+    text-decoration: none;
+}
+
 .btn svg {
     vertical-align: top;
 }
@@ -1171,17 +1177,17 @@ a:hover {
 .form-label {
     display: block;
     margin-bottom: 8px;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 18px;
     letter-spacing: -0.25px;
-    color: #393939;
+    /* color: #33475b; */
     transition-duration: 0.125s;
     transition-property: color;
 }
 
-.form-label:hover {
+/* .form-label:hover {
     color: #33475b;
-}
+} */
 
 .form-label__info {
     display: inline-block;
