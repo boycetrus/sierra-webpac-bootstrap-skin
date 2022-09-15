@@ -119,17 +119,20 @@
 </div>
 <!-- set up SVGs for use element -->
 
-<div class="login__page">
-    <div class="login__container">
+<div class="login__page login">
 
-        <a href="/" tabindex="10">
-            <!-- <img src="/screens/logo_sm.gif" class="login__logo" height="40" width="280" alt="Catalog Home Page"> -->
+    <div class="loginTop">
+        &nbsp;
+        <!-- Prevent div collapse -->
+        <div class="loginTopLogo">
             <svg aria-label="Sutherland Shire Libraries" fill="#093569" width="129" height="80" role="img"
                 style="background-color:none; border-radius:3px;">
                 <use xlink:href="#library-icon"></use>
             </svg>
-        </a>
+        </div>
+    </div>
 
+    <div class="loginArea loginArea2Col login__container">
         <form method="post" class="login__form">
             <!--{iferrmsg}-->
             <div class="errors">
@@ -139,18 +142,24 @@
             <h5 class="login__title">PIN Request</h5>
             <p class="login__subtitle">Please enter the following information:</p>
             <fieldset>
+                <!--{ifneedpatronname}-->
                 <div class="login__input-area">
                     <label for="name">
                         <span class="form-label">Name</span>
-                        <input name="name" class="form-input" id="" value="" size="20" maxlength="40">
+                        <input name="name" class="loginField form-control" id="" value="" />
                     </label>
                 </div>
+                <!--{xif}-->
+
+                <!--{ifneedpatronverify}-->
                 <div class="login__input-area">
                     <label for="code">
                         <span class="form-label">Barcode</span>
-                        <input name="code" class="form-input" id="" type="PASSWORD" value="" size="20" maxlength="40">
+                        <input name="code" class="loginField form-control" id="" type="PASSWORD" value="" />
                     </label>
                 </div>
+                <!--{xif}-->
+
                 <div class="login__submit-area">
                     <input type="hidden" name="pat_submit" value="xxx">
                     <a href="#" class="login__button" onclick="javascript:document.forms[0].submit()">
