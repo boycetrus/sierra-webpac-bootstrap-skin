@@ -1,0 +1,48 @@
+<head>
+    <title>Pinreset Request</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/screens/pinreset_request.css">
+</head>
+
+<div class="login__page">
+<div class="login__container">
+
+<a href="/" tabindex="10">
+<img src="/screens/logo_sm.gif" class="login__logo" height="40" width="280" alt="Catalog Home Page">
+</a>
+
+<form method="post" class="login__form">
+<!--{iferrmsg}-->
+<div class="errormessage">
+<!--{errmsg}-->
+</div>
+<!--{xif}-->
+<h5 class="login__title">PIN Request</h5>
+<p class="login__subtitle">Please enter the following information:</p>
+<fieldset>
+<div class="login__input-area">
+<label for="name">
+<span class="form-label">Name</span>
+<input name="name" class="form-input" id="" value="" size="20" maxlength="40">
+</label>
+</div>
+<div class="login__input-area">
+<label for="code">
+<span class="form-label">Barcode</span>
+<input name="code" class="form-input" id="" type="PASSWORD" value="" size="20" maxlength="40">
+</label>
+</div>
+<div class="login__submit-area">
+<input type="hidden" name="pat_submit" value="xxx">
+<a href="#" class="login__button" onclick="javascript:document.forms[0].submit()">
+Submit
+</a>
+</div>
+</fieldset>
+</form>
+
+<div class="login__footnote">Don’t have a library card? <a href="/selfreg">Sign up here</a></div>
+
+</div>
+</div>
