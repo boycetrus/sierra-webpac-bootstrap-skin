@@ -2625,6 +2625,7 @@ select.form-control:focus {
 .login__subtitle {
     margin-top: -15px;
     margin-bottom: 30px;
+    width: 24em;
 }
 
 .login__input {
@@ -2707,7 +2708,9 @@ select.form-control:focus {
         flex-direction: column;
     }
 
-    .form-control {
+    .form-control,
+    .login__title,
+    .login__subtitle {
         width: 100%;
     }
 }
