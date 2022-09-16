@@ -134,17 +134,18 @@
         </div>
 
         <div class="loginArea loginArea2Col login__container">
-            <form method="post" class="login__form">
+            <form method="post" class="login__form fm-v">
                 <!--{iferrmsg}-->
                 <div class="errors">
                     <!--{errmsg}-->
                 </div>
                 <!--{xif}-->
-                <h5 class="login__title">PIN Request</h5>
-                <p class="login__subtitle">Please enter the following information:</p>
+                <h5 class="login__title">Request PIN Reset</h5>
+                <p class="login__subtitle">Please enter your library card number we'll email you a link to reset your
+                    PIN.</p>
                 <fieldset>
                     <!--{ifneedpatronname}-->
-                    <div class="login__input-area">
+                    <div class="loginFieldBg input login__input">
                         <label for="name">
                             <span class="form-label">Name</span>
                             <input name="name" class="loginField form-control" id="" value="" />
@@ -153,7 +154,7 @@
                     <!--{xif}-->
 
                     <!--{ifneedpatronverify}-->
-                    <div class="login__input-area">
+                    <div class="loginFieldBg input login__input">
                         <label for="code">
                             <span class="form-label">Barcode</span>
                             <input name="code" class="loginField form-control" id="" type="PASSWORD" value="" />
