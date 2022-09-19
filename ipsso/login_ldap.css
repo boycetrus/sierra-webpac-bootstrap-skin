@@ -2592,6 +2592,7 @@ select.form-control:focus {
     border-top: 4px solid #7fd1de;
     background-color: #FFF;
     box-shadow: 2px 2px 4px #494e594d;
+    margin-bottom: 0;
 }
 
 .login__container {

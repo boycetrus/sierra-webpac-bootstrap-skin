@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/apps/CAS/resources/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/apps/CAS/resources/login_ldap.css" />
+    <script type="text/javascript" src="/scripts/common.js"></script>
 </head>
 
 <body>
@@ -132,12 +133,12 @@
             </div>
         </div>
 
-        <div class="login__container">
+        <div class="loginArea loginArea2Col login__container">
 
             <form method="post" class="login__form fm-v">
 
                 <!--{iferrmsg}-->
-                <div class="errormessage">
+                <div id="clientmessage" class="errormessage">
                     <!--{errmsg}-->
                 </div>
                 <!--{xif}-->
