@@ -140,29 +140,33 @@
                     <!--{errmsg}-->
                 </div>
                 <!--{xif}-->
-                <h5 class="login__title">Request PIN Reset</h5>
-                <p class="login__subtitle">Please enter your library card number we'll email you a link to reset your
-                    PIN.</p>
-                <fieldset>
-                    <!--{ifneedpatronname}-->
-                    <div class="loginFieldBg input login__input">
-                        <label for="name" class="form-label">Barcode</label>
-                        <input id="name" name="name" class="loginField form-control">
-                    </div>
-                    <!--{xif}-->
+                <h1 class="login__title h5">RESET YOUR PASSCODE</h5>
+                    <p class="login__subtitle">Please enter your library card number we'll email you a link to reset
+                        your Passcode.</p>
+                    <fieldset>
+                        <!--{ifneedpatronname}-->
+                        <div class="loginFieldBg input login__input">
+                            <label for="name" class="form-label">Name</label>
+                            <input id="name" name="name" class="loginField form-control">
+                        </div>
+                        <!--{xif}-->
 
-                    <!--{ifneedpatronverify}-->
-                    <div class="loginFieldBg input login__input">
-                        <label for="code" class="form-label">Barcode</label>
-                        <input id="code" name="code" class="loginField form-control">
-                    </div>
-                    <!--{xif}-->
+                        <!--{ifneedpatronverify}-->
+                        <div class="loginFieldBg input login__input">
+                            <label for="code" class="form-label">Barcode
+                                <i data-bs-toggle="tooltip" title="" class="form-label__info"
+                                    data-bs-original-title="enter 14 digits, no spaces"
+                                    aria-label="enter 14 digits, no spaces"></i>
+                            </label>
+                            <input id="code" name="code" class="loginField form-control">
+                        </div>
+                        <!--{xif}-->
 
-                    <div class="login__submit-area">
-                        <input type="hidden" name="pat_submit" value="xxx">
-                        <button class="btn btn-primary btn-lg login__button">Submit</button>
-                    </div>
-                </fieldset>
+                        <div class="login__submit-area">
+                            <input type="hidden" name="pat_submit" value="xxx">
+                            <button class="btn btn-primary btn-lg login__button">Submit</button>
+                        </div>
+                    </fieldset>
             </form>
         </div>
         <div class="login__footnote">Don&apos;t have a library card? <a
@@ -172,5 +176,15 @@
 
     </div>
 
-    <!-- <script type="text/javascript" src="/apps/CAS/resources/bootstrap.bundle.min.js"></script> -->
+    <script type="text/javascript" src="/apps/CAS/resources/bootstrap.bundle.min.js"></script>
+    <!-- Trigger the tooltip -->
+    <script type="text/javascript" src="/apps/CAS/resources/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl, {
+                delay: { "show": 10, "hide": 10 }
+            })
+        })
+    </script>
 </body>

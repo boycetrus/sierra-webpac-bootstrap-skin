@@ -337,7 +337,7 @@ a:hover {
 
 
 /**/
-/* errors */
+/* messages */
 /**/
 
 .errors {
@@ -348,6 +348,13 @@ a:hover {
     margin-bottom: 1em;
     border-radius: 0.25em;
 }
+
+.policy-message {
+    background: #FFF9EE;
+    border: 1px solid #FFCD89;
+    border-radius: 4px;
+}
+
 
 /**/
 /* navbar */

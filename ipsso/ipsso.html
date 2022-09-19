@@ -170,7 +170,7 @@
                             </div>
 
                             <div id="ipssopinentry">
-                                <label for="pin" class="form-label">PIN
+                                <label for="pin" class="form-label">Passcode
                                     <i data-bs-toggle="tooltip" title="" class="form-label__info"
                                         data-bs-original-title="Usually a 4 digit number"
                                         aria-label="Usually a 4 digit number"></i>
@@ -182,10 +182,11 @@
                             </div>
 
 
+
                             <!--ifneedspin-->
                             <fieldset class="newpin" id="ipssonewpin">
-                                <legend class="h6">Please enter a new PIN</legend>
-                                <label for="pin1" class="form-label">New PIN
+                                <legend class="h6">Please enter a new Passcode</legend>
+                                <label for="pin1" class="form-label">New Passcode
                                     <!--                                <i data-bs-toggle="tooltip" title=""-->
                                     <!--                                   class="form-label__info"-->
                                     <!--                                   data-bs-original-title="Replace this text with your tooltip text"-->
@@ -196,7 +197,7 @@
                                         tabindex="35" class="loginField form-control">
                                 </div>
 
-                                <label for="pin2" class="form-label">Retype new PIN
+                                <label for="pin2" class="form-label">Confirm New Passcode
                                     <!--                                <i data-bs-toggle="tooltip" title=""-->
                                     <!--                                   class="form-label__info"-->
                                     <!--                                   data-bs-original-title="Replace this text with your tooltip text"-->
@@ -210,12 +211,12 @@
                             </fieldset>
                             <!--xif-->
                             <!-- This button is hidden unless using mobile devices. Even if hidden it enables Enter key to submit. -->
-                            <button name="extpatsubmit" type="submit"
+                            <!-- <button name="extpatsubmit" type="submit"
                                 class="loginSubmit btn btn-lg btn-primary login__button">Sign In &nbsp;
                                 <svg aria-label="sign in" fill="none" width="17" height="20" role="img">
                                     <use xlink:href="#login"></use>
                                 </svg>
-                            </button>
+                            </button> -->
 
                         </fieldset>
                     </div> <!-- end login -->
@@ -227,7 +228,9 @@
                 <!--                </label>-->
                 <!--                <label class="checkbox_label form-check__label" for="rememberme">Remember me</label>-->
                 <!--            </div>-->
-                <div class="formButtons">
+
+
+                <!-- <div class="formButtons">
                     <a href="#" class="btn btn-lg btn-primary login__button btn-desktop"
                         onclick="document.forms['fm1'].submit();">
                         <div onmousedown="this.className='pressedState';" onmouseout="this.className='';"
@@ -241,6 +244,15 @@
                             </div>
                         </div>
                     </a>
+                </div> -->
+                <div class="formButtons">
+                    <button class="btn btn-lg btn-primary login__button btn-desktop">
+                        <span class="login__button_text">Sign In &nbsp;
+                            <svg aria-label="sign in" fill="none" width="17" height="20" role="img">
+                                <use xlink:href="#login"></use>
+                            </svg>
+                        </span>
+                    </button>
                 </div>
 
                 <div class="login__forgot"><a href="/pinreset">Forgot your PIN?</a></div>

@@ -144,7 +144,9 @@
                 <!--{xif}-->
 
                 <fieldset class="login__form">
-                    <legend class="h5 login__title">RESET YOUR PIN</legend>
+                    <legend class="h5 login__title">ENTER A NEW PASSCODE</legend>
+                    <p class="login__subtitle">Please enter your library card number and a new Passcode, then retype
+                        your new Passcode to make sure you don't make a mistake.</p>
 
                     <!--{ifneedpatronname}-->
                     <!-- <div class="login__input_area">
@@ -181,9 +183,9 @@
                     <!-- </span>
                     </div> -->
 
-
+                    <p class="policy-message">Trivial PINs are not accepted, e.g. 1111, 1212, etc.</p>
                     <div class="login__input-area">
-                        <label for="pin1" class="form-label">Enter a PIN
+                        <label for="pin1" class="form-label">New Passcode
                             <i data-bs-toggle="tooltip" title="" class="form-label__info"
                                 data-bs-original-title="Usually a 4 digit number"
                                 aria-label="Usually a 4 digit number"></i>
@@ -194,9 +196,8 @@
                             <!-- output of token: <input name="pin1" id="" type="PASSWORD" value="" size="20" maxlength="64">> -->
                         </div>
                     </div>
-
                     <div class="login__input-area">
-                        <label for="pin2" class="form-label">Confirm your PIN
+                        <label for="pin2" class="form-label">Confirm New Passcode
                             <i data-bs-toggle="tooltip" title="" class="form-label__info"
                                 data-bs-original-title="Type your new PIN again. PINs must match"
                                 aria-label="Type your new PIN again - PINs must match"></i>
