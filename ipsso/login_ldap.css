@@ -132,6 +132,10 @@ mark {
     margin-top: 15px;
 }
 
+.mt-30 {
+    margin-top: 30px;
+}
+
 .mb-20 {
     margin-bottom: 20px;
 }
@@ -353,6 +357,8 @@ a:hover {
     background: #FFF9EE;
     border: 1px solid #FFCD89;
     border-radius: 4px;
+    padding: 7px 11px;
+    text-align: center;
 }
 
 
