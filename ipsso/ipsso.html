@@ -10,9 +10,7 @@
 
     <link rel="stylesheet" type="text/css" href="/apps/CAS/resources/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/apps/CAS/resources/login_ldap.css">
-    <!-- <link rel="stylesheet" type="text/css" href="/apps/CAS/resources/login.css"> -->
-    <!-- <link rel="stylesheet" type="text/css" href="/apps/CAS/resources/login_html.css"> -->
-    <!-- <link rel="stylesheet" type="text/css" href="/apps/CAS/resources/login_mobile.css"> -->
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
 
     <!-- <script type="text/javascript" src="/screens/iiilangswitch.js"></script> -->
@@ -180,12 +178,13 @@
 
                             <!--ifneedspin-->
                             <fieldset class="newpin" id="ipssonewpin">
+                                <p class="policy-message mt-30 mb-20">Trivial PINs are not accepted, e.g. 1111, 1212,
+                                    etc.</p>
                                 <legend class="h6">Please enter a new Passcode</legend>
                                 <label for="pin1" class="form-label">New Passcode
-                                    <!--                                <i data-bs-toggle="tooltip" title=""-->
-                                    <!--                                   class="form-label__info"-->
-                                    <!--                                   data-bs-original-title="Replace this text with your tooltip text"-->
-                                    <!--                                   aria-label="Tooltip goes here"></i>-->
+                                    <i data-bs-toggle="tooltip" title="" class="form-label__info"
+                                        data-bs-original-title="Usually a 4 digit number"
+                                        aria-label="Usually a 4 digit number"></i>
                                 </label>
                                 <div class="loginFieldBg input login__input">
                                     <input id="pin1" name="pin1" type="password" value="" size="20" maxlength="64"
@@ -193,10 +192,9 @@
                                 </div>
 
                                 <label for="pin2" class="form-label">Confirm New Passcode
-                                    <!--                                <i data-bs-toggle="tooltip" title=""-->
-                                    <!--                                   class="form-label__info"-->
-                                    <!--                                   data-bs-original-title="Replace this text with your tooltip text"-->
-                                    <!--                                   aria-label="Tooltip goes here"></i>-->
+                                    <i data-bs-toggle="tooltip" title="" class="form-label__info"
+                                        data-bs-original-title="passcodes must match"
+                                        aria-label="passcodes must match"></i>
                                 </label>
                                 <div class="loginFieldBg input login__input">
                                     <input id="pin2" name="pin2" type="password" value="" size="20" maxlength="64"
@@ -204,14 +202,6 @@
                                 </div>
 
                             </fieldset>
-                            <!--xif-->
-                            <!-- This button is hidden unless using mobile devices. Even if hidden it enables Enter key to submit. -->
-                            <!-- <button name="extpatsubmit" type="submit"
-                                class="loginSubmit btn btn-lg btn-primary login__button">Sign In &nbsp;
-                                <svg aria-label="sign in" fill="none" width="17" height="20" role="img">
-                                    <use xlink:href="#login"></use>
-                                </svg>
-                            </button> -->
 
                         </fieldset>
                     </div> <!-- end login -->
@@ -224,22 +214,6 @@
                 <!--                <label class="checkbox_label form-check__label" for="rememberme">Remember me</label>-->
                 <!--            </div>-->
 
-
-                <!-- <div class="formButtons">
-                    <a href="#" class="btn btn-lg btn-primary login__button btn-desktop"
-                        onclick="document.forms['fm1'].submit();">
-                        <div onmousedown="this.className='pressedState';" onmouseout="this.className='';"
-                            onmouseup="this.className='';">
-                            <div class="buttonSpriteDiv">
-                                <span class="login__button_text">Sign In &nbsp;
-                                    <svg aria-label="sign in" fill="none" width="17" height="20" role="img">
-                                        <use xlink:href="#login"></use>
-                                    </svg>
-                                </span>
-                            </div>
-                        </div>
-                    </a>
-                </div> -->
                 <div class="formButtons">
                     <button class="btn btn-lg btn-primary login__button btn-desktop">
                         <span class="login__button_text">Sign In &nbsp;
@@ -274,15 +248,15 @@
                 try { ipssoFirstField.focus(); }
                 catch (err) { }
 
-                document.onkeydown = enterSubmit
+                // document.onkeydown = enterSubmit
 
-                function enterSubmit(e) {
-                    var keycode;
-                    if (window.event) keycode = window.event.keyCode;
-                    else if (e) keycode = e.which;
-                    if (keycode == 13)
-                        document.forms[0].submit();
-                }
+                // function enterSubmit(e) {
+                //     var keycode;
+                //     if (window.event) keycode = window.event.keyCode;
+                //     else if (e) keycode = e.which;
+                //     if (keycode == 13)
+                //         document.forms[0].submit();
+                // }
             </script>
 
 
