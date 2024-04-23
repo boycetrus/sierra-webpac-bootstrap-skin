@@ -1,174 +1,10 @@
-<!DOCTYPE HTML>
-<html lang="en">
+<html>
 
 <head>
-    <title>Login | Sutherland Shire Libraries</title>
-    <meta http-equiv="X-UA-Compatible" content="FF=3;OtherUA=4">
-    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script type="text/javascript" src="/scripts/common.js"></script> -->
-
-    <!-- uncomment to use the css files on the live Sierra server
-    <link rel="stylesheet" type="text/css" href="/apps/CAS/resources/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="/apps/CAS/resources/login_ldap.css"> 
-    -->
-
-    <!-- local css files for testing -->
-    <link rel="stylesheet" type="text/css" href="ipsso/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="ipsso/login_ldap.css">
-
-    <!-- Roboto from google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
-        rel="stylesheet">
-
-    <!-- <script type="text/javascript" src="/screens/iiilangswitch.js"></script> -->
-
-    <style>
-        /* header desktop up */
-        .header-container a:hover,
-        .header-container a:active,
-        .header-container a:focus {
-            color: #454f5b;
-            background-color: #eaedef;
-            text-decoration: none;
-        }
-
-        .header {
-            height: 80px;
-            background-color: #FFF;
-            box-shadow: 0px 1px 2px rgba(0, 15, 55, 0.06);
-        }
-
-        .title-logo .separator {
-            border-left: 2px solid #093569;
-            height: 60px;
-            margin: 0 10px 0 4px;
-        }
-
-        .title-logo h1 {
-            font-size: 24px;
-            font-weight: 300;
-            font-style: normal;
-            line-height: 1.17;
-        }
-
-        .header-top__user-log-in {
-            display: flex;
-            align-items: center;
-            height: 36px;
-            border-radius: 18px;
-            padding: 0 14px;
-            margin: 0 8px;
-            border: 1px solid transparent;
-            outline: none;
-            background-color: transparent;
-            font-size: 16px;
-            color: #454f5b;
-        }
-
-        .header-top__user-log-in .button-text {
-            margin-left: 8px;
-        }
-
-        .header .title-logo-link {
-            color: #33475b;
-            text-decoration: none;
-            padding: 0 24px;
-            height: 100%;
-            outline: none;
-        }
-
-        /* header mobile */
-        @media (max-width: 767.98px) {
-            .header {
-                height: 56px;
-            }
-
-            .title-logo svg,
-            .title-logo .separator {
-                display: none;
-            }
-
-            .title-logo h1 {
-                font-size: 16px;
-                font-size: 16px;
-                font-weight: normal;
-            }
-
-            .title-logo svg,
-            .title-logo .separator {
-                display: none;
-            }
-
-            .header-top__user-log-in .button-text {
-                display: none;
-            }
-        }
-
-
-
-        .header-bottom {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            height: 56px;
-            background-color: #f1f4f6;
-            border-bottom: 1px solid #dedede;
-            border-top: 4px solid #eaedef;
-        }
-
-        .custom-links {
-            flex: 1;
-            display: flex;
-            min-width: 0;
-            height: 100%;
-            border-left: 1px solid #dee1e4;
-            border-right: 1px solid #dee1e4;
-            overflow-y: hidden;
-            overflow-x: auto;
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-
-        .custom-link {
-            height: 55px;
-            padding: 0 16px;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 55px;
-            color: #33475b;
-            text-decoration: none;
-            white-space: nowrap;
-            outline: none;
-        }
-
-        .custom-link:hover,
-        .custom-link:focus,
-        .custom-link:active {
-            background-color: #ced2d6;
-            box-shadow: inset 0 0 0 1px #535862;
-            color: #33475b;
-            text-decoration: none;
-        }
-
-        .title {
-            font-size: 24px;
-            font-weight: 500;
-            line-height: 1.5;
-            color: #33475b;
-        }
-
-        p,
-        li {
-            font-size: 16px;
-            line-height: 1.5;
-            color: #33475b;
-        }
-    </style>
-
+    <title>Pinreset Request Message</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/apps/CAS/resources/login_ldap.css" />
 </head>
 
 <body>
@@ -280,146 +116,26 @@
                 <path d="M9 5L12 8L9 11" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
                     stroke-linejoin="round" />
             </symbol>
-            <symbol id="user" viewBox="0 0 512 512">
-                <path
-                    d="M256 288c79.53 0 144-64.47 144-144s-64.47-144-144-144c-79.52 0-144 64.47-144 144S176.5 288 256 288zM351.1 320H160c-88.36 0-160 71.63-160 160c0 17.67 14.33 32 31.1 32H480c17.67 0 31.1-14.33 31.1-32C512 391.6 440.4 320 351.1 320z" />
-            </symbol>
         </svg>
     </div>
     <!-- set up SVGs for use element -->
+    <div class="login__page login">
 
-    <div id="header" class="header-container">
-        <section class="header d-flex justify-content-between align-items-center">
-            <a class="title-logo-link d-flex align-items-center" href="https://suth.ap.iiivega.com">
-                <div class="title-logo d-flex justify-content-between align-items-center">
-                    <svg aria-label="Sutherland Shire Libraries" fill="#093569" width="129" height="80" role="img"
-                        style="background-color:none; border-radius:3px;">
-                        <use xlink:href="#library-icon"></use>
-                    </svg>
-                    <div class="separator"></div>
-                    <h1 class="library__title">Sutherland Shire Libraries</h1>
-                </div>
-            </a>
-            <div class="header-top__user">
-                <a href="https://suth.ap.iiivega.com/" id="user-login-button" class="header-top__user-log-in">
-                    <svg aria-label="user account" fill="#454f5b" width="18" height="18" role="img">
-                        <use xlink:href="#user"></use>
-                    </svg>
-                    <span class="button-text">
-                        My account
-                        <!--{patron}-->
-                    </span>
-                </a>
-
+        <div class="loginTop">
+            &nbsp;
+            <!-- Prevent div collapse -->
+            <div class="loginTopLogo">
+                <svg aria-label="Sutherland Shire Libraries" fill="#093569" width="129" height="80" role="img"
+                    style="background-color:none; border-radius:3px;">
+                    <use xlink:href="#library-icon"></use>
+                </svg>
             </div>
-        </section>
+        </div>
 
-        <section class="header-bottom">
-            <div class="container-fluid">
-                <nav class="custom-links">
-                    <a class="custom-link" href="https://suth.ap.iiivega.com/">Catalogue Search</a>
-                    <a class="custom-link" href="https://cms.ssc.nsw.gov.au/community/Library">Library Website</a>
-                </nav>
-            </div>
-        </section><!-- /header-bottom -->
-
-    </div> <!-- /header -->
-
-
-
-    <div class="container">
-
-        <main class="py-4 px-6">
-
-            <h2 class="title">Suggest a Purchase</h2>
-            <p class="mb-3">Provide the details of the item you would like the Library to acquire in the form below.</p>
-            <p><strong>Important Notes</strong></p>
-            <ul>
-                <li>Holds are not placed and the library will not contact you about the result of this suggestion for
-                    purchase.</li>
-                <li>Please use the <a href="/illb" title="Interlibrary loan request form">Item Request Form</a> if you
-                    want to be
-                    advised of the result of your suggestion for purchase (charges apply). See <a target="_blank"
-                        href="http://cms.ssc.nsw.gov.au/Community/Library/Services/Books-Reading/Interlibrary-Loans">Services
-                        - Interlibrary Loans</a> for more information.</li>
-                <li>Before proceeding please check the library catalogue to make sure we don't already have what you
-                    want.</li>
-                <li>All suggestions for purchase are assessed against the criteria set in the <a
-                        href="http://cms.ssc.nsw.gov.au/Community/Library/Membership/Library-Policies">Library
-                        Collection Managment Policy</a>.</li>
-            </ul>
-
-            <form id="fm1" class="fm-v mt-4" method="post">
-                <!--display any errors-->
-                <!--{ifpinerrormessage}-->
-                <!--{pinerrormessage}-->
-                <!--{xif}-->
-
-                <!--{acquireform}-->
-
-                <div class="mb-3">
-                    <label for="author" class="" form-label>Author</label>
-                    <input type="text" name="author" id="author" class="form-control" value="">
-                </div>
-
-                <div class="mb-3">
-                    <label for="title" class="" form-label>Title</label>
-                    <input type="text" name="title" id="title" class="form-control" value="">
-                </div>
-
-                <div class="mb-3">
-                    <label for="publisher" class="" form-label>Publisher (if known)</label>
-                    <input type="text" name="publisher" id="publisher" class="form-control" value="">
-                </div>
-
-                <div class="mb-3">
-                    <label for="mention" class="" form-label>Where have you seen this item mentioned?</label>
-                    <input type="text" name="mention" id="mention" class="form-control" value="">
-                </div>
-
-                <div class="mb-3">
-                    <label for="other" class="" form-label>Any other information?</label>
-                    <input type="text" name="other" id="other" class="form-control" value="">
-                </div>
-
-                <div class="formButtons">
-                    <button class="btn btn-primary">Submit</button>
-                </div>
-
-            </form>
-
-            <footer>
-                <ul class="d-flex flex-wrap justify-content-center list-unstyled">
-                    <li><a target="_blank" class="link"
-                            href="https://www.sutherlandshire.nsw.gov.au/privacy-policy">Privacy Policy Statement</a>
-                    </li>
-                </ul>
-            </footer>
-
-        </main>
-
-    </div><!-- /container -->
-
-
-
-
-    <!-- uncomment to use the js files on the live Sierra server
-        <script type="text/javascript" src="/apps/CAS/resources/bootstrap.bundle.min.js"></script> 
-    -->
-    <!-- local js file for testing -->
-    <script type="text/javascript" src="ipsso/bootstrap.bundle.min.js"></script>
-
-    <!-- Trigger the tooltip -->
-    <script type="text/javascript">
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-            return new bootstrap.Tooltip(tooltipTriggerEl, {
-                delay: { "show": 10, "hide": 10 }
-            })
-        })
-    </script>
-
-    <!-- IPSSO html form updated 2023 Sep 21 -->
+        <div class="login__message">
+            <!--{msg}-->
+        </div>
+    </div>
 </body>
 
 </html>

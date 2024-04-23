@@ -3,7 +3,7 @@
 
 body { font-size:85%; }
 
-div #login { width:48%; }
+/* div #login { width:48%; } */
 
 .formButtons { text-align:center; padding-top:.8em; }
 
@@ -32,7 +32,7 @@ div #login { width:48%; }
 */
 
 
-.loginField { width:13em; margin:5px 2px 2px 5px; padding:1px; border:solid 0 #fff; background: transparent; font-size:1.6em; }
+.loginField { width:270px; margin:5px 2px 2px 5px; padding:1px; border:solid 0 #fff; background: transparent; font-size:1.6em; }
 
 .loginFieldBg { background:url("field_bg.gif") no-repeat; margin:2px 0; }
 
@@ -44,7 +44,7 @@ fieldset .barcodeAltChoice { margin:2em 0; }
 
 #ie legend { margin-left:-6px; }
 
-.loginArea1Col form { width:18em; }
+.loginArea1Col form { width:25em; }
 
 .loginTopLogo { margin: 7em auto 1em; padding-bottom:1.8em; }
 
