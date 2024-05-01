@@ -168,6 +168,13 @@
             color: #33475b;
         }
 
+        .label-unavailable {
+            color: #c21414;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 1.25;
+        }
+
         p,
         li {
             font-size: 16px;
@@ -392,39 +399,80 @@
                 <!--{illform}-->
 
                 <div class="mb-3">
-                    <label for="main0" class="" form-label>Author</label>
+                    <label for="main0" class="form-label">Author</label>
                     <input type="text" name="main0" id="main0" class="form-control" value="">
                 </div>
 
                 <div class="mb-3">
-                    <label for="main1" class="" form-label>Title</label>
-                    <input type="text" name="main1" id="main1" class="form-control" value="">
+                    <label for="main1" class="form-label">Title</label>
+                    <input type="text" name="main1" id="main1" class="form-control" value="" required>
                 </div>
 
                 <div class="mb-3">
-                    <label for="publ0" class="" form-label>Publisher (if known)</label>
+                    <label for="publ0" class="form-label">Publisher (if known)</label>
                     <input type="text" name="publ0" id="publ0" class="form-control" value="">
                 </div>
 
                 <div class="mb-3">
-                    <label for="info0" class="" form-label>ISBN</label>
-                    <input type="text" name="info0" id="info0" class="form-control" value="">
-                </div>
-
-                <div class="mb-3">
-                    <label for="main3" class="" form-label>Other information?</label>
+                    <label for="main3" class="form-label">Other information?</label>
                     <input type="text" name="main3" id="main3" class="form-control" value="">
                 </div>
 
                 <div class="mb-3">
-                    <label for="info1" class="" form-label>Collect from which library?</label>
-                    <input type="text" name="info1" id="info1" class="form-control" value="">
+                    <label for="info0" class="form-label">ISBN</label>
+                    <input type="text" name="info0" id="info0" class="form-control" value="">
                 </div>
 
                 <div class="mb-3">
-                    <label for="info2" class="" form-label>Will pay extra if no free libraries - Y/N?</label>
+                    <label for="info1" class="form-label">Collect from which library?</label>
+                    <select name="info1" id="info1" class="form-control">
+                        <option value="SU" selected>Sutherland Library</option>
+                        <option value="CR">Cronulla Library</option>
+                        <option value="CA">Caringbah Library</option>
+                        <option value="MI">Miranda Library</option>
+                        <option value="EN">Engadine Library</option>
+                        <option value="ME">Menai Library</option>
+                        <option value="SY">Sylvania Library</option>
+                        <option value="BU">Bundeena Library</option>
+                    </select>
+
+
+                    <!-- <label for="info1" class="form-label">Collect from which library?</label>
+                    <input type="text" name="info1" id="info1" class="form-control" value=""> -->
+                </div>
+
+                <div class="mb-3">
+                    <!-- <fieldset>
+                    <legend>Select a maintenance drone:</legend>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                Default radio
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                                value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                                Second default radio
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
+                                value="option3" disabled>
+                            <label class="form-check-label" for="exampleRadios3">
+                                Disabled radio
+                            </label>
+                        </div>
+                    </fieldset> -->
+
+
+                    <label for="info2" class="form-label">Will pay extra if no free libraries - Y/N?</label>
                     <input type="text" name="info2" id="info2" class="form-control" value="">
                 </div>
+
+                <p class="label-unavailable mb-4">You will be charged $5.70 for this request.</p>
 
                 <div class="formButtons">
                     <!--Support for scopes: -->
