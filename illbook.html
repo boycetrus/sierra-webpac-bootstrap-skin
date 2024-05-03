@@ -378,13 +378,14 @@
                 <li>Read the information about the <a
                         href="https://libraries.sutherlandshire.nsw.gov.au/services/interlibrary-loans"
                         target="_blank">Interlibrary Loan Service</a> on our website before making a request.</li>
+                <li>A non-refundable $5.70 is charged for all interlibrary loan requests.</li>
                 <li>The Library always attempts to obtain items from libraries that don't charge us first.</li>
                 <li>If not available from a non-charging location, $32.40 is the standard fee other libraries charge.
                     Please indicate whether you are willing to pay $32.40 to borrow from a charging location in the form
                     below.</li>
                 <li>A response from the supplying library is expected within 4 working days.</li>
             </ul>
-            <h3>Do you have a deadline?</h3>
+            <h3 class="title">Do you have a deadline?</h3>
             <p>If you have a deadline, please discuss your request with library staff before
                 making a request online. Telephone the Library on 02 9710 0351 between 9am-5pm weekdays.</p>
 
@@ -403,8 +404,6 @@
 
                 <!-- the form fields below replace the {illform} token -->
                 <!--{illform}-->
-
-                <p class="label-unavailable mb-3">You will be charged $5.70 for this request.</p>
 
                 <div class="mb-3">
                     <label for="main0" class="form-label">Author</label>
@@ -449,7 +448,7 @@
                     <input type="text" name="info1" id="info1" class="form-control" value=""> -->
                 </div>
 
-                <div class="mb-4">
+                <div class="mb-3">
                     <fieldset>
                         <legend class="form-label">Are you willing to pay extra fees if we can't get this item from a
                             free location?
@@ -467,6 +466,16 @@
                     <!-- <label for="info2" class="form-label">Are you willing to pay extra fees if we can't get this item
                         from a free location?</label>
                     <input type="text" name="info2" id="info2" class="form-control" value=""> -->
+                </div>
+
+                <div class="mb-4">
+                    <fieldset>
+                        <legend class="form-label">Standard Interlibrary Loan Fee</legend>
+                        <div>
+                            <input type="checkbox" id="standardFee" value="Yes" required>
+                            <label for="standardFee">I agree to pay the $5.70 request fee</label>
+                        </div>
+                    </fieldset>
                 </div>
 
                 <div class="formButtons">
