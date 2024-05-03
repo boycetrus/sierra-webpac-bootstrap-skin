@@ -182,10 +182,16 @@
             color: #33475b;
         }
 
+
+
         /* forms */
         .fm-v label {
             font-size: 16px;
             font-weight: 400;
+        }
+
+        .fm-v legend {
+            border: 0;
         }
 
         .fm-v .form-control {
@@ -448,17 +454,18 @@
                         <legend class="form-label">Are you willing to pay extra fees if we can't get this item from a
                             free location?
                         </legend>
-                        <div class="form-check">
+                        <div>
                             <input type="radio" name="info2" id="extraFeeYes" value="Yes">
                             <label for="extraFeeYes">Yes</label>
                         </div>
-                        <div class="form-check">
-                            <input type="radio" name="info2" id="extraFeeNo" value="No" required>
-                            <label for="extraFeeNo">No</label>
+                        <div>
+                            <input type="radio" name="info2" id="ExtraFeeNo" value="No" required>
+                            <label for="ExtraFeeNo">No</label>
                         </div>
                     </fieldset>
 
-                    <!-- <label for="info2" class="form-label">Will pay extra if no free libraries - Y/N?</label>
+                    <!-- <label for="info2" class="form-label">Are you willing to pay extra fees if we can't get this item
+                        from a free location?</label>
                     <input type="text" name="info2" id="info2" class="form-control" value=""> -->
                 </div>
 
