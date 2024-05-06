@@ -143,7 +143,7 @@
             <!-- Prevent div collapse -->
             <div class="loginTopLogo">
                 <svg aria-label="Sutherland Shire Libraries" fill="#093569" width="170" height="50" role="img"
-                    style="background-color:none; margin: 0 10px;">
+                    style="background-color:none; margin: 10px;">
                     <use xlink:href="#library-icon"></use>
                 </svg>
             </div>
@@ -152,7 +152,7 @@
         <!-- Use for dual external and library authentication: -->
         <div class="loginArea loginArea2Col login__container">
             <!-- Use for library-only authentication: -->
-            <form id="fm1" class="fm1">
+            <form id="fm1" class="fm-v">
 
                 <div class="login__inner">
                     <!--display login form-->
@@ -214,13 +214,6 @@
                         </fieldset>
                     </div> <!-- end login -->
                 </div>
-                <!--            <div class="form-check">-->
-                <!--                <label class="checkbox_input">-->
-                <!--                    <input type="checkbox" name="rememberme" id="rememberme" class="form-check__input">-->
-                <!--                    <div class="form-check__check"></div>-->
-                <!--                </label>-->
-                <!--                <label class="checkbox_label form-check__label" for="rememberme">Remember me</label>-->
-                <!--            </div>-->
 
                 <div class="formButtons">
                     <button class="btn btn-lg btn-primary login__button btn-desktop">
@@ -256,15 +249,6 @@
                 try { ipssoFirstField.focus(); }
                 catch (err) { }
 
-                // document.onkeydown = enterSubmit
-
-                // function enterSubmit(e) {
-                //     var keycode;
-                //     if (window.event) keycode = window.event.keyCode;
-                //     else if (e) keycode = e.which;
-                //     if (keycode == 13)
-                //         document.forms[0].submit();
-                // }
             </script>
 
 
@@ -282,7 +266,9 @@
     </div> <!-- loginPage -->
 
     <!-- Trigger the tooltip -->
-    <script type="text/javascript" src="/apps/CAS/resources/bootstrap.bundle.min.js"></script>
+    <!-- <script type="text/javascript" src="/apps/CAS/resources/bootstrap.bundle.min.js"></script> -->
+    <script type="text/javascript" src="bootstrap.bundle.min.js"></script>
+
     <script type="text/javascript">
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
