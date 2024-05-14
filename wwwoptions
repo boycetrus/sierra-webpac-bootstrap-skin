@@ -399,7 +399,7 @@ ICON_BUT_ILL_HOME=<span data-option="ICON_BUT_ILL_HOME">New Request</span>
 ICON_BUT_PAT_ILL_FORM=<span data-option="ICON_BUT_PAT_ILL_FORM">Interlibrary Loan Form</span>
 ICON_BUT_PAT_ILL=<span data-option="ICON_BUT_PAT_ILL">Interlibrary Loan</span>
 ILL_CONF_EMAIL_SUBJECT=Library notification of Inter-library Loan request
-ILL_HOME=/screens/ill.html
+ILL_HOME=/illb
 
 # INN-Reach
 IR_PLACEMENT=1
