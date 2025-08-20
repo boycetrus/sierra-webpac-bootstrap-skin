@@ -15,6 +15,7 @@
 # Saving and Exporting
 # Requesting
 # Patron Record
+# Web Access Management
 # SMS Options
 # My Millennium
 # Patron Ratings
@@ -35,7 +36,7 @@
 # My Federated Search (Research Pro or MetaFind)
 # WebPAC Pro
 # Research Pro
-# Program Registration
+# XSS Security
 
 
 # General Display and Behavior
@@ -320,12 +321,21 @@ SEEPUDATE=true
 TABLEPARAM_PATDISP=border="0" name="tableparam_patdisp"|border="0" name="tableparam_patdisp"|border="0" name="tableparam_patdisp"
 TABLEPARAM_PATFUNC=id="patFunc" class="table table-bordered"|id="patFunc" class="table table-bordered"|id="patFunc" class="table table-bordered"
 TIMEOUT_POPUP=600
-EXP_MSG=3000|WARNING: Your account expires in %n day(s) on %d. We use expiry dates to ensure our records are correct. Please ask staff to confirm your details on your next visit. If you don't visit the library before the expiry date you will not be able to access your account online.
+EXP_MSG=3000|WARNING: Your account expires in %n day(s) on %d. We use expiry dates to ensure our records are correct. Please ask staff to confirm your details on your next visit. If you do not visit the library before the expiry date you will not be able to access your account online.
 IPSSO_USEHTML=true
+
+# Web Access Management
+PROXYDNS=webpac.sutherlandshire.nsw.gov.au
+TIMEOUT_WAMPATRON=1800
+WAM_LOG_IP=false
+WAM_LOG_PNUM=false
+WAM_LOG_REJECTIONS=false
 
 #SMS Options
 SMS_OPTOUT_WARN=You will be opted out of SMS notification.
 SMS_PHONE_WARN=Your mobile number will be changed.
+ICON_SUBMIT=<span class="teal-button">Submit</span>
+
 
 # My Millennium
 ICON_BUT_PAT_PSEARCH_REMOVE=<span data-option="ICON_BUT_PAT_PSEARCH_REMOVE">Delete All Searches</span>
@@ -333,7 +343,7 @@ BUT_PAT_PSEARCH_UPDATE=/screens/updatelist.gif
 ICON_BUT_PAT_PSEARCH_UPDATE=<span data-option="ICON_BUT_PAT_PSEARCH_UPDATE">Apply Changes</span>
 BUT_PAT_SEARCH=/screens/pat_search.gif
 ICON_BUT_PAT_GETPSAVEDRECS=<span data-option="ICON_BUT_PAT_GETPSAVEDRECS">Preferred Searches</span>
-CIRC_HIST_LIMIT_TEXT=Limit to titles which aren't in my Reading History
+CIRC_HIST_LIMIT_TEXT=Limit to titles which are not in my Reading History
 HAS_ALTERNATE_ID=false
 ALTERNATE_ID_EMAIL=username@replacesitename.com|Your login name has changed
 ICON_PAT_DELETE_ALL=<span data-option="ICON_PAT_DELETE_ALL">Delete All</span>
@@ -529,18 +539,5 @@ MF_SEARCHINDEX=Keywords,Keywords|:CREATOR,Author|:TITLE,Title|:SUBJECT,Subject
 MF_STYLESHEET=/screens/styles.css
 MF_TOPLOGO=@screens/toplogo.html
 
-# Program Display
-PROG_AVS_TAG=PHJQIL
-PROGRAM_SECTION_FIELDS=Date/Time:VsT|Meets:Vss|Location:Fs285|Instructor:Vsn|Status:VsS
-ICON_BUT_PAT_PROGRAMS=Library Events
-ICON_BUT_PAT_SORTBYDATE=<div class="button80Bold" id="ICON_BUT_PAT_SORTBYDATE">Sort by Date</div>
-ICON_BUT_PAT_SORTBYNAME=<div class="button80Bold" id="ICON_BUT_PAT_SORTBYNAME">Sort by Name</div>
-ICON_RET2PROG=<div class="button80Bold" id="ICON_RET2PROG">Return to Programs</div>
-ICON_REGISTER=<span data-option="ICON_REGISTER">Click to Register</span>
-ICON_ADD_TO_WAITLIST=<span data-option="ICON_ADD_TO_WAITLIST">Add to Waitlist</span>
-ICON_VIEW_ADDITIONAL_SESSIONS=<span data-option="ICON_VIEW_ADDITIONAL_SESSTIONS>View Additional Sessions</span>
-ICON_HIDE_ADDITIONAL_SESSIONS=<span data-option="ICON_HIDE_ADDITIONAL_SESSIONS">Hide Additional Sessions</span>
-ICON_PROGRAM_CAL=<span data-option="ICON_PROGRAM_CAL">Events Calendar</span>
-TABLEPARAM_PROG_SECTIONS=width="100%" border="1" cellspacing="0" align="center" name="tableparam_prog_sections"
-BOTLOGO_ENCORE=@screens/botlogo_encore.html
-WEBLINKS_ENCORE=0
+# XSS Security
+CSP_SCRIPT_SRC_HOSTS=https://www.googletagmanager.com 
