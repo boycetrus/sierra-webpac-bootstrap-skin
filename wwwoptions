@@ -34,6 +34,7 @@
 # Patron Registration
 # My Federated Search (Research Pro or MetaFind)
 # WebPAC Pro
+# XSS Security
 # Research Pro
 # Program Registration
 
@@ -423,9 +424,8 @@ FEATURED_LIST=01,02,03,117|FEATURED LISTS|CATEGORY|# of Titles
 
 # Content Linking and Other Resources
 # If your system uses SSL, use the https example, to avoid secure/nonsecure warning on Internet Explorer.
-BIBIMAGE=http://contentcafe2.btol.com/ContentCafe/Jacket.aspx?UserID=Innovative&Password=Goldengate&Return=1&Type=S&Value=%s|I|http://contentcafe2.btol.com/ContentCafeClient/ContentCafe.aspx?UserID=Innovative&amp;Password=Goldengate&amp;ItemKey=%s&amp;Options=Y
-# BIBIMAGE=http://contentcafe2.btol.com/ContentCafe/Jacket.aspx?UserID=PUTACCOUNTHERE&amp;Password=PUTACCOUNTHERE&amp;Return=T&amp;Type=S&amp;Value=%s&amp;erroroverride=1|I|http://contentcafe2.btol.com/ContentCafeClient/ContentCafe.aspx?UserID=PUTACCOUNTHERE&amp;Password=PUTACCOUNTHERE&amp;ItemKey=%s&amp;Options=Y
 # BIBIMAGE=https://contentcafe2.btol.com/ContentCafe/Jacket.aspx?UserID=PUTACCOUNTHERE&amp;Password=PUTACCOUNTHERE&amp;Return=T&amp;Type=S&amp;Value=%s&amp;erroroverride=1|I|https://contentcafe2.btol.com/ContentCafeClient/ContentCafe.aspx?UserID=PUTACCOUNTHERE&amp;Password=PUTACCOUNTHERE&amp;ItemKey=%s&amp;Options=Y
+BIBIMAGE=https://secure.syndetics.com/index.aspx?isbn=%s/lc.gif&client=sutherland&type=unbound|i|https://secure.syndetics.com/index.aspx?isbn=%s/lc.gif&client=sutherland&type=unbound
 BIBIMAGE_TEXT=Book Cover
 BUT_ENCYCPD=/screens/encycpd.gif
 BUT_FULL_TEXT=/screens/full_text.gif
@@ -495,6 +495,10 @@ BROWSE50=true
 # ICON_SPELLCHECK_SEARCH=Search
 INNOVATIVE_FOOTER=center|a
 # SPELLCHECK=<span class="spellcheckTool">Did you mean %a? %s </span>
+
+# XSS Security
+CSP_SCRIPT_SRC_HOSTS=https://www.googletagmanager.com
+CSP_CONNECT_SRC_HOSTS=https://www.google-analytics.com
 
 # Research Pro
 # MF_BIBIMAGE=http://syndetics.com/index.aspx/?isbn=%s/SC.gif&amp;client=PUTACCOUNTHERE&amp;type=hw7|i|http://syndetics.com/index.aspx/?isbn=%s/SC.gif&amp;client=PUTACCOUNTHERE&amp;type=hw7
